@@ -1,0 +1,13 @@
+Subject: 版面文章通知 - "{FORUM_NAME}"
+
+Hello {USERNAME},
+
+您收到這個通知是因為您設定了在 "{SITENAME}" 上監視版面 "{FORUM_NAME}". 這個版面上剛有人回覆了主題 "{TOPIC_TITLE}". 您可以使用下面的連結檢視這個主題, 在您檢視這個主題前不會再有任何通知.
+
+{U_NEWEST_POST}
+
+如果您不想再監視這個版面, 您可以在上面的版面中點選 "取消訂閱版面" 連結或點選下面的連結:
+
+{U_STOP_WATCHING_FORUM}
+
+{EMAIL_SIG}

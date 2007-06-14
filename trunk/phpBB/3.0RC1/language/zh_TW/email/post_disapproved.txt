@@ -1,0 +1,12 @@
+Subject: 文章未核准 - "{POST_SUBJECT}"
+
+Hello {USERNAME},
+
+您收到這個通知是因為您在 "{SITENAME}" 上發表的文章 "{POST_SUBJECT}" 未通過版主或管理員核准.
+
+不核准的理由是:
+
+{REASON}
+
+
+{EMAIL_SIG}
