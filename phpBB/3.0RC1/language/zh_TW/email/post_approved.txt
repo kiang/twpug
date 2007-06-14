@@ -1,0 +1,14 @@
+Subject: 文章被核准 - "{POST_SUBJECT}"
+
+Hello {USERNAME},
+
+您收到這個通知是因為您在 "{SITENAME}" 上的文章 "{POST_SUBJECT}" 已經被版主或管理員核准.
+
+您可以點選下面的連結檢視您的文章:
+{U_VIEW_POST}
+
+您可以點選下面的連結檢視這個主題:
+{U_VIEW_TOPIC}
+
+
+{EMAIL_SIG}

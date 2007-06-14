@@ -1,0 +1,12 @@
+Subject: 主題未核准 - "{TOPIC_TITLE}"
+
+Hello {USERNAME},
+
+您收到這個通知是因為您在 "{SITENAME}" 上發表的主題 "{TOPIC_TITLE}" 未通過版主或管理員的核准.
+
+不核准的理由是:
+
+{REASON}
+
+
+{EMAIL_SIG}

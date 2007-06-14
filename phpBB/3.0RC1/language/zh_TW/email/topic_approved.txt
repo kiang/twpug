@@ -1,0 +1,11 @@
+Subject: 主題已被核准 - "{TOPIC_TITLE}"
+
+Hello {USERNAME},
+
+您收到這個通知, 因為您在 "{SITENAME}" 上發表的主題 "{TOPIC_TITLE}" 已經被版主或管理員核准.
+
+如果您希望檢視這個主題, 請點選下面的連結:
+{U_VIEW_TOPIC}
+
+
+{EMAIL_SIG}
