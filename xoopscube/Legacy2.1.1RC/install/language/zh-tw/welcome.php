@@ -1,5 +1,5 @@
 <?php
-// $Id: welcome.php,v 1.2.8.2 2006/02/04 09:30:08 minahito Exp $
+// $Id$
 // XOOPS CUBE UTF-8 中文翻譯檔
 // 本中文翻譯檔乃直接由英文版翻譯過來,遵照GPL授權協議. 
 // 除了GPL的規範之外,沒有其它限制

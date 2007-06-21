@@ -4,7 +4,7 @@ define('_MB_USER_PASSWORD', '密碼：');
 define('_MB_USER_LOGIN', '登入');
 define('_MB_USER_LOSTPASS', '忘記密碼？');
 define('_MB_USER_USERREG', '現在註冊！');
-define('_MB_USER_SECURE', 'SSL');
+define('_MB_USER_SECURE', '安全連線');
 define('_MB_USER_REMEMBERME', '記住我');
 
 define('_MB_USER_ONLINEPHRASE', '%s 個使用者在線上');

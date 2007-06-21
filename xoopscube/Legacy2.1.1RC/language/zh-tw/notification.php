@@ -1,5 +1,5 @@
 <?php
-// $Id: notification.php,v 1.2.8.1.2.1 2006/11/08 09:24:17 minahito Exp $
+// $Id: notification.php,v 1.1 2007/05/15 02:34:43 minahito Exp $
 
 // RMV-NOTIFY
 
@@ -15,7 +15,7 @@ define('_NOT_DELETE', '刪除');
 define('_NOT_CHECKALL', '檢查所有的');
 define('_NOT_MODULE', '模組');
 define('_NOT_CATEGORY', '類別');
-define('_NOT_ITEMID', '代碼');
+define('_NOT_ITEMID', '編號');
 define('_NOT_ITEMNAME', '名稱');
 define('_NOT_EVENT', '事件');
 define('_NOT_EVENTS', '事件');

@@ -1,12 +1,13 @@
 <?php
-// $Id: finish.php,v 1.2.8.1 2006/02/03 17:16:36 tom_g3x Exp $
-// XOOPS CUBE UTF-8 中文翻譯檔
-// 本中文翻譯檔乃直接由英文版翻譯過來,遵照GPL授權協議. 
-// 除了GPL的規範之外,沒有其它限制
-// 翻譯者：SUN (sun@meto.com.tw) http://www.meto.com.tw
 $content .=
-"<u><b>您的網站已經建置完成</b></u>
-<p>請按 <a href='../index.php'>這裡</a> 到網站首頁.</p>
-<u><b>如果有使用上的問題可至XOOPS支援站</b></u><p>請按<a href='http://xoopscube.org/' target='_blank'>XOOPS Cube</a>或<a href='http://tw.xoops.org/' target='_blank'>tw.xoops.org-繁體中文支援站</a></p>
+"<u><b>您的網站已經完成</b></u>
+<p>請點選 <a href='../index.php'>這裡</a> 到網站首頁.</p>
+如果有使用上的問題可到下面網站尋求解答：
+<ul>
+<li><a href='http://xoops.tnc.edu.tw/' target='_blank'>XOOPS 正體中文延伸計畫</a></li>
+<li><a href='http://xoopscube.tw/' target='_blank'>XOOPS Cube 中文支援站</a></li>
+<li><a href='http://twpug.net/modules/newbb/viewforum.php?forum=4' target='_blank'>台灣PHP聯盟</a></li>
+<li><a href='http://xoopscube.org/' target='_blank'>XOOPS Cube官方網站</a></li>
+</ul>
 ";
 ?>
