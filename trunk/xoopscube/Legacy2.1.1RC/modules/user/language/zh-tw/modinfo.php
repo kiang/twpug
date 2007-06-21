@@ -1,6 +1,6 @@
 <?php
 
-define('_MI_USER_ADMENU_AVATAR_MANAGE', '大頭貼管理');
+define('_MI_USER_ADMENU_AVATAR_MANAGE', '圖示管理');
 define('_MI_USER_ADMENU_GROUP_LIST', '群組管理');
 define('_MI_USER_ADMENU_LIST', '會員管理');
 define('_MI_USER_ADMENU_MAIL', '會員郵寄');
@@ -23,12 +23,12 @@ define('_MI_USER_CONF_ACTV_TYPE', '選擇新註冊使用者的啟用方式');
 define('_MI_USER_CONF_ACTV_USER', '由使用者啟用 (推薦)');
 define('_MI_USER_CONF_ALLOW_REGISTER', '允許新會員註冊?');
 define('_MI_USER_CONF_ALW_RG_DESC', '選擇是來接受新使用者註冊。');
-define('_MI_USER_CONF_AVATAR_HEIGHT', '大頭貼圖片最大高度 (pixel)');
-define('_MI_USER_CONF_AVATAR_MAXSIZE', '大頭貼圖片最大大小 (byte)');
+define('_MI_USER_CONF_AVATAR_HEIGHT', '圖示圖片最大高度 (pixel)');
+define('_MI_USER_CONF_AVATAR_MAXSIZE', '圖示圖片最大大小 (byte)');
 define('_MI_USER_CONF_AVATAR_MINPOSTS', '最少必須發表文章數');
 define('_MI_USER_CONF_AVT_MIN_DESC', '輸入能夠上傳自訂圖示的文章數量下限。');
-define('_MI_USER_CONF_AVATAR_WIDTH', '大頭貼圖片最大寬度 (pixel)');
-define('_MI_USER_CONF_AVTR_ALLOW_UP', '允許自訂大頭貼上傳?');
+define('_MI_USER_CONF_AVATAR_WIDTH', '圖示圖片最大寬度 (pixel)');
+define('_MI_USER_CONF_AVTR_ALLOW_UP', '允許自訂圖示上傳?');
 define('_MI_USER_CONF_BAD_EMAILS', '在使用者的資料中輸入要保留的電子郵件');
 define('_MI_USER_CONF_BAD_EMAILS_DESC', '每一個之間用 <b>|</b> 隔開, 不分大小寫, 可用正>');
 define('_MI_USER_CONF_BAD_UNAMES', '');
@@ -36,7 +36,7 @@ define('_MI_USER_CONF_BAD_UNAMES_DESC', '每一個之間用 <b>|</b> 隔開, 不
 define('_MI_USER_CONF_CHGMAIL', '允許使用者變更電子郵件位址?');
 define('_MI_USER_CONF_DISCLAIMER', '註冊時要顯示的網站規範');
 define('_MI_USER_CONF_DISCLAIMER_DESC', '輸入相關的站台規範文字內容.');
-define('_MI_USER_CONF_DISCLAIMER_DESC_DEFAULT', 'While the administrators and moderators of this site will attempt to remove\nor edit any generally objectionable material as quickly as possible, it is\nimpossible to review every message. Therefore you acknowledge that all posts\nmade to this site express the views and opinions of the author and not the\nadministrators, moderators or webmaster (except for posts by these people)\nand hence will not be held liable. \n\nYou agree not to post any abusive, obscene, vulgar, slanderous, hateful,\nthreatening, sexually-orientated or any other material that may violate any\napplicable laws. Doing so may lead to you being immediately and permanently\nbanned (and your service provider being informed). The IP address of all\nposts is recorded to aid in enforcing these conditions. Creating multiple\naccounts for a single user is not allowed. You agree that the webmaster,\nadministrator and moderators of this site have the right to remove, edit,\nmove or close any topic at any time should they see fit. As a user you agree\nto any information you have entered above being stored in a database. While\nthis information will not be disclosed to any third party without your\nconsent the webmaster, administrator and moderators cannot be held\nresponsible for any hacking attempt that may lead to the data being\ncompromised. \n\nThis site system uses cookies to store information on your local computer.\nThese cookies do not contain any of the information you have entered above,\nthey serve only to improve your viewing pleasure. The email address is used\nonly for confirming your registration details and password (and for sending\nnew passwords should you forget your current one). \n\nBy clicking Register below you agree to be bound by these conditions.');
+define('_MI_USER_CONF_DISCLAIMER_DESC_DEFAULT', '雖然這個網站的相關管理人員會盡可能移除或編輯有問題的內容，但是要看完每一篇文章有點困難；而您明白自己在網站上發表的所有文章代表個人的觀點與意見，管理人員並不為內容負責，您也同意不會發表任何違反法律、善良風俗與網站規定的內容，這些內容可能會導致網站永遠拒絕您的參觀，您發表文章的位置與相關資訊會被記錄以履行上述約定。\n\n您同意網站的相關管理人員在任何時間有權利移除、編輯、移動或是關閉任何他們覺得不妥的主題，而身為一個使用者，您同意所發表的任何文章被儲存在資料庫中，這些內容在未取得您的同意前不會提供給第三者，不過網站管理人員無法承擔在人為的惡意入侵中被竊取與濫用內容的法律責任。\n\n這個網站使用 cookies 將資訊儲存在您使用的電腦中，其中並不包含您在上面輸入的內容，這些資訊只用來改善您的瀏覽體驗；而信箱只用來確認您的註冊細節與密碼（並且在您忘記密碼時用來重新設定），點選下面的註冊按鈕表示您同意上述條件。');
 define('_MI_USER_CONF_DISPDSCLMR', '顯示站台規範?');
 define('_MI_USER_CONF_DISPDSCLMR_DESC', '選擇是以在註冊時可以顯示站台規範');
 define('_MI_USER_CONF_MAXUNAME', '使用者名稱最大字元長度');
@@ -55,9 +55,9 @@ define('_MI_USER_CONF_UNAME_TEST_LEVEL_STRONG', '嚴謹 (只能使用英文字�
 define('_MI_USER_CONF_UNAME_TEST_LEVEL_WEAK', '寬鬆 (允許使用雙位元文字,例中文)');
 define('_MI_USER_CONF_USE_SSL', '使用 SSL 登入？');
 define('_MI_USER_CONF_USERCOOKIE', '使用者 cookies 名稱。');
-define('_MI_USER_CONF_USERCOOKIE_DESC', 'This cookie contains only a user name and is saved in a user pc for a year (if the user wishes). If a user have this cookie, username will be automatically inserted in the login box.');
-define('_MI_USER_KEYWORD_AVATAR_MANAGE', '自訂大頭貼管理');
-define('_MI_USER_KEYWORD_CREATE_AVATAR', '建立大頭貼');
+define('_MI_USER_CONF_USERCOOKIE_DESC', 'cookie 中只會包含使用者名稱，儲存在使用者的電腦中一年（如果使用者允許）；使用者儲存了這個項目後，每次要登入時就會自動在表單填上使用者的帳號。');
+define('_MI_USER_KEYWORD_AVATAR_MANAGE', '自訂圖示管理');
+define('_MI_USER_KEYWORD_CREATE_AVATAR', '建立圖示');
 define('_MI_USER_KEYWORD_CREATE_GROUP', '建立群組');
 define('_MI_USER_KEYWORD_CREATE_RANK', '建立等級');
 define('_MI_USER_KEYWORD_CREATE_USER', '建立使用者');
@@ -67,7 +67,7 @@ define('_MI_USER_KEYWORD_MAILJOB_MANAGE', '郵件工作管理');
 define('_MI_USER_KEYWORD_USER_LIST', '使用者列表');
 define('_MI_USER_KEYWORD_USER_SEARCH', '搜尋使用者');
 define('_MI_USER_LANG_MAILJOB_LINK_LIST', '郵件工作連結列表');
-define('_MI_USER_MENU_CREATE_AVATAR', '建立大頭貼');
+define('_MI_USER_MENU_CREATE_AVATAR', '建立圖示');
 define('_MI_USER_MENU_CREATE_GROUP', '建立群組');
 define('_MI_USER_MENU_CREATE_RANK', '建立新的會員等級');
 define('_MI_USER_MENU_CREATE_USER', '建立使用者');

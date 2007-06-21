@@ -1,10 +1,10 @@
 <?php
-// $Id: user.php,v 1.2 2005/03/18 12:52:14 onokazu Exp $
+// $Id: user.php,v 1.1 2007/05/15 02:34:43 minahito Exp $
 //%%%%%%		File Name user.php 		%%%%%
-define('_US_NOTREGISTERED', '還沒註冊嗎? 請點按 <a href=register.php>這裡</a>.');
+define('_US_NOTREGISTERED', '還沒註冊嗎？ 請點選 <a href=register.php>這裡</a>。');
 define('_US_LOSTPASSWORD', '忘記您的密碼了嗎？');
-define('_US_NOPROBLEM', '沒問題，只要輸入您以前在本站註冊時登錄的電子郵件即可.');
-define('_US_YOUREMAIL', '您的電子郵件: ');
+define('_US_NOPROBLEM', '沒問題，只要輸入您以前在本站註冊時登錄的電子郵件即可。');
+define('_US_YOUREMAIL', '您的電子郵件：');
 define('_US_SENDPASSWORD', '傳送密碼給您');
 define('_US_LOGGEDOUT', '目前您已登出');
 define('_US_THANKYOUFORVISIT', '感謝您參觀我們的網站!');
@@ -29,7 +29,7 @@ define('_US_EMAIL', '電子郵件');
 define('_US_ALLOWVIEWEMAIL', '公開您的電子郵件');
 define('_US_WEBSITE', '網站');
 define('_US_TIMEZONE', '時區');
-define('_US_AVATAR', '大頭貼');
+define('_US_AVATAR', '圖示');
 define('_US_VERIFYPASS', '確認密碼');
 define('_US_SUBMIT', '確定送出');
 define('_US_USERNAME', '帳號');
@@ -61,9 +61,9 @@ define('_US_NICKNAMETOOLONG', '帳號太長，不能超過%s個字元.');
 define('_US_NICKNAMETOOSHORT', '帳號太短，不能短於%s個字元.');
 define('_US_NAMERESERVED', '錯誤：不能用系統保留字當帳號。');
 define('_US_NICKNAMENOSPACES', '帳號請勿包含空白字元.');
-define('_US_NICKNAMETAKEN', 'ERROR: 這個帳號已有人使用.');
-define('_US_EMAILTAKEN', 'ERROR: 這個 Email 已經有人註冊過.');
-define('_US_ENTERPWD', 'ERROR: 您必須提供密碼.');
+define('_US_NICKNAMETAKEN', '錯誤：這個帳號已有人使用.');
+define('_US_EMAILTAKEN', '錯誤：這個信箱已經有人註冊過。');
+define('_US_ENTERPWD', '錯誤：您必須提供密碼。');
 define('_US_SORRYNOTFOUND', '抱歉，找不到所填資料一致的使用者帳號.');
 
 
@@ -123,13 +123,13 @@ define('_US_PROFUPDATED', '個人資料已更新!');
 define('_US_USECOOKIE', '在cookie中儲存您的帳號資料(不包含密碼)1年');
 define('_US_NO', '否');
 define('_US_DELACCOUNT', '刪除帳號');
-define('_US_MYAVATAR', '我的大頭貼');
-define('_US_UPLOADMYAVATAR', '上傳我的大頭貼');
+define('_US_MYAVATAR', '我的圖示');
+define('_US_UPLOADMYAVATAR', '上傳我的圖示');
 define('_US_MAXPIXEL', '最大寬度/高度(Pixel)');
 define('_US_MAXIMGSZ', '最大檔案大小 (Bytes)');
 define('_US_SELFILE', '選擇檔案');
-define('_US_OLDDELETED', '舊的大頭貼已經刪除!');
-define('_US_CHOOSEAVT', '選一個你要的大頭貼吧');
+define('_US_OLDDELETED', '舊的圖示已經刪除!');
+define('_US_CHOOSEAVT', '選一個您要使用的圖示');
 
 define('_US_PRESSLOGIN', '請按以下按鈕登入');
 

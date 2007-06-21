@@ -26,7 +26,7 @@ define('_AD_USER_LANG_AVATAR_TYPE', '類型');
 define('_AD_USER_LANG_AVATAR_TYPE_C', '自訂');
 define('_AD_USER_LANG_AVATAR_TYPE_S', '系統');
 define('_AD_USER_LANG_AVATAR_USING_COUNT', '使用者');
-define('_AD_USER_LANG_AVATAR_WEIGHT', '順位');
+define('_AD_USER_LANG_AVATAR_WEIGHT', '權重');
 define('_AD_USER_LANG_BODY', '內容');
 define('_AD_USER_LANG_COMPLETED', '完成日期');
 define('_AD_USER_LANG_CONTROL', '控制');

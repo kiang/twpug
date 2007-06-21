@@ -1,5 +1,5 @@
 <?php
-// $Id: install2.php,v 1.2 2005/03/18 12:52:14 onokazu Exp $
+// $Id: install2.php,v 1.1 2007/05/15 02:34:22 minahito Exp $
 define('_INSTALL_WEBMASTER', '站務管理者');
 define('_INSTALL_WEBMASTERD', '網站管理者');
 define('_INSTALL_REGUSERS', '註冊會員');

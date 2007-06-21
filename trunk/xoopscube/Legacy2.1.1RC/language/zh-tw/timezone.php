@@ -1,5 +1,5 @@
 <?php
-// $Id: timezone.php,v 1.2 2005/03/18 12:52:14 onokazu Exp $
+// $Id$
 // XOOPS CUBE UTF-8 中文翻譯檔
 // 本中文翻譯檔乃直接由英文版翻譯過來,遵照GPL授權協議. 
 // 除了GPL的規範之外,沒有其它限制

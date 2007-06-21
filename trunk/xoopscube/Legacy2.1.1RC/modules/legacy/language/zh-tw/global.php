@@ -1,8 +1,8 @@
 <?php
-// $Id: global.php,v 1.1.2.2 2006/10/19 09:00:40 minahito Exp $
+// $Id: global.php,v 1.1 2007/05/15 02:35:28 minahito Exp $
 
-define('_TOKEN_ERROR', 'Alert ! This prevent you from instantiating a malformed request or post. Please, submit again to confirm!');
-define('_SYSTEM_MODULE_ERROR', 'Following Modules are not installed.');
+define('_TOKEN_ERROR', '注意，這是為了避免您送出有問題的請求或文章，請重新送出一次來進行確認！');
+define('_SYSTEM_MODULE_ERROR', '沒有安裝下面模組。');
 define('_INSTALL', '安裝');
 define('_UNINSTALL', '移除');
 define('_SYS_MODULE_UNINSTALLED', '必要（未安裝）');
@@ -36,8 +36,8 @@ define('_MULTIPAGE', '欲讓您的文章跨頁, 請在文章中插入 <font colo
 define('_IFNOTRELOAD', '若這個頁面沒有自動重新載入, 請點按 <a href=\'%s\'>這裡</a>');
 define('_WARNINSTALL2', '警告: 目錄 %s 仍存在於您的伺服器中. <br />.請立即移除它,以策安全.');
 define('_WARNINWRITEABLE', '警告: 檔案 %s 在您的伺服器中可以被寫入. <br />請立即修改它的權限,以策安全.<br /> Unix 平台 (權限 444), Win32 平台 (唯讀)');
-define('_WARNPHPENV', 'WARNING: php.ini parameter "%s" is set to "%s". %s');
-define('_WARNSECURITY', '(It may cause a security problem)');
+define('_WARNPHPENV', '警告： php.ini 參數 "%s" 目前設定為 "%s"。 %s');
+define('_WARNSECURITY', '（這也許會引發安全性問題）');
 
 //%%%%%%	File Name themeuserpost.php 	%%%%%
 define('_PROFILE', '設定資料');
@@ -75,7 +75,7 @@ define('_NO', '否');
 define('_YES', '是');
 define('_EDIT', '編輯');
 define('_DELETE', '刪除');
-define('_VIEW', 'View');
+define('_VIEW', '檢視');
 define('_SUBMIT', '送出');
 define('_MODULENOEXIST', '選用的模組並不存在!');
 define('_ALIGN', '排列對準');
@@ -121,8 +121,8 @@ define('_IMAGENAME', '名稱:');
 define('_IMGMAXSIZE', '最大可允許的檔案大小 (bytes):');
 define('_IMGMAXWIDTH', '最大可允許的寬度 (pixels):');
 define('_IMGMAXHEIGHT', '最大可允許的高度 (pixels):');
-define('_IMAGECAT', '種類:');
-define('_IMAGEFILE', '圖像檔:');
+define('_IMAGECAT', '種類：');
+define('_IMAGEFILE', '圖片檔案：');
 define('_IMGWEIGHT', '圖像管理中的顯示順序:');
 define('_IMGDISPLAY', '顯示這個圖像嗎?');
 define('_IMAGEMIME', 'MIME 形態:');
