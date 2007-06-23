@@ -26,17 +26,17 @@ $lang = array_merge($lang, array(
 	'EMAIL_FILES'			=> 'Email模板',
 
 	'FILE_CONTENTS'				=> '檔案內容',
-	'FILE_FROM_STORAGE'			=> '存儲資料夾中的檔案',
+	'FILE_FROM_STORAGE'			=> '儲存資料夾中的檔案',
 
 	'HELP_FILES'				=> '幫助檔案',
 
 	'INSTALLED_LANGUAGE_PACKS'	=> '已安裝的語言包',
-	'INVALID_LANGUAGE_PACK'		=> '選中的語言包無效. 請檢驗語言包並重新上傳.',
-	'INVALID_UPLOAD_METHOD'		=> '選中的上傳方式無效, 請選擇其他方式.',
+	'INVALID_LANGUAGE_PACK'		=> '勾選的語言包無效. 請檢驗語言包並重新上傳.',
+	'INVALID_UPLOAD_METHOD'		=> '勾選的上傳方式無效, 請選擇其他方式.',
 
 	'LANGUAGE_DETAILS_UPDATED'			=> '語言細節更新完成.',
 	'LANGUAGE_ENTRIES'					=> '語言項目',
-	'LANGUAGE_ENTRIES_EXPLAIN'			=> '這裡您可以改變現有的語言包或尚未翻譯的項目.<br /><strong>注意:</strong> 一旦您更改語言檔案, 改動將存儲在一個單獨的資料夾中用於下載. 變化對於會員是無法見的, 除非您上傳覆蓋原來的語言檔案.',
+	'LANGUAGE_ENTRIES_EXPLAIN'			=> '這裡您可以改變現有的語言包或尚未翻譯的項目.<br /><strong>注意:</strong> 一旦您更改語言檔案, 改動將儲存在一個單獨的資料夾中用於下載. 變化對於會員是無法見的, 除非您上傳覆蓋原來的語言檔案.',
 	'LANGUAGE_FILES'					=> '語言檔案',
 	'LANGUAGE_KEY'						=> '語言字鍵',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> '這個語言包已經安裝過了.',
@@ -46,7 +46,7 @@ $lang = array_merge($lang, array(
 	'LANGUAGE_PACK_ISO'					=> 'ISO',
 	'LANGUAGE_PACK_LOCALNAME'			=> '本地名稱',
 	'LANGUAGE_PACK_NAME'				=> '名稱',
-	'LANGUAGE_PACK_NOT_EXIST'			=> '選中的語言包不存在.',
+	'LANGUAGE_PACK_NOT_EXIST'			=> '勾選的語言包不存在.',
 	'LANGUAGE_PACK_USED_BY'				=> '使用者 (包括機器人)',
 	'LANGUAGE_VARIABLE'					=> '語言變量',
 	'LANG_AUTHOR'						=> '語言包作者',
@@ -63,7 +63,7 @@ $lang = array_merge($lang, array(
 	'NO_REMOVE_DEFAULT_LANG'		=> '您不能刪除預設的語言包.<br />如果您確實想刪除它, 請先設定另一種語言為預設語言.',
 	'NO_UNINSTALLED_LANGUAGE_PACKS'	=> '沒有未安裝的語言包',
 
-	'REMOVE_FROM_STORAGE_FOLDER'		=> '從存儲資料夾種刪除',
+	'REMOVE_FROM_STORAGE_FOLDER'		=> '從儲存資料夾種刪除',
 
 	'SELECT_DOWNLOAD_FORMAT'	=> '選擇下載格式',
 	'SUBMIT_AND_DOWNLOAD'		=> '提供並下載檔案',
@@ -80,7 +80,7 @@ $lang = array_merge($lang, array(
 	'UPLOAD_METHOD'				=> '上傳方式',
 	'UPLOAD_SETTINGS'			=> '上傳設定',
 
-	'WRONG_LANGUAGE_FILE'		=> '選中的語言包無效.',
+	'WRONG_LANGUAGE_FILE'		=> '勾選的語言包無效.',
 ));
 
 ?>

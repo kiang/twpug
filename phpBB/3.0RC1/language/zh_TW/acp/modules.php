@@ -22,7 +22,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> '這裡您可以管理各種模組. 請注意管理員控制面板使用的是三層選單結構 (分類 -> 分類 -> 模組) 而其他使用的是兩層選單結構 (分類 -> 模組) . 請同樣注意的是您有可能會把自己給鎖在模組外面, 如果您刪除或停用了涉及模組自身管理的模組.',
 	'ADD_MODULE'					=> '新增模組',
-	'ADD_MODULE_CONFIRM'			=> '您確認用選中的模式新增選中的模組嗎?',
+	'ADD_MODULE_CONFIRM'			=> '您確認用勾選的模式新增勾選的模組嗎?',
 	'ADD_MODULE_TITLE'				=> '新增模組',
 
 	'CANNOT_REMOVE_MODULE'	=> '無法刪除模組, 因為有下層的引用. 請先刪除或移除所有下層引用.',
@@ -33,7 +33,7 @@ $lang = array_merge($lang, array(
 	'CHOOSE_MODULE_EXPLAIN'	=> '選擇這個模組調用的檔案.',
 	'CREATE_MODULE'			=> '建立新模組',
 
-	'DEACTIVATED_MODULE'	=> '凍結模組',
+	'DEACTIVATED_MODULE'	=> '停用模組',
 	'DELETE_MODULE'			=> '刪除模組',
 	'DELETE_MODULE_CONFIRM'	=> '您確認刪除這個模組嗎?',
 

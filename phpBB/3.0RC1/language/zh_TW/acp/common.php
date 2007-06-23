@@ -24,16 +24,16 @@ $lang = array_merge($lang, array(
 	'ACP_ADMINISTRATORS'		=> '管理員',
 	'ACP_ADMIN_LOGS'			=> '管理日誌',
 	'ACP_ADMIN_ROLES'			=> '管理員角色',
-	'ACP_ATTACHMENTS'			=> '附件',
-	'ACP_ATTACHMENT_SETTINGS'	=> '附件設定',
+	'ACP_ATTACHMENTS'			=> '附加檔案',
+	'ACP_ATTACHMENT_SETTINGS'	=> '附加檔案設定',
 	'ACP_AUTH_SETTINGS'			=> '認證設定',
 	'ACP_AUTOMATION'			=> '自動操作',
 	'ACP_AVATAR_SETTINGS'		=> '圖示設定',
 
 	'ACP_BACKUP'				=> '備份',
 	'ACP_BAN'					=> '停用',
-	'ACP_BAN_EMAILS'			=> '停用email地址',
-	'ACP_BAN_IPS'				=> '停用IP地址',
+	'ACP_BAN_EMAILS'			=> '停用email位址',
+	'ACP_BAN_IPS'				=> '停用IP位址',
 	'ACP_BAN_USERNAMES'			=> '停用帳號',
 	'ACP_BBCODES'				=> 'BBCode',
 	'ACP_BOARD_CONFIGURATION'	=> '討論區設定',
@@ -58,7 +58,7 @@ $lang = array_merge($lang, array(
 	'ACP_CLIENT_COMMUNICATION'	=> '客戶端通信',
 	'ACP_COOKIE_SETTINGS'		=> 'Cookie設定',
 	'ACP_CRITICAL_LOGS'			=> '錯誤日誌',
-	'ACP_CUSTOM_PROFILE_FIELDS'	=> '自定義資料欄目',
+	'ACP_CUSTOM_PROFILE_FIELDS'	=> '自訂資料欄目',
 	
 	'ACP_DATABASE'				=> '資料庫管理',
 	'ACP_DISALLOW'				=> '禁止',
@@ -84,10 +84,10 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGEMENT'			=> '群組管理',
 	'ACP_GROUPS_PERMISSIONS'		=> '群組權限',
 	
-	'ACP_ICONS'					=> '主題圖標',
-	'ACP_ICONS_SMILIES'			=> '主題圖標/表情',
+	'ACP_ICONS'					=> '主題圖示',
+	'ACP_ICONS_SMILIES'			=> '主題圖示/表情',
 	'ACP_IMAGESETS'				=> '圖片組',
-	'ACP_INACTIVE_USERS'		=> '凍結的會員',
+	'ACP_INACTIVE_USERS'		=> '停用的會員',
 	'ACP_INDEX'					=> '管理員控制面板首頁',
 	
 	'ACP_JABBER_SETTINGS'		=> 'Jabber設定',
@@ -150,7 +150,7 @@ $lang = array_merge($lang, array(
 	'ACP_USERS_FORUM_PERMISSIONS'	=> '會員的版面權限',
 	'ACP_USERS_LOGS'				=> '會員日誌',
 	'ACP_USERS_PERMISSIONS'			=> '會員的權限',
-	'ACP_USER_ATTACH'				=> '附件',
+	'ACP_USER_ATTACH'				=> '附加檔案',
 	'ACP_USER_AVATAR'				=> '圖示',
 	'ACP_USER_FEEDBACK'				=> '反饋',
 	'ACP_USER_GROUPS'				=> '群組',
@@ -188,20 +188,20 @@ $lang = array_merge($lang, array(
 	'COLOUR_SWATCH'			=> '網頁安全色取色板',
 	'CONFIG_UPDATED'		=> '設定更新完成.',
 
-	'DEACTIVATE'				=> '凍結',
+	'DEACTIVATE'				=> '停用',
 	'DIRECTORY_DOES_NOT_EXIST'	=> '輸入的路徑 "%s" 不存在.',
 	'DIRECTORY_NOT_DIR'			=> '輸入的路徑 "%s" 不是目錄.',
 	'DIRECTORY_NOT_WRITABLE'	=> '輸入的路徑 「%s」 無法寫.',
 	'DISABLE'					=> '禁止',
 	'DOWNLOAD'					=> '下載',
 	'DOWNLOAD_AS'				=> '下載為',
-	'DOWNLOAD_STORE'			=> '下載或存儲檔案',
+	'DOWNLOAD_STORE'			=> '下載或儲存檔案',
 	'DOWNLOAD_STORE_EXPLAIN'	=> '您可以直接下載檔案或儲存到您的 <samp>store/</samp> 目錄.',
 
 	'EDIT'					=> '編輯',
 	'ENABLE'				=> '啟用',
 	'EXPORT_DOWNLOAD'		=> '下載',
-	'EXPORT_STORE'			=> '存儲',
+	'EXPORT_STORE'			=> '儲存',
 
 	'GENERAL_OPTIONS'		=> '綜合選項',
 	'GENERAL_SETTINGS'		=> '綜合設定',
@@ -209,7 +209,7 @@ $lang = array_merge($lang, array(
 
 	'INSTALL'				=> '安裝',
 	'IP'					=> '會員 IP',
-	'IP_HOSTNAME'			=> 'IP 地址或主機名',
+	'IP_HOSTNAME'			=> 'IP 位址或主機名',
 
 	'LOGGED_IN_AS'			=> '您登入的身份為:',
 	'LOGIN_ADMIN'			=> '您必須是已授權的會員才能管理討論區.',
@@ -225,14 +225,14 @@ $lang = array_merge($lang, array(
 
 	'NOTIFY'				=> '通知',
 	'NO_ADMIN'				=> '您未被授權管理這個討論區.',
-	'NO_EMAILS_DEFINED'		=> '沒有發現可用的email地址',
+	'NO_EMAILS_DEFINED'		=> '沒有發現可用的email位址',
 	'NO_PASSWORD_SUPPLIED'	=> '您需要輸入您的密碼後才能瀏覽管理員控制面板.',	
 
 	'OFF'					=> '關',
 	'ON'					=> '開',
 
 	'PARSE_BBCODE'						=> '解析 BBCode',
-	'PARSE_SMILIES'						=> '解析表情圖標',
+	'PARSE_SMILIES'						=> '解析表情圖示',
 	'PARSE_URLS'						=> '解析連結格式',
 	'PERMISSIONS_TRANSFERRED'			=> '權限已經傳遞',
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> '您現在使用來自於 %1$s 的權限. 您可以以這個會員的權限瀏覽版面但是不能瀏覽管理員控制面板因為管理員權限沒有被傳遞. 您可以隨時 <a href="%2$s"><strong>回覆您的權限設定</strong></a>.',
@@ -243,7 +243,7 @@ $lang = array_merge($lang, array(
 	'RESYNC'							=> '重新同步',
 	'RETURN_TO'							=> '回到…',
 
-	'SELECT_ANONYMOUS'		=> '選擇遊客會員',
+	'SELECT_ANONYMOUS'		=> '選擇訪客會員',
 	'SELECT_OPTION'			=> '選擇選項',
 
 	'UCP'					=> '會員控制面板',
@@ -262,9 +262,9 @@ $lang = array_merge($lang, array(
 
 // Logs
 $lang = array_merge($lang, array(
-	'ACP_ADMIN_LOGS_EXPLAIN'	=> '這裡列出了討論區管理員執行的操作. 您可以按帳號、日期、IP地址或操作排序. 如果您有合適的權限, 您也可以清除部分或全部日誌記錄.',
-	'ACP_CRITICAL_LOGS_EXPLAIN'	=> '這裡列出了討論區自身的操作. 這些日誌為您解決特定問題提供有用資訊, 例如無法投遞的email. 您可以按帳號、日期、IP地址或操作排序. 如果您有足夠的權限, 您也可以清除部分或全部日誌記錄.',
-	'ACP_MOD_LOGS_EXPLAIN'		=> '這裡列出了討論區版主執行的操作, 在下拉框中選擇一個版面. 您可以按帳號、日期、IP地址或操作排序. 如果您有足夠的權限, 您也可以清除部分或全部日誌記錄.',
+	'ACP_ADMIN_LOGS_EXPLAIN'	=> '這裡列出了討論區管理員執行的操作. 您可以按帳號、日期、IP位址或操作排序. 如果您有合適的權限, 您也可以清除部分或全部日誌記錄.',
+	'ACP_CRITICAL_LOGS_EXPLAIN'	=> '這裡列出了討論區自身的操作. 這些日誌為您解決特定問題提供有用資訊, 例如無法投遞的email. 您可以按帳號、日期、IP位址或操作排序. 如果您有足夠的權限, 您也可以清除部分或全部日誌記錄.',
+	'ACP_MOD_LOGS_EXPLAIN'		=> '這裡列出了討論區版主執行的操作, 在下拉框中選擇一個版面. 您可以按帳號、日期、IP位址或操作排序. 如果您有足夠的權限, 您也可以清除部分或全部日誌記錄.',
 	'ACP_USERS_LOGS_EXPLAIN'	=> '這裡列出了會員執行的操作以及作用於會員的操作.',
 	'ALL_ENTRIES'				=> '所有項目',
 
@@ -272,16 +272,16 @@ $lang = array_merge($lang, array(
 
 	'NO_ENTRIES'	=> '沒有記錄',
 
-	'SORT_IP'		=> 'IP地址',
+	'SORT_IP'		=> 'IP位址',
 	'SORT_DATE'		=> '日期',
 	'SORT_ACTION'	=> '操作',
 ));
 
 // Index page
 $lang = array_merge($lang, array(
-	'ADMIN_INTRO'				=> '感謝您選擇phpBB作為討論區解決方案. 這個界面將顯示您的討論區的總體統計資訊. 左邊的連結允許您從各個方面管理討論區, 每個分頁有如何使用管理工具的提示.',
+	'ADMIN_INTRO'				=> '感謝您選擇phpBB作為討論區解決方案. 這個介面將顯示您的討論區的總體統計資訊. 左邊的連結允許您從各個方面管理討論區, 每個分頁有如何使用管理工具的提示.',
 	'ADMIN_LOG'					=> '記錄的管理員操作',
-	'ADMIN_LOG_INDEX_EXPLAIN'	=> '這裡顯示了管理員進行的最後五個操作. 完整的操作日誌可以通過下面的連結檢視.',
+	'ADMIN_LOG_INDEX_EXPLAIN'	=> '這裡顯示了管理員進行的最後五個操作. 完整的操作日誌可以透過下面的連結檢視.',
 	'AVATAR_DIR_SIZE'			=> '圖示目錄大小',
 
 	'BOARD_STARTED'		=> '討論區開張日期',
@@ -289,13 +289,13 @@ $lang = array_merge($lang, array(
 	'DATABASE_SERVER_INFO'	=> '資料庫伺服器',
 	'DATABASE_SIZE'			=> '資料庫大小',
 
-	'FILES_PER_DAY'		=> '每天的附件量',
+	'FILES_PER_DAY'		=> '每天的附加檔案量',
 	'FORUM_STATS'		=> '討論區統計',
 
 	'GZIP_COMPRESSION'	=> 'GZip壓縮',
 
 	'NOT_AVAILABLE'		=> '無法使用',
-	'NUMBER_FILES'		=> '附件數量',
+	'NUMBER_FILES'		=> '附加檔案數量',
 	'NUMBER_POSTS'		=> '文章數量',
 	'NUMBER_TOPICS'		=> '主題數量',
 	'NUMBER_USERS'		=> '會員數量',
@@ -327,37 +327,37 @@ $lang = array_merge($lang, array(
 
 	'TOPICS_PER_DAY'	=> '每日主題',
 
-	'UPLOAD_DIR_SIZE'	=> '發表的附件大小',
+	'UPLOAD_DIR_SIZE'	=> '發表的附加檔案大小',
 	'USERS_PER_DAY'		=> '每日新會員',
 
 	'VALUE'					=> '值',
 	'VIEW_ADMIN_LOG'		=> '檢視管理員日誌',
-	'VIEW_INACTIVE_USERS'	=> '檢視凍結帳號',
+	'VIEW_INACTIVE_USERS'	=> '檢視停用帳號',
 
 	'WELCOME_PHPBB'			=> '歡迎來到phpBB',
 ));
 
 // Inactive Users
 $lang = array_merge($lang, array(
-	'INACTIVE_DATE'					=> '凍結日期',
+	'INACTIVE_DATE'					=> '停用日期',
 	'INACTIVE_REASON'				=> '原因',
-	'INACTIVE_REASON_MANUAL'		=> '會員被管理員凍結',
+	'INACTIVE_REASON_MANUAL'		=> '會員被管理員停用',
 	'INACTIVE_REASON_PROFILE'		=> '個人資料變更',
 	'INACTIVE_REASON_REGISTER'		=> '新註冊的帳號',
 	'INACTIVE_REASON_REMIND'		=> '強制帳號啟用',
 	'INACTIVE_REASON_UNKNOWN'		=> '未知',
-	'INACTIVE_USERS'				=> '凍結的會員',
+	'INACTIVE_USERS'				=> '停用的會員',
 	'INACTIVE_USERS_EXPLAIN'		=> '這是已經註冊但是沒有啟用的會員列表. 您可以刪除或提醒 (發送email) 他們.',
-	'INACTIVE_USERS_EXPLAIN_INDEX'	=> '這是最近十個未啟用的會員列表. 您可以通過下面的連結檢視完整列表並進行啟用、刪除或email通知操作.',
+	'INACTIVE_USERS_EXPLAIN_INDEX'	=> '這是最近十個未啟用的會員列表. 您可以透過下面的連結檢視完整列表並進行啟用、刪除或email通知操作.',
 
-	'NO_INACTIVE_USERS'	=> '沒有凍結的會員',
+	'NO_INACTIVE_USERS'	=> '沒有停用的會員',
 
-	'SORT_INACTIVE'		=> '凍結日期',
+	'SORT_INACTIVE'		=> '停用日期',
 	'SORT_LAST_VISIT'	=> '最後瀏覽',
 	'SORT_REASON'		=> '原因',
 	'SORT_REG_DATE'		=> '註冊日期',
 
-	'USER_IS_INACTIVE'		=> '會員被凍結',
+	'USER_IS_INACTIVE'		=> '會員被停用',
 ));
 
 // Log Entries
@@ -391,9 +391,9 @@ $lang = array_merge($lang, array(
 	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>失敗的管理員登入嘗試</strong>',
 	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>管理員登入</strong>',
 
-	'LOG_ATTACH_EXT_ADD'		=> '<strong>新增或編輯附件副檔名</strong><br />» %s',
-	'LOG_ATTACH_EXT_DEL'		=> '<strong>刪除附件副檔名</strong><br />» %s',
-	'LOG_ATTACH_EXT_UPDATE'		=> '<strong>更新附件副檔名</strong><br />» %s',
+	'LOG_ATTACH_EXT_ADD'		=> '<strong>新增或編輯附加檔案副檔名</strong><br />» %s',
+	'LOG_ATTACH_EXT_DEL'		=> '<strong>刪除附加檔案副檔名</strong><br />» %s',
+	'LOG_ATTACH_EXT_UPDATE'		=> '<strong>更新附加檔案副檔名</strong><br />» %s',
 	'LOG_ATTACH_EXTGROUP_ADD'	=> '<strong>新增副檔名組</strong><br />» %s',
 	'LOG_ATTACH_EXTGROUP_EDIT'	=> '<strong>編輯副檔名組</strong><br />» %s',
 	'LOG_ATTACH_EXTGROUP_DEL'	=> '<strong>刪除副檔名組</strong><br />» %s',
@@ -424,7 +424,7 @@ $lang = array_merge($lang, array(
 	'LOG_CLEAR_USER'		=> '<strong>清空會員日誌</strong><br />» %s',
 	'LOG_CLEAR_USERS'		=> '<strong>清空多個會員日誌</strong>',
 
-	'LOG_CONFIG_ATTACH'			=> '<strong>更改附件設定</strong>',
+	'LOG_CONFIG_ATTACH'			=> '<strong>更改附加檔案設定</strong>',
 	'LOG_CONFIG_AUTH'			=> '<strong>更改身份驗證設定</strong>',
 	'LOG_CONFIG_AVATAR'			=> '<strong>更改圖示設定</strong>',
 	'LOG_CONFIG_COOKIE'			=> '<strong>更改cookie設定</strong>',
@@ -450,7 +450,7 @@ $lang = array_merge($lang, array(
 	'LOG_LOCK_POST'				=> '<strong>鎖定文章</strong><br />» %s',
 	'LOG_MERGE'					=> '<strong>合併文章</strong> 至主題<br />» %s',
 	'LOG_MOVE'					=> '<strong>移動主題</strong><br />» 自 %s',
-	'LOG_POST_APPROVED'			=> '<strong>審批文章</strong><br />» %s',
+	'LOG_POST_APPROVED'			=> '<strong>審核文章</strong><br />» %s',
 	'LOG_POST_DISAPPROVED'		=> '<strong>駁回文章 「%1$s」 因為以下的原因</strong><br />» %2$s',
 	'LOG_POST_EDITED'			=> '<strong>編輯文章 「%1$s」 由</strong><br />» %2$s',
 	'LOG_REPORT_CLOSED'			=> '<strong>關閉舉報</strong><br />» %s',
@@ -459,7 +459,7 @@ $lang = array_merge($lang, array(
 	'LOG_SPLIT_SOURCE'			=> '<strong>風格文章</strong><br />» 自 %s',
 
 	'LOG_TOPIC_DELETED'			=> '<strong>刪除主題</strong><br />» %s',
-	'LOG_TOPIC_APPROVED'		=> '<strong>審批主題</strong><br />» %s',
+	'LOG_TOPIC_APPROVED'		=> '<strong>審核主題</strong><br />» %s',
 	'LOG_TOPIC_DISAPPROVED'		=> '<strong>駁回主題 「%1$s」 因為以下的原因</strong><br />%2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>重新同步主題統計</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>更改主題類型</strong><br />» %s',
@@ -512,7 +512,7 @@ $lang = array_merge($lang, array(
 	'LOG_IMAGESET_EDIT_DETAILS'	=> '<strong>編輯圖片組細節</strong><br />» %s',
 	'LOG_IMAGESET_EDIT'			=> '<strong>編輯圖片組</strong><br />» %s',
 	'LOG_IMAGESET_EXPORT'		=> '<strong>匯出圖片組</strong><br />» %s',
-	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>更新 「%2$s」 圖片組地址</strong><br />» %1$s',
+	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>更新 「%2$s」 圖片組位址</strong><br />» %1$s',
 	'LOG_IMAGESET_REFRESHED'	=> '<strong>更新圖片組</strong><br />» %s',
 
 	'LOG_INACTIVE_ACTIVATE'	=> '<strong>啟用未啟用的帳號</strong><br />» %s',
@@ -561,13 +561,13 @@ $lang = array_merge($lang, array(
 
 	'LOG_PROFILE_FIELD_ACTIVATE'	=> '<strong>資料欄目啟用</strong><br />» %s',
 	'LOG_PROFILE_FIELD_CREATE'		=> '<strong>資料欄目新增</strong><br />» %s',
-	'LOG_PROFILE_FIELD_DEACTIVATE'	=> '<strong>資料欄目凍結</strong><br />» %s',
+	'LOG_PROFILE_FIELD_DEACTIVATE'	=> '<strong>資料欄目停用</strong><br />» %s',
 	'LOG_PROFILE_FIELD_EDIT'		=> '<strong>資料欄目修改</strong><br />» %s',
 	'LOG_PROFILE_FIELD_REMOVED'		=> '<strong>資料欄目刪除</strong><br />» %s',
 
 	'LOG_PRUNE'					=> '<strong>裁減版面</strong><br />» %s',
 	'LOG_AUTO_PRUNE'			=> '<strong>自動裁減版面</strong><br />» %s',
-	'LOG_PRUNE_USER_DEAC'		=> '<strong>會員凍結</strong><br />» %s',
+	'LOG_PRUNE_USER_DEAC'		=> '<strong>會員停用</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>裁減會員 刪除文章</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>裁減會員 保留文章</strong><br />» %s',
 
@@ -620,11 +620,11 @@ $lang = array_merge($lang, array(
 	'LOG_USER_BAN_IP'		=> '<strong>通過會員管理停用IP</strong> 原因: "<em>%1$s</em>"<br />» %2$s',
 	'LOG_USER_BAN_EMAIL'	=> '<strong>通過會員管理停用email</strong> 原因: "<em>%1$s</em>"<br />» %2$s',
 	'LOG_USER_DELETED'		=> '<strong>刪除會員</strong><br />» %s',
-	'LOG_USER_DEL_ATTACH'	=> '<strong>刪除這個會員發表的所有附件</strong><br />» %s',
+	'LOG_USER_DEL_ATTACH'	=> '<strong>刪除這個會員發表的所有附加檔案</strong><br />» %s',
 	'LOG_USER_DEL_AVATAR'	=> '<strong>刪除會員圖示</strong><br />» %s',
 	'LOG_USER_DEL_POSTS'	=> '<strong>刪除這個會員的所有文章</strong><br />» %s',
 	'LOG_USER_DEL_SIG'		=> '<strong>刪除會員簽名檔</strong><br />» %s',
-	'LOG_USER_INACTIVE'		=> '<strong>凍結會員</strong><br />» %s',
+	'LOG_USER_INACTIVE'		=> '<strong>停用會員</strong><br />» %s',
 	'LOG_USER_MOVE_POSTS'	=> '<strong>移動會員文章</strong><br />» posts by "%1$s" to forum "%2$s"',
 	'LOG_USER_NEW_PASSWORD'	=> '<strong>更改會員密碼</strong><br />» %s',
 	'LOG_USER_REACTIVATE'	=> '<strong>強制會員帳號重新啟用</strong><br />» %s',
@@ -637,7 +637,7 @@ $lang = array_merge($lang, array(
 	'LOG_USER_DEL_SIG_USER'		=> '<strong>會員簽名檔刪除</strong>',
 	'LOG_USER_FEEDBACK'			=> '<strong>新增會員反饋</strong><br />» %s',
 	'LOG_USER_GENERAL'			=> '%s',
-	'LOG_USER_INACTIVE_USER'	=> '<strong>會員帳號被凍結</strong>',
+	'LOG_USER_INACTIVE_USER'	=> '<strong>會員帳號被停用</strong>',
 	'LOG_USER_LOCK'				=> '<strong>會員鎖定自己的主題</strong><br />» %s',
 	'LOG_USER_MOVE_POSTS_USER'	=> '<strong>移動所有文章到版面 "%s"</strong>',
 	'LOG_USER_REACTIVATE_USER'	=> '<strong>強制會員帳號重新啟用</strong>',

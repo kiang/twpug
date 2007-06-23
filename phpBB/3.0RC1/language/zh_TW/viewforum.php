@@ -28,7 +28,7 @@ $lang = array_merge($lang, array(
 	'ICON_ANNOUNCEMENT'		=> '公告',
 	'ICON_STICKY'			=> '置頂',
 
-	'LOGIN_NOTIFY_FORUM'	=> '您在本版面有通知，請登入檢視。',
+	'LOGIN_NOTIFY_FORUM'	=> '您在本討論區有通知，請登入檢視。',
 
 	'MARK_TOPICS_READ'		=> '標記話題為已閱讀',
 
@@ -36,13 +36,13 @@ $lang = array_merge($lang, array(
 	'NEW_POSTS_LOCKED'		=> '有新文章【鎖定】',
 	'NO_NEW_POSTS_HOT'		=> '無新文章【熱門】',
 	'NO_NEW_POSTS_LOCKED'	=> '無新文章【鎖定】',
-	'NO_READ_ACCESS'		=> '您沒有閱讀本版面文章的權限。',
+	'NO_READ_ACCESS'		=> '您沒有閱讀本討論區文章的權限。',
 
-	'POST_FORUM_LOCKED'		=> '版面被鎖定',
+	'POST_FORUM_LOCKED'		=> '討論區被鎖定',
 
-	'TOPICS_MARKED'			=> '這個版面的文章現在被標記為已閱讀',
+	'TOPICS_MARKED'			=> '這個討論區的文章現在被標記為已閱讀',
 
-	'VIEW_FORUM'			=> '檢視版面',
+	'VIEW_FORUM'			=> '檢視討論區',
 	'VIEW_FORUM_TOPIC'		=> '1 個話題',
 	'VIEW_FORUM_TOPICS'		=> '%d 個話題',
 ));

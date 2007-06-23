@@ -22,7 +22,7 @@ if (empty($lang) || !is_array($lang))
 // BBCodes 
 // Note to translators: you can translate everything but what's between { and }
 $lang = array_merge($lang, array(
-	'ACP_BBCODES_EXPLAIN'		=> 'BBCode是一種HTML的特殊實現, 可以產生各種頁面效果而不會有安全隱患. 這裡您可以新增/刪除/編輯自定義BBCode',
+	'ACP_BBCODES_EXPLAIN'		=> 'BBCode是一種HTML的特殊實現, 可以產生各種頁面效果而不會有安全隱患. 這裡您可以新增/刪除/編輯自訂BBCode',
 	'ADD_BBCODE'				=> '新增BBCode',
 
 	'BBCODE_ADDED'				=> 'BBCode新增完成.',
@@ -32,7 +32,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_HELPLINE_EXPLAIN'	=> '這個區域會在鼠標移過時顯示BBCode提示資訊',
 	'BBCODE_HELPLINE_TEXT'		=> '提示文本',
 	'BBCODE_INVALID_TAG_NAME'	=> '您選擇的BBCode標籤名稱已經存在.',
-	'BBCODE_OPEN_ENDED_TAG'		=> '您的自定義BBCode必須包含開關標籤.',
+	'BBCODE_OPEN_ENDED_TAG'		=> '您的自訂BBCode必須包含開關標籤.',
 	'BBCODE_TAG'				=> '標籤',
 	'BBCODE_TAG_TOO_LONG'		=> '您選擇的標籤名稱太長了.',
 	'BBCODE_TAG_DEF_TOO_LONG'	=> '您輸入的標籤定義太長了, 請盡量簡短.',
@@ -56,7 +56,7 @@ $lang = array_merge($lang, array(
 	'tokens'	=>	array(
 		'TEXT'			=> '任何文字, 包括外文字元, 數字, 等等…',
 		'NUMBER'		=> '任何數字序列',
-		'EMAIL'			=> '有效的email地址',
+		'EMAIL'			=> '有效的email位址',
 		'URL'			=> '使用任何協議的有效的URL(http, ftp, 等等… 不能用作javascript掠奪). 如果沒有提供, 將新增"http://"',
 		'LOCAL_URL'		=> '本地URL. URL必須和主題頁相關並且不能包含伺服器名稱和協議',
 		'COLOR'			=> 'HTML顏色, 可以是六位十六進制數<samp>#FF1234</samp> 或者<a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS色彩關鍵字</a> 例如<samp>fuchsia</samp> 或 <samp>InactiveBorder</samp>'
@@ -65,60 +65,60 @@ $lang = array_merge($lang, array(
 
 // Smilies and topic icons
 $lang = array_merge($lang, array(
-	'ACP_ICONS_EXPLAIN'		=> '這裡您可以新增/刪除/編輯會員在主題和文章中使用的圖標. 這些圖標一般顯示在標題旁, 您也可以新增新的圖標包.',
-	'ACP_SMILIES_EXPLAIN'	=> '表情圖標一般是較小的, 有時可以是動畫檔案的小圖片, 會員用於表達情緒的好方式. 這裡您可以新增/刪除/編輯表情圖標. 您也可以安裝和建立新的表情圖片包.',
-	'ADD_SMILIES'			=> '新增多個表情圖標',
+	'ACP_ICONS_EXPLAIN'		=> '這裡您可以新增/刪除/編輯會員在主題和文章中使用的圖示. 這些圖示一般顯示在標題旁, 您也可以新增新的圖示包.',
+	'ACP_SMILIES_EXPLAIN'	=> '表情圖示一般是較小的, 有時可以是動畫檔案的小圖片, 會員用於表達情緒的好方式. 這裡您可以新增/刪除/編輯表情圖示. 您也可以安裝和建立新的表情圖片包.',
+	'ADD_SMILIES'			=> '新增多個表情圖示',
 	'ADD_SMILEY_CODE'		=> '新增更多的表情程式碼',
-	'ADD_ICONS'				=> '新增多個圖標',
+	'ADD_ICONS'				=> '新增多個圖示',
 	'AFTER_ICONS'			=> '在 %s 之後',
 	'AFTER_SMILIES'			=> '在 %s 之後',
 
 	'CODE'						=> '程式碼',
-	'CURRENT_ICONS'				=> '目前圖標',
-	'CURRENT_ICONS_EXPLAIN'		=> '選擇如何處理目前安裝的圖標',
-	'CURRENT_SMILIES'			=> '目前表情圖標',
-	'CURRENT_SMILIES_EXPLAIN'	=> '選擇如何處理目前安裝的表情圖標',
+	'CURRENT_ICONS'				=> '目前圖示',
+	'CURRENT_ICONS_EXPLAIN'		=> '選擇如何處理目前安裝的圖示',
+	'CURRENT_SMILIES'			=> '目前表情圖示',
+	'CURRENT_SMILIES_EXPLAIN'	=> '選擇如何處理目前安裝的表情圖示',
 
-	'DISPLAY_ON_POSTING'	=> '在發帖時顯示',
+	'DISPLAY_ON_POSTING'	=> '在發表文章時顯示',
 
-	'EDIT_ICONS'				=> '編輯圖標',
-	'EDIT_SMILIES'				=> '編輯表情圖標',
+	'EDIT_ICONS'				=> '編輯圖示',
+	'EDIT_SMILIES'				=> '編輯表情圖示',
 	'EMOTION'					=> '表情',
 	'EXPORT_ICONS'				=> '匯出並下載icons.pak',
-	'EXPORT_ICONS_EXPLAIN'		=> '%s點選這個連結, 您安裝的圖標設定將被輸出為 <samp>icons.pak</samp> 下載, 用於建立 <samp>.zip</samp> 或 <samp>.tgz</samp> 檔案, 這個檔案包含所有您的圖標加上這個 <samp>icons.pak</samp> 設定檔案%s.',
+	'EXPORT_ICONS_EXPLAIN'		=> '%s點選這個連結, 您安裝的圖示設定將被輸出為 <samp>icons.pak</samp> 下載, 用於建立 <samp>.zip</samp> 或 <samp>.tgz</samp> 檔案, 這個檔案包含所有您的圖示加上這個 <samp>icons.pak</samp> 設定檔案%s.',
 	'EXPORT_SMILIES'			=> '匯出並下載smilies.pak',
-	'EXPORT_SMILIES_EXPLAIN'	=> '%s點選這個連結, 您安裝的表情圖標設定將被匯出為 <samp>smilies.pak</samp> 下載, 用於建立 <samp>.zip</samp> 或 <samp>.tgz</samp> 檔案, 這個檔案包含所有您的表情圖標加上設定檔案 <samp>smilies.pak</samp>%s.',
+	'EXPORT_SMILIES_EXPLAIN'	=> '%s點選這個連結, 您安裝的表情圖示設定將被匯出為 <samp>smilies.pak</samp> 下載, 用於建立 <samp>.zip</samp> 或 <samp>.tgz</samp> 檔案, 這個檔案包含所有您的表情圖示加上設定檔案 <samp>smilies.pak</samp>%s.',
 
 	'FIRST'			=> '第一個',
 
-	'ICONS_ADD'				=> '新增新圖標',
-	'ICONS_ADDED'			=> '圖標新增完成.',
-	'ICONS_CONFIG'			=> '圖標設定',
-	'ICONS_DELETED'			=> '圖標刪除完成.',
-	'ICONS_EDIT'			=> '編輯圖標',
-	'ICONS_EDITED'			=> '圖標更新完成.',
-	'ICONS_HEIGHT'			=> '圖標高度',
-	'ICONS_IMAGE'			=> '圖標圖片',
-	'ICONS_IMPORTED'		=> '圖標包安裝完成.',
-	'ICONS_IMPORT_SUCCESS'	=> '圖標系列匯入完成.',
-	'ICONS_LOCATION'		=> '圖標位置',
-	'ICONS_NOT_DISPLAYED'	=> '以下圖標將不會在發帖中顯示',
-	'ICONS_ORDER'			=> '圖標順序',
-	'ICONS_URL'				=> '圖標檔案',
-	'ICONS_WIDTH'			=> '圖標寬度',
-	'IMPORT_ICONS'			=> '安裝圖標包',
+	'ICONS_ADD'				=> '新增新圖示',
+	'ICONS_ADDED'			=> '圖示新增完成.',
+	'ICONS_CONFIG'			=> '圖示設定',
+	'ICONS_DELETED'			=> '圖示刪除完成.',
+	'ICONS_EDIT'			=> '編輯圖示',
+	'ICONS_EDITED'			=> '圖示更新完成.',
+	'ICONS_HEIGHT'			=> '圖示高度',
+	'ICONS_IMAGE'			=> '圖示圖片',
+	'ICONS_IMPORTED'		=> '圖示包安裝完成.',
+	'ICONS_IMPORT_SUCCESS'	=> '圖示系列匯入完成.',
+	'ICONS_LOCATION'		=> '圖示位置',
+	'ICONS_NOT_DISPLAYED'	=> '以下圖示將不會在發表文章中顯示',
+	'ICONS_ORDER'			=> '圖示順序',
+	'ICONS_URL'				=> '圖示檔案',
+	'ICONS_WIDTH'			=> '圖示寬度',
+	'IMPORT_ICONS'			=> '安裝圖示包',
 	'IMPORT_SMILIES'		=> '安裝表情圖片包',
 
 	'KEEP_ALL'			=> '保留全部',
 
-	'MASS_ADD_SMILIES'	=> '新增多個表情圖標',
+	'MASS_ADD_SMILIES'	=> '新增多個表情圖示',
 
-	'NO_ICONS_ADD'		=> '沒有可用於新增的圖標.',
-	'NO_ICONS_EDIT'		=> '沒有可用於修改的圖標.',
-	'NO_ICONS_EXPORT'	=> '您沒有用於建立包的圖標.',
+	'NO_ICONS_ADD'		=> '沒有可用於新增的圖示.',
+	'NO_ICONS_EDIT'		=> '沒有可用於修改的圖示.',
+	'NO_ICONS_EXPORT'	=> '您沒有用於建立包的圖示.',
 	'NO_ICONS_PAK'		=> '沒有找到圖片包.',
-	'NO_SMILIES_ADD'	=> '沒有可用於新增的表情圖標.',
-	'NO_SMILIES_EDIT'	=> '沒有可用於修改的表情圖標.',
+	'NO_SMILIES_ADD'	=> '沒有可用於新增的表情圖示.',
+	'NO_SMILIES_EDIT'	=> '沒有可用於修改的表情圖示.',
 	'NO_SMILIES_EXPORT'	=> '您沒有用於建立表情圖片包的表情圖片.',
 	'NO_SMILIES_PAK'	=> '沒有找到表情圖片包.',
 
@@ -139,9 +139,9 @@ $lang = array_merge($lang, array(
 	'SMILIES_IMAGE'				=> '表情圖片',
 	'SMILIES_IMPORTED'			=> '表情圖片包安裝完成.',
 	'SMILIES_IMPORT_SUCCESS'	=> '表情圖片包匯入完成.',
-	'SMILIES_LOCATION'			=> '表情圖片地址',
-	'SMILIES_NOT_DISPLAYED'		=> '以下的表情圖片在發帖頁面上不顯示',
-	'SMILIES_ORDER'				=> '表情圖標順序',
+	'SMILIES_LOCATION'			=> '表情圖片位址',
+	'SMILIES_NOT_DISPLAYED'		=> '以下的表情圖片在發表文章頁面上不顯示',
+	'SMILIES_ORDER'				=> '表情圖示順序',
 	'SMILIES_URL'				=> '表情圖片檔案',
 	'SMILIES_WIDTH'				=> '表情圖片寬度',
 
@@ -164,13 +164,13 @@ $lang = array_merge($lang, array(
 
 	'WORD'				=> '敏感詞',
 	'WORD_ADDED'		=> '敏感詞新增完成.',
-	'WORD_REMOVED'		=> '選中的敏感詞刪除完成.',
-	'WORD_UPDATED'		=> '選中的敏感詞更新完成.',
+	'WORD_REMOVED'		=> '勾選的敏感詞刪除完成.',
+	'WORD_UPDATED'		=> '勾選的敏感詞更新完成.',
 ));
 
 // Ranks
 $lang = array_merge($lang, array(
-	'ACP_RANKS_EXPLAIN'		=> '使用這個資料表您可以新增, 編輯, 檢視和刪除等級. 您也可以建立自定義等級, 使用在會員管理中.',
+	'ACP_RANKS_EXPLAIN'		=> '使用這個資料表您可以新增, 編輯, 檢視和刪除等級. 您也可以建立自訂等級, 使用在會員管理中.',
 	'ADD_RANK'				=> '新增新等級',
 
 	'MUST_SELECT_RANK'		=> '您必須選擇一個等級.',
@@ -180,7 +180,7 @@ $lang = array_merge($lang, array(
 	'NO_UPDATE_RANKS'		=> '等級成功刪除. 但是使用這個等級的會員並沒有更新. 您需要手動重置這些會員的等級.',
 
 	'RANK_ADDED'			=> '等級新增完成.',
-	'RANK_IMAGE'			=> '等級圖標',
+	'RANK_IMAGE'			=> '等級圖示',
 	'RANK_IMAGE_EXPLAIN'	=> '這裡定義和等級相關聯的小圖片. 路徑為phpBB根目錄的相對路徑.',
 	'RANK_MINIMUM'			=> '最小文章數',
 	'RANK_REMOVED'			=> '等級刪除完成.',
@@ -195,7 +195,7 @@ $lang = array_merge($lang, array(
 	'ADD_DISALLOW_EXPLAIN'	=> '您可以使用萬用字元 *來禁止使用某類的帳號',
 	'ADD_DISALLOW_TITLE'	=> '新增停用帳號',
 
-	'DELETE_DISALLOW_EXPLAIN'	=> '您可以通過點選列表中的帳號再點選提供來刪除一個停用的帳號',
+	'DELETE_DISALLOW_EXPLAIN'	=> '您可以透過點選列表中的帳號再點選提供來刪除一個停用的帳號',
 	'DELETE_DISALLOW_TITLE'		=> '刪除一個停用的帳號',
 	'DISALLOWED_ALREADY'		=> '您輸入的帳號無法停用. 它或者已經存在列表中, 或者存在於敏感詞列表中, 或者與現存的帳號符合.',
 	'DISALLOWED_DELETED'		=> '停用的帳號刪除完成.',
@@ -207,9 +207,9 @@ $lang = array_merge($lang, array(
 
 // Reasons
 $lang = array_merge($lang, array(
-	'ACP_REASONS_EXPLAIN'	=> '這裡您可以管理用於舉報和否決文章的原因. 預設的原因 (帶 * 標記) 不能刪除, 這個原因一般用於沒有合適的選項而要指定自定義原因的場合.',
+	'ACP_REASONS_EXPLAIN'	=> '這裡您可以管理用於舉報和否決文章的原因. 預設的原因 (帶 * 標記) 不能刪除, 這個原因一般用於沒有合適的選項而要指定自訂原因的場合.',
 	'ADD_NEW_REASON'		=> '新增新原因',
-	'AVAILABLE_TITLES'		=> '可用的本地語言原因標題',
+	'AVAILABLE_TITLES'		=> '可用自己的語言原因標題',
 	
 	'IS_NOT_TRANSLATED'			=> '原因 <strong>尚未</strong> 本地化.',
 	'IS_NOT_TRANSLATED_EXPLAIN'	=> '原因 <strong>尚未</strong> 被翻譯成本地語言. 如果您希望提供本地化的資料表, 則需要為語言檔案的舉報原因片段設定合適的關鍵字.',

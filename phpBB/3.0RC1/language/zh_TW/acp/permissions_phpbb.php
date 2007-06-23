@@ -1,5 +1,4 @@
 <?php
-*/
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
@@ -59,8 +58,8 @@ $lang = array_merge($lang, array(
 		'pm'			=> '私人簡訊',
 		'polls'			=> '投票',
 		'post'			=> '文章',
-		'post_actions'	=> '發帖動作',
-		'posting'		=> '發帖',
+		'post_actions'	=> '發表文章動作',
+		'posting'		=> '發表文章',
 		'profile'		=> '資料',
 		'settings'		=> '設定',
 		'topic_actions'	=> '主題操作',
@@ -80,12 +79,12 @@ $lang = array_merge($lang, array(
 	'acl_u_viewprofile'	=> array('lang' => '可以檢視會員資料', 'cat' => 'profile'),
 	'acl_u_chgname'		=> array('lang' => '可以更改帳號稱', 'cat' => 'profile'),
 	'acl_u_chgpasswd'	=> array('lang' => '可以更改密碼', 'cat' => 'profile'),
-	'acl_u_chgemail'	=> array('lang' => '可以更改email地址', 'cat' => 'profile'),
+	'acl_u_chgemail'	=> array('lang' => '可以更改email位址', 'cat' => 'profile'),
 	'acl_u_chgavatar'	=> array('lang' => '可以更改圖示', 'cat' => 'profile'),
 	'acl_u_chggrp'		=> array('lang' => '可以更改預設群組', 'cat' => 'profile'),
 
-	'acl_u_attach'		=> array('lang' => '可以發表附件', 'cat' => 'post'),
-	'acl_u_download'	=> array('lang' => '可以下載附件', 'cat' => 'post'),
+	'acl_u_attach'		=> array('lang' => '可以上傳附加檔案', 'cat' => 'post'),
+	'acl_u_download'	=> array('lang' => '可以下載附加檔案', 'cat' => 'post'),
 	'acl_u_savedrafts'	=> array('lang' => '可以儲存草稿', 'cat' => 'post'),
 	'acl_u_chgcensors'	=> array('lang' => '可以停用敏感詞過濾', 'cat' => 'post'),
 	'acl_u_sig'			=> array('lang' => '可以使用簽名檔', 'cat' => 'post'),
@@ -98,10 +97,10 @@ $lang = array_merge($lang, array(
 	'acl_u_pm_forward'	=> array('lang' => '可以轉發私人簡訊', 'cat' => 'pm'),
 	'acl_u_pm_emailpm'	=> array('lang' => '可以email私人簡訊', 'cat' => 'pm'),
 	'acl_u_pm_printpm'	=> array('lang' => '可以打印私人簡訊', 'cat' => 'pm'),
-	'acl_u_pm_attach'	=> array('lang' => '可以在簡訊中新增附件', 'cat' => 'pm'),
-	'acl_u_pm_download'	=> array('lang' => '可以在簡訊中下載附件', 'cat' => 'pm'),
+	'acl_u_pm_attach'	=> array('lang' => '可以在簡訊中新增附加檔案', 'cat' => 'pm'),
+	'acl_u_pm_download'	=> array('lang' => '可以在簡訊中下載附加檔案', 'cat' => 'pm'),
 	'acl_u_pm_bbcode'	=> array('lang' => '可以在簡訊中使用BBCode', 'cat' => 'pm'),
-	'acl_u_pm_smilies'	=> array('lang' => '可以在簡訊中使用表情圖標', 'cat' => 'pm'),
+	'acl_u_pm_smilies'	=> array('lang' => '可以在簡訊中使用表情圖示', 'cat' => 'pm'),
 	'acl_u_pm_img'		=> array('lang' => '可以在簡訊中粘貼圖片', 'cat' => 'pm'),
 	'acl_u_pm_flash'	=> array('lang' => '可以在簡訊中粘貼Flash', 'cat' => 'pm'),
 
@@ -119,7 +118,7 @@ $lang = array_merge($lang, array(
 	'acl_f_read'		=> array('lang' => '可以瀏覽版面', 'cat' => 'post'),
 	'acl_f_post'		=> array('lang' => '可以發表新主題', 'cat' => 'post'),
 	'acl_f_reply'		=> array('lang' => '可以回覆主題', 'cat' => 'post'),
-	'acl_f_icons'		=> array('lang' => '可以使用主題圖標', 'cat' => 'post'),
+	'acl_f_icons'		=> array('lang' => '可以使用主題圖示', 'cat' => 'post'),
 	'acl_f_announce'	=> array('lang' => '可以發佈公告', 'cat' => 'post'),
 	'acl_f_sticky'		=> array('lang' => '可以發佈置頂文章', 'cat' => 'post'),
 
@@ -127,11 +126,11 @@ $lang = array_merge($lang, array(
 	'acl_f_vote'		=> array('lang' => '可以參與投票', 'cat' => 'polls'),
 	'acl_f_votechg'		=> array('lang' => '可以更改存在的投票', 'cat' => 'polls'),
 
-	'acl_f_attach'		=> array('lang' => '可以發表附件', 'cat' => 'content'),
+	'acl_f_attach'		=> array('lang' => '可以上傳附加檔案', 'cat' => 'content'),
 	'acl_f_download'	=> array('lang' => '可以下載檔案', 'cat' => 'content'),
 	'acl_f_sigs'		=> array('lang' => '可以使用簽名檔', 'cat' => 'content'),
 	'acl_f_bbcode'		=> array('lang' => '可以使用BBCode', 'cat' => 'content'),
-	'acl_f_smilies'		=> array('lang' => '可以使用表情圖標', 'cat' => 'content'),
+	'acl_f_smilies'		=> array('lang' => '可以使用表情圖示', 'cat' => 'content'),
 	'acl_f_img'			=> array('lang' => '可以發表圖片', 'cat' => 'content'),
 	'acl_f_flash'		=> array('lang' => '可以發表Flash', 'cat' => 'content'),
 
@@ -180,10 +179,10 @@ $lang = array_merge($lang, array(
 	'acl_a_forumdel'	=> array('lang' => '可以刪除版面', 'cat' => 'forums'),
 	'acl_a_prune'		=> array('lang' => '可以裁減版面', 'cat' => 'forums'),
 
-	'acl_a_icons'		=> array('lang' => '可以修改主題圖標和表情圖標', 'cat' => 'posting'),
+	'acl_a_icons'		=> array('lang' => '可以修改主題圖示和表情圖示', 'cat' => 'posting'),
 	'acl_a_words'		=> array('lang' => '可以修改敏感詞設定', 'cat' => 'posting'),
 	'acl_a_bbcode'		=> array('lang' => '可以設定BBCode標籤', 'cat' => 'posting'),
-	'acl_a_attach'		=> array('lang' => '可以修改附件相關設定', 'cat' => 'posting'),
+	'acl_a_attach'		=> array('lang' => '可以修改附加檔案相關設定', 'cat' => 'posting'),
 
 	'acl_a_user'		=> array('lang' => '可以管理會員', 'cat' => 'user_group'),
 	'acl_a_userdel'		=> array('lang' => '可以刪除/修剪會員', 'cat' => 'user_group'),
@@ -191,7 +190,7 @@ $lang = array_merge($lang, array(
 	'acl_a_groupadd'	=> array('lang' => '可以新增新群組', 'cat' => 'user_group'),
 	'acl_a_groupdel'	=> array('lang' => '可以刪除群組', 'cat' => 'user_group'),
 	'acl_a_ranks'		=> array('lang' => '可以管理等級', 'cat' => 'user_group'),
-	'acl_a_profile'		=> array('lang' => '可以管理自定義會員資料', 'cat' => 'user_group'),
+	'acl_a_profile'		=> array('lang' => '可以管理自訂會員資料', 'cat' => 'user_group'),
 	'acl_a_names'		=> array('lang' => '可以管理停用帳號', 'cat' => 'user_group'),
 	'acl_a_ban'			=> array('lang' => '可以管理停用', 'cat' => 'user_group'),
 

@@ -33,7 +33,7 @@ $lang = array_merge($lang, array(
 	'DATABASE'			=> '資料庫工具',
 	'DATA_ONLY'			=> '僅資料',
 	'DELETE_BACKUP'		=> '刪除備份',
-	'DELETE_SELECTED_BACKUP'	=> '您確認要刪除選中的備份嗎?',
+	'DELETE_SELECTED_BACKUP'	=> '您確認要刪除勾選的備份嗎?',
 	'DESELECT_ALL'		=> '取消全部',
 	'DOWNLOAD_BACKUP'	=> '下載備份',
 
@@ -48,12 +48,12 @@ $lang = array_merge($lang, array(
 	'SELECT_FILE'			=> '選擇一個檔案',
 	'START_BACKUP'			=> '開始備份',
 	'START_RESTORE'			=> '開始恢復',
-	'STORE_AND_DOWNLOAD'	=> '存儲並下載',
-	'STORE_LOCAL'			=> '本地存儲檔案',
+	'STORE_AND_DOWNLOAD'	=> '儲存並下載',
+	'STORE_LOCAL'			=> '本地儲存檔案',
 	'STRUCTURE_ONLY'		=> '僅結構',
 
 	'TABLE_SELECT'		=> '資料表選擇',
-	'TABLE_SELECT_ERROR'=> '您必須選中至少一個資料表.',
+	'TABLE_SELECT_ERROR'=> '您必須勾選至少一個資料表.',
 ));
 
 ?>

@@ -20,25 +20,25 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ATTACHMENT'						=> '附件',
-	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> '附件功能已經停用',
+	'ATTACHMENT'						=> '附加檔案',
+	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> '附加檔案功能已經停用',
 
 	'BOOKMARK_ADDED'		=> '主題收藏完成。',
 	'BOOKMARK_REMOVED'		=> '主題取消收藏完成。',
 	'BOOKMARK_TOPIC'		=> '收藏主題',
 	'BOOKMARK_TOPIC_REMOVE'	=> '取消收藏',
-	'BUMPED_BY'				=> '最後由 %1$s 於 %2$s 頂起',
-	'BUMP_TOPIC'			=> '頂起主題',
+	'BUMPED_BY'				=> '最後由 %1$s 於 %2$s 置頂',
+	'BUMP_TOPIC'			=> '置頂主題',
 
 	'CODE'					=> '程式碼',
 
 	'DELETE_TOPIC'			=> '刪除主題',
-	'DOWNLOAD_NOTICE'		=> '您沒有權限檢視這個主題的附件。',
+	'DOWNLOAD_NOTICE'		=> '您沒有權限檢視這個主題的附加檔案。',
 
 	'EDITED_TIMES_TOTAL'	=> '最後由 %1$s 編輯於 %2$s，總共編輯了 %3$d 次',
 	'EDITED_TIME_TOTAL'		=> '最後由 %1$s 編輯於 %2$s，總共編輯了 %3$d 次',
 	'EMAIL_TOPIC'			=> 'Email 給朋友',
-	'ERROR_NO_ATTACHMENT'	=> '選擇的附件已經不存在',
+	'ERROR_NO_ATTACHMENT'	=> '選擇的附加檔案已經不存在',
 
 	'FILE_NOT_FOUND_404'	=> '檔案 <strong>%s</strong> 不存在。',
 	'FORK_TOPIC'			=> '複製主題',
@@ -53,12 +53,12 @@ $lang = array_merge($lang, array(
 	'MAKE_STICKY'				=> '變更為 「置頂」',
 	'MAX_OPTIONS_SELECT'		=> '您最多可以選擇 <strong>%d</strong> 個選項',
 	'MAX_OPTION_SELECT'			=> '您只可以選擇 <strong>1</strong> 個選項',
-	'MISSING_INLINE_ATTACHMENT'	=> '附件 <strong>%s</strong> 已經無效',
+	'MISSING_INLINE_ATTACHMENT'	=> '附加檔案 <strong>%s</strong> 已經無效',
 	'MOVE_TOPIC'				=> '移動主題',
 
-	'NO_ATTACHMENT_SELECTED'=> '您沒有選擇下載或檢視的附件。',
-	'NO_NEWER_TOPICS'		=> '這個版面沒有更新的主題了',
-	'NO_OLDER_TOPICS'		=> '這個版面沒有更舊的主題了',
+	'NO_ATTACHMENT_SELECTED'=> '您沒有選擇下載或檢視的附加檔案。',
+	'NO_NEWER_TOPICS'		=> '這個討論區沒有更新的主題了',
+	'NO_OLDER_TOPICS'		=> '這個討論區沒有更舊的主題了',
 	'NO_UNREAD_POSTS'		=> '這個主題沒有未讀的新文章子。',
 	'NO_VOTE_OPTION'		=> '您必須選擇一個選項才能投票。',
 	'NO_VOTES'				=> '沒有投票',

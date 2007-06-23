@@ -59,12 +59,12 @@ $lang = array_merge($lang, array(
 	'MIN_SEARCH_CHARS'						=> '索引的最小字元長度',
 	'MIN_SEARCH_CHARS_EXPLAIN'				=> '小於這個長度的短語將不會被檢索.',
 	'MIN_SEARCH_AUTHOR_CHARS'				=> '最小帳號長度',
-	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'		=> '會員在搜尋作者姓名時必須輸入的字元串長度. 如果作者帳號長度小於這個數字, 您一人可以輸入完整帳號搜尋會員的文章.',
+	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'		=> '會員在搜尋作者姓名時必須輸入的字元串長度. 如果作者帳號長度小於這數量字, 您一人可以輸入完整帳號搜尋會員的文章.',
 
 	'PROGRESS_BAR'							=> '進度條',
 
-	'SEARCH_GUEST_INTERVAL'					=> '遊客搜尋間隔',
-	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> '在多次搜尋中遊客必須等待的間隔時間(秒).',
+	'SEARCH_GUEST_INTERVAL'					=> '訪客搜尋間隔',
+	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> '在多次搜尋中訪客必須等待的間隔時間(秒).',
 	'SEARCH_INDEX_CREATE_REDIRECT'			=> '所有id不高於 %1$d 的文章都已經建立索引, 這一操作中處理了 %2$d 個文章.<br />速度接近 %3$.1f 文章每秒.<br />索引正在進行中…',
 	'SEARCH_INDEX_DELETE_REDIRECT'			=> '所有id不高於 %1$d 的文章都已經從搜尋索引中刪除.<br />刪除正在進行中…',
 	'SEARCH_INDEX_CREATED'					=> '已經對資料庫中的所有文章建立了索引.',
