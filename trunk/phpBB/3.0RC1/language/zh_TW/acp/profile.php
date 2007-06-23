@@ -21,7 +21,7 @@ if (empty($lang) || !is_array($lang))
 
 // Custom profile fields
 $lang = array_merge($lang, array(
-	'ADDED_PROFILE_FIELD'	=> '成功新增會員自定義資料欄目.',
+	'ADDED_PROFILE_FIELD'	=> '成功新增會員自訂資料欄目.',
 	'ALPHA_ONLY'			=> '只允許數字與字母',
 	'ALPHA_SPACERS'			=> '數字, 字母和空格',
 	'ALWAYS_TODAY'			=> '總是目前日期',
@@ -102,7 +102,7 @@ $lang = array_merge($lang, array(
 	'PREVIEW_PROFILE_FIELD'		=> '預覽資料欄目',
 	'PROFILE_BASIC_OPTIONS'		=> '基本選項',
 	'PROFILE_FIELD_ACTIVATED'	=> '資料欄目啟用完成.',
-	'PROFILE_FIELD_DEACTIVATED'	=> '資料欄目已經凍結.',
+	'PROFILE_FIELD_DEACTIVATED'	=> '資料欄目已經停用.',
 	'PROFILE_LANG_OPTIONS'		=> '特定語言選項',
 	'PROFILE_TYPE_OPTIONS'		=> '特定資料類型選項',
 

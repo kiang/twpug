@@ -21,7 +21,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUT_USER'			=> '其它相關',
-	'ACTIVE_IN_FORUM'		=> '熱門於版面',
+	'ACTIVE_IN_FORUM'		=> '熱門於討論區',
 	'ACTIVE_IN_TOPIC'		=> '熱門於話題',
 	'ADD_FOE'				=> '新增壞蛋',
 	'ADD_FRIEND'			=> '新增好友',
@@ -37,17 +37,17 @@ $lang = array_merge($lang, array(
 	'DEST_LANG'				=> '語言',
 	'DEST_LANG_EXPLAIN'		=> '選擇一個合適的語言（如果可用）。',
 
-	'EMAIL_BODY_EXPLAIN'	=> '郵件將以純文字的形式發送，請不要新增任何 HTML 或 BBCode。這個郵件的返回地址將設定為您的 Email 地址。',
+	'EMAIL_BODY_EXPLAIN'	=> '郵件將以純文字的形式發送，請不要新增任何 HTML 或 BBCode。這個郵件的返回位址將設定為您的 Email 位址。',
 	'EMAIL_DISABLED'		=> '對不起 Email 相關的功能都已經被關閉。',
 	'EMAIL_SENT'			=> 'Email 已經發送。',
-	'EMAIL_TOPIC_EXPLAIN'	=> '內容將以純文字的形式發送，請不要包含任何 HTML 或 BBCode。請注意主題的資訊已經包含在郵件內。這個郵件的返回地址將設定為您的 Email 地址。',
-	'EMPTY_ADDRESS_EMAIL'	=> '您必須提供一個有效的郵件接收地址。',
+	'EMAIL_TOPIC_EXPLAIN'	=> '內容將以純文字的形式發送，請不要包含任何 HTML 或 BBCode。請注意主題的資訊已經包含在郵件內。這個郵件的返回位址將設定為您的 Email 位址。',
+	'EMPTY_ADDRESS_EMAIL'	=> '您必須提供一個有效的郵件接收位址。',
 	'EMPTY_MESSAGE_EMAIL'	=> '您必須填入郵件內容。',
 	'EMPTY_NAME_EMAIL'		=> '您必須填入真實的收信人名。',
 	'EMPTY_SUBJECT_EMAIL'	=> '您必須給郵件定個題目。',
 	'EQUAL_TO'				=> '等於',
 
-	'FIND_USERNAME_EXPLAIN'	=> '用這個資料表搜尋特定的成員。您不必填寫所有的資料表。符合部分字元可以使用 * 作為萬用字元。當輸入日期時請使用格式 <kbd>YYYY-MM-DD</kbd>，e.g. <samp>2004-02-29</samp>。使用多選框選擇一個或多個帳號（是否接受多個帳號取決於資料表本身）並點選選擇選中的按鈕回到原先的資料表。',
+	'FIND_USERNAME_EXPLAIN'	=> '用這個資料表搜尋特定的成員。您不必填寫所有的資料表。符合部分字元可以使用 * 作為萬用字元。當輸入日期時請使用格式 <kbd>YYYY-MM-DD</kbd>，e.g. <samp>2004-02-29</samp>。使用多選框選擇一個或多個帳號（是否接受多個帳號取決於資料表本身）並點選選擇勾選的按鈕回到原先的資料表。',
 	'FLOOD_EMAIL_LIMIT'		=> '您現在不能再次發送 Email。請稍後再試。',
 
 	'GROUP_LEADER'			=> '組領導者',

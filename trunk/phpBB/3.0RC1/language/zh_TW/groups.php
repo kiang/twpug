@@ -38,9 +38,9 @@ $lang = array_merge($lang, array(
 	'GROUP_IS_OPEN'						=> '這是一個開放的群組，會員可以申請加入。',
 	'GROUP_IS_SPECIAL'					=> '這是一個特殊的群組，特殊組由討論區管理員維護。', 
 	'GROUP_JOIN'						=> '加入群組',
-	'GROUP_JOIN_CONFIRM'				=> '您確定要加入選中的群組嗎？',
+	'GROUP_JOIN_CONFIRM'				=> '您確定要加入勾選的群組嗎？',
 	'GROUP_JOIN_PENDING'				=> '申請加入群組',
-	'GROUP_JOIN_PENDING_CONFIRM'		=> '您確定要申請加入選中的群組嗎？',
+	'GROUP_JOIN_PENDING_CONFIRM'		=> '您確定要申請加入勾選的群組嗎？',
 	'GROUP_JOINED'						=> '您已成功加入此群組',
 	'GROUP_JOINED_PENDING'				=> '申請已經提供。請等待群組領導者批復。',
 	'GROUP_LIST'						=> '管理會員',
@@ -56,7 +56,7 @@ $lang = array_merge($lang, array(
 	'GROUP_RESIGNED_PENDING'			=> '您已成功撤銷對此群組的申請',
 	'GROUP_TYPE'						=> '群組類型',
 	'GROUP_UNDISCLOSED'					=> '隱藏的群組',
-	'FORUM_UNDISCLOSED'					=> '管理隱藏的版面',
+	'FORUM_UNDISCLOSED'					=> '管理隱藏的討論區',
 
 	'LOGIN_EXPLAIN_GROUP'	=> '您需要登入後才能檢視組資料',
 
@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 	
 	'PRIMARY_GROUP'		=> '主要群組',
 
-	'REMOVE_SELECTED'		=> '刪除選中',
+	'REMOVE_SELECTED'		=> '刪除勾選',
 
 	'USER_GROUP_CHANGE'			=> '從群組 「%1$s」 到群組 「%2$s」',
 	'USER_GROUP_DEMOTE'			=> '辭去領導職務',

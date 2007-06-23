@@ -1,11 +1,11 @@
 
 Hello {TO_USERNAME},
 
-您在 "{SITENAME}" 上的帳號收到了來自 {FROM_USERNAME} 的新email, 下面是email的內容. 如果是垃圾郵件或其他對您產生冒犯的內容請聯繫討論區的管理員, 通過以下的地址:
+您在 "{SITENAME}" 上的帳號收到了來自 {FROM_USERNAME} 的新email, 下面是email的內容. 如果是垃圾郵件或其他對您產生冒犯的內容請聯繫討論區的管理員, 通過以下的位址:
 
 {BOARD_CONTACT}
 
-在反饋中請包含完整的email內容 (特別是郵件頭). 請注意這個email的回覆地址已經被設定為帳號 {FROM_USERNAME}.
+在反饋中請包含完整的email內容 (特別是郵件頭). 請注意這個email的回覆位址已經被設定為帳號 {FROM_USERNAME}.
 
 以下是發送給您的內容
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

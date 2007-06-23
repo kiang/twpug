@@ -27,7 +27,7 @@ $lang = array_merge($lang, array(
 	'ADMIN_TEST'				=> '檢測管理員設定',
 	'ADMIN_USERNAME'			=> '管理員帳號',
 	'ADMIN_USERNAME_EXPLAIN'	=> '（請輸入一個3到20位的帳號）',
-	'APP_MAGICK'				=> 'Imagemagick 支援【附件】',
+	'APP_MAGICK'				=> 'Imagemagick 支援【附加檔案】',
 	'AUTHOR_NOTES'				=> '作者提示<br />» %s',
 	'AVAILABLE'					=> '可用',
 	'AVAILABLE_CONVERTORS'		=> '可用的轉換程序',
@@ -39,7 +39,7 @@ $lang = array_merge($lang, array(
 
 	'CATEGORY'					=> '分區',
 	'CACHE_STORE'				=> '快取類型',
-	'CACHE_STORE_EXPLAIN'		=> '資料快取的物理地址，請優先使用檔案系統。',
+	'CACHE_STORE_EXPLAIN'		=> '資料快取的物理位址，請優先使用檔案系統。',
 	'CAT_CONVERT'				=> '轉換操作',
 	'CAT_INSTALL'				=> '全新安裝',
 	'CAT_OVERVIEW'				=> '綜合資訊',
@@ -55,14 +55,14 @@ $lang = array_merge($lang, array(
 	'CONFIG_FILE_WRITTEN'		=> '寫入設定檔案成功，您現在可以繼續進行下一步。',
 	'CONFIG_PHPBB_EMPTY'		=> '缺少 phpBB3 的設定資訊「%s」。',
 	'CONFIG_RETRY'				=> '重試',
-	'CONTACT_EMAIL_CONFIRM'		=> '確認Email聯繫地址',
+	'CONTACT_EMAIL_CONFIRM'		=> '確認Email聯繫位址',
 	'CONTINUE_CONVERT'			=> '繼續轉換',
 	'CONTINUE_CONVERT_BODY'		=> '檢測到曾經進行過轉換，您可以選擇進行重新轉換還是繼續上一次的轉換。',
 	'CONTINUE_LAST'				=> '繼續進行操作',
 	'CONTINUE_OLD_CONVERSION'	=> '繼續進行以前的轉換',
 	'CONVERT'					=> '轉換',
 	'CONVERT_COMPLETE'			=> '轉換完成',
-	'CONVERT_COMPLETE_EXPLAIN'	=> '您已經將您的討論區成功轉換為 phpBB 3.0，您現在可以 <a href="../">瀏覽您的討論區</a>。phpBB 的線上使用幫助位於 <a href="http://www.phpbb.com/support/documentation/3.0/">會員指南</a> 和 <a href="http://www.phpbb.com/phpBB/viewforum.php?f=46">技術支援版面</a>',
+	'CONVERT_COMPLETE_EXPLAIN'	=> '您已經將您的討論區成功轉換為 phpBB 3.0，您現在可以 <a href="../">瀏覽您的討論區</a>。phpBB 的線上使用幫助位於 <a href="http://www.phpbb.com/support/documentation/3.0/">會員指南</a> 和 <a href="http://www.phpbb.com/phpBB/viewforum.php?f=46">技術支援討論區</a>',
 	'CONVERT_INTRO'				=> '歡迎使用 phpBB 統一轉換框架',
 	'CONVERT_INTRO_BODY'		=> '這裡您可以從其它（已安裝）的討論區匯入資料，下表列出的是所有可用的轉換模組。如果其中沒有您想要的轉換模組，請瀏覽我們的網站，那裡可能會提供更多的轉換模組下載。',
 	'CONVERT_NEW_CONVERSION'	=> '新的轉換',
@@ -70,11 +70,11 @@ $lang = array_merge($lang, array(
 	'CONVERT_SETTINGS_VERIFIED'	=> '您輸入的資訊已經被檢驗，要開始轉換，請點選下面的按鈕。',
 	'CONV_ERR_FATAL'					=> '嚴重錯誤',
 
-	'CONV_ERROR_ATTACH_FTP_DIR'			=> '原討論區允許附件使用FTP上傳，請停用FTP上傳並確認設定了有效的上傳目錄，所有附件將被複製到這個新的web可瀏覽的目錄。這些完成後，請重新開始轉換程序。',
+	'CONV_ERROR_ATTACH_FTP_DIR'			=> '原討論區允許附加檔案使用FTP上傳，請停用FTP上傳並確認設定了有效的上傳目錄，所有附加檔案將被複製到這個新的web可瀏覽的目錄。這些完成後，請重新開始轉換程序。',
 	'CONV_ERROR_CONFIG_EMPTY'			=> '轉換程序沒有可用的設定資訊。',
-	'CONV_ERROR_FORUM_ACCESS'			=> '無法得到版面的瀏覽資訊.',
+	'CONV_ERROR_FORUM_ACCESS'			=> '無法得到討論區的瀏覽資訊.',
 	'CONV_ERROR_GET_CATEGORIES'			=> '無法得到分區資訊.',
-	'CONV_ERROR_GET_CONFIG'				=> '無法找到您的版面設定資訊.',
+	'CONV_ERROR_GET_CONFIG'				=> '無法找到您的討論區設定資訊.',
 	'CONV_ERROR_COULD_NOT_READ'			=> '無法讀寫 "%s".',
 	'CONV_ERROR_GROUP_ACCESS'			=> '無法得到群組權限資訊.',
 	'CONV_ERROR_INCONSISTENT_GROUPS'	=> '在add_bots()中檢測到群組資料表中的矛盾資料 - 如果手動設定過您需要新增所有特殊群組.',
@@ -92,7 +92,7 @@ $lang = array_merge($lang, array(
 	'CONV_ERROR_PERM_SETTING'			=> '無法新增/更改權限設定.',
 	'CONV_ERROR_PM_COUNT'				=> '無法選擇站內簡訊數量.',
 	'CONV_ERROR_REPLACE_CATEGORY'		=> '無法在新討論區中替換舊分區.',
-	'CONV_ERROR_REPLACE_FORUM'			=> '無法在新討論區中替換舊版面.',
+	'CONV_ERROR_REPLACE_FORUM'			=> '無法在新討論區中替換舊討論區.',
 	'CONV_ERROR_USER_ACCESS'			=> '無法得到會員權限資訊.',
 	'CONV_ERROR_WRONG_GROUP'			=> '錯誤的群組 "%1$s" 定義在 %2$s.',
 	'CONV_SAVED_MESSAGES'				=> '儲存資訊',
@@ -108,7 +108,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST'		=> '執行 <var>query_first</var> 時發生錯誤。',
 	'DB_ERR_QUERY_FIRST_TABLE'	=> '執行 <var>query_first</var> 時發生錯誤：%s ("%s")。',
 	'DB_ERR_SELECT'				=> '執行 <code>SELECT</code> 語句時發生錯誤。',
-	'DB_HOST'					=> '資料庫伺服器地址，或 DSN',
+	'DB_HOST'					=> '資料庫伺服器位址，或 DSN',
 	'DB_HOST_EXPLAIN'			=> 'DSN 代表 資料源名稱，它只與 ODBC 有關。',
 	'DB_NAME'					=> '資料庫名稱',
 	'DB_PASSWORD'				=> '資料庫密碼',
@@ -148,8 +148,8 @@ $lang = array_merge($lang, array(
 	'FILLING_TABLE'				=> '正在填寫資料表：<strong>%s</strong>',
 	'FILLING_TABLES'			=> '正在填寫資料表',
 	'FINAL_STEP'				=> '正在執行最後一步',
-	'FORUM_ADDRESS'				=> '討論區地址',
-	'FORUM_ADDRESS_EXPLAIN'		=> '這是指向您的討論區根目錄的超連結地址，例如：<samp>http://www.example.com/phpBB2/</samp>。如果您填入了一個地址，所有在信件、簡訊及簽名檔中與前面範例相同的地址都將被替換為新的討論區地址。',
+	'FORUM_ADDRESS'				=> '討論區位址',
+	'FORUM_ADDRESS_EXPLAIN'		=> '這是指向您的討論區根目錄的超連結位址，例如：<samp>http://www.example.com/phpBB2/</samp>。如果您填入了一個位址，所有在信件、簡訊及簽名檔中與前面範例相同的位址都將被替換為新的討論區位址。',
 	'FORUM_PATH'				=> '討論區路徑',
 	'FORUM_PATH_EXPLAIN'		=> '這是在硬碟上對應與您<strong>現在的phpBB根目錄</strong>的原討論區 <strong>相對</strong> 路徑',
 	'FOUND'						=> '存在',
@@ -169,14 +169,14 @@ $lang = array_merge($lang, array(
 		<h2>轉換一個已經存在的討論區到 phpBB3</h2>
 		<p>phpBB 統一轉換框架支援從 phpBB 2.0.x 和其他討論區軟體到 phpBB3 的轉換. 如果您有一個舊的討論區需要轉換, 請 <a href="%2$s">運行轉換程序</a>.</p>
 		<h2>使用您的 phpBB3!</h2>
-		<p>點選下面的連結將帶您到管理員控制面板 (ACP). 花一些時間檢查設定選項是否可用. 記住可以使用在線上幫助文件位於 <a href="http://www.phpbb.com/support/documentation/3.0/">文件</a> 和 <a href="http://www.phpbb.com/community/viewforum.php?f=46">技術支援版面</a>, 檢視 <a href="%3$s">README</a> 以得到更多的資訊.</p><p><strong>請在使用討論區前刪除, 移動或重命名install資料夾. 如果這個資料夾存在, 只有管理員控制面板才可以瀏覽.</strong></p>',
+		<p>點選下面的連結將帶您到管理員控制面板 (ACP). 花一些時間檢查設定選項是否可用. 記住可以使用在線上幫助文件位於 <a href="http://www.phpbb.com/support/documentation/3.0/">文件</a> 和 <a href="http://www.phpbb.com/community/viewforum.php?f=46">技術支援討論區</a>, 檢視 <a href="%3$s">README</a> 以得到更多的資訊.</p><p><strong>請在使用討論區前刪除, 移動或重命名install資料夾. 如果這個資料夾存在, 只有管理員控制面板才可以瀏覽.</strong></p>',
 	'INSTALL_INTRO'				=> '歡迎安裝！',
 // TODO: write some more introductions here
 	'INSTALL_INTRO_BODY'		=> '使用這個選項, 應該可以在您的伺服器上安裝 phpBB.</p><p>為了繼續安裝, 您需要知道您的資料庫設定. 如果您不清楚這些, 請聯繫您的web空間提供者. 沒有這些資訊安裝將不能繼續. 您需要:</p>
 
 	<ul>
 		<li>資料庫類型 - 您將使用的資料庫.</li>
-		<li>資料庫伺服器主機名或 DSN - 資料庫伺服器地址.</li>
+		<li>資料庫伺服器主機名或 DSN - 資料庫伺服器位址.</li>
 		<li>資料庫伺服器連接埠 - 資料庫伺服器連接埠 (一般情況下不需要輸入).</li>
 		<li>資料庫名稱 - 資料庫伺服器上的資料庫名稱.</li>
 		<li>帳號和密碼 - 用於登入並瀏覽上述資料庫的會員資料.</li>
@@ -215,8 +215,8 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_FIREBIRD_PS'=> '您為 Firebird 選擇的資料庫的頁面容量小於 8192，它必須至少為 8192。',
 	'INST_ERR_DB_NO_POSTGRES'	=> '您選擇的資料庫不是 <var>UNICODE</var> 或 <var>UTF8</var> 編碼，請使用 <var>UNICODE</var> 或 <var>UTF8</var> 編碼的資料庫。',
 	'INST_ERR_DB_NO_NAME'		=> '沒有指定資料庫名稱',
-	'INST_ERR_EMAIL_INVALID'	=> '您輸入的Email地址無效',
-	'INST_ERR_EMAIL_MISMATCH'	=> '您輸入的兩個Email地址互相不符合',
+	'INST_ERR_EMAIL_INVALID'	=> '您輸入的Email位址無效',
+	'INST_ERR_EMAIL_MISMATCH'	=> '您輸入的兩個Email位址互相不符合',
 	'INST_ERR_FATAL'			=> '安裝過程出現嚴重錯誤',
 	'INST_ERR_FATAL_DB'			=> '資料庫出現了一個嚴重且無法恢復的錯誤。這可能是由於您指定的會員沒有 <code>CREATE TABLES</code> 或 <code>INSERT</code> 的權限等等，下面可能會提供進一步的資訊。請首先考慮聯繫您的服務供應商，或是瀏覽phpBB支援討論區，以得到進一步幫助。',
 	'INST_ERR_FTP_PATH'			=> '無法轉換到指定目錄，請檢查路徑資訊。',
@@ -317,8 +317,8 @@ $lang = array_merge($lang, array(
 	'SUB_SUPPORT'				=> '支援',
 	'SUCCESSFUL_CONNECT'		=> '連接成功',
 // TODO: Write some text on obtaining support
-	'SUPPORT_BODY'				=> '在測試階段, 我們提供有限的技術支援於 <a href="http://www.phpbb.com/phpBB/viewforum.php?f=46">phpBB 3.0 測試支援版面</a>. 我們將回答一般的安裝設定問題, 以及和bug相關的一般問題. 我們不提供外掛, 自定義程式碼/風格和任何實際應用的支援.</p><p>需要更多的幫助, 請瀏覽 <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">如何快速上手</a>.</p><p>如果需要及時獲取最新的新聞和發佈, 請 <a href="http://www.phpbb.com/support/">加入我們的郵件列表</a>',
-	'SYNC_FORUMS'				=> '開始同步版面',
+	'SUPPORT_BODY'				=> '在測試階段, 我們提供有限的技術支援於 <a href="http://www.phpbb.com/phpBB/viewforum.php?f=46">phpBB 3.0 測試支援討論區</a>. 我們將回答一般的安裝設定問題, 以及和bug相關的一般問題. 我們不提供外掛, 自訂程式碼/風格和任何實際應用的支援.</p><p>需要更多的幫助, 請瀏覽 <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/">如何快速上手</a>.</p><p>如果需要及時獲取最新的新聞和發佈, 請 <a href="http://www.phpbb.com/support/">加入我們的郵件列表</a>',
+	'SYNC_FORUMS'				=> '開始同步討論區',
 	'SYNC_TOPICS'				=> '開始同步主題',
 	'SYNC_TOPIC_ID'				=> '正在同步主題：<var>topic_id</var> %1$s 至 %2$s',
 
@@ -486,7 +486,7 @@ $lang = array_merge($lang, array(
 		</ul>
 
 		<p>上傳install目錄後您的討論區將阻止普通會員的瀏覽。<br /><br />
-		<strong><a href="%2$s" title="%2$s">現在輸入install地址開始更新程序</a>。</strong><br />
+		<strong><a href="%2$s" title="%2$s">現在輸入install位址開始更新程序</a>。</strong><br />
 		<br />
 		按嚮導完成開始更新。完成後更新程序將給您發送一個通知。
 		</p>
@@ -521,7 +521,7 @@ $lang = array_merge($lang, array(
 	'CONFIG_SITE_DESC'				=> '用於描述您的討論區的一小段文字',
 	'CONFIG_SITENAME'				=> 'phpBB討論區',
 
-	'DEFAULT_INSTALL_POST'			=> '這是新安裝好的phpBB3討論區中的一個樣本文章。您可以刪除這個文章、這個主題甚至這個版面， 因為一切看起來都運轉正常！',
+	'DEFAULT_INSTALL_POST'			=> '這是新安裝好的phpBB3討論區中的一個樣本文章。您可以刪除這個文章、這個主題甚至這個討論區， 因為一切看起來都運轉正常！',
 
 	'EXT_GROUP_ARCHIVES'			=> '存檔',
 	'EXT_GROUP_DOCUMENTS'			=> '文件',
@@ -534,8 +534,8 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media多媒體檔案',
 
 	'FORUMS_FIRST_CATEGORY'			=> '我的第一個分區',
-	'FORUMS_TEST_FORUM_DESC'		=> '這只是一個測試版面.',
-	'FORUMS_TEST_FORUM_TITLE'		=> '測試版面一',
+	'FORUMS_TEST_FORUM_DESC'		=> '這只是一個測試討論區.',
+	'FORUMS_TEST_FORUM_TITLE'		=> '測試討論區一',
 
 	'RANKS_SITE_ADMIN_TITLE'		=> '網站管理員',
 

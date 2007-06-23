@@ -21,25 +21,25 @@ if (empty($lang) || !is_array($lang))
 
 // User pruning
 $lang = array_merge($lang, array(
-	'ACP_PRUNE_USERS_EXPLAIN'	=> '這裡您可以將討論區中的會員刪除（或者凍結）。 您可以有多種形式搜尋，然後刪除。如：發帖數量和最後一次的時間等等... 這些方式可以自由組合， 如：您可以選用2001年1月1日之前發表文章量少於10篇的會員來刪除。 您也可以選擇批量刪除，只需要將會員名單放進刪除欄目中即可。 此功能須小心使用！ 一旦會員被刪除後將無法再恢復。',
+	'ACP_PRUNE_USERS_EXPLAIN'	=> '這裡您可以將討論區中的會員刪除（或者停用）。 您可以有多種形式搜尋，然後刪除。如：發表文章數量和最後一次的時間等等... 這些方式可以自由組合， 如：您可以選用2001年1月1日之前發表文章量少於10篇的會員來刪除。 您也可以選擇批量刪除，只需要將會員名單放進刪除欄目中即可。 此功能須小心使用！ 一旦會員被刪除後將無法再恢復。',
 
-	'DEACTIVATE_DELETE'			=> '凍結或者刪除',
-	'DEACTIVATE_DELETE_EXPLAIN'	=> '選擇凍結會員或者刪除會員，註：此操作無法回覆！',
+	'DEACTIVATE_DELETE'			=> '停用或者刪除',
+	'DEACTIVATE_DELETE_EXPLAIN'	=> '選擇停用會員或者刪除會員，註：此操作無法回覆！',
 	'DELETE_USERS'				=> '刪除',
 	'DELETE_USER_POSTS'			=> '被刪除會員所發表的文章也刪除',
-	'DELETE_USER_POSTS_EXPLAIN' => '移動被刪除會員發表的文章。若會員被凍結將不會被移動。',
+	'DELETE_USER_POSTS_EXPLAIN' => '移動被刪除會員發表的文章。若會員被停用將不會被移動。',
 
 	'JOINED_EXPLAIN'			=> '輸入日期，使用 <kbd>YYYY-MM-DD</kbd> 格式。',
 
 	'LAST_ACTIVE_EXPLAIN'		=> '輸入日起，使用<kbd>YYYY-MM-DD</kbd> 格式。',
 
 	'PRUNE_USERS_LIST'				=> '將被裁減的會員',
-	'PRUNE_USERS_LIST_DELETE'		=> '使用選中的條件, 以下的會員帳號將被刪除.',
-	'PRUNE_USERS_LIST_DEACTIVATE'	=> '使用選中的條件, 以下的會員帳號將被凍結.',
+	'PRUNE_USERS_LIST_DELETE'		=> '使用勾選的條件, 以下的會員帳號將被刪除.',
+	'PRUNE_USERS_LIST_DEACTIVATE'	=> '使用勾選的條件, 以下的會員帳號將被停用.',
 
 	'SELECT_USERS_EXPLAIN'		=> '在這裡輸入特定會員，他們將會用於上述的設定標準。',
 
-	'USER_DEACTIVATE_SUCCESS'	=> '被選擇的會員已經成功凍結',
+	'USER_DEACTIVATE_SUCCESS'	=> '被選擇的會員已經成功停用',
 	'USER_DELETE_SUCCESS'		=> '被選擇的會員已經成功刪除',
 	'USER_PRUNE_FAILURE'		=> '沒有適合條件的會員.',
 
@@ -61,7 +61,7 @@ $lang = array_merge($lang, array(
 	'PRUNE_ANNOUNCEMENTS'			=> '裁減公告',
 	'PRUNE_FINISHED_POLLS'			=> '裁減已關閉的投票',
 	'PRUNE_FINISHED_POLLS_EXPLAIN'	=> '移除已經結束的投票主題',
-	'PRUNE_FORUM_CONFIRM'			=> '您確認要以指定的設定裁減選中的版面嗎? 一旦開始裁減, 滿足條件的文章和主題將被永遠刪除.',
+	'PRUNE_FORUM_CONFIRM'			=> '您確認要以指定的設定裁減勾選的版面嗎? 一旦開始裁減, 滿足條件的文章和主題將被永遠刪除.',
 	'PRUNE_NOT_POSTED'				=> '從最後發表的天數算起',
 	'PRUNE_NOT_VIEWED'				=> '從最後檢視的天數算起',
 	'PRUNE_OLD_POLLS'				=> '裁減較舊的投票',
