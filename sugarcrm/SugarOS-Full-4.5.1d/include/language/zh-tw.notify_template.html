@@ -1,0 +1,250 @@
+<!--
+/*********************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version
+ * 1.1.3 ("License"); You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for
+ * requirements.
+ *
+ * The Original Code is: SugarCRM Open Source
+ * The Initial Developer of the Original Code is SugarCRM, Inc.
+ * Portions created by SugarCRM are Copyright (C) 2004-2006 SugarCRM, Inc.;
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ ********************************************************************************/
+/*********************************************************************************
+ * $Id: en_us.notify_template.html,v 1.18 2005/08/24 01:53:19 ajay Exp $
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: Quote_Subject -->
+報價單 - {QUOTE_SUBJECT}
+<!-- END: Quote_Subject -->
+<!-- BEGIN: Quote -->
+{ASSIGNER} 指派了一個報價單給 {ASSIGNED_USER}。
+
+主旨：{QUOTE_SUBJECT}
+狀態：{QUOTE_STATUS}
+預期結案日：{QUOTE_CLOSEDATE}
+說明：{QUOTE_DESCRIPTION}
+
+您可以檢視這個報價單於下面網址：
+<{URL}>
+<!-- END: Quote -->
+
+
+<!-- BEGIN: Account_Subject -->
+公司 - {ACCOUNT_NAME}
+<!-- END: Account_Subject -->
+<!-- BEGIN: Account -->
+{ASSIGNER} 指派了一個公司給 {ASSIGNED_USER}。
+
+名稱：{ACCOUNT_NAME}
+類型：{ACCOUNT_TYPE}
+說明：{ACCOUNT_DESCRIPTION}
+
+您可以檢視這個公司於下面網址：
+<{URL}>
+<!-- END: Account -->
+
+
+<!-- BEGIN: Case_Subject -->
+案件 - {CASE_SUBJECT}
+<!-- END: Case_Subject -->
+<!-- BEGIN: Case -->
+{ASSIGNER} 指派了一個案件給 {ASSIGNED_USER}.
+
+主旨：{CASE_SUBJECT}
+優先順序：{CASE_PRIORITY}
+狀態：{CASE_STATUS}
+說明：{CASE_DESCRIPTION}
+
+您可以檢視這個案件於下面網址：
+<{URL}>
+<!-- END: Case -->
+
+
+<!-- BEGIN: Task_Subject -->
+任務 - {TASK_SUBJECT}
+<!-- END: Task_Subject -->
+<!-- BEGIN: Task -->
+{ASSIGNER} 指派了一個任務給 {ASSIGNED_USER}.
+
+主旨：{TASK_SUBJECT}
+優先順序：{TASK_PRIORITY}
+結束日期： {TASK_DUEDATE}
+狀態：{TASK_STATUS}
+說明：{TASK_DESCRIPTION}
+
+您可以檢視這個任務於下面網址：
+<{URL}>
+<!-- END: Task -->
+
+
+<!-- BEGIN: Meeting_Subject -->
+會議 - {MEETING_SUBJECT}
+<!-- END: Meeting_Subject -->
+<!-- BEGIN: Meeting -->
+致： {MEETING_TO},
+
+{ASSIGNER} 邀請您參與一個會議
+
+主旨：{MEETING_SUBJECT}
+狀態：{MEETING_STATUS}
+開始日期：{MEETING_STARTDATE}
+期間：{MEETING_HOURS}h, {MEETING_MINUTES}m
+說明：{MEETING_DESCRIPTION}
+
+接受這個會議：
+<{ACCEPT_URL}&accept_status=accept>
+
+暫時接受這個會議：
+<{ACCEPT_URL}&accept_status=tentative>
+
+無法參與這個會議：
+<{ACCEPT_URL}&accept_status=decline>
+
+<!-- END: Meeting -->
+
+
+<!-- BEGIN: Email_Subject -->
+電子郵件 - {EMAIL_SUBJECT}
+<!-- END: Email_Subject -->
+<!-- BEGIN: Email -->
+{ASSIGNER} 指派了一個電子郵件給 {ASSIGNED_USER}.
+
+主旨：{EMAIL_SUBJECT}
+寄送日期： {EMAIL_DATESENT}
+
+您可以檢視這個電子郵件於下面網址：
+<{URL}>
+<!-- END: Email -->
+
+
+
+
+
+
+<!-- BEGIN: Contact_Subject -->
+聯絡人 - {CONTACT_NAME}
+<!-- END: Contact_Subject -->
+<!-- BEGIN: Contact -->
+{ASSIGNER} 指派了一個聯絡人給 {ASSIGNED_USER}.
+
+名稱：{CONTACT_NAME}
+說明：{CONTACT_DESCRIPTION}
+
+您可以檢視這個聯絡人於下面網址：
+<{URL}>
+<!-- END: Contact -->
+
+
+<!-- BEGIN: Lead_Subject -->
+準客戶 - {LEAD_NAME}
+<!-- END: Lead_Subject -->
+<!-- BEGIN: Lead -->
+{ASSIGNER} 指派了一個準客戶 {ASSIGNED_USER}.
+
+名稱：{LEAD_NAME}
+準客戶來源： {LEAD_SOURCE}
+狀態：{LEAD_STATUS}
+說明：{LEAD_DESCRIPTION}
+
+您可以檢視這個準客戶於下面網址：
+<{URL}>
+<!-- END: Lead -->
+
+
+<!-- BEGIN: Opportunity_Subject -->
+機會 - {OPPORTUNITY_NAME}
+<!-- END: Opportunity_Subject -->
+<!-- BEGIN: Opportunity -->
+{ASSIGNER} 指派了一個機會給 {ASSIGNED_USER}.
+
+名稱：{OPPORTUNITY_NAME}
+金額： {OPPORTUNITY_AMOUNT}
+預期結案日：{OPPORTUNITY_CLOSEDATE}
+銷售策略：{OPPORTUNITY_STAGE}
+說明：{OPPORTUNITY_DESCRIPTION}
+
+您可以檢視這個機會於下面網址：
+<{URL}>
+<!-- END: Opportunity -->
+
+
+<!-- BEGIN: Bug_Subject -->
+問題 - {BUG_SUBJECT}
+<!-- END: Bug_Subject -->
+<!-- BEGIN: Bug -->
+{ASSIGNER} 指派了一個問題給 {ASSIGNED_USER}.
+
+主旨：{BUG_SUBJECT}
+類型：{BUG_TYPE}
+優先順序：{BUG_PRIORITY}
+狀態：{BUG_STATUS}
+解決方式： {BUG_RESOLUTION}
+版本： {BUG_RELEASE}
+說明：{BUG_DESCRIPTION}
+
+您可以檢視這個問題於下面網址：
+<{URL}>
+<!-- END: Bug -->
+
+
+<!-- BEGIN: Default_Subject -->
+指派物件
+<!-- END: Default_Subject -->
+<!-- BEGIN: Default -->
+{ASSIGNER} 指派了一個 {OBJECT} 給 {ASSIGNED_USER}.
+
+您可以檢視這個{OBJECT}於下面網址：
+<{URL}>
+<!-- END: Default -->
+
+<!-- BEGIN: Call_Subject -->
+電話聯繫 - {CALL_SUBJECT}
+<!-- END: Call_Subject -->
+<!-- BEGIN: Call -->
+致： {CALL_TO},
+ {ASSIGNER} 邀請您參與一個會議
+ 
+主旨：{CALL_SUBJECT}
+狀態：{CALL_STATUS}
+開始日期：{CALL_STARTDATE}
+期間：{CALL_HOURS}h, {CALL_MINUTES}m
+說明：{CALL_DESCRIPTION}
+
+接受這個電話聯繫：
+<{ACCEPT_URL}&accept_status=accept>
+
+暫時接受這個電話聯繫：
+<{ACCEPT_URL}&accept_status=tentative>
+
+無法接受這個電話聯繫：
+<{ACCEPT_URL}&accept_status=decline>
+
+<!-- END: Call -->
+
+<!-- BEGIN: Campaign_Subject -->
+活動 - {CAMPAIGN_NAME}
+<!-- END: Campaign_Subject -->
+<!-- BEGIN: Campaign -->
+{ASSIGNER} 指派了一個活動給 {ASSIGNED_USER}.
+
+主旨：{CAMPAIGN_NAME}
+金額： {CAMPAIGN_AMOUNT}
+結案日期： {CAMPAIGN_CLOSEDATE}
+狀態：{CAMPAIGN_STATUS}
+說明：{CAMPAIGN_DESCRIPTION}
+
+您可以檢視這個活動於下面網址：
+<{URL}>
+<!-- END: Campaign -->
