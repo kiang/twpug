@@ -1,0 +1,27 @@
+<?php
+
+if (empty($lang) || !is_array($lang))
+{
+        $lang = array();
+}
+
+$lang = array_merge($lang, array(
+	'ACTIVE_TOPICS' => NULL,
+	'ANNOUNCEMENTS' => NULL,
+	'FORUM_PERMISSIONS' => NULL,
+	'ICON_ANNOUNCEMENT' => NULL,
+	'ICON_STICKY' => NULL,
+	'LOGIN_NOTIFY_FORUM' => NULL,
+	'MARK_TOPICS_READ' => NULL,
+	'NEW_POSTS_HOT' => NULL,
+	'NEW_POSTS_LOCKED' => NULL,
+	'NO_NEW_POSTS_HOT' => NULL,
+	'NO_NEW_POSTS_LOCKED' => NULL,
+	'NO_READ_ACCESS' => NULL,
+	'POST_FORUM_LOCKED' => NULL,
+	'TOPICS_MARKED' => NULL,
+	'VIEW_FORUM' => NULL,
+	'VIEW_FORUM_TOPIC' => '1 topic',
+	'VIEW_FORUM_TOPICS' => '%d topics'
+));
+?>
