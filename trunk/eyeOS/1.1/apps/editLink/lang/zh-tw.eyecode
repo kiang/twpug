@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Edit link content'] = '編輯連結';
+$language['Update'] = '更新';
+$language['Link updated.'] = '連結更新了。';
+?>

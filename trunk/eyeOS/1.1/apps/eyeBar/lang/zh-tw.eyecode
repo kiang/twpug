@@ -1,0 +1,8 @@
+<?php
+global $language;
+$language['System preferences'] = '系統設定';
+$language['Applications'] = '應用程式';
+$language['About eyeOS'] = '關於 eyeOS';
+$language['Launch App'] = '啟動應用程式';
+$language['Close session'] = '關閉連線';
+?>

@@ -1,0 +1,35 @@
+<?php
+global $language;
+$language['Surname'] = '稱謂';
+$language['Delete'] = '刪除';
+$language['View'] = '檢視';
+$language['Name'] = '名稱';
+$language['Contacts'] = '聯絡人';
+$language['New Contact'] = '新增聯絡人';
+$language['Phone Number'] = '電話號碼';
+$language['Home Phone'] = '家裏電話';
+$language['Mobile Phone'] = '行動電話';
+$language['Address'] = '住址';
+$language['Personal Information'] = '個人資訊';
+$language['Professional Information'] = '專業資訊';
+$language['Internet Information'] = '網路資訊';
+$language['Notes'] = '備註';
+$language['Create'] = '建立';
+$language['Nick'] = '暱稱';
+$language['E-mail'] = '信箱';
+$language['Website'] = '網站';
+$language['Company'] = '公司';
+$language['Phone'] = '電話';
+$language['Fax'] = '傳真';
+$language['Company Address'] = '公司住址';
+$language['Instant Messenger'] = '即時通訊軟體';
+$language['Voice Over IP'] = '網路電話';
+$language['Please choose a contact to be edited first.'] = '請先選擇一個要編輯的聯絡人。';
+$language['Please, fill the name and surname.'] = '請輸入名稱與稱謂。';
+$language['Sorry, there is already a contact with this Name and Surname.'] = '抱歉，名稱與稱謂重複。';
+$language['Error writing file'] = '寫入檔案時發生錯誤';
+$language['New contact created successfully.'] = '成功建立新聯絡人。';
+$language['Contact updated successfully.'] = '聯絡人更新成功。';
+$language['Please choose a contact to be deleted first.'] = '請先選擇一個要刪除的聯絡人。';
+$language['Contact deleted successfully.'] = '聯絡人刪除成功。';
+?>

@@ -1,0 +1,11 @@
+<?php
+global $language;
+$language['Add feed'] = '新增資料來源';
+$language['Update feed'] = '更新資料來源';
+$language['Delete feed'] = '刪除資料來源';
+$language['Actions'] = '操作';
+$language['Feeds'] = '資料來源';
+$language['Enter the url of feed to add'] = '輸入資料來源的網址來新增';
+$language['You have to enter a valid url'] = '您必須輸入一個正確的網址';
+$language['This feed already exists'] = '這個資料來源已經存在';
+?>

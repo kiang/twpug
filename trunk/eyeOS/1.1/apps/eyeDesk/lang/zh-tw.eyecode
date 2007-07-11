@@ -1,0 +1,4 @@
+<?php
+global $language;
+$language['Welcome to %s, %s.'] = '歡迎來到 %s，%s。';
+?>

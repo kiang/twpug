@@ -1,0 +1,9 @@
+<?php
+global $language;
+$language['Office'] = '辦公室';
+$language['Network'] = '網路';
+$language['Games'] = '遊戲';
+$language['System'] = '系統';
+$language['Places'] = '位置';
+$language['Accesories'] = '輔助程式';
+?>

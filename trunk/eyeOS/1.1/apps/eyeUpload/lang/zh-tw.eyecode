@@ -1,0 +1,9 @@
+<?php
+global $language;
+$language['Select a file to upload'] = '選擇要上傳的檔案';
+$language['Upload'] = '上傳';
+$language['Error uploading file'] = '上傳檔案失敗';
+$language['Upload finished!'] = '上傳完成！';
+$language['Error writing file!'] = '寫入檔案失敗！';
+$language['You can now close this window.'] = '您現在可以關閉這個視窗。';
+?>

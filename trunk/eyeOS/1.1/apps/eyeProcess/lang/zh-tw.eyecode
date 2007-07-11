@@ -1,0 +1,8 @@
+<?php
+global $language;
+$language['Pid'] = '程序編號';
+$language['Process Name'] = '程序名稱';
+$language['Username'] = '使用者';
+$language['Kill Process'] = '刪除程序';
+$language['Process killed successfully.'] = '程序刪除成功。';
+?>

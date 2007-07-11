@@ -1,0 +1,7 @@
+<?php
+global $language;
+$language['Directory removed successfully.'] = '資料夾移除成功。';
+$language['Unable to delete directory.'] = '無法刪除資料夾。';
+$language['Error deleting file.'] = '刪除檔案時發生錯誤。';
+$language['File moved to trash.'] = '檔案移到垃圾桶。';
+?>
