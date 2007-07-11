@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['File extracted successfully.'] = '檔案解壓縮成功。';
+$language['Extract'] = '解壓縮';
+$language['Filename'] = '檔案名稱';
+?>

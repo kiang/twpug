@@ -1,0 +1,18 @@
+<?php
+global $language;
+$language['Upload file'] = '上傳檔案';
+$language['Download'] = '下載';
+$language['Download as zip'] = '下載為 zip 格式';
+$language['Create folder'] = '建立資料夾';
+$language['Rename'] = '修改名稱';
+$language['Delete'] = '刪除';
+$language['Copy'] = '複製';
+$language['Paste'] = '貼上';
+$language['Properties'] = '屬性';
+$language['Actions'] = '操作';
+$language['Places'] = '位置';
+$language['Home'] = '首頁';
+$language['Desktop'] = '桌面';
+$language['Documents'] = '文件';
+$language['Music'] = '音樂';
+?>

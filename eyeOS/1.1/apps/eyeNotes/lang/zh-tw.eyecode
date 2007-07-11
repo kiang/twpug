@@ -1,0 +1,15 @@
+<?php
+global $language;
+$language['New'] = '新增';
+$language['Open'] = '開啟';
+$language['Save'] = '儲存';
+$language['Save As'] = '另存';
+$language['Name'] = '名稱';
+$language['Size'] = '大小';
+$language['Sorry, you do not have sufficient permissions.'] = '抱歉，您沒有足夠的權限。';
+$language['File saved successfully.'] = '檔案儲存成功。';
+$language['Error opening file'] = '開啟檔案時發生錯誤';
+$language['Unable to create file'] = '無法建立檔案';
+$language['Select destination file'] = '選擇目標檔案';
+$language['Select file to open'] = '選擇要開啟的檔案';
+?>

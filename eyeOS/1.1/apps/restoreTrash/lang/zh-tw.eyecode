@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Are you sure you want to restore this file?'] = '您確定要還原這個檔案？';
+$language['Yes'] = '是';
+$language['No'] = '否';
+?>

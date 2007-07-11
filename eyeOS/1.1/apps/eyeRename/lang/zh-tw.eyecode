@@ -1,0 +1,4 @@
+<?php
+global $language;
+$language['Type a new name:'] = '輸入一個新的名稱：';
+?>

@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Are you sure you want to empty trash content?'] = '您確定要清空垃圾桶？';
+$language['Yes'] = '是';
+$language['No'] = '否';
+?>

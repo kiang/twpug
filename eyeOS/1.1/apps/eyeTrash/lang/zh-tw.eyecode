@@ -1,0 +1,12 @@
+<?php
+global $language;
+$language['Empty trash'] = '清空垃圾桶';
+$language['Restore File'] = '還原檔案';
+$language['File properties'] = '檔案屬性';
+$language['Home'] = '首頁';
+$language['Desktop'] = '桌面';
+$language['Documents'] = '文件';
+$language['Music'] = '音樂';
+$language['Actions'] = '操作';
+$language['Places'] = '位置';
+?>

@@ -1,0 +1,4 @@
+<?php
+global $language;
+$language['File Copied. You can now paste it in another folder.'] = '檔案複製了，您現在可以將它貼到另一個資料夾。';
+?>

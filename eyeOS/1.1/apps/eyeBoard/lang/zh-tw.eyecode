@@ -1,0 +1,5 @@
+<?php
+global $language;
+$language['Send'] = '送出';
+$language['Clear'] = '清除';
+?>

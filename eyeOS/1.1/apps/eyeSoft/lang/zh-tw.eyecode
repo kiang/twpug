@@ -1,0 +1,13 @@
+<?php
+global $language;
+$language['Install'] = '安裝';
+$language['Update'] = '更新';
+$language['Search'] = '搜尋';
+$language['Categories'] = '類別';
+$language['App Name'] = '應用程式名稱';
+$language['Version'] = '版本';
+$language['You are installing a new App in your eyeOS system'] = '您正在安裝一個新的應用程式';
+$language['Accept'] = '接受';
+$language['Cancel'] = '取消';
+$language['eyeSoft: Package list updated'] = 'eyeSoft：程式清單更新了';
+?>

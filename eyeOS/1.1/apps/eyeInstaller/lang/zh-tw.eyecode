@@ -1,0 +1,9 @@
+<?php
+global $language;
+$language['Installing'] = '安裝中';
+$language['Nothing to install!'] = '沒有可以安裝的程式！';
+$language['Accept'] = '接受';
+$language['Cancel'] = '取消';
+$language['Package installed successfully!'] = '程式安裝成功！';
+$language['Do you really want to install this package into the system?'] = '您確定要安裝這個程式到系統？';
+?>
