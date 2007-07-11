@@ -169,8 +169,8 @@ function outputLangFile($langFile,$showall) {
 	echo '<form id="TransForm" action="'.
 		htmlspecialchars($_SERVER["REQUEST_URI"],ENT_QUOTES,'UTF-8').'" method="post">'."\n";
 	echo "<table>\n";
-	echo "<tr>\n".'<th id="key">KEY NAME</th>'."\n".'<th id="original">Original text</th>'."\n";
-	echo '<th id="translated">Translated text</th>'."\n".'<th id="set">Set</th>'."\n</tr>\n";
+	echo "<tr>\n".'<th id="key">KEY NAME</th>'."\n".'<th id="original">Original text / Translated text</th>'."\n";
+	echo '<th id="set">Set</th>'."\n</tr>\n";
 
 	$keys=$langFile->readKeyList();
 	foreach ($keys as $key) {
@@ -203,11 +203,12 @@ function outputLangFile($langFile,$showall) {
 		if (!$showall && ($status==LSTATUS_UNCHANGED)) continue;
 
 		echo "<tr>\n<td $cl>".htmlspecialchars($kname,ENT_QUOTES,'UTF-8').
-			"</td>\n<td $cl>".htmlspecialchars($orig,ENT_QUOTES,'UTF-8').
-			"</td>\n<td $cl>";
+			"</td>\n<td $cl width='200'>".htmlspecialchars($orig,ENT_QUOTES,'UTF-8').
+			//"</td>\n<td $cl>";
+			"<br />";
 
 		if (strlen($orig)>=40) {
-			echo '<div><textarea name="t_'.$kname.'" cols="55" rows="'.ceil(strlen($orig)/30).
+			echo '<div><textarea name="t_'.$kname.'" cols="55" rows="'.ceil(strlen($orig)/80).
 				'" onchange="document.forms[0].elements[\'c_'.$kname.'\'].checked=true;">'.
 				htmlspecialchars($trans,ENT_QUOTES,'UTF-8')."</textarea>\n</div>\n";
 		} else {
