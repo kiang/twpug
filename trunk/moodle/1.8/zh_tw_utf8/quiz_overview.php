@@ -1,5 +1,5 @@
-<?PHP // $Id: quiz_overview.php,v 1.1 2007/02/18 22:10:48 koenr Exp $ 
-      // quiz_overview.php - created with Moodle 1.6 + (2006050507)
+<?PHP // $Id$ 
+      // quiz_overview.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['allattempts'] = '顯示所有測驗次數';

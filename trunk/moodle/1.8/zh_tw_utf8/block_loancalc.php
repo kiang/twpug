@@ -1,5 +1,5 @@
-<?PHP // $Id: block_loancalc.php,v 1.1 2007/02/18 22:10:36 koenr Exp $ 
-      // block_loancalc.php - created with Moodle 1.6 Beta 5 (2006050502)
+<?PHP // $Id$ 
+      // block_loancalc.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['amountofloan'] = '借用金額';

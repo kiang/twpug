@@ -1,5 +1,5 @@
-<?PHP // $Id: my.php,v 1.1 2007/02/18 22:10:47 koenr Exp $ 
-      // my.php - created with Moodle 1.6 + (2006050507)
+<?PHP // $Id$ 
+      // my.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['mymoodle'] = '我的課程概要';

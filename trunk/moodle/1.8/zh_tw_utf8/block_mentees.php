@@ -1,5 +1,5 @@
 <?PHP // $Id$ 
-      // block_mentees.php - created with Moodle 1.8 + (2007021505)
+      // block_mentees.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['blockname'] = '被輔導人';
