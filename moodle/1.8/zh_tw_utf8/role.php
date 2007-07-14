@@ -1,5 +1,5 @@
 <?PHP // $Id$ 
-      // role.php - created with Moodle 1.8 + (2007021505)
+      // role.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['addrole'] = '新增一個角色';
@@ -41,5 +41,19 @@ $string['course:viewcoursegrades'] = '檢視課程分數';
 $string['course:viewhiddenactivities'] = '檢視隱藏活動';
 $string['course:viewhiddencourses'] = '檢視隱藏課程';
 $string['course:viewhiddensections'] = '檢視隱藏區域';
+$string['currentrole'] = '現在的角色';
+$string['defaultrole'] = '預設的角色';
+$string['defineroles'] = '定義角色';
+$string['editrole'] = '編輯角色';
+$string['manageroles'] = '管理角色';
+$string['permissions'] = '權限';
+$string['roleassignments'] = '分配角色';
+$string['roles'] = '角色';
+$string['selectrole'] = '選擇一個角色';
+$string['showallroles'] = '顯示所有角色';
+$string['site:restore'] = '還原課程';
+$string['site:viewreports'] = '檢視報表';
+$string['user:create'] = '建立使用者';
+$string['user:delete'] = '刪除使用者';
 
 ?>

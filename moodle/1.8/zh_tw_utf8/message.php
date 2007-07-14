@@ -1,5 +1,5 @@
-<?PHP // $Id: message.php,v 1.1 2007/02/18 22:10:47 koenr Exp $ 
-      // message.php - created with Moodle 1。5。2 (2005060220)
+<?PHP // $Id$ 
+      // message.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['addcontact'] = '新增簡訊';

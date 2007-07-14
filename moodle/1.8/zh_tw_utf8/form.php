@@ -1,5 +1,5 @@
 <?PHP // $Id$ 
-      // form.php - created with Moodle 1.8 + (2007021505)
+      // form.php - created with Moodle 1.8.2+ (2007021520)
 
 
 $string['addfields'] = '新增 $a 個欄位到表單';
