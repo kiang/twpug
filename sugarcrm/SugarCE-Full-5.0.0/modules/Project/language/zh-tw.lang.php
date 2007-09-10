@@ -2,6 +2,7 @@
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 $mod_strings = array (
   'LBL_MODULE_NAME' => '專案',
+  'LBL_MODULE_NAME_FOR_SITEMAP' => '專案',
   'LBL_MODULE_TITLE' => '專案：首頁',
   'LBL_SEARCH_FORM_TITLE' => '搜尋專案',
   'LBL_LIST_FORM_TITLE' => '專案列表',
@@ -12,7 +13,6 @@ $mod_strings = array (
   'LBL_ASSIGNED_USER_ID' => '指派給：',
   'LBL_MODIFIED_USER_ID' => '修改者編號：',
   'LBL_CREATED_BY' => '建立人：',
-  'LBL_TEAM_ID' => '團隊：',
   'LBL_NAME' => '名稱：',
   'LBL_DESCRIPTION' => '說明：',
   'LBL_DELETED' => '刪除：',

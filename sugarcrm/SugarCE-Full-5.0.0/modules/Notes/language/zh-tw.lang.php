@@ -58,6 +58,9 @@ $mod_strings = array (
   'LBL_LIST_ASSIGNED_TO_NAME' => '指派的使用者',
   'LBL_REMOVING_ATTACHMENT' => '移除附加檔案',
   'ERR_REMOVING_ATTACHMENT' => '移除附加檔案時發生錯誤',
+  'LBL_CREATED_BY' => '建立者',
+  'LBL_MODIFIED_BY' => '修改者',
+  'LBL_SEND_ANYWAYS' => '這封郵件沒有主旨，確定寄出/儲存？',
 
 );
 ?>

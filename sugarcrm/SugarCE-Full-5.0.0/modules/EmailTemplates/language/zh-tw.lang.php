@@ -33,6 +33,7 @@ $mod_strings = array (
   'LBL_TEAM' => '團隊：',
   'LBL_TEAMS_LINK' => '團隊',
   'LBL_TEXT_BODY' => '文字內容',
+  'LBL_USERS' => '使用者',
   'LNK_ALL_EMAIL_LIST' => '所有郵件',
   'LNK_ARCHIVED_EMAIL_LIST' => '保留的郵件',
   'LNK_CHECK_EMAIL' => '檢查郵件',
@@ -55,6 +56,12 @@ $mod_strings = array (
   'LBL_TEXT_ONLY' => '只有純文字',
   'LBL_SEND_AS_TEXT' => '只寄送純文字',
   'LBL_ACCOUNT' => '帳號',
+  'LBL_BASE_MODULE' => '基礎模組',
+  'LBL_FROM_NAME' => '寄件人名稱',
+  'LBL_PLAIN_TEXT' => '純文字',
+  'LBL_CREATED_BY' => '建立者',
+  'LBL_FROM_ADDRESS' => '寄件人信箱',
+  'LBL_PUBLISHED' => '已發佈',
 
 );
 ?>
