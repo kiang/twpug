@@ -1,6 +1,7 @@
 <?php
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 $mod_strings = array (
+  'LBL_BLANK' => ' ',
   'LBL_MODULE_NAME' => '電話聯繫',
   'LBL_MODULE_TITLE' => '電話聯繫：首頁',
   'LBL_SEARCH_FORM_TITLE' => '電話聯繫',
@@ -78,6 +79,8 @@ $mod_strings = array (
   'LBL_LIST_ASSIGNED_TO_NAME' => '指派的使用者',
   'LBL_LIST_MY_CALLS' => '我的電話記錄',
   'LBL_SELECT_FROM_DROPDOWN' => '請先從相關項目的下拉選單選擇一個。',
+  'LBL_ASSIGNED_TO_NAME' => '指派給',
+  'LBL_ASSIGNED_TO_ID' => '指派的使用者',
 
 );
 ?>

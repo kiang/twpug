@@ -59,6 +59,7 @@ $mod_strings = array (
   'LBL_CASES_SUBPANEL_TITLE' => '案件',
   'LBL_SYSTEM_ID' => '系統編號',
   'LBL_LIST_ASSIGNED_TO_NAME' => '指派的使用者',
+  'LBL_ASSIGNED_TO_NAME' => '指派給',
 
 );
 ?>

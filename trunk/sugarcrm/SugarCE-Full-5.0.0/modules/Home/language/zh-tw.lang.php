@@ -1,6 +1,7 @@
 <?php
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 $mod_strings = array (
+  'LBL_MODULE_NAME' => '首頁',
   'LBL_NEW_FORM_TITLE' => '新增聯絡人',
   'LBL_FIRST_NAME' => '姓：',
   'LBL_LAST_NAME' => '名：',
@@ -32,6 +33,10 @@ $mod_strings = array (
   'LBL_NO_RESULTS_TIPS' => '<h3>搜尋提示：</h3><ul><li>確認您在上方選擇了適當的類別。</li><li>放寬搜尋條件。</li><li>如果仍然找不到任何資料，請透過模組的進階搜尋功能。</li></ul>',
   'LBL_RELOAD_PAGE' => '請 <a href=\"javascript: window.location.reload()\">重新整理視窗</a> 來使用這個 Dashlet 。',
   'LBL_ADD_DASHLETS' => '新增 Dashlets',
+  'LBL_ADD_PAGE' => '新增頁面',
+  'LBL_DELETE_PAGE' => '刪除頁面',
+  'LBL_CHANGE_LAYOUT' => '調整畫面配置',
+  'LBL_RENAME_PAGE' => '頁面改名',
   'LBL_CLOSE_DASHLETS' => '關閉',
   'LBL_OPTIONS' => '選項',
   'LBL_TODAY' => '今天',
@@ -71,6 +76,13 @@ $mod_strings = array (
   'LBL_DASHLET_CONFIGURE_TITLE' => '標題',
   'LBL_DASHLET_CONFIGURE_DISPLAY_ROWS' => '顯示資料列',
   'LBL_TRAINING_TITLE' => '訓練',
+  'LBL_CREATING_NEW_PAGE' => '建立新頁面中',
+  'LBL_NEW_PAGE_FEEDBACK' => '您已經建立了一個新頁面，接著可以透過新增 Dashlets 選單項目來加入內容。',
+  'LBL_DELETE_PAGE_CONFIRM' => '您確定要刪除這個頁面？',
+  'LBL_SAVING_PAGE_TITLE' => '儲存頁面標題',
+  'LBL_RETRIEVING_PAGE' => '取得頁面',
+  'LBL_HOME_PAGE_1_NAME' => '我的首頁',
+  'LBL_HOME_PAGE_2_NAME' => '我的統計圖表',
 
 );
 ?>

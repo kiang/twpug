@@ -26,6 +26,7 @@ $mod_strings = array (
   'LBL_ANY_EMAIL' => '任意電子郵件：',
   'LBL_ANY_PHONE' => '任意電話：',
   'LBL_ASSIGNED_TO_NAME' => '負責成員：',
+  'LBL_ASSIGNED_TO_ID' => '指派的使用者',
   'LBL_ASSISTANT_PHONE' => '輔助電話：',
   'LBL_ASSISTANT' => '輔助：',
   'LBL_BIRTHDATE' => '生日：',
@@ -63,6 +64,7 @@ $mod_strings = array (
   'LBL_HOME_PHONE' => '家：',
   'LBL_ID' => '編號：',
   'LBL_IMPORT_VCARD' => '匯入 vCard',
+  'LBL_VCARD' => 'vCard',
   'LBL_IMPORT_VCARDTEXT' => '自動從匯入的 vCard 建立一個新的聯絡人',
   'LBL_INVALID_EMAIL' => '錯誤的信箱：',
   'LBL_INVITEE' => '直接報告',
@@ -121,7 +123,6 @@ $mod_strings = array (
   'LBL_SELECT_CHECKED_BUTTON_TITLE' => '選擇勾選的聯絡人',
   'LBL_STATE' => '縣市：',
   'LBL_SYNC_CONTACT' => '同步更新聯絡人：',
-  'LBL_TEAM_ID' => '團隊編號：',
   'LBL_TITLE' => '職務：',
   'LNK_CONTACT_LIST' => '聯絡人',
   'LNK_IMPORT_VCARD' => '從 vCard 建立',
@@ -157,6 +158,7 @@ $mod_strings = array (
   'LBL_LIST_CITY' => '鄉鎮市區',
   'LBL_LIST_STATE' => '縣市',
   'LBL_HOMEPAGE_TITLE' => '我的聯絡人',
+  'LBL_CHECKOUT_DATE' => '檢驗日期',
 
 );
 ?>
