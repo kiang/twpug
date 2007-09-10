@@ -114,7 +114,7 @@ $mod_strings = array (
   'NTC_COPY_SHIPPING_ADDRESS2' => '複製到付款',
   'NTC_DELETE_CONFIRMATION' => '您確定要刪除這筆記錄？',
   'NTC_REMOVE_ACCOUNT_CONFIRMATION' => '您確定要刪除這筆記錄？',
-  'NTC_REMOVE_MEMBER_ORG_CONFIRMATION' => '你確定要刪除這個記錄嗎？',
+  'NTC_REMOVE_MEMBER_ORG_CONFIRMATION' => '您確定要刪除這個成員組織記錄嗎？',
 
 );
 ?>
