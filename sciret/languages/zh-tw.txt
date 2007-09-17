@@ -1,0 +1,694 @@
+Action
+操作
+Add Article
+新增文章
+Add articles
+新增文章
+Add Articles/Bookmarks
+新增文章/書籤
+Add article to favorites
+新增文章至我的最愛
+Add Bookmark
+新增書籤
+Add bookmark to favorites
+新增書籤至我的最愛
+Add Category
+新增目錄
+Added comment
+新增評語
+Added related article
+相關文章
+Add link
+新增連結
+Add location to favorites
+新增位置至我的最愛
+Add new
+新增
+Add results to favorites
+新增結果至我的最愛
+Add subcategory
+新增子目錄
+Add User
+新增帳號
+Admin rights
+管理權限
+Advanced Search
+進階搜尋
+All
+全部
+All Articles
+全部文章
+Allow comments and ratings
+允許意見與評分
+Always start browsing
+總是開啟瀏覽
+answer
+回答
+Answer
+回答
+anytime
+任何時間
+Anywhere in the article
+於文章中任意處
+Anywhere in the article/bookmarks
+文章與書籤的任意處
+Are you sure you want to delete the bookmark?
+您確定要刪除書籤？
+Are you sure you want to delete the category?
+您確定要刪除類別？
+Are you sure you wish to delete the article title?
+您確定要刪除文章標題？
+Are you sure you wish to delete user?
+您確定要刪除使用者？
+Are you sure you wish to mark this TO-DO as completed?
+您確定要將這個工作標示為完成？
+Article
+文章
+Article created
+文章已新增
+Article deleted successfully
+文章已成功刪除
+Article does not exist
+文章不存在
+Article has beed added to favorites successfully
+文章已成功加入最愛
+Article has been commented and rated successfully
+文章已成功評論及評價
+Article has been rated successfully
+文章已成功評價
+Article has been removed from favorites successfully
+成功從我的最愛刪除文章
+Article hasn't been commented
+文章還沒有任何評論
+Article modified
+文章已修改
+Article published successfully
+成功發佈文章
+Article rated
+文章已評價
+Articles
+文章
+Articles and Bookmarks
+文章與書籤
+Article saved successfully.
+文章儲存成功.
+Articles only
+僅文章
+Artikle ID
+文章編號
+Ascendent
+逆向排序
+Attached Files
+附件
+Attach File
+附件
+Author
+作者
+Average rating
+平均值
+Before submiting a question, please search in the knowledge base first
+提問前，請先搜尋本站資料庫
+Bookmark
+書籤
+Bookmarks
+書籤
+Bookmarks only
+僅書籤
+Bookmarks saved successfully
+書籤儲存成功
+Browse unpublished articles/bookmarks
+瀏覽尚未發布之文章/書籤
+by
+由
+Category
+目錄
+Category deleted successfully
+成功刪除目錄
+Category saved successfully
+目錄儲存成功
+Category will be shown in the future
+類別未來將會顯示
+Clear
+清除
+comment
+評語
+Comment deleted successfully
+成功刪除評論
+Comment published successfully
+成功發布評論
+Comment saved successfully
+評語已儲存
+Comments
+評語
+Completed
+完成
+Contents
+內容
+Continue
+繼續
+Couldn't connect to the database.
+無法連線資料庫
+Couldn't create database. Please create it manually and try again.
+無法自動新增資料庫，請以手動方式新增後再試一次
+Created by %s on %s
+由 %s 於 %s 建立
+Created on
+建立日期
+Creating new article to answer question made by %s on %s
+由 %s 於 %s  新增文章以回應提問
+Creation Date
+建立日期
+Creator
+建立者
+Current category and subcategories
+當前目錄及子目錄
+Current category only
+僅當前目錄
+Currently none.<br />Click icon to set one.
+目前無.<br />請按圖示設定
+Database Hostname
+資料庫主機名稱
+Database Name
+資料庫名稱
+Database Username
+資料庫帳號
+Database Username Password
+資料庫密碼
+Date
+日期
+Date format
+日期格式
+Days before password expires
+密碼有效天數
+Delete
+刪除
+Delete Article
+刪除文章
+Delete Bookmark
+刪除書籤
+Deleted reference to related article successfully
+成功刪除參照
+Deleted related article
+刪除相關文章
+Descendent
+正向排序
+Description
+描述
+details
+細節
+did not match any documents.
+未搜尋到文章.
+documents found
+找到的文章
+Drafts Only
+只有草稿
+Due Date
+到期日
+Edit
+修改
+Edit/Add Category
+修改/新增 目錄
+Edit Article
+修改文章
+Edit Bookmark
+修改書籤
+Edit Categories
+修改目錄
+E-mail
+電子信箱
+E-mail article
+郵寄文章
+Enter one or two words describing the issue, or type the article number if you know it
+請用ㄧ或兩個字來描述，或輸入文章代碼
+Enter the Knowledge Base!!
+進入知識庫!!
+Enter your credentials
+請輸入憑證資料
+Error: article does not exist
+錯誤：文章不存在
+Error: this article hasn't yet been published
+錯誤：文章尚未被發布
+Error uploading file
+檔案上傳失敗
+Excellent
+佳
+Excerpt
+摘錄
+Expiration Date
+有效期限
+Favorites
+我的最愛
+File deleted on database but note there was an error attempting to delete it from the filesystem
+檔案已自資料庫內刪除，但無法從系統中刪除.
+File deleted successfully
+成功刪除檔案
+File not found (1)
+無法找到 (1)
+File not found (2)
+無法找到 (2)
+File '%s' attached
+檔案 %s 附加了
+File '%s' deleted
+檔案 %s 刪除了
+File uploaded successfully
+檔案上傳成功
+Find Results
+搜尋結果
+First Name
+名
+Give Admin access?
+授予管理權限？
+Hide
+隱藏
+His articles will get passed to the main Admin User.
+文章會傳給總管理者。
+History
+修改歷程
+Home
+首頁
+Icon
+圖示
+If this is the first time you enter the Knowledge Base please proceed with the installation.
+若您為首次進入知識庫，請先進行安裝。
+If you can't find answers to your problem in the knowledge base, describe it below
+如果您無法在知識庫中找到問題的答案，請在下面描述
+If you wish, you can add comments here
+可於此評論
+If you wish, you can comment this article here
+歡迎於此輸入評語
+Include subcategories
+含子目錄
+Including the exact phrase
+含以下字串
+Including these words*
+含以下文字
+in %s
+位於 %s
+Insert demo data?
+匯入展示資料？
+Install
+安裝
+Installation was successful!
+安裝完成！
+Internal article by default
+預設為內部文章
+Internal use only
+僅供內部使用
+In the article's content
+在文章的內容
+In the article's content/bookmark description
+在文章的內容與書籤的說明
+In the article's title
+在文章的標題
+In the title
+在標題
+Invalid article ID
+文章代碼不合
+Invalid recipient
+收件人錯誤
+Invalid Reply-To address
+回覆地址錯誤
+Knowledge Base
+知識庫
+Language
+語言
+Last modification on
+最後修改日期
+Last Modified
+最近修改日期
+Last Name
+姓
+Latest
+最近的文章
+Link deleted successfully
+成功刪除連結
+Links
+連結
+Link '%s' added
+連結 %s 新增了
+Link saved successfully
+連結已被儲存
+Links & Files
+連結與夾檔
+Link '%s' removed
+連結 %s 移除了
+Location has been added to favorites successfully
+成功新增位置至我的最愛
+Location has been removed from favorites successfully
+成功從我的最愛刪除
+Login
+登入
+Logout
+登出
+Mail article
+郵寄文章
+Make knowledge base public
+公開知識庫
+Make sure all words are spelled correctly.
+請確認拼字正確
+Manage Articles
+管理文章
+Manage Articles/Bookmarks
+管理文章/書籤
+Manage Categories
+管理類別
+Manage Items
+管理文章
+Manage Questions
+管理提問
+Manage Users
+帳號管理
+Maximum file size
+最大檔案限制
+Message
+內文
+Modification date
+修改日期
+Month Day, Year
+月 日,年
+Most Viewed
+最常檢視的文章
+Name
+名稱
+Never
+從不
+Never expires
+永不到期
+NEW TO-DO
+新工作
+Next
+往後
+No
+否
+No articles/bookmarks related
+無相關文章/書籤
+Nobody has rated this article so far
+本文章尚未評價
+Nobody has rated this item
+尚無評價
+No events recorded
+無事件紀錄
+No files attached
+未附加檔案
+No links referenced
+無參考連結
+No matches were found
+未發現適合者
+None
+無
+Nothing was uploaded
+無檔案上傳
+Number of articles per page
+每頁文章數
+Occurrences
+頻率
+Only admin and author can modify an article
+只有管理者與作者可以修改文章
+Only Articles
+僅文章
+Only Bookmarks
+僅書籤
+Order results by
+排序方式
+Parent Category
+上層目錄
+password
+密碼
+Password
+密碼
+past 3 months
+過去3月間
+past 6 months
+過去6月間
+past year
+過去一年
+People have rated this article
+本文章有評價
+Please enter your name to post a comment
+請輸入姓名以便評語
+Please rate the pertinence and quality of this article
+請評價此篇文章
+Please rate the pertinence and quality of this bookmark
+請評價本書籤
+Poor
+弱
+Poster
+提交人
+Preferences
+喜好設定
+Preferences saved successfully
+喜好設定儲存成功
+Previous
+往前
+Printer view
+預覽列印
+Private
+私人
+Publication date
+發布日期
+Publicly available
+公開
+publish
+發布
+Publish
+發布
+Publish Article
+發布文章
+Publish articles automatically
+自動發布文章
+Publish bookmarks automatically
+自動發布書籤
+Publish comments automatically
+自動發佈評語
+Published
+已發布
+Publish questions automatically
+自動發佈提問
+Question
+提問
+Question deleted successfully
+成功刪除提問
+Question published successfully
+成功發布提問
+Recipient (only one allowed)
+收件人 (僅可一位)
+Related Articles
+相關文章
+Related Articles/Bookmarks
+相關文章/書籤
+Related articles in the Knowledge Base
+相關文章
+Related articles saved successfully
+相關文章已成功儲存
+Remove article from favorites
+從我的最愛刪除文章
+Remove bookmark from favorites
+從我的最愛刪除書籤
+Remove location from favorites
+從我的最愛刪除
+Remove results from favorites
+從我的最愛刪除結果
+Repeat password
+重設密碼
+Reply-To address
+回覆地址
+Save
+儲存
+Save as Draft
+儲存為草稿
+Search
+搜尋
+Search has been added to favorites successfully
+搜尋結果已新增至我的最愛
+Search has been removed from favorites successfully
+搜尋結果已從我的最愛刪除
+Search in
+搜尋於
+Search in all the Knowledge Base
+搜尋本站
+Search in category
+在類別搜尋
+Search Results
+搜尋結果
+seconds
+秒
+Select
+選取
+Select articles
+選取文章
+Select Category
+目錄分類
+Send
+傳送
+Send mail from (email)
+寄件人（信箱）
+Send mail from (name)
+寄件人（名稱）
+Send mail using
+寄信方式
+Separate word list with spaces
+以空格區分文字
+Show
+顯示
+Show articles from
+顯示文章方式
+Show messages in category
+目錄中顯示訊息
+SMTP password
+SMTP 密碼
+SMTP port
+SMTP 連接埠
+SMTP server
+SMTP 伺服器
+SMTP settings
+SMTP 設定
+SMTP user
+SMTP 使用者
+Sorry, only the author or an admin can delete this article.
+抱歉，只有作者或管理者可以刪除這個文章。
+Sorry, only the author or an admin can modify this article.
+抱歉，只有作者或管理者可以修改這個文章。
+Sorry, there was a problem trying to send the e-mail. Please try again later.
+傳送信件有問題，請稍後再試。
+Sorry, this article is for internal use only.
+抱歉，這篇文章只在內部使用。
+Sort by:
+排序：
+Subject
+主題
+Submit
+傳送
+Submit comment
+送出評價
+Submit comment and rating
+送出評論與評價
+Submit Question
+提問
+Suggestions
+建議
+Target
+目標
+The articles database is empty
+文章資料庫內是空的
+There are no articles under this category
+本目錄內無文章
+There are no categories
+尚無目錄
+There are no comments so far
+尚無評論
+There are no files attached
+無附加檔案
+There are no links referenced
+無參考連結
+There are no related articles
+無相關文章
+The superadministrator user was created, with the username 'admin' and password 'admin'
+管理者建立了，帳號為 admin 、密碼為 admin
+This article hasn't yet been published in the Knowledge Base
+這篇文章尚未在知識庫發佈
+Title
+主題
+To be able to continue, please make your config.php file writable and then press Continue.
+繼續之前，請先確認 config.php 檔可被編輯
+ToDo
+工作
+Try different keywords.
+請嘗試其他關鍵字。
+Try with rare keywords, that would more likely appear in the kind of document you're looking for.
+請嘗試比較容易區隔內容的關鍵字，這樣會比較容易找到您想要找的文章。
+Unanswered Questions
+未回答之提問
+Unpublished
+尚未發布
+Upload
+上傳
+Usage
+用法
+User
+帳號
+User added successfully
+新增帳號成功
+User Data
+用戶資料
+User deleted successfully
+成功刪除帳號
+User edited successfully
+修改帳號成功
+Username
+帳號
+User Name
+帳號
+View All
+檢視全部
+Viewing All Articles
+檢視全部文章
+Viewing All Articles and Bookmarks
+瀏覽全部文章與書籤
+Viewing All Bookmarks
+檢視全部書籤
+views
+檢視
+Views
+檢視
+View Unpublished
+檢視未發佈的
+View Unpublished and Drafts Only
+只檢視未發佈與草稿
+View Unpublished Only
+僅檢視尚未發布者
+With at least one of these words*
+至少含以下任一字
+Without these words*
+不含以下文字
+Wrong category ID
+目錄代碼錯誤
+Wrong comment ID
+評論代碼錯誤
+Wrong file ID
+檔案代碼錯誤
+Wrong link ID
+連結代碼錯誤
+Wrong Username or Password
+帳號或密碼錯誤
+Yes
+是
+You are in %s
+您目前位於 %s
+You can't delete the main administrator user.
+您不能夠刪除主要管理者。
+You don't have the permission to perform this operation
+您沒有足夠的權限執行這個操作
+You have already rated this article
+您已評價過這篇文章
+You have already rated this bookmak
+您已評價過這個書籤
+You have no Favorites
+沒有我的最愛
+You have no To-Do's
+您沒有工作
+You must enter your name
+請輸入姓名
+You need to fill at least the Name field
+至少需輸入姓名欄位
+You need to fill the following fields:
+需輸入下列欄位資料
+Your article will be publicly available immediately'
+您的文章將會立即發布
+Your article won't be available publicly until it is explicitly set as "Published"
+您的文章會在明確設定為發布後才公開
+Your bookmark will be publicly available immediately
+您的書籤將即刻被發布
+Your bookmark won't be available publicly until it is explicitly set as "Published"
+您的書籤會在明確設定為發布後才公開
+Your Name
+姓名
+Your question was added successfully
+提問已成功新增
+Your question was empty
+尚未輸入提問
+Your question will be published immediately
+您的提問將即刻被發布
+Your question will need to get approved before being published
+您的提問須經審核後方可被發布
+Your search
+您的搜尋
