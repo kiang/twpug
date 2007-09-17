@@ -11,13 +11,13 @@ define('_MI_LR_FOOTER', '頁尾');
 define('_MI_LR_FOOTER_DESC', 'Be sure to type full links with the path starting from http:
 define(\'_MI_LR_META_AUTHOR\', "Meta Author');
 define('_MI_LR_META_AUTHOR', 'Meta Author');
-define('_MI_LR_META_AUTHOR_DESC', 'The author meta tag defines the name of the author of the document being read. Supported data formats include the name, email address of the webmaster, company name or URL.');
+define('_MI_LR_META_AUTHOR_DESC', '作者後設標籤定義了網頁內容的作者，支援的資料格式包含姓名、站長的信箱、公司名稱或網址。');
 define('_MI_LR_META_COPYRIGHT', '後設版權');
-define('_MI_LR_META_COPYRIGHT_DESC', 'The copyright meta tag defines any copyright statements you wish to disclose about your web page documents.');
+define('_MI_LR_META_COPYRIGHT_DESC', '版權後設標籤定義了您希望網頁內容揭露的版權訊息。');
 define('_MI_LR_META_DESCRIPTION', '後設說明');
-define('_MI_LR_META_DESCRIPTION_DESC', 'The description meta tag is a general description of what is contained in your web page');
+define('_MI_LR_META_DESCRIPTION_DESC', '說明後設標籤是用來說明網站包含了什麼樣的內容。');
 define('_MI_LR_META_KEYWORDS', '後設關鍵字');
-define('_MI_LR_META_KEYWORDS_DESC', 'The keywords meta tag is a series of keywords that represents the content of your site. Type in keywords with each separated by a comma or a space. (Ex. XOOPS, PHP, mySQL, portal system)');
+define('_MI_LR_META_KEYWORDS_DESC', '關鍵字後設標籤是一些用來代表網站內容的關鍵字，以逗點分隔方式輸入多個關鍵字，例如： XOOPS, PHP, mySQL, portal system。');
 define('_MI_LR_META_RATING', '後設評分');
 define('_MI_LR_META_RATING_DESC', '後設評分定義網站的年齡與內容評分');
 define('_MI_LR_META_ROBOTS', '機器人後設');

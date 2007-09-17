@@ -238,12 +238,12 @@ define('_AD_LEGACY_MESSAGE_UNINSTALLATION_BLOCK_SUCCESSFUL', '成功移除區塊
 define('_AD_LEGACY_MESSAGE_UNINSTALLATION_MODULE_SUCCESSFUL', '成功移除模組 \'{0}\' 。');
 define('_AD_LEGACY_MESSAGE_UPDATE_STARTED', '開始更新。');
 define('_AD_LEGACY_MESSAGE_UPDATING_MODULE_SUCCESSFUL', '更新模組 \'{0}\' 成功。');
-define('_AD_LEGACY_TIPS_ADD_CUSTOM_BLOCK', '<a href=\"index.php?action=BlockInstallList\">Install new blocks</a>, and set your site just the way you want it!<br/>If you want to have a block with free content that is not part of a module, simply <a href=\"index.php?action=CustomBlockEdit\">create a custom block</a> and write your message in it.');
-define('_AD_LEGACY_TIPS_BLOCK_UNINSTALL', 'Even if you uninstall a block, the configuration of the block isn\'t deleted. The block is simply removed from view. Therefore you can re-install the block easily because the installer remembers the last configuration.');
-define('_AD_LEGACY_TIPS_CUSTOM_BLOCK_UNINSTALL', 'Even if you uninstall the custom block, the configuration of the block isn\'t deleted. The block is simply removed from view. You can re-install or delete it from the database from the <a href=\"index.php?action=BlockInstallList\">\'install block\' page</a>.');
-define('_AD_LEGACY_TIPS_IMGCAT_STORETYPE', 'Please choose either the file or the database storage scheme for your image files. <strong>This setting cannot be changed later.</strong><br/>Do keep in mind that if you select the database as the storage destination, image files will be stored as BLOB type data which may not be suitable for backup purposes.');
-define('_AD_LEGACY_TIPS_INSTALL_BLOCK', 'You can customize your site by installing your favorite blocks. You can edit each block\'s options when you install the block.');
-define('_AD_LEGACY_TIPS_THEME_ADMIN', 'Choose the look of your site by clicking the \'select\' button next to your favourite theme.<br/> Let your users choose their own favourite look and feel for your site.  Check the boxes to add a theme to the theme selection block. For more details, read the help.');
+define('_AD_LEGACY_TIPS_ADD_CUSTOM_BLOCK', '<a href=\"index.php?action=BlockInstallList\">安裝新區塊</a>，並且依據自己的想法設定網站！<br/>如果您希望有一個存放自訂內容的區塊，只要點選 <a href=\"index.php?action=CustomBlockEdit\">建立一個自訂區塊</a> 後輸入希望使用的資訊即可。');
+define('_AD_LEGACY_TIPS_BLOCK_UNINSTALL', '即使您移除了一個區塊，區塊的設定並不會刪除，只會從畫面中移除；這樣一來您可以輕易的重新安裝這個區塊，因為安裝精靈會記得上次的設定。');
+define('_AD_LEGACY_TIPS_CUSTOM_BLOCK_UNINSTALL', '即使您移除了一個自訂區塊，區塊的設定並不會刪除，只會從畫面中移除；您可以從 <a href="index.php?action=BlockInstallList">安裝區塊頁面</a>重新安裝或是刪除它。');
+define('_AD_LEGACY_TIPS_IMGCAT_STORETYPE', '請選擇透過資料庫或檔案儲存圖片，<strong>這個設定未來無法調整。</strong><br/>請記得，如果您選擇儲存在資料庫，圖片檔案會儲存為 BLOB 類型，可能不適合用來備份。');
+define('_AD_LEGACY_TIPS_INSTALL_BLOCK', '您可以透過安裝喜歡的區塊來調整自己的網站，安裝之後可以進一步調整區塊的屬性。');
+define('_AD_LEGACY_TIPS_THEME_ADMIN', '選擇您的網站希望使用的佈景，點選旁邊的一個選擇按鈕。<br/>如果您希望讓使用者選擇自己想要使用的畫面，在選擇區塊中加入其他佈景，細節請參考說明文件。');
 define('_MD_AM_ADMINML', '管理員電子郵件');
 define('_MD_AM_ADMNOTSET', '管理員的郵件位址沒有設.');
 define('_MD_AM_ALLOWHTML', '使用者的評論中可以使用 HTML 標記嗎?');
