@@ -41,6 +41,7 @@ $mod_strings = array (
   'LBL_DEFAULT_VALUE' => '預設值',
   'LBL_AUDITED' => '預設值',
   'LBL_REPORTABLE' => '可用在報表',
+  'ERR_RESERVED_FIELD_NAME' => '保留的關鍵字',
 
 );
 ?>

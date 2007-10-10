@@ -83,6 +83,7 @@ $mod_strings = array (
   'LBL_RETRIEVING_PAGE' => '取得頁面',
   'LBL_HOME_PAGE_1_NAME' => '我的首頁',
   'LBL_HOME_PAGE_2_NAME' => '我的統計圖表',
+  'LBL_HOME_PAGE_3_NAME' => '行銷與支援頁面',
 
 );
 ?>

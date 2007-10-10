@@ -49,7 +49,7 @@ $mod_strings = array (
   'LBL_PROXY_TITLE' => '代理伺服器設定',
   'LBL_PROXY_USERNAME' => '帳號',
   'LBL_RESTORE_BUTTON_LABEL' => '還原',
-  'LBL_SKYPEOUT_ON_DESC' => '允許使用者點選電話號碼時透過 SkypeOut&reg; 撥打，啟用這個功能必須先確認電話號碼格式正確。正確的格式應該為 \\\\\"+\\\\\"  \\\\\"國碼\\\\\" \\\\\"電話號碼\\\\\"，像是 +1 (555) 555-1234。詳細資訊請參考 Skype 網站： <a href=\\\\\"http://www.skype.com/help/faq/skypeout.html#calling\\\\\" target=\\\\\"skype\\\\\">skype&reg; faq</a>',
+  'LBL_SKYPEOUT_ON_DESC' => '允許使用者點選電話號碼時透過 SkypeOut&reg; 撥打，啟用這個功能必須先確認電話號碼格式正確。正確的格式應該為 \\\"+\\\"  \\\"國碼\\\" \\\"電話號碼\\\"，像是 +1 (555) 555-1234。詳細資訊請參考 Skype 網站： <a href=\\\"http://www.skype.com/help/faq/skypeout.html#calling\\\" target=\\\"skype\\\">skype&reg; faq</a>',
   'LBL_SKYPEOUT_ON' => '啟用 SkypeOut&reg; 整合？',
   'LBL_SKYPEOUT_TITLE' => 'SkypeOut&reg;',
   'LBL_USE_REAL_NAMES' => '顯示全名（不是登入帳號）',
@@ -86,6 +86,7 @@ $mod_strings = array (
   'LBL_LDAP_BASE_DN_DESC' => '例如： DC=SugarCRM,DC=com',
   'LBL_LDAP_AUTO_CREATE_USERS_DESC' => '如果認證使用者不存在，會在程式中自動建立。',
   'LBL_LDAP_ENC_KEY' => '加密金鑰：',
+  'DEVELOPER_MODE' => '開發模式：',
   'LBL_LDAP_ENC_KEY_DESC' => '使用 ldap 時的 SOAP 認證。',
   'LDAP_ENC_KEY_NO_FUNC_DESC' => '在 php.ini 中必須啟用 php_mcrypt 外掛。',
 

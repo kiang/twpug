@@ -24,6 +24,8 @@ $mod_strings = array (
   'LBL_TEAM_REPORTS' => '-- 團隊報表 --',
   'LBL_REPORT_NO_CHART' => '這個報表沒有圖形',
   'LBL_MOVE_CHARTS' => '（點選圖表名稱來移動到其他位置）',
+  'LBL_DASHBOARD_PAGE_1' => '統計首頁',
+  'LBL_DASHBOARD_PAGE_2' => '銷售統計',
 
 );
 ?>

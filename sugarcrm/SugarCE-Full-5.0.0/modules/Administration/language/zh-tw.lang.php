@@ -586,6 +586,14 @@ $mod_strings = array (
   'WARN_VALIDATION_EXPIRED2' => '天後到期，請前往管理區的授權管理。',
   'LBL_MODULEBUILDER' => '模組精靈',
   'LBL_MODULEBUILDER_DESC' => '建立新模組來延伸系統的功能',
+  'LBL_SUGARPORTAL' => '入口網站',
+  'LBL_SUGARPORTAL_DESC' => '管理入口網站',
+  'LBL_CLEAR_TEMPLATE_DATA_CACHE_DESC' => '移除快取的樣板檔案',
+  'LBL_CLEAR_TEMPLATE_DATA_CACHE_TITLE' => '清除樣板資料快取',
+  'LBL_CLEAR_VARDEFS_DATA_CACHE_TITLE' => '清除 Vardefs 資料快取',
+  'LBL_CLEAR_VARDEFS_DATA_CACHE_DESC' => '從快取移除 vardefs',
+  'LBL_QUICK_REPAIR_AND_REBUILD' => '快速修復與重建',
+  'LBL_QUICK_REPAIR_AND_REBUILD_DESC' => '為選擇的模組修復與重建資料庫、外掛、Vardefs、Dashlets等',
 
 );
 ?>
