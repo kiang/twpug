@@ -306,6 +306,14 @@ $mod_strings = array (
   'LBL_CAMPAIGN_RETURN_ON_INVESTMENT' => '活動投資收益（ROI）',
   'LBL_CAMPAIGN_RESPONSE_BY_RECIPIENT_ACTIVITY' => '依據收件人操作的活動回應',
   'LBL_LOG_ENTRIES_BLOCKEDD_TITLE' => '依據信箱位址或網域進行節流',
+  'LBL_AMOUNT_IN_DOLLARS' => '金額',
+  'LBL_ROI_CHART_REVENUE' => '收入',
+  'LBL_ROI_CHART_INVESTMENT' => '投資',
+  'LBL_ROI_CHART_BUDGET' => '預算',
+  'LBL_ROI_CHART_EXPECTED_REVENUE' => '預期收益',
+  'LBL_TOP_CAMPAIGNS' => '熱門活動',
+  'LBL_TOP_CAMPAIGNS_NAME' => '活動名稱',
+  'LBL_TOP_CAMPAIGNS_REVENUE' => '收入',
 
 );
 ?>

@@ -47,7 +47,7 @@ $mod_strings = array (
   'LBL_LIST_STATUS' => '狀態：',
   'LBL_LOGIN' => '登入帳號',
   'LBL_MAILBOX_DEFAULT' => '收件匣',
-  'LBL_MAILBOX_SSL_DESC' => '連線時使用 SSL，如果這個功能無法執行，請透過參數 \\"--with-imap-ssl\\" 重新編譯您的PHP程式。',
+  'LBL_MAILBOX_SSL_DESC' => '連線時使用 SSL，如果這個功能無法執行，請透過參數 \"--with-imap-ssl\" 重新編譯您的PHP程式。',
   'LBL_MAILBOX_SSL' => '使用 SSL',
   'LBL_MAILBOX_TYPE' => '操作',
   'LBL_MAILBOX' => '訂閱的資料夾',
@@ -106,6 +106,7 @@ $mod_strings = array (
   'LNK_LIST_TEST_IMPORT' => '測試郵件匯入',
   'LNK_NEW_QUEUES' => '建立新佇列',
   'LNK_SEED_QUEUES' => '從團隊取得佇列',
+  'LBL_IS_PERSONAL' => '個人信箱',
 
 );
 ?>

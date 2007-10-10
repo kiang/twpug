@@ -1,27 +1,37 @@
 <!--
 /*********************************************************************************
- * The contents of this file are subject to the SugarCRM Public License Version
- * 1.1.3 ("License"); You may not use this file except in compliance with the
- * License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * All copies of the Covered Code must include on each user interface screen:
- *    (i) the "Powered by SugarCRM" logo and
- *    (ii) the SugarCRM copyright notice
- * in the same form as they appear in the distribution.  See full license for
- * requirements.
- *
- * The Original Code is: SugarCRM Open Source
- * The Initial Developer of the Original Code is SugarCRM, Inc.
- * Portions created by SugarCRM are Copyright (C) 2004-2006 SugarCRM, Inc.;
- * All Rights Reserved.
- * Contributor(s): ______________________________________.
+ * SugarCRM is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004 - 2007 SugarCRM Inc.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 3 as published by the
+ * Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ * 
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ * 
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU General Public License version 3.
+ * 
+ * In accordance with Section 7(b) of the GNU General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo. If the display of the logo is not reasonably feasible for
+ * technical reasons, the Appropriate Legal Notices must display the words
+ * "Powered by SugarCRM".
  ********************************************************************************/
 /*********************************************************************************
- * $Id: en_us.notify_template.html,v 1.18 2005/08/24 01:53:19 ajay Exp $
+
  ********************************************************************************/
 -->
 
@@ -248,3 +258,16 @@
 您可以檢視這個活動於下面網址：
 <{URL}>
 <!-- END: Campaign -->
+
+<!-- BEGIN: Quota_Subject -->
+配額 - 您在 {QUOTA_TIMEPERIOD} 的配額
+<!-- END: Quota_Subject -->
+<!-- BEGIN: Quota -->
+{ASSIGNER} 指派了一個配額給 {ASSIGNED_USER}.
+
+金額： {QUOTA_AMOUNT}
+期間： {QUOTA_TIMEPERIOD}
+
+您可以透過下面網址檢視這個配額： 
+<{QUOTA_URL}>
+<!-- END: Quota -->

@@ -104,6 +104,7 @@ $mod_strings = array (
   'LBL_USERS_MODIFIED_LINK' => '修改者',
   'LBL_VIEW_FORM_TITLE' => '客戶檢視',
   'LBL_WEBSITE' => '網站：',
+  'LBL_CREATED_ID' => '建立者編號',
   'LNK_ACCOUNT_LIST' => '客戶',
   'LNK_NEW_ACCOUNT' => '新增客戶',
   'MSG_DUPLICATE' => '建立這個客戶也許會重複，您可以從清單中選擇一個客戶或是點選建立客戶來透過之前的資料建立一個新帳號。',
