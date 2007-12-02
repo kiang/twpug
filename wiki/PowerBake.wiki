@@ -22,3 +22,18 @@ Known problems and limitations:
  After the models are set up, the other "bake all" functions come in more handy. I haven't checked but, I would hope there's an overwrite all in there. That's one thing I don't really like. Maybe prompt me once or use a parameter, but I hate having to punch yes to replace files.
 
  I don't know if it's a good idea. But you could try to disable line 421 to 432 in cake/console/libs/shell.php. You'll get the results as you wish. :) 
+
+{{{
+		if (is_file($path) && $this->interactive === true) {
+			$key = $this->in(__("File exists, overwrite?", true). " {$path}",  array('y', 'n', 'q'), 'n');
+			if (low($key) == 'q') {
+				$this->out(__("Quitting.", true) ."\n");
+				exit;
+			} elseif (low($key) == 'a') {
+				$this->dont_ask = true;
+			} elseif (low($key) != 'y') {
+				$this->out(__("Skip", true) ." {$path}\n");
+				return false;
+			}
+		}
+}}}
