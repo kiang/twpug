@@ -1,0 +1,71 @@
+<!--
+
+/*********************************************************************************
+ * SugarCRM is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004 - 2007 SugarCRM Inc.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ * 
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ * 
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU General Public License version 3.
+ * 
+ * In accordance with Section 7(b) of the GNU General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo. If the display of the logo is not reasonably feasible for
+ * technical reasons, the Appropriate Legal Notices must display the words
+ * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ ********************************************************************************/
+
+-->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<h1>Upgrade Wizard</h1>
+
+<p>Use this Wizard to upload new patches to upgrade your existing Sugar application. Before you begin this process, ensure that the config.php file for your installation is writable. 
+<ol>
+<li>Click <span class="helpButton">Next </span>to perform System checks to ensure that you have the necessary file permissions and database privileges to upgrade the system. The status of System Checks changes to <span class="helpButton">In Progress</span>.
+<li>Click <span class="helpButton">Next</span> to upload the upgrade files. You can install from the Sugar server or from your local machine.
+<li>To upload from the Sugar Exchange:
+<ol>
+<li>On the Install from Sugar tab, enter your user name and password, accept the license agreement, and click <span class="helpButton">Login</span>
+<br>If authentication is successful, the system lists available packages on the page.
+<li>To install a package, click the corresponding <span class="helpButton">Download</span> button.
+<br>The system downloads the package and displays it below.
+<li>Click <span class="helpButton">Next</span> to view the Preflight Check page.
+<br>By default, the <span class="helpButton">Upgrade Wizard Runs SQL</span> option is selected as the database update method. If you ran the SQL queries manually, select <span class="helpButton">Manual SQL Queries</span> from the Database Update Method drop-down list and select the <span class="helpButton">Check when SQL has been manually run</span> box.
+<li>Click <span class="helpButton">Next</span> to view the Commit Upgrade page.
+<br>Optionally, you can click <span class="helpButton">Show</span> to see a list of files that were copied and the rebuild results.
+<li>Click <span class="helpButton">Next</span> to view the Debrief page.
+<li>Click  <span class="helpButton">Done</span>.
+</ol>
+<br>To upload from your local machine:
+<ol>
+<li>On the Install from local file tab, click <span class="helpButton">Browse</span> to navigate to the location of the upgrade zip file and then click <span class="helpButton">Upload Upgrade</span>; to remove the file, click <span class="helpButton">Delete Package</span>.
+<li>Click <span class="helpButton">Next</span> to view the Preflight Check page and follow the process to commit the upgrade and view the Debrief page as described above.
+</ol>
