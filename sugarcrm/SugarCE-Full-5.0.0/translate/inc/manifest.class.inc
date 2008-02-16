@@ -107,7 +107,6 @@
         \n\t'image_dir'=>'<basepath>/images',
         \n\t'copy' => array(
         \n\tarray('from'=> '<basepath>/include','to'=> 'include',),
-        \n\tarray('from'=> '<basepath>/install','to'=> 'install',),
         \n\tarray('from'=> '<basepath>/modules','to'=> 'modules'))
         \n);\n");
         fwrite($file_handle,"?>\n");

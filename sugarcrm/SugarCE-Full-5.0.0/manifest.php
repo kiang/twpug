@@ -5,9 +5,9 @@ $manifest = array(
 	'type' => 'langpack',
 	'is_uninstallable' => 'Yes',
 	'version' => '1',
-	'acceptable_sugar_flavors' => array ('*'),
+	'acceptable_sugar_flavors' => array (),
 	'author' => 'Finjon Kiang',
-	'acceptable_sugar_versions' => array ('*'),
+	'acceptable_sugar_versions' => array (),
 );
 
 $installdefs = array(
@@ -18,11 +18,7 @@ $installdefs = array(
 	'copy' => array(
         
 	array('from'=> '<basepath>/include','to'=> 'include',),
-	
 	array('from'=> '<basepath>/jscalendar','to'=> 'jscalendar',),
-        
-	array('from'=> '<basepath>/install','to'=> 'install',),
-        
 	array('from'=> '<basepath>/modules','to'=> 'modules'))
         
 );

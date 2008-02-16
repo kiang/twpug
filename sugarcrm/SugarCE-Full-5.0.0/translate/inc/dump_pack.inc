@@ -44,7 +44,7 @@ function writeFooter($file_handle) {
 function writeArrayContent($sugar_terms,$file_handle,$tab = '   ') {
      for ($j = 0 ; $j < count($sugar_terms); $j++) {
         $label_id = $sugar_terms[$j]->label_id;
-        $text = $sugar_terms[$j]->text;
+        $text = ereg_replace("\\\\","",$sugar_terms[$j]->text);
         fwrite($file_handle,$tab."'".$label_id."' => '".ereg_replace("'","\'",$text)."' ");
         if ($j < count($sugar_terms) - 1) fwrite($file_handle, ",\n");
     }
