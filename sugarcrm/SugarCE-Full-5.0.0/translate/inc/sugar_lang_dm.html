@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Expires" CONTENT="Fri, Jan 01 1900 00:00:00 GMT">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="content-language" content="en">
+<META name="author" content="">
+<META HTTP-EQUIV="Reply-to" CONTENT="@.com">
+<META name="generator" content="PHPEd 3.1">
+<META NAME="description" CONTENT="">
+<META name="keywords" content="">
+<META NAME="Creation_Date" CONTENT="08/15/2000">
+<META name="revisit-after" content="15 days">
+<title>Sugar Lang Data Model</title>
+<link rel="stylesheet" type="text/css" href="../style/doc.css">
+</head>
+<body class="doc-parah2"><br />
+  <h2>sugar_lang_dico</h2>
+<div class="doc-note">Contains all the dictionary entries</DIV><br />
+<!-- TABLE INFORMATIONS -->
+<table width="100%" class="dm" style="border: 1px solid black; border-collapse: collapse; background-color: white;">
+<tr>
+    <th width="50">Field</th>
+    <th width="80">Type</th>
+
+    <!--<th width="50">Attributes</th>-->
+    <th width="40">Null</th>
+    <th width="70">Default</th>
+    <!--<th width="50">Extra</th>-->
+    
+    <th>Links to</th>
+    <th>Comments</th>
+
+</tr>
+
+    
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>id</u>&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">int(11)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">auto_increment&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Dictionary Entry Id&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    ref&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Reference Text&nbsp;</td>
+
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    trx&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+
+    <td width="40" class="print">Yes&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap"><i>NULL</i>&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Translation Text&nbsp;</td>
+</tr>
+        
+
+</table>
+
+    </div>
+    <br /><br />   
+<div style="page-break-before: always;">
+<h2>sugar_lang_trx</h2>
+<div class="doc-note">Contains the entry to be translated</DIV><br />
+<!-- TABLE INFORMATIONS -->
+<table width="100%" class="dm"  style="border: 1px solid black; border-collapse: collapse; background-color: white;">
+<tr>
+    <th width="50">Field</th>
+    <th width="80">Type</th>
+
+    <!--<th width="50">Attributes</th>-->
+    <th width="40">Null</th>
+    <th width="70">Default</th>
+    <!--<th width="50">Extra</th>-->
+    
+    <th>Links to</th>
+    <th>Comments</th>
+
+</tr>
+
+    
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>id</u>&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">int(11)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">auto_increment&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Entry Id&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    ref&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Text To Translate&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    trx&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Translated Text&nbsp;</td>
+</tr>
+        
+</table>
+
+    </div> <br /><br />   
+<div style="page-break-before: always;">
+<h2>sugar_mnf</h2>
+<div class="doc-note">Contains the manifest properties for each versions<br />(`version_id`) REFER `sugar_lang/sugar_versions`(`id`) ON DELETE CASCADE</DIV><br />
+<!-- TABLE INFORMATIONS -->
+<table width="100%" class="dm" style="border: 1px solid black; border-collapse: collapse; background-color: white;">
+<tr>
+    <th width="50">Field</th>
+    <th width="80">Type</th>
+
+    <!--<th width="50">Attributes</th>-->
+    <th width="40">Null</th>
+    <th width="70">Default</th>
+    <!--<th width="50">Extra</th>-->
+    
+    <th>Links to</th>
+    <th>Comments</th>
+
+</tr>
+
+    
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>version_id</u>&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">smallint(6)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+
+    <td width="70" class="print" nowrap="nowrap">0&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">sugar_versions -&gt; id&nbsp;</td>
+    <td class="print">Id of the version of the manifest&nbsp;</td>
+</tr>
+        
+
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>lang</u>&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(3)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Indicates if the manifest belongs to a reference package (value 'REF') or to the translated package (value 'TRX')&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>name</u>&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(40)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Manifest Property Name&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    value&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(200)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+
+    <td width="40" class="print">Yes&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap"><i>NULL</i>&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Manifest Property Value&nbsp;</td>
+</tr>
+        
+
+</table>
+
+    </div> <br /><br />   
+<div style="page-break-before: always;">
+<h2>sugar_terms</h2>
+<div class="doc-note">Contains all the terms of the reference and translated package for each version<br />  (`version_id`) REFER `sugar_lang/sugar_versions`(`id`) ON DELETE CASCADE</DIV><br />
+<!-- TABLE INFORMATIONS -->
+<table width="100%" class="dm" style="border: 1px solid black; border-collapse: collapse; background-color: white;">
+<tr>
+    <th width="50">Field</th>
+    <th width="80">Type</th>
+
+    <!--<th width="50">Attributes</th>-->
+    <th width="40">Null</th>
+    <th width="70">Default</th>
+    <!--<th width="50">Extra</th>-->
+    
+    <th>Links to</th>
+    <th>Comments</th>
+
+</tr>
+
+    
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>id</u>&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">int(11)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">auto_increment&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Sugar Term Id&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    version_id&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">smallint(6)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">0&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">sugar_versions -&gt; id&nbsp;</td>
+
+    <td class="print">Id of the translation version&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    file&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(100)<bdo dir="ltr"></bdo></td>
+
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">File to which belongs the sugar term&nbsp;</td>
+</tr>
+
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    array_id&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(20)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Name of the array to which belongs the sugar term&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    sub_array_id&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(50)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Name of the sub array to which belongs the sugar term (if existing)&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    label_id&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(50)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Name of the Label (array key) mapping the term&nbsp;</td>
+</tr>
+        
+<tr>
+
+    <td width=50 class='print' nowrap="nowrap">
+        
+    lang&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">varchar(3)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Indicates if this term is for the reference package (value 'REF') or for the translated package (value 'TRX')&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    text&nbsp;
+
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Sugar Term Text&nbsp;</td>
+</tr>
+        
+</table>
+
+    </div>     <br /><br />   
+<div style="page-break-before: always;">
+<h2>sugar_versions</h2>
+<div class="doc-note">Contains the version definition</DIV><br />
+<!-- TABLE INFORMATIONS -->
+<table width="100%" class="dm" style="border: 1px solid black; border-collapse: collapse; background-color: white;">
+<tr>
+
+    <th width="50">Field</th>
+    <th width="80">Type</th>
+    <!--<th width="50">Attributes</th>-->
+    <th width="40">Null</th>
+    <th width="70">Default</th>
+    <!--<th width="50">Extra</th>-->
+    
+    <th>Links to</th>
+
+    <th>Comments</th>
+</tr>
+
+    
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    <u>id</u>&nbsp;
+    </td>
+
+    <td width="80" class="print" nowrap="nowrap">smallint(6)<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">auto_increment&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Id of the translation version&nbsp;</td>
+</tr>
+        
+<tr>
+    <td width=50 class='print' nowrap="nowrap">
+        
+    descr&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">text<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+
+    <td width="40" class="print">No&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">&nbsp;</td>
+    <!--<td width="50" bgcolor="#E5E5E5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Designation of the translation version&nbsp;</td>
+</tr>
+        
+<tr>
+
+    <td width=50 class='print' nowrap="nowrap">
+        
+    added&nbsp;
+    </td>
+    <td width="80" class="print" nowrap="nowrap">timestamp<bdo dir="ltr"></bdo></td>
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+    <td width="40" class="print">Yes&nbsp;</td>
+    <td width="70" class="print" nowrap="nowrap">CURRENT_TIMESTAMP&nbsp;</td>
+
+    <!--<td width="50" bgcolor="#D5D5D5" nowrap="nowrap">&nbsp;</td>-->
+        
+    <td class="print">&nbsp;</td>
+    <td class="print">Creation Time&nbsp;</td>
+</tr>
+        
+</table>
+<BR><BR>
+</body>
+</html>

@@ -1,0 +1,335 @@
+body {
+      margin: 0px 0px 0px 0px;
+      background-color:#BFBFBF;      
+}
+
+img {
+	border: none;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+}
+
+input.mark {
+    background-color: #FCC212;
+}
+
+select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    width:250px;    
+}
+
+select.mini {
+    width:80px;
+}
+
+.checkbox {
+     border: 0px none ;
+     background-color: transparent;
+}
+ 
+.radio {
+     border: 0px none ;
+     background-color: transparent;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;    
+}
+
+
+span.err-msg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight:bold;
+    color:#FF0000;
+    text-align:center;
+}
+
+span.msg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+    color:#187F17;
+    text-align:center;
+}
+
+.btn {
+    border: 1px solid #222222;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    color : #111111;
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-image: url(../style/button25.gif); 
+    width: 110px;
+    height: 24px;
+    
+}
+
+.btnform {
+    border: 1px solid #222222;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    color : #222222;
+    background-color: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 20px;
+    
+}
+
+.tabform2 {
+    background-color: #BBBBCC;
+    border-bottom-width:1px; 
+    border-bottom-style: solid ;  
+    border-bottom-color:#000000; 
+}
+
+.tabform2 TD {
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.tabform {
+    background-color: #E6EDF7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding:0 0;
+    text-align:center;
+}
+
+.tabform TR {
+    height:25px;
+}
+
+.tabform TD:first-child {text-align:right; padding-right:15px;}
+
+.tabform TD.left {text-align:left; padding-left:15px;}
+
+.tabform TD {
+    border:none;
+    border-bottom-width:1px;
+    border-bottom-style: solid ;
+    border-bottom-color: #FFFFFF;
+    border-right-width:1px;
+    border-right-style: solid ;
+    border-right-color: #FFFFFF;
+    background-color: #E6EDF7;
+    color:#111111;
+    font-size: 11px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.tabform .title TR {
+    height:20px;
+    background-color: #3E80E0;
+}
+
+.tabform .title TD {
+    border:none;
+    background-color: #3E80E0;
+    font-weight: bold;
+    color: #FFFFFF;  
+    border-bottom-width:1px;
+    border-bottom-style: solid ;
+    border-bottom-color: #000000; 
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.tabform-list {
+    background-color: #ECF2FE;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding:0 0;
+    text-align:center;
+
+}
+
+.tabform-list TD {
+    border:none;
+    border-bottom-width:1px;
+    border-bottom-style: solid ;
+    border-bottom-color: #D9D9D9;
+    border-right-width:1px;
+    border-right-style: solid ;
+    border-right-color: #D9D9D9;
+    background-color: #ECF2FE;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.tabform-list .odd TR {
+    background-color: #FFFFFF;
+}
+
+.tabform-list TD.red {
+    color:red;
+}
+
+.tabform-list TD.green {
+    color:green;
+}
+
+.tabform-list .odd TD {
+    border:none;
+    background-color: #FFFFFF;
+    border-right-width:1px;
+    border-right-style: solid ;
+    border-right-color: #D9D9D9;    
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.tabform-list .even TR {
+    background-color: #ECF2FE;
+}    
+
+.tabform-list .even TD {
+    border:none;
+    background-color:#ECF2FE;
+    border-right-width:1px;
+    border-right-style: solid ;
+    border-right-color: #D9D9D9;    
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+
+.tabform-list .title TR {
+    background-color: #3E80E0;
+}
+
+.tabform-list .title TD {
+    border:none;
+    background-color: #3E80E0;
+    font-weight: bold;
+    color: #FFFFFF;  
+    border-bottom-width:1px;
+    border-bottom-style: solid ;
+    border-bottom-color: #000000; 
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+A:link, A:active, A:visited{
+    text-decoration:none;
+    color: #536CDF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+A:hover{
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1917BF;
+}
+
+
+/*
+############# Menu bar ##############
+*/
+
+/* this is the clipping region for the menu. it's width and height get set by script, depending on the size of the items table */
+.transMenu {
+	position:absolute;
+	overflow:hidden;
+	left:-1000px;
+	top:-1000px;
+	}
+
+/* this is the main container for the menu itself. it's width and height get set by script, depending on the size of the items table */
+.transMenu .content {
+	position:absolute;
+	}
+
+/* this table comprises all menu items. each TR is one item. It is relatively positioned so that the shadow and background transparent divs can be positioned underneath it */
+.transMenu .items {
+	position:relative;
+	left:0px; top:0px;
+	z-index:2;
+	}
+
+.transMenu.top .items {
+	border-top:none;
+	}
+
+/* each TR.item is one menu item */
+.transMenu .item {
+    color:#336;
+    font-size:10px;
+    font-family:sans-serif;
+    text-decoration:none;
+	/* this is a hack for mac/ie5, whom incorrectly cascades the border properties of the parent table to each row */
+	border:none;
+	cursor:pointer;
+	cursor:hand;
+	}
+
+/* this DIV is the semi-transparent white background of each menu. the -moz-opacity is a proprietary way to get transparency in mozilla, the filter is for IE/windows 5.0+. */
+/* we set the background color in script because ie mac does not use it; that browser only uses a semi-transparent white PNG that the spacer gif inside this DIV is replaced by */
+.transMenu .background {
+	position:absolute;
+	left:0px; top:0px;
+	z-index:1;
+	-moz-opacity:.8;
+	filter:alpha(opacity=80);
+	}
+
+/* same concept as .background, but this is the sliver of shadow on the right of the menu. It's left, height, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowRight {
+	position:absolute;
+	z-index:3;
+	top:3px; width:2px;
+	-moz-opacity:.4;
+	filter:alpha(opacity=40);
+	}
+
+/* same concept as .background, but this is the sliver of shadow on the bottom of the menu. It's top, width, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowBottom {
+	position:absolute;
+	z-index:1;
+	left:3px; height:2px;
+	-moz-opacity:.4;
+	filter:alpha(opacity=40);
+	}
+
+/* this is the class that is used when the mouse is over an item. script sets the row to this class when required. */
+.transMenu .item.hover {
+	background:#3A64BA;
+	color:white;
+	}
+
+/* this is either the dingbat that indicates there is a submenu, or a spacer gif in it's place. We give it extra margin to create some space between the text and the dingbat */
+.transMenu .item img {
+	margin-left:10px;
+	}
+    
+.shell {border:none;}
+.shell TR.packed {height:10px;}
+.shell TD {border:none;}
+.shell TD.left {text-align:left;padding-left:15px;}
+.shell TD.right {text-align:right;padding-right:15px;}
+.shell TR {border:none;}
