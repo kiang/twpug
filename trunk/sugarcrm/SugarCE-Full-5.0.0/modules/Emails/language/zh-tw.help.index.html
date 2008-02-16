@@ -1,0 +1,138 @@
+<!--
+
+/*********************************************************************************
+ * SugarCRM is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004 - 2007 SugarCRM Inc.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ * 
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ * 
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU General Public License version 3.
+ * 
+ * In accordance with Section 7(b) of the GNU General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo. If the display of the logo is not reasonably feasible for
+ * technical reasons, the Appropriate Legal Notices must display the words
+ * "Powered by SugarCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ ********************************************************************************/
+
+-->
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<h1>Emails</h1>
+
+<p>Use the Emails module as an email client to to view and manage emails from your external mail accounts.<br><br>
+<p>The Emails Home page displays the following information:<br><br>
+<ul><li>A list of emails in your Sugar inbox along with related information such as the sender and the subject. 
+<ul><li>Select an email from the list to view the contents below.</li></ul></li>
+<li>Buttons to perform basic email functions.
+<ul>
+<li>To check for incoming emails, click <span class="helpButton">Check Mail</span>.
+<li>To compose an email, click <span class="helpButton">Compose Email</span>.
+<li>To set your email preferences, create email accounts, and create group folders, click <span class="helpButton">Settings</span>.  
+<li>To change the page layout, click the desired layout displayed in the <span class="helpButton">Views</span> option adjacent to the Settings button.
+</ul></li>
+
+<li>Tabs for Folders, Search, and Address Book.
+<ul>
+<li>The Folders tab lists existing local folders and group folders. Sugar provides a local folder named My Email to store emails that you receive or import. Users can create additional local folders in the Folders tab. Only administrators can create group folders.
+<li>The Search tab lists fields for simple search and for advanced search. Enter a keyword in the Simple Search field to find emails containing that word. To narrow down search results with additional filters such as subject, sender, and recepient, use the Advanced Search fields.
+<li>The Address Book tab provides the ability to add entries from your list of users, contacts, and leads to your address book. 
+</ul>
+
+<li>A Shortcuts section that displays the following options:</li><ul>
+<li><span class="helpShortcut">My Email</span>. Click this option to view the contents of the My Email folder.</li>
+<li><span class="helpShortcut">My Archives</span>. Click this option to view a list of emails that you archived for your records.</li>
+<li><span class="helpShortcut">Create Archived Email</span>. Click this option to archive an inbound or outbound email for your records.</li>
+<li><span class="helpShortcut">Create Email Template</span>. Click this option to create a template for campaign emails. The system extracts variables such as names and addresses from campaign target records and merges them with the email template when you send out campaign emails. </li>
+<li><span class="helpShortcut">All Emails</span>. Click this option to view all outbound emails including drafts and archived emails.</li>
+<li><span class="helpShortcut">Email Templates</span>. Click this option to view a list of existing email templates.</li>
+</ul>
+
+<h3>Creating Mail Accounts</h3>
+You must set up a mail account in Sugar for every external email account that you want to access through Sugar. You must set up at least one mail account in Sugar to be able to send and receive emails.
+<br><br>Sugar automatically creates an folder for every mail account that you configure. Emails in this account reside on the mail server of the associated external mail account. 
+<br><br>You can import these emails into Sugar. Sugar provides a local Sugar folder named My Email, which you can use to store imported emails.<br><br>
+<p>To set up a mail account, do as follows:
+<ol>
+<li>Click <span class="helpButton">Settings</span> and select the <span class="helpButton">Accounts</span> tab.
+<li>Enter a name for the account.
+<li>Enter the address of the email server from which your emails will be routed to Sugar.
+<li>Enter a user name and password for the account.
+<li>From the Mail Server Protocol drop-down list, select either IMAP or POP3 as the mail server protocol. If you are setting up a gmail account, click <span class="helpButton">Show Advanced</span> and enable SSL.
+<li>Select a mail server for outbound emails from the Outgoing Mail Server drop-down list.
+<li>Test settings to ensure they are correct and then click <span class="helpButton">Save</span> to create the account.
+</ol>
+<h3>Setting General Preferences</h3>
+General settings include options such as the page layout, importing emails, and archiving emails. Some of these settings have default values, which you can change. General settings apply to all your email accounts in Sugar.
+To set up general preferences, click <span class="helpButton">Settings</span> and select the <span class="helpButton">General</span> tab.</p>
+<h3>Creating Email Folders</h3>
+You can create local folders to group emails according to subject, project, or other criteria. Administrators can create Group folders to route incoming emails for distribution among various users in the organization. You create Group folders in the Folders tab of the Settings window and local folders in the Folders tab of the Emails module home page.<br><br> 
+<p>To create a local folder, On the Folders tab in the Emails module, right-click <span class="helpButton">My Email</span> and select <span class="helpButton">Add Folder</span>.<br><br>
+
+<p>To create a Group folder, do the following:
+<ol>
+<li>Click <span class="helpButton">Settings</span> and select the <span class="helpButton">Folders</span> tab. 
+<li>In the Create Group Folder section, enter a name for the folder.
+<li>To create a sub-folder, select the parent folder from the Add this folder drop-down list.
+<!--BEGIN SUGARCRM CP ONLY -->
+<li>Select a group from the group drop-down list.
+<!--END SUGARCRM CP ONLY-->
+
+
+
+<li>Click <span class="helpButton">Add New Group Folder</span> to create the folder.
+</ol>
+To view local folders and group folders in the Folders tab of the Emails home page, you must select them in the Folders tab under Settings. Similarly, to hide a folder, de-select it in Settings.
+<h3>Creating an Address Book</h3>
+You can create an address book consisting of entries from your list of contacts, users, and leads. <BR><br>
+After you populate the Address Book, you can find an entry quickly by typing in an alphabet, partial name, or full name in the Filter field.<br><br>
+
+
+
+<ol>
+<li>Click <span class="helpButton">Select</span> and, in the Select Address Book Entries windown, enter the first name, last name, or email address of the individual and click <span class="helpButton">Search</span>.
+<li>In the search results, click <span class="helpButton">Add</span> to list the individual in your address book.
+
+
+
+
+</ol>
+<h3>Composing and Managing Emails</h3>
+<ol>
+<li>To create an email, click <span class="helpButton">Compose Email</span>. 
+<li>If you created more than one mail account in Sugar, select a account from the drop-down list in the To field to specify the account from which to send the email.
+<li>To save the email as a draft, click <span class="helpButton">Save Draft</span>.
+<li>To attach one or more files, click <span class="helpButton">Attach Files</span>. To attach a file located on your local file system, select <span class="helpButton">Add File from File System</span>. To attach a file created in Sugar, click <span class="helpButton">Add Document from SugarDocuments</span>.
+<li>To select an email template for the email as well as a signature or a character set that is different from what you specified in Settings, click <span class="helpButton">Options</span> and select from the appropriate drop-down list. To send the email in HTML format, select <span class="helpButton">Send HTML</span>. To archive the email in Sugar, select <span class="helpButton">Archive Sent Email</span>.
+</ol>
+</ul>
