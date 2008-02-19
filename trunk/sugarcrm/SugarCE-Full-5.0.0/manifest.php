@@ -18,7 +18,7 @@ $installdefs = array(
 	'copy' => array(
         
 	array('from'=> '<basepath>/include','to'=> 'include',),
-	array('from'=> '<basepath>/jscalendar','to'=> 'jscalendar',),
+        
 	array('from'=> '<basepath>/modules','to'=> 'modules'))
         
 );
