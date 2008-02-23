@@ -58,18 +58,37 @@ function writeArray($version_id,$file,$array_id,$file_handle) {
      print "<TD>".count($sugar_terms)."</TD>";
      writeArrayContent($sugar_terms,$file_handle);
 
-     $sugar_sub_arrays = query_db("SELECT distinct sub_array_id FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id != ''");
+     $sugar_sub_arrays = query_db("SELECT distinct sub_array_id, level FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id != ''");
 
      if (count($sugar_terms) > 0 && count($sugar_sub_arrays) > 0) fwrite($file_handle, ",\n");
      print "<TD>".count($sugar_sub_arrays)."</TD>";
      $array_terms_count = 0;
      for ($i = 0 ; $i < count($sugar_sub_arrays); $i++) {
-         $sub_array_id = $sugar_sub_arrays[$i]->sub_array_id;
-         $sugar_array_terms = query_db("SELECT label_id, text FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id = '".$sub_array_id."' order by id");
-         $array_terms_count += count($sugar_array_terms);
-         fwrite($file_handle,"   '".$sub_array_id."' => array (\n");
-         writeArrayContent($sugar_array_terms,$file_handle,"      ");
-         fwrite($file_handle,"  )");
+         if($sugar_sub_arrays[$i]->level == 3) {
+             $sub_array_id = $sugar_sub_arrays[$i]->sub_array_id;
+             fwrite($file_handle,"   '".$sub_array_id."' => array (\n");
+             $third_arrays = query_db("SELECT distinct third_array_id FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id = '".$sub_array_id."'");
+             for( $j =0; $j < count($third_arrays) ;$j ++) {
+                 $third_array_id = $third_arrays[$j]->third_array_id;
+                 fwrite($file_handle,"      '".$third_array_id."' => array (\n");
+                 $third_terms = query_db("SELECT label_id, text FROM sugar_terms
+                 WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."'
+                 and array_id = '".$array_id."' and sub_array_id = '".$sub_array_id."'
+                 and third_array_id = '".$third_array_id."' order by id");
+                 $array_terms_count += count($sugar_array_terms);
+                 writeArrayContent($third_terms,$file_handle,"          ");
+                 fwrite($file_handle,"  )");
+                 if ($j < count($third_arrays) - 1) fwrite($file_handle, ",\n");
+             }
+             fwrite($file_handle,"  )");
+         } else {
+             $sub_array_id = $sugar_sub_arrays[$i]->sub_array_id;
+             $sugar_array_terms = query_db("SELECT label_id, text FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id = '".$sub_array_id."' order by id");
+             $array_terms_count += count($sugar_array_terms);
+             fwrite($file_handle,"   '".$sub_array_id."' => array (\n");
+             writeArrayContent($sugar_array_terms,$file_handle,"      ");
+             fwrite($file_handle,"  )");
+         }
          if ($i < count($sugar_sub_arrays) - 1) fwrite($file_handle, ",\n");
      }
      fwrite($file_handle, ");\n");
@@ -108,8 +127,3 @@ for ($i = 0 ; $i < count($sugar_file); $i++) {
 
 print "</TABLE>";
 print "<BR>";
-
-
-
-
-?>

@@ -76,7 +76,10 @@ function insert_in_sugar_terms($sugar_lang_rec,$text) {
         //replace the file name by the translation file name
         $file_name = ereg_replace("[^\\./]+.lang.php$", $translationKey.".lang.php", $sugar_lang_rec->file);
         //values are the same key 
-        $query = "'" .$version_id . "','".$file_name ."','".$sugar_lang_rec->array_id."','".$sugar_lang_rec->sub_array_id."','" . $sugar_lang_rec->label_id . "','TRX','".$text_insert."'";
+        $query = "'" .$version_id . "','".$file_name ."','".$sugar_lang_rec->array_id."','" .
+        $sugar_lang_rec->sub_array_id."','".$sugar_lang_rec->third_array_id."','" . 
+        $sugar_lang_rec->label_id . "','" . $sugar_lang_rec->level . "','TRX','".
+        $text_insert."'";
         //Add the values to be inserted to the queries array
         $sql_values[] = $query;
 }
@@ -149,7 +152,7 @@ for ($i = 0 ; $i < count($sugar_terms) ; $i++) {
 //It is the concatenation of all values in a form prefered by mysql
 //eg : insert into tabl (col,col,...) VALUES(val,val,...),(val,val,...) ...
 if (count($sql_values) > 0) {
-    $query = "INSERT INTO sugar_terms (version_id,file,array_id,sub_array_id,label_id,lang,text) VALUES("; 
+    $query = "INSERT INTO sugar_terms (version_id,file,array_id,sub_array_id,third_array_id,label_id,level,lang,text) VALUES("; 
     $query .= implode("),(", $sql_values).")"; 
     mysql_query($query) or die("<SPAN class=msg-err>A mysql error occured : ".mysql_error()."</SPAN>"); 
 }
