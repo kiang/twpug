@@ -62,13 +62,15 @@ CREATE TABLE `sugar_terms` (
   `file` varchar(100) NOT NULL default '',
   `array_id` varchar(20) NOT NULL default '',
   `sub_array_id` varchar(50) NOT NULL default '',
+  `third_array_id` varchar(64) NOT NULL,
   `label_id` varchar(50) NOT NULL default '',
+  `level` tinyint(2) NOT NULL,
   `lang` varchar(3) NOT NULL default '',
   `text` text NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `LANG_INDEX` (`lang`),
   KEY `TERM_INDEX` (`version_id`,`file`,`array_id`,`sub_array_id`,`label_id`)
-) ENGINE=InnoDB;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 
 -- --------------------------------------------------------
 
