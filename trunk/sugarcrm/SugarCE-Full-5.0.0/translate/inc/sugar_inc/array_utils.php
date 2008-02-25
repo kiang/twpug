@@ -1,4 +1,4 @@
-<?PHP
+<?php
 /*********************************************************************************
  * The contents of this file are subject to the SugarCRM Public License Version
  * 1.1.3 ("License"); You may not use this file except in compliance with the
