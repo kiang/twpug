@@ -110,7 +110,7 @@ function my_header($title,$html_charset) {
     global $projet_config,$menu_array;
     ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-    <HTML><HEAD><meta http-equiv="Content-Type" content="text/html; charset=<?=$html_charset?>" />
+    <HTML><HEAD><meta http-equiv="Content-Type" content="text/html; charset=<?php echo $html_charset?>" />
     <META HTTP-EQUIV="Expires" CONTENT="0">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
