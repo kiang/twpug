@@ -32,7 +32,7 @@ header("Pragma: no-cache");
 </HEAD>
 <BODY bgcolor="#E6EBF6">
 <BR>
-<?
+<?php
  
 if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $form_errors = '';    
@@ -237,7 +237,7 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
 $first_check = true;
  if(!$install_ok) { ?>
-<FORM name="the_form" method="post" action="<?basename(__FILE__); ?>" onsubmit="javascript:return Validate();">
+<FORM name="the_form" method="post" action="<?php basename(__FILE__); ?>" onsubmit="javascript:return Validate();">
 <SCRIPT TYPE="text/javascript">
  
 function returnObjById( id )
@@ -295,7 +295,7 @@ function Validate() {
 
 </SCRIPT><BR><DIV align="center"><TABLE class="tabform" border="0" width="800" cellpadding="2" cellspacing="0" align="center">
 <TR class="title"><TD colspan="3">Sugar Translation Suite Installation</TD></TR>
-<TR><TD width="50%"><STRONG>Mysql Database:</STRONG></TD><TD colspan="2" width="50%"><?
+<TR><TD width="50%"><STRONG>Mysql Database:</STRONG></TD><TD colspan="2" width="50%"><?php
 if(function_exists("mysql_connect")) {
     print '<span class="msg">OK</span>';
      //(default charset: '.mysql_client_encoding().')
@@ -305,7 +305,7 @@ if(function_exists("mysql_connect")) {
 }
 
 ?></TD></TR>
-<TR><TD width="50%"><STRONG>Writable directorys for temp files:</STRONG></TD><TD colspan="2" width="50%"><?
+<TR><TD width="50%"><STRONG>Writable directorys for temp files:</STRONG></TD><TD colspan="2" width="50%"><?php
 if(is_writable("./dumppack") && is_writable("./tmp_lang")) {
     print '<span class="msg">OK</span>';
 } else {
@@ -313,32 +313,32 @@ if(is_writable("./dumppack") && is_writable("./tmp_lang")) {
     $first_check = false;     
 }
 ?></TD></TR>
-<? if($first_check) {
+<?php if($first_check) {
 
 ?> 
 <TR class="title"><TD colspan="3" align="left"><STRONG>Database configuration:</STRONG></TD></TR>
-<TR><TD width="50%"><STRONG>Host Name:</STRONG></TD><TD width="30%"><input name="host_name" type="text" value="<?=$host_name?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
-<TR><TD width="50%"><STRONG>Database Name:</STRONG></TD><TD width="30%"><input name="db_name" type="text" value="<?=$db_name?>" size="40"/ ></TD><TD width="20%">Create: <input name="chkdb" class="checkbox" type="checkbox" <? print $chkdb?'CHECKED':''?> value="1" /></TD></TR>
-<TR><TD width="50%"><STRONG>User Name:</STRONG></TD><TD width="30%"><input name="user_name" type="text" value="<?=$user_name?>" size="40"/ ></TD><TD width="20%">Create: <input id="chkuser" name="chkuser" class="checkbox" type="checkbox" <? print $chkuser?'CHECKED':''?> value="1" onclick="toggle_user()" /></TD></TR>
-<TR><TD width="50%"><STRONG>Password:</STRONG></TD><TD width="30%"><input name="user_pass" type="password" value="<?=$user_pass?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
-<TR id="user_pass_conf" style="display:<? print $chkuser?'':'none'?>"><TD width="50%"><STRONG>Password confirmation:</STRONG></TD><TD width="30%"><input name="user_pass_conf" type="password" value="<?=$user_pass_conf?>" size="40" /></TD><TD width="20%">&nbsp;</TD></TR>
-<TR><TD width="50%"><STRONG>Charset to use to create tables in Database:</STRONG></TD><TD width="30%"><input id="charset_db" <? print $chkchar?'disabled="true"':'' ?>" name="charset_db" type="text" value="<?=$charset_db?>" size="40"/ ></TD><TD width="20%">Use default: <input id="chkchar" name="chkchar" class="checkbox" type="checkbox" <? print $chkchar?'CHECKED':''?> value="1" onclick="toggle_charset()" /></TD></TR> 
-<TR><TD width="50%"><STRONG>Charset to use for HTML:</STRONG></TD><TD width="30%"><input name="charset_html" type="text" value="<?=$charset_html?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
-<TR><TD width="50%"><STRONG>Database account above is a privileged user?</STRONG></TD><TD colspan="2" width="50%"><input name="chkpu" id="chkpu" class="checkbox" type="checkbox" <? print $chkpu?'CHECKED':''?> <?print $chkuser?'disabled="true"':'';?> value="1" onclick="toggle_pu()" /></TD></TR>
-<TR id="db_pu_name" style="display:<? print $chkpu?'none':''?>"><TD width="50%"><STRONG>Privileged user Name:</STRONG></TD><TD width="30%"><input name="db_pu_name" type="text" value="<?=$db_pu_name?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
-<TR id="db_pu_pass" style="display:<? print $chkpu?'none':''?>"><TD width="50%"><STRONG>Privileged user password:</STRONG></TD><TD width="30%"><input name="db_pu_pass" type="password" value="<?=$db_pu_pass?>" size="40" /></TD><TD width="20%">&nbsp;</TD></TR>
-<?
+<TR><TD width="50%"><STRONG>Host Name:</STRONG></TD><TD width="30%"><input name="host_name" type="text" value="<?php echo $host_name?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
+<TR><TD width="50%"><STRONG>Database Name:</STRONG></TD><TD width="30%"><input name="db_name" type="text" value="<?php echo  $db_name?>" size="40"/ ></TD><TD width="20%">Create: <input name="chkdb" class="checkbox" type="checkbox" <?php print $chkdb?'CHECKED':''?> value="1" /></TD></TR>
+<TR><TD width="50%"><STRONG>User Name:</STRONG></TD><TD width="30%"><input name="user_name" type="text" value="<?php $user_name?>" size="40"/ ></TD><TD width="20%">Create: <input id="chkuser" name="chkuser" class="checkbox" type="checkbox" <? php print $chkuser?'CHECKED':''?> value="1" onclick="toggle_user()" /></TD></TR>
+<TR><TD width="50%"><STRONG>Password:</STRONG></TD><TD width="30%"><input name="user_pass" type="password" value="<?php echo $user_pass?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
+<TR id="user_pass_conf" style="display:<?php  print $chkuser?'':'none'?>"><TD width="50%"><STRONG>Password confirmation:</STRONG></TD><TD width="30%"><input name="user_pass_conf" type="password" value="<?php echo $user_pass_conf?>" size="40" /></TD><TD width="20%">&nbsp;</TD></TR>
+<TR><TD width="50%"><STRONG>Charset to use to create tables in Database:</STRONG></TD><TD width="30%"><input id="charset_db" <?php print $chkchar?'disabled="true"':'' ?>" name="charset_db" type="text" value="<?php echo $charset_db?>" size="40"/ ></TD><TD width="20%">Use default: <input id="chkchar" name="chkchar" class="checkbox" type="checkbox" <?php print $chkchar?'CHECKED':''?> value="1" onclick="toggle_charset()" /></TD></TR>
+<TR><TD width="50%"><STRONG>Charset to use for HTML:</STRONG></TD><TD width="30%"><input name="charset_html" type="text" value="<?php echo $charset_html?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
+<TR><TD width="50%"><STRONG>Database account above is a privileged user?</STRONG></TD><TD colspan="2" width="50%"><input name="chkpu" id="chkpu" class="checkbox" type="checkbox" <?php print $chkpu?'CHECKED':''?> <?php print $chkuser?'disabled="true"':'';?> value="1" onclick="toggle_pu()" /></TD></TR>
+<TR id="db_pu_name" style="display:<?php print $chkpu?'none':''?>"><TD width="50%"><STRONG>Privileged user Name:</STRONG></TD><TD width="30%"><input name="db_pu_name" type="text" value="<?php echo $db_pu_name?>" size="40"/ ></TD><TD width="20%">&nbsp;</TD></TR>
+<TR id="db_pu_pass" style="display:<?php print $chkpu?'none':''?>"><TD width="50%"><STRONG>Privileged user password:</STRONG></TD><TD width="30%"><input name="db_pu_pass" type="password" value="<?php echo $db_pu_pass?>" size="40" /></TD><TD width="20%">&nbsp;</TD></TR>
+<?php
 }
 ?>
 </TABLE>
-<? if($first_check) {
+<?php if($first_check) {
     print  '<BR><INPUT type="submit" value="Process" class="btn">';
 } else {
     print  '<BR><INPUT type="button" value="Re-check" onclick="javascript:location.href=\'install.php\';" class="btn">';
 }
 ?></DIV>
 </FORM>
-<? } else {
+<?php } else {
     print '<BR><BR><TABLE align="center" cellspacing="0" width="400px" class="tabform"><TR class="title"><TD colspan="2">Installation successfull!</TD></TR>';
     print '<TR><TD colspan="2" align="center">&nbsp;<BR>You can now access the <a href="index.php">index</a> page';
     print ' to start using Sugar Translation suite<BR>&nbsp;</TD></TR></TABLE>';  
