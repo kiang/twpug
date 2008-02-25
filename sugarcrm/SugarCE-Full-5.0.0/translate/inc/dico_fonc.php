@@ -7,10 +7,10 @@ function getVersions() {
 function checkVersions() {
     $versions = getVersions();
     if (count($versions) == 0) {  
-        ?><BR><CENTER><?
+        ?><BR><CENTER><?php
         msg("No version have yet been imported, you need to import a reference language pack for this functionality");
         msg("Click <A href='lang_mngt.php'>here</A> to import a new language pack and use it as a reference for your translation");
-        ?></BODY></HTML><?
+        ?></BODY></HTML><?php
         die();
     }
     return $versions[0]->id;
@@ -59,7 +59,7 @@ function showDicoEntry($query,$force_area ,$checkboxes = false,$show_next = fals
     <TR class='title'><TD colspan=<?php echo $colspan?>>Text Entry</TD></TR>
     <TR><TD colspan=<?php echo $colspan?>><TABLE class=shell width=100%><TR><TD class=left witdh=50%><INPUT TYPE=submit name='back' value='Back' align=left class=btnform /></TD><TD class=right class=right witdh=50%><INPUT TYPE=submit name='next' value='Next' align=right class=btnform /></TD></TR></TABLE></TD></TR>
     <TR><?php echo $checkbox_hdr?><TD width=6%>Id</TD><TD width=47%>Reference</TD><TD width=47%>Translation</TD></TR>
-    <?
+    <?php
     for ($i = 0; $i < count($results) ; $i++) {
         $class = ($i % 2 ? "odd" : "even");
         print "\n<TR class=$class>";
@@ -78,7 +78,7 @@ function showDicoEntry($query,$force_area ,$checkboxes = false,$show_next = fals
         
     }
     if (count($results) >=20) {
-        ?><TR><TD colspan=<?php echo $colspan?>><TABLE class=shell width=100%><TR><TD class=left witdh=50%><INPUT TYPE=submit name='back' value='Back' align=left class=btnform /></TD><TD class=right class=right witdh=50%><INPUT TYPE=submit name='next' value='Next' align=right class=btnform /></TD></TR></TABLE></TD></TR><?
+        ?><TR><TD colspan=<?php echo $colspan?>><TABLE class=shell width=100%><TR><TD class=left witdh=50%><INPUT TYPE=submit name='back' value='Back' align=left class=btnform /></TD><TD class=right class=right witdh=50%><INPUT TYPE=submit name='next' value='Next' align=right class=btnform /></TD></TR></TABLE></TD></TR><?php
     }
     print "</TABLE>";
     return count($results);
