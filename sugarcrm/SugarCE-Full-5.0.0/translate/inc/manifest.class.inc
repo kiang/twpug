@@ -87,7 +87,7 @@
     function toFile($path = "./") {
         global $manifestProps;
         $file_handle = fopen($path . "manifest.php","w");
-        fwrite($file_handle,"<?PHP \n\$manifest = array( \n");
+        fwrite($file_handle,"<?php \n\$manifest = array( \n");
         for ($i = 0 ; $i < count($manifestProps); $i++) {
             $key = $manifestProps[$i];
             if ($this->has($key)) {
