@@ -47,8 +47,8 @@ function stickyRadio($value) {
 ?><CENTER><BR>
 <form name="search" method="post" action="<?php print $_SERVER['PHP_SELF']; ?>">
 <TABLE width="600px" class='tabform'><TR><TD width=30%>Select Version : </TD><TD>
-<? print getVersionDropDown("versionDD",$version_id," onchange='{document.location.href=\"".basename($_SERVER['PHP_SELF'])."?version=\"+this.value;}' STYLE='{width:170px}'","(Choose Version)"); ?> 
-</TD></TR></TABLE><? 
+<?php print getVersionDropDown("versionDD",$version_id," onchange='{document.location.href=\"".basename($_SERVER['PHP_SELF'])."?version=\"+this.value;}' STYLE='{width:170px}'","(Choose Version)"); ?>
+</TD></TR></TABLE><?php
 if ($version_id > -1) {
     $mnf = new Manifest($version_id);
     if (! $mnf->check()) {
@@ -61,22 +61,22 @@ if ($version_id > -1) {
         <TABLE cellspacing=0 width='700px' class='tabform' border=1  >
         <TR class='title'><TD colspan=3>Selection</TD></TR>
         <TR >
-            <TD width=2%><INPUT NAME=action TYPE=radio class='radio' <? stickyRadio("status")?> /></TD><TD STYLE='text-align:left' colspan=2 width=45% ><STRONG>View translation status of language pack definition</STRONG></TD>
+            <TD width=2%><INPUT NAME=action TYPE=radio class='radio' <?php stickyRadio("status")?> /></TD><TD STYLE='text-align:left' colspan=2 width=45% ><STRONG>View translation status of language pack definition</STRONG></TD>
         </TR>
         <TR>
-            <TD width=2%><INPUT NAME=action TYPE=radio class='radio' <? stickyRadio("merge")?> /></TD><TD STYLE='text-align:left'><STRONG>Create language pack definition from dictionary</STRONG></TD>
+            <TD width=2%><INPUT NAME=action TYPE=radio class='radio' <?php stickyRadio("merge")?> /></TD><TD STYLE='text-align:left'><STRONG>Create language pack definition from dictionary</STRONG></TD>
             <TD><TABLE class='shell' width=100%><TR>
-                <TD width=50%>Perform Approximation</TD><TD><INPUT class="checkbox" TYPE=checkbox NAME=perform_approx <?= ($perform_approx ? "CHECKED" : "") ?> /></TD>
+                <TD width=50%>Perform Approximation</TD><TD><INPUT class="checkbox" TYPE=checkbox NAME=perform_approx <?php echo  ($perform_approx ? "CHECKED" : "") ?> /></TD>
             </TR></TABLE></TD>
         </TR>
         <TR>
-            <TD  width=2%><INPUT NAME=action TYPE=radio class='radio' <? stickyRadio("dump")?> /></TD><TD STYLE='text-align:left'><STRONG>Dump translated package to file</STRONG></TD>
+            <TD  width=2%><INPUT NAME=action TYPE=radio class='radio' <?php stickyRadio("dump")?> /></TD><TD STYLE='text-align:left'><STRONG>Dump translated package to file</STRONG></TD>
             <TD><TABLE class='shell' width=100%><TR>
-                <TD width=40%>Destination Directory</TD><TD><INPUT TYPE=TEXT NAME=file_path size=20 value='<?=$file_path?>' /></TD></TR><TR>
+                <TD width=40%>Destination Directory</TD><TD><INPUT TYPE=TEXT NAME=file_path size=20 value='<?php echo $file_path?>' /></TD></TR><TR>
                 <TD width=40%>Sugar Entry Validation</TD><TD ><TABLE>
-                   <TR><TD>By Define, version &gt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="DEFINE" <?= ( empty($inc_sugar_entry) || $inc_sugar_entry == "DEFINE"  ? "CHECKED" : "") ?> /></TD></TR>
-                   <TR><TD>By Global, version &lt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="GLOBALS" <?= ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "GLOBALS"  ? "CHECKED" : "") ?> /></TD></TR>
-                   <TR><TD>None, version &lt; 3.5&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="NONE" <?= ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "NONE"  ? "CHECKED" : "") ?> /></TD></TR>
+                   <TR><TD>By Define, version &gt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="DEFINE" <?php echo  ( empty($inc_sugar_entry) || $inc_sugar_entry == "DEFINE"  ? "CHECKED" : "") ?> /></TD></TR>
+                   <TR><TD>By Global, version &lt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="GLOBALS" <?php echo  ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "GLOBALS"  ? "CHECKED" : "") ?> /></TD></TR>
+                   <TR><TD>None, version &lt; 3.5&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="NONE" <?php echo  ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "NONE"  ? "CHECKED" : "") ?> /></TD></TR>
                 </TABLE></TD>
             </TR></TABLE></TD>
         </TR>
@@ -84,12 +84,12 @@ if ($version_id > -1) {
         <BR>
         <INPUT TYPE=submit value='Submit' name='Submit' CLASS='btn'>
 
-    <? } 
+    <?php }
 }   ?>
         <BR>
         <BR>                
 </FORM>  </CENTER>
-<?
+<?php
 
 if ($isPost) {
 

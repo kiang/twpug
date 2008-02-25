@@ -39,7 +39,7 @@ function showDicoEntryForm($query) {
     $count_entry = showDicoEntry($query,false,true);
     if ($count_entry > 0 ) { ?>
         <BR><CENTER><INPUT TYPE=submit value='Update' name='update' class=btn /></CENTER>
-        <?
+        <?php
     }
 
 }
@@ -76,14 +76,14 @@ if (!isset($to_row) || ! is_numeric($to_row)) $to_row= 30;
 <form name="search" method="post" action="<?php print $_SERVER['PHP_SELF']; ?>?action=search">
     <TABLE align=center cellspacing=0 width="600px" class='tabform'>
     <TR class='title'><TD colspan=3>Look for dictionary entry</TD></TR>
-    <TR><TD width=15%><STRONG>Reference :</STRONG></TD><TD width=15%><? printSelect("ref_sel",$ref_sel); ?></TD><TD><INPUT TYPE=text size=70 name='ref_text' value='<?=$ref_text?>' /></TD></TR>
-    <TR><TD width=15%><STRONG>Translation :</STRONG></TD><TD width=15%><? printSelect("trx_sel",$trx_sel); ?></TD><TD><INPUT TYPE=text size=70 name='trx_text' value='<?=$trx_text?>' /></TD></TR>
-    <TR><TD width=15% colspan=2><STRONG>From Row :</STRONG></TD><TD><INPUT TYPE=text size=70 name='from_row' value='<?=$from_row?>' /></TD></TR>
-    <TR><TD width=15% colspan=2><STRONG>Row Count :</STRONG></TD><TD><INPUT TYPE=text size=70 name='to_row' value='<?=$to_row?>' /></TD></TR>
+    <TR><TD width=15%><STRONG>Reference :</STRONG></TD><TD width=15%><?php printSelect("ref_sel",$ref_sel); ?></TD><TD><INPUT TYPE=text size=70 name='ref_text' value='<?php echo $ref_text?>' /></TD></TR>
+    <TR><TD width=15%><STRONG>Translation :</STRONG></TD><TD width=15%><?php printSelect("trx_sel",$trx_sel); ?></TD><TD><INPUT TYPE=text size=70 name='trx_text' value='<?php echo $trx_text?>' /></TD></TR>
+    <TR><TD width=15% colspan=2><STRONG>From Row :</STRONG></TD><TD><INPUT TYPE=text size=70 name='from_row' value='<?php echo $from_row?>' /></TD></TR>
+    <TR><TD width=15% colspan=2><STRONG>Row Count :</STRONG></TD><TD><INPUT TYPE=text size=70 name='to_row' value='<?php echo $to_row?>' /></TD></TR>
     </TABLE><BR>
     <CENTER><INPUT TYPE=submit value='search' name='search' class=btn /></CENTER><BR>
     
-<?
+<?php
 if($isPost) {
     if ($action == "search") {
         runSearch();

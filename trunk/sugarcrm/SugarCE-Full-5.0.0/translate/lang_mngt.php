@@ -122,7 +122,7 @@ function display_menu() {
     }
 
     ?>
-<FORM name="the_form" method="post" action="<?basename(__FILE__); ?>"
+<FORM name="the_form" method="post" action="<?php basename(__FILE__); ?>"
 	onsubmit="javascript:return Validate();" enctype="multipart/form-data">
 <SCRIPT language="javascript" src="style/lang_mngt_js.js"></SCRIPT>
 <TABLE class="tabform" border="0" width="800" cellpadding="2"
@@ -137,13 +137,13 @@ function display_menu() {
 			<TR class=packed>
 				<TD width=10%><INPUT class="radio" NAME="srctype" id="srctype"
 					TYPE="radio" VALUE="upload" onclick="displaySrc('')"
-					<?print($source=='upload')?'CHECKED':'';?> /></TD>
+					<?php print($source=='upload')?'CHECKED':'';?> /></TD>
 				<TD class=left>Uploaded Pack</TD>
 			</TR>
 			<TR class=packed>
 				<TD width=10%><INPUT class="radio" NAME="srctype" id="srctype"
 					TYPE="radio" VALUE="sug_inst" onclick="displaySrc('')"
-					<?print($source=='sug_inst')?'CHECKED':'';?> />
+					<?php print($source=='sug_inst')?'CHECKED':'';?> />
 				
 				
 				<TD class=left>Existing SugarCRM instance</TD>
@@ -160,13 +160,13 @@ function display_menu() {
 		<TD width=40% align="right"><STRONG>Sugar installation path:</STRONG></TD>
 		<TD width=60% align="left"><input type="text" name="sugar_path"
 			size="40"
-			value="<?
+			value="<?php
 print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_path']:DEFAULT_SUGAR_PATH; 
 ?>" /></TD>
 	</TR>
 	<TR id="lang_row" style="display: none">
 		<TD width=40% align="right"><STRONG>Lang:</STRONG></TD>
-		<TD width=60% align="left"><?     
+		<TD width=60% align="left"><?php
 		if (isset($_POST['srctype']) && $_POST['srctype'] == "sug_inst") {
 		    if(isset($_POST['sugar_path'])) {
 		        if(is_readable($_POST['sugar_path']."/config.php")) {
@@ -204,22 +204,22 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 		<TD width=60% align="left"><SELECT name="action" id="action"
 			onchange="displayAction()">
 			<OPTION value="show_info"
-			<?$action=='show_info'?print'SELECTED':print'';?>>Show language pack
+			<?php $action=='show_info'?print'SELECTED':print'';?>>Show language pack
 			info</OPTION>
 			<OPTION value='compare_info'
-			<?$action=='compare_info'?print'SELECTED':print'';?>>Compare to
+			<?php $action=='compare_info'?print'SELECTED':print'';?>>Compare to
 			language pack</OPTION>
 			<OPTION value='import_info'
-			<?$action=='import_info'?print'SELECTED':print'';?>>Import to
+			<?php $action=='import_info'?print'SELECTED':print'';?>>Import to
 			database</OPTION>
 			<OPTION value='import_dico'
-			<?$action=='import_dico'?print'SELECTED':print'';?>>Import
+			<?php $action=='import_dico'?print'SELECTED':print'';?>>Import
 			dictionary from translated pack</OPTION>
 		</SELECT></TD>
 	</TR>
 	<TR id="db_options" style="display: none">
 		<TD width=40% align="right"><STRONG>DB Import Options:</STRONG></TD>
-		<TD width=60% align="left"><?
+		<TD width=60% align="left"><?php
 		print getVersionDropDown('drop_version', 0, "", 'New Version: ');
 		print '&nbsp;<input type="text" name="new_version" size="20" value="';
 		print(isset($_POST['new_version']) && $_POST['new_version'] != "")?$_POST['new_version']:"";
@@ -230,7 +230,7 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 </TABLE>
 <BR>
 <DIV align="center">
-<DIV id="compared" style="display:<?print(isset($_POST['action']) && $_POST['action'] == "compare_info")?'inline':'none';?>">
+<DIV id="compared" style="display:<?php print(isset($_POST['action']) && $_POST['action'] == "compare_info")?'inline':'none';?>">
 <TABLE class="tabform" border="0" width="800" cellpadding="2"
 	cellspacing="0" align="center">
 	<TR class="title">
@@ -243,13 +243,13 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 			<TR class=packed>
 				<TD width=10%><INPUT class="radio" NAME="srctype_cp" id="srctype_cp"
 					TYPE="radio" VALUE="upload" onclick="displaySrc('_cp')"
-					<?print($source_cp=='upload')?'CHECKED':'';?> /></TD>
+					<?php print($source_cp=='upload')?'CHECKED':'';?> /></TD>
 				<TD class=left>Uploaded Pack</TD>
 			</TR>
 			<TR class=packed>
 				<TD width=10%><INPUT class="radio" NAME="srctype_cp" id="srctype_cp"
 					TYPE="radio" VALUE="sug_inst" onclick="displaySrc('_cp')"
-					<?print($source_cp=='sug_inst')?'CHECKED':'';?> />
+					<?php print($source_cp=='sug_inst')?'CHECKED':'';?> />
 				
 				
 				<TD class=left>Existing SugarCRM instance</TD>
@@ -266,13 +266,13 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 		<TD width=40% align="right"><STRONG>Sugar installation path:</STRONG></TD>
 		<TD width=60% align="left"><input type="text" name="sugar_path_cp"
 			size="40"
-			value="<?
+			value="<?php
 print(isset($_POST['sugar_path_cp']) && $_POST['sugar_path_cp'] != "")?$_POST['sugar_path_cp']:DEFAULT_SUGAR_PATH;
 ?>" /></TD>
 	</TR>
 	<TR id="lang_row_cp" style="display: none">
 		<TD width=40% align="right"><STRONG>Lang:</STRONG></TD>
-		<TD width=60% align="left"><?
+		<TD width=60% align="left"><?php
 		if (isset($_POST['srctype_cp']) && $_POST['srctype_cp'] == "sug_inst") {
 		    if(isset($_POST['sugar_path_cp'])) {
 		        if(is_readable($_POST['sugar_path_cp']."/config.php")) {
@@ -318,7 +318,7 @@ displaySrc("");
 displaySrc("_cp");
 displayAction();
 </SCRIPT></FORM>
-		<?
+		<?php
 }
 function getPackInfo($path, $ext, $lang = null) {
 
@@ -714,7 +714,7 @@ my_header($title,$html_charset);
 ?>
 <BR>
 <BR>
-<DIV align="center"><?
+<DIV align="center"><?php
 if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(($_POST['srctype'] == "sug_inst" && !isset($_POST['drop_lang'])) || ($_POST['srctype_cp'] == "sug_inst" && !isset($_POST['drop_lang_cp']))) {
@@ -873,14 +873,14 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 		<TD width=15%>Matching Entry</TD>
 		<TD width=15%>Imported Entry</TD>
 	</TR>
-	<?
+	<?php
 	$i =0;;
 	foreach($dico_counters as $key => $value) {
 	    print "<TR class=".(++$i % 2 ? "odd" : "even" )." ><TD>$key</TD><TD>".$trx_counters[$key]."</TD><TD>$value</TD></TD>\n";
 	}
 	?>
 </TABLE>
-	<?
+	<?php
 
 }
 if(isset($_POST['action']) && ($_POST['action'] == "show_info" || $_POST['action'] == "import_info")) {
