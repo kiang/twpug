@@ -69,21 +69,21 @@ if ($isUpdate) {
 
 ?>
 <CENTER>
-<?  ?>
+<?php  ?>
 <form name="search" method="post" action="<?php print $_SERVER['PHP_SELF']; ?>">
 <BR>
 <TABLE width="600px" class='tabform'><TR><TD width=30%>Select Version : </TD><TD>
-<? print getVersionDropDown("versionDD",$version_id," onchange='{document.location.href=\"".basename($_SERVER['PHP_SELF'])."?version=\"+this.value;}' STYLE='{width:170px}'"); ?> 
+<?php print getVersionDropDown("versionDD",$version_id," onchange='{document.location.href=\"".basename($_SERVER['PHP_SELF'])."?version=\"+this.value;}' STYLE='{width:170px}'"); ?>
 </TD></TR></TABLE>
 <BR>
     <TABLE align=center cellspacing=0 width="600px" class='tabform-list'>
     <TR class='title'><TD colspan=2>Reference Manifest</TD></TR>
-    <? print writeMnfTable($refMnf);?>
+    <?php print writeMnfTable($refMnf);?>
     </TABLE>
 <BR>    
     <TABLE align=center cellspacing=0 width="600px" class='tabform-list'>
     <TR class='title'><TD colspan=2>Translation Manifest</TD></TR>
-    <? print writeMnfTable($trxMnf); ?>
+    <?php print writeMnfTable($trxMnf); ?>
     </TABLE>
     <BR>
     <TABLE width=300px align=center>

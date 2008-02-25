@@ -29,7 +29,7 @@ function showTrxEntryForm($query) {
         <TABLE width=300px align=center><TR>
             <TD align=center><INPUT TYPE=submit value='Commit Changes' name='commit' class='btn' /></TD><TD align=center><INPUT TYPE=submit value='Update' name='update' class='btn'/></TD>
         </TR><TABLE>
-        <?
+        <?php
     }
 
 }
@@ -65,15 +65,15 @@ function showSearchForm() {
     <form name="search" method="post" action="<?php print $_SERVER['PHP_SELF']; ?>">
         <TABLE align=center cellspacing=0 width="600px" class='tabform'>
         <TR class='title'><TD colspan=3>Search for entry to translate</TD></TR>
-        <TR><TD width=15%><STRONG>English :</STRONG></TD><TD width=15%><? printSelect("ref_sel",$ref_sel); ?></TD><TD><INPUT TYPE=text size=70 name='ref_text' value='<?=$ref_text?>' /></TD></TR>
-        <TR><TD width=15% colspan=2><STRONG>From Row :</STRONG></TD><TD><INPUT TYPE=text size=70 name='from_row' value='<?=$from_row?>' /></TD></TR>
-        <TR><TD width=15% colspan=2><STRONG>Row Count :</STRONG></TD><TD><INPUT TYPE=text size=70 name='to_row' value='<?=$to_row?>' /></TD></TR>
-        <TR><TD width=15% colspan=2><STRONG>Only Blanks :</STRONG></TD><TD><INPUT TYPE=CHECKBOX class=checkbox name='rem_blank' <?=(isset($rem_blank) && $rem_blank == "on" ? "CHECKED" : "")?> /></TD></TR>
+        <TR><TD width=15%><STRONG>English :</STRONG></TD><TD width=15%><?php printSelect("ref_sel",$ref_sel); ?></TD><TD><INPUT TYPE=text size=70 name='ref_text' value='<?php echo $ref_text?>' /></TD></TR>
+        <TR><TD width=15% colspan=2><STRONG>From Row :</STRONG></TD><TD><INPUT TYPE=text size=70 name='from_row' value='<?php echo $from_row?>' /></TD></TR>
+        <TR><TD width=15% colspan=2><STRONG>Row Count :</STRONG></TD><TD><INPUT TYPE=text size=70 name='to_row' value='<?php echo $to_row?>' /></TD></TR>
+        <TR><TD width=15% colspan=2><STRONG>Only Blanks :</STRONG></TD><TD><INPUT TYPE=CHECKBOX class=checkbox name='rem_blank' <?php echo (isset($rem_blank) && $rem_blank == "on" ? "CHECKED" : "")?> /></TD></TR>
         </TABLE>
         <BR>
         <CENTER><INPUT TYPE=submit value='Search' class='btn' name='search' /></CENTER>
         <BR>
-    <?
+    <?php
 }
 
 if($isPost) {
