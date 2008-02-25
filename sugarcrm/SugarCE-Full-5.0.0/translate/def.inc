@@ -1,4 +1,4 @@
-<?php
+<?
 
 if(is_readable("config.php")) {
     include("config.php");
