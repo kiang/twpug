@@ -114,12 +114,12 @@ function my_header($title,$html_charset) {
     <META HTTP-EQUIV="Expires" CONTENT="0">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-    <TITLE><? print $title; ?></TITLE>
+    <TITLE><?php print $title; ?></TITLE>
     <link href="<?php print $projet_config['html_inc_path']; ?>/style.css" rel="stylesheet" type="text/css">
     <script language="javascript" src="<?php print $projet_config['html_inc_path']; ?>/transmenuC.js"></script>
     </HEAD>
     <BODY bgcolor="#E6EBF6" onload="init();">
-    <?
+    <?php
     afficher_menu($menu_array);   
 }
 ?>
