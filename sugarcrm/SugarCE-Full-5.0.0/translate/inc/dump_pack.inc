@@ -51,7 +51,6 @@ function writeArrayContent($sugar_terms,$file_handle,$tab = '   ') {
 }
 
 function writeArray($version_id,$file,$array_id,$file_handle) {
-    
      print "<TD>$file</TD><TD>$array_id</TD>";
      fwrite($file_handle, "\$".$array_id." = array ( \n");
      $sugar_terms = query_db("SELECT label_id, text FROM sugar_terms WHERE version_id=$version_id and lang = 'TRX' and file = '".$file."' and array_id = '".$array_id."' and sub_array_id = '' order by id");

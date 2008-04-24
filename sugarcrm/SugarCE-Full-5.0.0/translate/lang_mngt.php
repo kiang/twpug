@@ -521,16 +521,33 @@ function prepareDico($tab_files, $tab_files2, $lang, $lang2, $path, $path2, $inf
                             if(gettype($val) == "array") {
                                 if(array_key_exists($key, $current)) {
                                     while (list($sub_key, $sub_val) = each($val)) {
-                                        $info_lang["nbl"]++;
-                                        if(array_key_exists($sub_key, $current[$key])) {
-                                            if (! ($sub_val != "" && $current[$key][$sub_key] == "")) {
-                                                // sub array key exist we add to the dictionary if not defined yet
-                                                if (! array_key_exists($sub_val,$dico)) {
-                                                    $dico[$sub_val] = $current[$key][$sub_key]; $dico_entry++;
+                                        if(gettype($sub_val) == "array") {
+                                            while (list($third_key, $third_val) = each($sub_val)) {
+                                                $info_lang["nbl"]++;
+                                                if(array_key_exists($third_key, $current[$key])) {
+                                                    if (! ($third_val != "" && $current[$key][$third_key] == "")) {
+                                                        // sub array key exist we add to the dictionary if not defined yet
+                                                        if (! array_key_exists($third_val,$dico)) {
+                                                            $dico[$third_val] = $current[$key][$third_key]; $dico_entry++;
+                                                        }
+                                                        $translated_entry++;
+                                                    } else {
+                                                        $empty_trx++;
+                                                    }
                                                 }
-                                                $translated_entry++;
-                                            } else {
-                                                $empty_trx++;
+                                            }
+                                        } else {
+                                            $info_lang["nbl"]++;
+                                            if(array_key_exists($sub_key, $current[$key])) {
+                                                if (! ($sub_val != "" && $current[$key][$sub_key] == "")) {
+                                                    // sub array key exist we add to the dictionary if not defined yet
+                                                    if (! array_key_exists($sub_val,$dico)) {
+                                                        $dico[$sub_val] = $current[$key][$sub_key]; $dico_entry++;
+                                                    }
+                                                    $translated_entry++;
+                                                } else {
+                                                    $empty_trx++;
+                                                }
                                             }
                                         }
                                     }
@@ -695,7 +712,7 @@ function expl($tab, $lvl, $the_file, $array_name, $type, $info_lang, $version_id
                 if($lvl == 3) {
                     $query_line = $version_id.", '".$tmp_file."', '".$type."', '".$parent."', '".$array_name."', '".mysql_real_escape_string($key)."', " . $lvl . ", 'REF', '".mysql_real_escape_string($val)."'";
                 } else {
-                    $query_line = $version_id.", '".$tmp_file."', '".$type."', '', '".$array_name."', '".mysql_real_escape_string($key)."', " . $lvl . ", 'REF', '".mysql_real_escape_string($val)."'";
+                    $query_line = $version_id.", '".$tmp_file."', '".$type."', '".$array_name."', '', '".mysql_real_escape_string($key)."', " . $lvl . ", 'REF', '".mysql_real_escape_string($val)."'";
                 }
                 $global_query[] = $query_line;
                 /*
