@@ -31,4 +31,11 @@ The complete documentation can be found in the doc.html file, and his accessible
 For any comments or suggestions please contact us : office@grupa-atlantis.pl
 
 
-
+Hint for merging translations:
+INSERT INTO sugar_lang_dico( ref, trx )
+SELECT b.ref, b.trx
+FROM sugar_lang_dico_b AS b
+WHERE 0 = (
+SELECT COUNT( id )
+FROM sugar_lang_dico
+WHERE ref = b.ref ) 
