@@ -1,0 +1,253 @@
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <HTML><HEAD><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <TITLE>Sugar Translation Suite Documentation</TITLE>
+    <link href="style/doc.css" rel="stylesheet" type="text/css">
+    </HEAD>
+    <BODY>
+   
+
+<H1>Sugar Translation Suite Documentation</H1><BR>
+<BR><BR><H2>Table of Content</H2>
+<DIV class="doc-parah2">
+<UL class="toc">
+<LI><A href="#partI">I.&nbsp;Introduction</A></LI>
+<LI><A href="#partII">II.&nbsp;Installation</A></LI>
+<LI><A href="#partIII">III.&nbsp;Main usages</A></LI>
+<LI><A href="#partIV">IV.&nbsp;In deep page description</A></LI>
+<UL>
+<LI><A href="#partIV1">IV.1&nbsp;Language Pack Manager</A></LI>
+<LI><A href="#partIV2">IV.2&nbsp;Edit Manifest</A></LI>
+<LI><A href="#partIV3">IV.3&nbsp;Translation Management</A></LI>
+<LI><A href="#partIV4">IV.4&nbsp;To Translate</A></LI>
+<LI><A href="#partIV5">IV.5&nbsp;Dictionary Administration</A></LI>
+</UL>
+</LI>
+<LI><A href="#partV">V.&nbsp;SugarLang Data Model</A></LI>
+</UL>
+</DIV>
+
+<BR><A name="partI" /><BR><H2>I.&nbsp;Introduction</H2>
+<DIV class="doc-parah2">
+Sugar Translation suite is a free php/MySQL based application which provide an easy way for people who are working 
+on a language pack for SugarCRM to manage there translation and to make it evolve with each new version of SugarCRM.<BR><BR>
+This suite provides interesting functionalities and features for working on sugar crm translations such as :<BR> 
+- Definition of a dictionary, which allow to reduce the amount of work needed for the translation.<BR>
+- Management of language pack versions, in order to support different translations versions.<BR>
+- Edition of translation manifest.<BR>
+- Generation of language pack. Generating a new sugar crm translation becomes as easy as a click.<BR>
+- Lots of statistics reports : to display and compare two language pack version or to view the current translation status.<BR>
+<BR><BR>Sugar Translation suite was tested with PHP 5.04/Mysql 4 on both linux/windows and should be working with most php/mysql versions<BR>
+To access the application you will need a web browser. Most recent web browser should be compatible (tested on Firefox 1.x and Internet Explorer 6)
+</DIV>
+<BR><A name="partII" /><BR><H2>II.&nbsp;Installation</H2>
+<DIV class="doc-parah2">
+Unzip the archive to your web directory (/var/www/html/ (Linux/Apache) or C:\Program Files\Apache Group\Apache\htdocs\ (Windows/Apache))<BR>
+Run the installation process by accessing the install.php page using your web browser.<BR><BR>
+
+During the installation process, you will have to provide the following informations :<BR><BR> 
+
+
+<STRONG>Host Name:</STRONG> The host name is typically set to localhost if your database server is running on the same machine as your 
+web server.<BR><BR>
+<STRONG>Database Name:</STRONG> This is the name of the database where table used by the sugar translation suite will be created.<BR><BR>
+<STRONG>User name:</STRONG> This is the name of the user which will be used by the application to access the Mysql database.<BR><BR>
+<STRONG>User password:</STRONG> The password related to the user name<BR><BR>
+<P class="doc-note">Note: By default, the create database checkbox is check so make sure that the user has administratice provileges. If it's not the case
+you will have to provide identification information of a privileged user.</P>
+<STRONG>Charset to use to create tables in Database:</STRONG> This is the charset that will be used to create table. If you need a specific charset
+just provide it there (you will have to uncheck the "use default" checkbox first).<BR><BR>
+<STRONG>Charset to use for HTML:</STRONG> this is the charset that will be used to display by the application to display HTML pages.<BR><BR>
+After providing all those information, you can click on the "Process" button.<BR>
+If all the informations you provided are correct, you will have a "Installation Sucessfull" message. Otherway, the installation script will provide you informations of what does wrong.<BR>
+
+
+<P class="doc-note">note: After the installation you can still change the values you provided by editing the config.php file</P>
+</DIV> 
+<BR><A name="partIII" /><BR><H2>III.&nbsp;Main usages</H2>
+<DIV class="doc-parah2">
+This sections describes the steps required in order to publish a translated sugar crm language pack.
+</DIV>
+<H3>Step 1: Importing a reference package</H3>
+<DIV class="doc-parah2">
+In order to published the translation of a sugar crm versions, it is first necessary to perform an import of the sugarcrm language terms.
+This import can be performed on an existing sugarcrm installation, or any language pack found on the sugarforge Language pack project listing. 
+Note that you can import a version of sugarcrm in any language of your choice, according to what will be the easiest to translate.
+The terms of the imported package will be stored in database as the reference package of a choosen version, which can either be a new one or overwrite an existing one.
+</DIV>
+<H3>Step 2: Edit the manifest</H3>
+<DIV class="doc-parah2">
+You can edit the manifest properties of your translated language package before publishing it.
+In addition, two manifest properties (underlined in orange) are required. They are the :
+<UL>
+<LI>Language file suffix, corresponding to the &lt;ISO639&gt;_&lt;ISO3166&gt; format for sugar crm language files. (examples : fr_FR, en_US, pl_PL etc ...)
+<LI>The name of the language pack as it will appear in the Sugar CRM Drop down (actually replaces the language_pack_name property of the app_list_strings in the include/language lang file).
+</UL>
+</DIV>
+<H3>Additional Step : Import your own dictionary</H3>
+<DIV class="doc-parah2">
+If you are already the owner of a translated version of sugar crm you can import your own dictionary by using the Language Pack Manager. 
+This will insert in the mysql sugar_lang database the result of the terms to terms translation between a reference package and a translated package, so that you will not have to translate them again.
+</DIV>
+<H3>Step 3: Prepare the content to translate</H3>
+<DIV class="doc-parah2">
+You can prepare the content to translate by selecting the option "Create language pack definition from dictionary" in the "Translation Management" page, this after selecting the version you have previously imported.
+This step will compare your translation dictionary to the the terms contained in the imported reference package.
+It will result in the generation of the translated sugar terms, when a translation can be found. In the other case content will be added to the "To Translate" section.
+</DIV>
+<H3>Step 4: Translate</H3>
+<DIV class="doc-parah2">
+Once the step 3 is performed you can start to translate by accessing the "To Translate" page.
+This page allows to define the translation for a given set of sugar terms. 
+By commiting your changes to the dictionary you add new translations that will later be used in order to generate your translated language pack.
+</DIV>
+<H3>Step 5: Generate your language pack</H3>
+<DIV class="doc-parah2">
+Once you have translated the sugar terms, you can regenerate the content of your translated language pack by following the instruction of the step 3. 
+You can after dump the content of your package, by selecting the "Dump translated package to file". 
+The defined server directory will contain the content of your translated package.
+</DIV>
+<H3>Correcting bugs / Translating new version</H3>
+<DIV class="doc-parah2">
+Correcting translation errors can be performed thanks to the dictionary administration page. 
+You can on this page search for your translation entries and correct them. You will just have to regenerate your language pack as described in step 5.
+</DIV>
+<BR><A name="partIV" /><BR><H2>IV.&nbsp;In deep page description</H2>
+<A name="partIV1" />
+<H3>Language Pack Manager</H3>
+<DIV class="doc-parah3">
+This page allow you to perform the following operations :<BR><BR>
+<H4>Display informations about an exising language pack</H4>
+<P>
+First you need to select the source to use<BR><BR>
+
+Two types of source are available:<BR>
+	- Language pack already installed in a SugarCRM instance.<BR>
+	- Language packs as provided for installation (zip files)<BR><BR>
+
+
+If you want to use a zip file language pack, select the "Uploaded Pack" option using the radio botton on the source line, and
+click on "Browse" to select the location of the language pack file.<BR><BR>
+
+If you want to use an installed langue pack, select the "Existing SugarCRM instance" option using the radio botton on the source line,
+and provide the path (both absolute and relative path should work). Then click on the "Find available languages" button to retrieve the list of all 
+different language packs which are installed in this SugarCRM instance. You can now select the language using the dropdown<BR>
+
+<P class="doc-note">note: If the path you provided is not correct an error message will be displayed. You can then correct the path and click on the "Search again" button.</P>
+
+<P class="doc-note">note2: You can use a SugarCRM instance which has not be installed yet (the SugarCRM installation archive has just been uncompressed), but in that case the default language (en_US) will be used.</P><BR>
+
+
+After selecting the source of the language pack, just check that the action is "Show language pack info" and click on the "go" button.
+</P>
+
+<H4>Compare 2 language packs</H4>
+<P>
+Just modifie the selection of the action dropdown and select "Compare to language pack"<BR>
+Choose a source for language pack #1 and #2<BR> 
+Click on the "go" button
+</P>
+
+<H4>Import a language pack to the database</H4>
+<P>
+Select the source of your language pack
+Select "Import to database" in the action dropdown.
+</P>
+<H4>Import a dictionary from a Language Pack</H4>
+<P>
+This option will create a dictionary based on a term to term translation from a reference package (Pack #1) with an already translated package (Pack #2).
+The dictionary will contain a distinct set of all translation, such that redundant translation will not be included twice.
+To use this option you need to enter the parameter refering to your reference package, and select the option "Import dictionary from translated pack" in the action drop down.
+A second tab will appear in order to indicate where to find the translated pack. Once filled you can click the Submit button.
+A report providing the number of terms imported to the dictionary will then be displayed.
+<P class="doc-note">Note that the existing dictionary stored in the sugar_lang_dico table will be <B>totally</B> overwritten. Make sure to keep a backup of this table in any case.</P>
+</P>
+</DIV> 
+
+<A name="partIV2" />
+<BR>
+<H3>Edit Manifest</H3>
+<DIV class="doc-parah3">
+This page allows to define the properties of the manifest file that will be generated with your language pack.
+You first need to select from the Version drop down, the manifest of the language pack version to edit.
+Two properties (underlined in orange) are required. They are the :
+<UL>
+<LI>Language file suffix, corresponding to the &lt;ISO639&gt;_&lt;ISO3166&gt; format for sugar crm language files. (examples : fr_FR, en_US, pl_PL etc ...)
+<LI>The name of the language pack as it will appear in the Sugar CRM Drop down (actually replaces the language_pack_name property of the app_list_strings in the include/language lang file).
+</UL>
+Those properties are later on use in the Translation Management page for generating the language pack.
+To clear/initialize the content of your manifest properties click the refresh button.
+To save the changes you have made click the update button.
+<BR>
+<P class="doc-note">If you have imported your reference package from a Sugar Language Pack the reference manifest will be displayed, in order to more easily understand the content of each property.</P>
+</DIV>
+<A name="partIV3" />
+<BR>
+<H3>Translation Management</H3>
+<DIV class="doc-parah3">
+This page allows to generate the translated content of a language pack, view the status of the translation and generate the file version of the language pack.
+<H4>Select the version</H4>
+You are first required to select the version that you will work with. This version corresponds to an imported language pack.
+<P class="doc-note">If you have note defined the required manifest properties for the selected version, a message will appear to redirect you to the Edit Manifest page</P>
+<H4>Create language pack definition from dictionary</H4>
+This operation generates the content of the translated language pack.
+It actually loops through the terms of the imported/reference package and seek for a term to term translation in the dictionary.
+The terms that can not be translated will be appended to the content that will have to be translated (available in the To Translate page).
+A report of the translated counts will be displayed after the operation.
+<P class="doc-note">The perform approximation checkbox (checked by default) enable some useful approximation and automatic translation which can cover up to 30% of the text.</P>
+<H4>View translation status</H4>
+This options will display a progression report of the generated translated package by comparing it to the reference package. 
+It provides counts of terms of each file and array for both the reference and the translated package.
+Files and arrays for which the count of translated terms are less than the reference terms will be displayed in red.
+<H4>Dump translated pack to file</H4>
+This operation generates the files of the sugar crm language pack. A report of the generated file will be displayed after the operation.
+The "Destination Directory" edit box should contain a path to a server directory with writing privileges. By default the choosen directory is the local "dumppack" directory.
+When the "Include Sugar Entry Validation", the SugarCRM entry point validation will be added to each generated file (eg : "if(empty(\$GLOBALS['sugarEntry'])) die('Not A Valid Entry Point');").
+<P class="doc-note">Only the manifest and translation files are overwritten in the destination directory, on which can also stage other files of your choices : eg Notification template, icons etc ...</P>
+<P class="doc-note">You can change the default directory path in the def.inc by changing the value of the $default_dump_file_path</P>
+</DIV>
+<A name="partIV4" />
+<BR>
+<H3>To Translate</H3>
+<DIV class="doc-parah3">
+This page display the content that needs to be translated in order to publish a Language pack for an imported version.
+A counter of translated terms is displayed at the top of the page.
+<H4>Search</H4>
+You can search terms to translate by entering your search and display criteria and clicking the search button.
+You can also search for reference terms that Starts by, Contains or Ends with a given portion of text. 
+You can select to display only the entry that have not been translated yet.
+The number of rows to displays can be adjusted by setting the row count property.
+The From row property will allow to display page past the Row Count limit.
+<H4>Content update</H4>
+Once you have entered the translation in the Translated column, click the update button, this will save the changes.
+Once you are ready to generate a translated sugar pack you should click the "Commit To Dictionary" button. This will add all the translated content (eg Translation field not empty) to the dictionary content.
+<H4>Navigation</H4>
+By using the Next and Back button, you can navigate through the pages of the content to translate.<STRONG>Updates made on the page will be automatically saved.</STRONG>
+</DIV>
+<A name="partIV5" />
+<BR>
+<H3>Dictionary Administration</H3>
+<DIV class="doc-parah3">
+This page display the content of the dictionary saved in the sugar_lang database. This dictionary is used to perform translation.<BR>  
+You can use this page to provide updates to its content in order for example to correct translation errors.
+<H4>Search</H4>
+You can search dictionary terms by entering your search and display criteria and clicking the search button.
+You can search for reference and translated terms that Starts by, Contains or Ends with a given portion of text.<BR> 
+The number of rows to displays can be adjusted by setting the row count property.
+The From row property will allow to display page past the Row Count limit.
+<H4>Content update</H4>
+An entry can be deleted from the dictionary by checking the Delete check box next to its row and by clicking the update button.
+To save changes provided to the content, click the update button.
+<H4>Navigation</H4>
+By using the Next and Back button, you can navigate through the pages of the dictionary content based on your search criteria.
+<STRONG>Updates made on the page will <I>NOT</I> be automatically saved.</STRONG>
+</DIV>
+<BR><A name="partV" /><BR><H2>V.&nbsp;Sugar Lang Data Model</H2>
+<DIV class="doc-parah2">
+The Sugar Lang database description can be found <A href="inc/sugar_lang_dm.html">here</A>
+</DIV>
+<BR><BR>
+</BODY>
+</HTML>
