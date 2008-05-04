@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: webERP 3.02\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-05-03 22:35+0100\n"
-"PO-Revision-Date: 2008-05-04 22:16+0800\n"
+"PO-Revision-Date: 2008-05-04 22:32+0800\n"
 "Last-Translator: Finjon Kiang <kiang@osobiz.com>\n"
 "Language-Team: Good <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,12 +26,12 @@ msgstr "二級科目"
 #: AccountGroups.php:18
 #, fuzzy
 msgid "An error occurred in retrieving the account groups of the parent account group during the check for recursion"
-msgstr "取得BOM零件是發生錯誤於循環檢查"
+msgstr "在遞歸檢查時提取主會計群組的會計科目時發生錯誤"
 
 #: AccountGroups.php:19
 #, fuzzy
 msgid "The SQL that was used to retrieve the account groups of the parent account group and that failed in the process was"
-msgstr "用作取得BOM零件和執行失敗的資料庫查詢是"
+msgstr "用作提取中提取會計科目主帳目組時誤失敗的 SQL 是"
 
 #: AccountGroups.php:60
 #, fuzzy
@@ -54,11 +54,12 @@ msgstr "或這個字元"
 #: AccountGroups.php:72
 #, fuzzy
 msgid "The account group name must be at least one character long"
-msgstr "聯繫名稱必須不少於 1 個字元"
+msgstr "會計科目名稱必須不少於 1 個字元"
 
 #: AccountGroups.php:79
+#, fuzzy
 msgid "The parent account group selected appears to result in a recursive account structure - select an alternative parent account group or make this group a top level account group"
-msgstr ""
+msgstr "選取的主會計群組顯示結果於遞歸的會計結構 - 選取其他主會計科目 或 使這群組為頂層群組"
 
 #: AccountGroups.php:98
 msgid "The section in accounts must be an integer"
@@ -158,11 +159,12 @@ msgstr "與這個二級科目有關的總帳科目"
 #: AccountGroups.php:174
 #, fuzzy
 msgid "Cannot delete this account group because it is a parent account group of other account group(s)"
-msgstr "未能刪除這科目，因為已有稅項依據使用"
+msgstr "未能刪除這會計科目, 因為這是其他科目的主帳目組"
 
 #: AccountGroups.php:175
+#, fuzzy
 msgid "account groups that have this group as its/there parent account group"
-msgstr ""
+msgstr "這主群組下屬的會計科目"
 
 #: AccountGroups.php:179
 msgid "group has been deleted"
@@ -201,7 +203,7 @@ msgstr "損益表"
 #: AccountGroups.php:313
 #, fuzzy
 msgid "Parent Group"
-msgstr "科目名稱"
+msgstr "主群組"
 
 #: AccountGroups.php:229
 #: AccountGroups.php:232
@@ -465,7 +467,7 @@ msgstr "二級科目名稱"
 #: AccountGroups.php:322
 #, fuzzy
 msgid "Top Level Group"
-msgstr "二級科目名稱"
+msgstr "頂層群組"
 
 #: AccountGroups.php:336
 msgid "Section In Accounts"
@@ -522,7 +524,7 @@ msgstr "一級科目不能含有這個字元"
 #: AccountSections.php:80
 #, fuzzy
 msgid "The account section name must contain at least one character"
-msgstr "一級科目不能含有這個字元"
+msgstr "會計科目名稱必須不少於 1 個字元"
 
 #: AccountSections.php:86
 #: AccountSections.php:92
@@ -826,7 +828,7 @@ msgstr "只有凍結的帳號"
 #: AgedDebtors.php:470
 #, fuzzy
 msgid "Only Show Customers Of"
-msgstr "只顯示有折價交易的客戶"
+msgstr "只顯示各戶的"
 
 #: AgedDebtors.php:482
 msgid "Only show customers trading in"
@@ -930,7 +932,7 @@ msgstr "業務區維護"
 #: Areas.php:40
 #, fuzzy
 msgid "The area code must be three characters or less long"
-msgstr "業務員代號必須少於 3 字元"
+msgstr "地區編號必須是或少於2字元"
 
 #: Areas.php:45
 #, fuzzy
@@ -940,7 +942,7 @@ msgstr "在系統內已存在客戶代號"
 #: Areas.php:50
 #, fuzzy
 msgid "The area description must be twenty five characters or less long"
-msgstr "銷售類別描述必須少於 20 字元"
+msgstr "地區說明長度必須是或少於50字元"
 
 #: Areas.php:55
 msgid "The area code may not be empty"
@@ -2164,11 +2166,12 @@ msgstr "到存貨零零件編號"
 #: BOMs.php:8
 #, fuzzy
 msgid "Multi-Level Bill Of Materials Maintenance"
-msgstr "BOM維護"
+msgstr "多層次物料清單維護"
 
 #: BOMs.php:35
+#, fuzzy
 msgid "A maximum of 15 levels of bill of materials only can be displayed"
-msgstr ""
+msgstr "只能顯示最多15層的物料清單"
 
 #: BOMs.php:56
 msgid "An error occurred in retrieving the components of the BOM during the check for recursion"
@@ -2187,8 +2190,9 @@ msgid "The SQL used to retrieve the components was"
 msgstr "用作取得零件的資料庫是"
 
 #: BOMs.php:120
+#, fuzzy
 msgid "Drill Down"
-msgstr ""
+msgstr "Drill Down (深究)"
 
 #: BOMs.php:125
 #: BOMs.php:131
@@ -2249,8 +2253,9 @@ msgid "and effective to was"
 msgstr "及生效至是"
 
 #: BOMs.php:251
+#, fuzzy
 msgid "Only non-serialised or non-lot controlled items can be set to auto issue. These items require the lot/serial numbers of items issued to the works orders to be specified so autoissue is not an option. Auto issue has been automatically set to off for this component"
-msgstr ""
+msgstr "自有非序號或非批號控制物品可以被設為自動發放.  這發放到工作訂單的物品須要指定批號/序號, 所以不能選取自動發放.  這零件的自動發放會自動設為關閉"
 
 #: BOMs.php:275
 msgid "Could not update this BOM component because"
@@ -2371,12 +2376,12 @@ msgstr "檢閱零件"
 #: BOMs.php:430
 #, fuzzy
 msgid "Manufactured parent items"
-msgstr "撰擇貸方項目"
+msgstr "自產主物品"
 
 #: BOMs.php:450
 #, fuzzy
 msgid "Assembly parent items"
-msgstr "撰擇貸方項目"
+msgstr "組裝主物品"
 
 #: BOMs.php:470
 #, fuzzy
@@ -2386,7 +2391,7 @@ msgstr "套裝"
 #: BOMs.php:490
 #, fuzzy
 msgid "Level"
-msgstr "活躍層次"
+msgstr "層次"
 
 #: BOMs.php:493
 #: BOMs.php:601
@@ -2428,17 +2433,17 @@ msgstr "生效致"
 #: WorkOrderStatus.php:82
 #, fuzzy
 msgid "Auto Issue"
-msgstr "要發出的數量"
+msgstr "自動發放"
 
 #: BOMs.php:499
 #, fuzzy
 msgid "Qty On Hand"
-msgstr "在手上的總數量"
+msgstr "庫存數量"
 
 #: BOMs.php:503
 #, fuzzy
 msgid "No materials found."
-msgstr "找不到客戶"
+msgstr "找不到物料"
 
 #: BOMs.php:553
 msgid "Edit the details of the selected component in the fields below"
@@ -2479,7 +2484,7 @@ msgstr "工作中心維護"
 #: BOMs.php:669
 #, fuzzy
 msgid "Auto Issue this Component to Work Orders"
-msgstr "發出產品到工作單"
+msgstr "自動發放零件到工作訂單"
 
 #: BOMs.php:768
 msgid "to maintain the bill of material for using the options below"
@@ -2836,7 +2841,7 @@ msgstr "更新"
 #: ConfirmDispatchControlled_Invoice.php:7
 #, fuzzy
 msgid "Specify Dispatched Controlled Items"
-msgstr "指定派送控制項目"
+msgstr "指定派送控制物品"
 
 #: ConfirmDispatchControlled_Invoice.php:18
 msgid "Select a line item to invoice"
@@ -2993,7 +2998,7 @@ msgstr "訂單項目不能取得，請選擇其他訂單"
 #: includes/PDFOrderPageHeader_generic.inc:55
 #, fuzzy
 msgid "Customer No."
-msgstr "沒有開發中發票"
+msgstr "客戶編碼"
 
 #: ConfirmDispatch_Invoice.php:243
 #: CustEDISetup.php:98
@@ -3259,12 +3264,12 @@ msgstr "輸入批次/捆/批 號"
 #: ConfirmDispatch_Invoice.php:403
 #, fuzzy
 msgid "There was a problem testing for a default shipper because"
-msgstr "測試預設貨運商時發生問題，因為"
+msgstr "測試預設供應商時發生問題, 因為"
 
 #: ConfirmDispatch_Invoice.php:409
 #, fuzzy
 msgid "There was a problem testing for a default shipper"
-msgstr "測試預設貨運商時發生問題"
+msgstr "測試預設運輸商時發生問題"
 
 #: ConfirmDispatch_Invoice.php:415
 msgid "There are no shippers defined"
@@ -3314,26 +3319,30 @@ msgid "No further processing has been done"
 msgstr "沒有進一步程序被執行"
 
 #: ConfirmDispatch_Invoice.php:541
+#, fuzzy
 msgid "Could not retrieve the quantity left at the location once this order is invoiced (for the purposes of checking that stock will not go negative because)"
-msgstr ""
+msgstr "未能提取地點餘下數量因為這訂單已開發票 (有目的地檢查存貨不能為負數, 因為)"
 
 #: ConfirmDispatch_Invoice.php:546
+#, fuzzy
 msgid "Invoicing the selected order would result in negative stock. The system parameters are set to prohibit negative stocks from occurring. This invoice cannot be created until the stock on hand is corrected."
-msgstr ""
+msgstr "選取要開發票的訂單會導至存貨負數.  系統設定為不接受產生負數存貨, 這發票不能產生除非修改存貨庫存"
 
 #: ConfirmDispatch_Invoice.php:546
 #: ConfirmDispatch_Invoice.php:569
 #, fuzzy
 msgid "Negative Stock Prohibited"
-msgstr "負數存貨列出錯誤"
+msgstr "禁止負存貨數量"
 
 #: ConfirmDispatch_Invoice.php:565
+#, fuzzy
 msgid "Could not retrieve the component quantity left at the location once the assembly item on this order is invoiced (for the purposes of checking that stock will not go negative because)"
-msgstr ""
+msgstr "未能提取地點的餘下零件數量因為這訂單的組裝物品已開發票 (有目的地檢查存貨不能為負數, 因為)"
 
 #: ConfirmDispatch_Invoice.php:569
+#, fuzzy
 msgid "Invoicing the selected order would result in negative stock for a component of an assembly item on the order. The system parameters are set to prohibit negative stocks from occurring. This invoice cannot be created until the stock on hand is corrected."
-msgstr ""
+msgstr "選取要開發票的訂單會導致這訂單組裝物品的零件為負數.  系統設定為不接受產生負數存貨.  這發票未能產生除非修改存貨庫存"
 
 #: ConfirmDispatch_Invoice.php:595
 msgid "We were unable to load Area where the Sale is to from the BRANCHES table"
@@ -4416,8 +4425,9 @@ msgstr "貸方總價"
 
 #: Credit_Invoice.php:448
 #: SelectCreditItems.php:905
+#, fuzzy
 msgid "The GL code to write off the credit value to must be specified. Please select the appropriate GL code for the selection box"
-msgstr ""
+msgstr "必需指定要衝銷貨帳值的總帳編碼.  請選取合適的貨帳編碼"
 
 #: Credit_Invoice.php:472
 msgid "The company information and preferences could not be retrieved"
@@ -4486,12 +4496,12 @@ msgstr "以下更新零件地點存貨記錄的資料庫正被使用"
 #: Credit_Invoice.php:887
 #, fuzzy
 msgid "The serial stock item record could not be selected because"
-msgstr "存貨序列號號未能更新，因為"
+msgstr "未能選取序列號存貨物品記錄, 因為"
 
 #: Credit_Invoice.php:888
 #, fuzzy
 msgid "The following SQL to select the serial stock item record was used"
-msgstr "以下更新序列號項目記錄的資料庫正被使用"
+msgstr "以下用作選取序號存貨物品記錄的 SQL 是"
 
 #: Credit_Invoice.php:990
 msgid "Written off ex Inv"
@@ -4607,7 +4617,7 @@ msgstr "執行貸方"
 #: CreditItemsControlled.php:8
 #, fuzzy
 msgid "Specify Credited Controlled Items"
-msgstr "指定貸方控制項目"
+msgstr "指定貸帳控制物品"
 
 #: CreditItemsControlled.php:31
 #: CreditItemsControlled.php:42
@@ -4878,7 +4888,7 @@ msgstr "客戶 EDI 設定"
 #: Z_CheckDebtorsControl.php:20
 #, fuzzy
 msgid "Back to Customers"
-msgstr "返回目錄"
+msgstr "搜尋客戶"
 
 #: CustEDISetup.php:34
 msgid "The customers EDI reference code cannot contain any of the following characters"
@@ -5092,7 +5102,7 @@ msgstr "客戶"
 #: CustomerAllocations.php:355
 #, fuzzy
 msgid "Cust No"
-msgstr "沒有開發中發票"
+msgstr "客戶編號"
 
 #: CustomerAllocations.php:359
 #: SupplierAllocations.php:577
@@ -5280,7 +5290,7 @@ msgstr "分公司記錄未能新增或更新，因為"
 #: CustomerBranches.php:281
 #, fuzzy
 msgid "Could not update vtiger"
-msgstr "未能更新帳號，因為"
+msgstr "未能更新vtiger"
 
 #: CustomerBranches.php:280
 #: Factors.php:89
@@ -5298,55 +5308,55 @@ msgstr "無法新增，因為"
 #: CustomerBranches.php:281
 #, fuzzy
 msgid "The SQL that was used to update the vtiger CRM entity"
-msgstr "用作更新使用者失敗的資料庫查詢是"
+msgstr "用作更新vtiger CRM的SQL"
 
 #: CustomerBranches.php:303
 #, fuzzy
 msgid "The new vtiger CRM entiry could not be added because"
-msgstr "未能更新報表，因為"
+msgstr "新的 vtiger CRM 輸入未能新增, 因為"
 
 #: CustomerBranches.php:304
 #, fuzzy
 msgid "Could not add CRM"
-msgstr "未能新增稅區"
+msgstr "未能新增CRM"
 
 #: CustomerBranches.php:304
 #, fuzzy
 msgid "The SQL that was used to add the CRM entity"
-msgstr "用作新增項目失敗的資料庫查詢是"
+msgstr "用作新增CRM輸入的SQL"
 
 #: CustomerBranches.php:308
 #: CustomerBranches.php:309
 #, fuzzy
 msgid "CRM Sequence failed"
-msgstr "失敗的資料庫查詢是"
+msgstr "CRM排序錯誤"
 
 #: CustomerBranches.php:308
 #: CustomerBranches.php:314
 #, fuzzy
 msgid "could not be added"
-msgstr "無法新增，因為"
+msgstr "未能新增"
 
 #: CustomerBranches.php:309
 #, fuzzy
 msgid "The SQL that was used to add the CRM Sequence"
-msgstr "用作新增項目失敗的資料庫查詢是"
+msgstr "用作新增CRM次序的SQL"
 
 #: CustomerBranches.php:314
 #: CustomerBranches.php:315
 #, fuzzy
 msgid "insert into accountscf failed"
-msgstr "新增或更新業務員失敗，因為"
+msgstr "插入到帳目失敗"
 
 #: CustomerBranches.php:315
 #, fuzzy
 msgid "could not be added\t"
-msgstr "無法新增，因為"
+msgstr "未能新增\t"
 
 #: CustomerBranches.php:318
 #, fuzzy
 msgid "The new CRM entity has been created in vtiger for this new branch"
-msgstr "新的工作中心已加到資料庫"
+msgstr "新分公司已新增到CRM"
 
 #: CustomerBranches.php:364
 msgid "Cannot delete this branch because customer transactions have been created to this branch"
@@ -5469,7 +5479,7 @@ msgstr "稅區"
 #: CustomerBranches.php:454
 #, fuzzy
 msgid "Enabled?"
-msgstr "啟用"
+msgstr "啟用?"
 
 #: CustomerBranches.php:468
 #, php-format
@@ -5536,15 +5546,16 @@ msgstr "地址列 6"
 #: CustomerBranches.php:682
 #, fuzzy
 msgid "Special Instructions"
-msgstr "特殊訂單"
+msgstr "特殊指示"
 
 #: CustomerBranches.php:685
 msgid "Delivery Days"
 msgstr "交貨日數"
 
 #: CustomerBranches.php:688
+#, fuzzy
 msgid "Forward Date After (day in month)"
-msgstr ""
+msgstr "付款日期"
 
 #: CustomerBranches.php:692
 #: SalesPeople.php:144
@@ -6286,7 +6297,7 @@ msgstr "客戶無法新增，因為"
 #: Customers.php:258
 #, fuzzy
 msgid "You should automatically be forwarded to the entry of a new Customer Branch page"
-msgstr "您該會自動轉至訂單列資料輸入頁"
+msgstr "你該會自動轉至新客戶分公司輸入頁"
 
 #: Customers.php:259
 #: DeliveryDetails.php:210
@@ -6363,7 +6374,7 @@ msgstr "屬於此客戶的分公司資料"
 #: Customers.php:392
 #, fuzzy
 msgid "No sales types/price lists defined"
-msgstr "(的)銷售類別/價格表"
+msgstr "未設定銷售種類/價目表"
 
 #: Customers.php:394
 msgid "Sales Type/Price List"
@@ -6423,7 +6434,7 @@ msgstr "客戶貨幣"
 #: Customers.php:470
 #, fuzzy
 msgid "Customer PO Line on SO"
-msgstr "客戶設立自"
+msgstr "銷售訂單中的客戶訂單列"
 
 #: Customers.php:475
 #: Customers.php:662
@@ -6461,8 +6472,9 @@ msgid "Customers Currency"
 msgstr "客戶貨幣"
 
 #: Customers.php:651
+#, fuzzy
 msgid "Require Customer PO Line on SO"
-msgstr ""
+msgstr "在銷售訂單上要求客戶訂單列"
 
 #: Customers.php:676
 msgid "Update Customer"
@@ -6553,7 +6565,7 @@ msgstr "顯示如何配置"
 #: CustWhereAlloc.php:39
 #, fuzzy
 msgid "The transaction number to be queried must be entered first"
-msgstr "交易編號未能增額"
+msgstr "請先輸入要查詢的交易編號"
 
 #: CustWhereAlloc.php:57
 msgid "Allocations made against invoice number"
@@ -6566,7 +6578,7 @@ msgstr "交易總計"
 #: CustWhereAlloc.php:76
 #, fuzzy
 msgid "There are no allocations made against this transaction"
-msgstr "沒有配置被執行"
+msgstr "這交易沒有配置"
 
 #: CustWhereAlloc.php:85
 #: Z_CheckAllocs.php:64
@@ -6650,8 +6662,9 @@ msgstr "訂單未能接受，沒有有效地址"
 
 #: DeliveryDetails.php:62
 #: DeliveryDetails.php:63
+#, fuzzy
 msgid "Box"
-msgstr ""
+msgstr "盒"
 
 #: DeliveryDetails.php:63
 msgid "You have entered the word"
@@ -6666,8 +6679,9 @@ msgid "Items cannot be delivered to"
 msgstr "項目未能交貨"
 
 #: DeliveryDetails.php:63
+#, fuzzy
 msgid "box"
-msgstr ""
+msgstr "盒"
 
 #: DeliveryDetails.php:63
 msgid "addresses"
@@ -6912,7 +6926,7 @@ msgstr "列印報價單"
 #: SelectSalesOrder.php:156
 #, fuzzy
 msgid "Add Sales Order"
-msgstr "輸入銷貨訂單"
+msgstr "新增銷售訂單"
 
 #: DeliveryDetails.php:375
 msgid "Thank you for your business"
@@ -7123,13 +7137,13 @@ msgstr "接受訂單修改"
 #: DemandWorkOrders.php:8
 #, fuzzy
 msgid "Demand Work Orders"
-msgstr "執行 EDI 訂單"
+msgstr "搜尋工作訂單"
 
 #: DemandWorkOrders.php:45
 #: SelectProduct.php:632
 #, fuzzy
 msgid "The quantity on work orders for this product cannot be retrieved because"
-msgstr "這產品的訂單數量要接收到"
+msgstr "這產品工作訂單上的數量未能提取, 因為"
 
 #: DiscountCategories.php:8
 msgid "Discount Categories Maintenance"
@@ -8575,12 +8589,12 @@ msgstr "未能加入明細資料到新科目"
 #: GLAccounts.php:67
 #, fuzzy
 msgid "The new general ledger account has been added"
-msgstr "會計科目已更新"
+msgstr "新總帳帳戶已新增"
 
 #: GLAccounts.php:87
 #, fuzzy
 msgid "Cannot delete this account because chart details have been created using this account and at least one period has postings to it"
-msgstr "未能刪除帳號因為明細資料已產生"
+msgstr "未能刪除帳戶因為應用這帳戶和最少一個期間的圖表已產生和已記帳"
 
 #: GLAccounts.php:88
 msgid "chart details that require this account code"
@@ -8680,9 +8694,9 @@ msgid "P/L or B/S"
 msgstr "P/L 或 B/S"
 
 #: GLAccounts.php:310
-#, php-format
+#, fuzzy, php-format
 msgid "Are you sure you wish to delete this account? Additional checks will be performed in any event to ensure data integrity is not compromised."
-msgstr ""
+msgstr "是否確定要刪除這帳目? 會進行附加檢查確保有沒有相關的整合資料"
 
 #: GLAccounts.php:331
 msgid "Show All Accounts"
@@ -8757,7 +8771,7 @@ msgstr "選擇另一個結餘日期"
 #: GLBudgets.php:8
 #, fuzzy
 msgid "Create GL Budgets"
-msgstr "輸入總帳收款"
+msgstr "產生總帳預算"
 
 #: GLBudgets.php:28
 #: GLJournal.php:243
@@ -8767,53 +8781,54 @@ msgstr "選取會計科目"
 #: GLBudgets.php:38
 #, fuzzy
 msgid "budgets cannot be allocated until the GL accounts are set up"
-msgstr "收款未能輸入總帳直到總帳帳號被設定"
+msgstr "預算未能配置除非已設定總帳帳目"
 
 #: GLBudgets.php:62
 #, fuzzy
 msgid "Prev Account"
-msgstr "二級科目"
+msgstr "上一個帳目"
 
 #: GLBudgets.php:63
 #, fuzzy
 msgid "Select Account"
-msgstr "選取會計科目"
+msgstr "選取帳目"
 
 #: GLBudgets.php:64
 #, fuzzy
 msgid "Next Account"
-msgstr "二級科目"
+msgstr "下一個帳目"
 
 #: GLBudgets.php:77
+#, fuzzy
 msgid "Cannot update GL budgets"
-msgstr ""
+msgstr "未能更新總帳預算"
 
 #: GLBudgets.php:78
 #, fuzzy
 msgid "The SQL that failed to update the GL budgets was"
-msgstr "新增總帳收款失敗的資料庫查詢是"
+msgstr "更新總帳預算失敗的 SQL 是"
 
 #: GLBudgets.php:126
 #, fuzzy
 msgid "Last Financial Year"
-msgstr "財正年度完結"
+msgstr "上一財政年度"
 
 #: GLBudgets.php:127
 #, fuzzy
 msgid "This Financial Year"
-msgstr "財正年度完結"
+msgstr "本財政年度"
 
 #: GLBudgets.php:128
 #, fuzzy
 msgid "Next Financial Year"
-msgstr "財正年度完結"
+msgstr "下一財政年度"
 
 #: GLBudgets.php:130
 #: GLBudgets.php:132
 #: GLBudgets.php:134
 #, fuzzy
 msgid "Year ended"
-msgstr "去年"
+msgstr "年結"
 
 #: GLBudgets.php:139
 #: SalesAnalReptCols.php:271
@@ -8904,13 +8919,15 @@ msgstr "輸入其他日記帳"
 
 #: GLJournal.php:133
 #: GLJournal.php:161
+#, fuzzy
 msgid "GL Journals involving the debtors control account cannot be entered. The general ledger debtors ledger (AR) integration is enabled so control accounts are automatically maintained by webERP. This setting can be disabled in System Configuration"
-msgstr ""
+msgstr "借方受控帳戶未能輸入總帳日記帳, 借方應收整合設定為開啟, 所以受控帳戶由webERP自動維護,  這設定可以在系統設定中關閉"
 
 #: GLJournal.php:137
 #: GLJournal.php:165
+#, fuzzy
 msgid "GL Journals involving the creditors control account cannot be entered. The general ledger creditors ledger (AP) integration is enabled so control accounts are automatically maintained by webERP. This setting can be disabled in System Configuration"
-msgstr ""
+msgstr "貨方受控帳戶未能輸入總帳日記帳, 貸方應付整合設定為開啟, 所以受控帳戶由webERP自動維護,  這設定可以在系統設定中關閉"
 
 #: GLJournal.php:142
 #: GLJournal.php:171
@@ -9251,7 +9268,7 @@ msgstr "接收採購訂單"
 #: PO_Header.php:60
 #, fuzzy
 msgid "Back to Purchase Orders"
-msgstr "返回這採購訂單"
+msgstr "返回採購訂單"
 
 #: GoodsReceived.php:21
 msgid "This page can only be opened if a purchase order has been selected"
@@ -9293,8 +9310,9 @@ msgid "Total value of goods received"
 msgstr "貨品接收總值"
 
 #: GoodsReceived.php:169
+#, fuzzy
 msgid "Receiving a negative quantity that results in negative stock is prohibited by the parameter settings. This delivery of stock cannot be processed until the stock of the item is corrected."
-msgstr ""
+msgstr "系統設定為不允可收取負數量產生的負存貨數.  這交收未能進行, 請修正物品存貨"
 
 #: GoodsReceived.php:178
 msgid "There is nothing to process"
@@ -9305,8 +9323,9 @@ msgid "Please enter valid quantities greater than zero"
 msgstr "請輸入大於 0 的有效數量"
 
 #: GoodsReceived.php:183
+#, fuzzy
 msgid "Negative stocks would result by processing a negative delivery - quantities must be changed or the stock quantity of the item going negative corrected before this delivery will be processed."
-msgstr ""
+msgstr "負存貨會導致負交收 - 必須修改物品的數量或存貨數量之後才進行交收"
 
 #: GoodsReceived.php:189
 msgid "Entered quantities cannot be greater than the quantity entered on the purchase invoice including the allowed over-receive percentage"
@@ -9490,7 +9509,7 @@ msgstr "首頁"
 #: index.php:14
 #, fuzzy
 msgid "Sales"
-msgstr "銷售類別"
+msgstr "銷售"
 
 #: index.php:14
 #: WWW_Users.php:10
@@ -9505,7 +9524,7 @@ msgstr "應付帳款"
 #: index.php:14
 #, fuzzy
 msgid "Purchases"
-msgstr "BOX 12 - GST 於採購"
+msgstr "採購"
 
 #: index.php:14
 #: WWW_Users.php:13
@@ -9562,7 +9581,7 @@ msgstr "選取循環訂單範本"
 #: index.php:133
 #, fuzzy
 msgid "Process Recurring Orders"
-msgstr "執行循環訂單"
+msgstr "執行循環銷售訂單"
 
 #: index.php:142
 msgid "Order Inquiry"
@@ -9586,8 +9605,9 @@ msgstr "訂單交貨差異報表"
 
 #: index.php:169
 #: PDFDIFOT.php:22
+#, fuzzy
 msgid "Delivery In Full On Time (DIFOT) Report"
-msgstr ""
+msgstr " 準時完成交貨(DIFOT)報告"
 
 #: index.php:217
 msgid "Select Order to Invoice"
@@ -9662,7 +9682,7 @@ msgstr "新增客戶"
 #: includes/header.inc:47
 #, fuzzy
 msgid "Customers"
-msgstr "客戶貨幣"
+msgstr "客戶"
 
 #: index.php:347
 msgid "Select Supplier"
@@ -9694,7 +9714,7 @@ msgstr "貸方月結餘"
 #: index.php:389
 #, fuzzy
 msgid "Add Supplier"
-msgstr "新增一個供應商"
+msgstr "新增供應商"
 
 #: index.php:394
 #, fuzzy
@@ -9762,8 +9782,9 @@ msgid "Enter Stock Counts"
 msgstr "輸入存貨盤點"
 
 #: index.php:525
+#, fuzzy
 msgid "Serial Item Research Tool"
-msgstr ""
+msgstr "序號物品搜集工具"
 
 #: index.php:530
 msgid "Inventory Item Movements"
@@ -9820,12 +9841,12 @@ msgstr "列出負數存貨"
 #: index.php:599
 #, fuzzy
 msgid "Add A New Item"
-msgstr "新增一個新產品"
+msgstr "新增新物品"
 
 #: index.php:604
 #, fuzzy
 msgid "Select An Item"
-msgstr "選擇產品"
+msgstr "選取一個物品"
 
 #: index.php:609
 #: SalesCategories.php:9
@@ -9841,7 +9862,7 @@ msgstr "輸入工作單"
 #: index.php:653
 #, fuzzy
 msgid "Select A Work Order"
-msgstr "選取現有未完成的工作單"
+msgstr "選取工作訂單"
 
 #: index.php:658
 msgid "Costed Bill Of Material Inquiry"
@@ -10027,12 +10048,12 @@ msgstr "損益表"
 #: index.php:989
 #, fuzzy
 msgid "Tax Reports"
-msgstr "營業稅報表"
+msgstr "稅報告"
 
 #: index.php:1008
 #, fuzzy
 msgid "GL Budgets"
-msgstr "會計科目"
+msgstr "總帳預算"
 
 #: index.php:1048
 #: index.php:1051
@@ -10284,17 +10305,17 @@ msgstr "預設這地點的使用者"
 #: Locations.php:249
 #, fuzzy
 msgid "Cannot delete this location because it is the default location for a bill of material"
-msgstr "未能刪除這地點，因為這是使用者的預設地點"
+msgstr "未能刪除這地點, 因為這是物料清單的預設地點"
 
 #: Locations.php:249
 #, fuzzy
 msgid "The bill of materials must be modified first"
-msgstr "必須先修改使用者記錄"
+msgstr "必須先修改物料清單"
 
 #: Locations.php:250
 #, fuzzy
 msgid "bom components using this location"
-msgstr "這地點的工作單"
+msgstr "這地點的物料清單零件"
 
 #: Locations.php:257
 msgid "Cannot delete this location because it is used by some work centre records"
@@ -10307,12 +10328,12 @@ msgstr "這地點的工作中心"
 #: Locations.php:265
 #, fuzzy
 msgid "Cannot delete this location because it is used by some work order records"
-msgstr "未能刪除這地點，因為已有工作單記錄"
+msgstr "未能刪除這地點, 因為已有工作訂單記錄"
 
 #: Locations.php:266
 #, fuzzy
 msgid "work orders using this location"
-msgstr "這地點的工作單"
+msgstr "這地點的工作訂單"
 
 #: Locations.php:273
 msgid "Cannot delete this location because it is used by some branch records as the default location to deliver from"
@@ -10323,8 +10344,9 @@ msgid "branches set up to use this location by default"
 msgstr "預設這地點的分公司"
 
 #: Locations.php:320
+#, fuzzy
 msgid "There are no locations that match up with a tax province record to display. Check that tax provinces are set up for all dispatch locations"
-msgstr ""
+msgstr "沒有地點配對於稅區記錄可顯示.  請檢查設定派送地點的稅區"
 
 #: Locations.php:324
 #: Locations.php:429
@@ -10499,30 +10521,32 @@ msgstr "指定的供應商沒有有價值的收貨單可列印"
 #: PaymentAllocations.php:14
 #, fuzzy
 msgid "Payment Allocations"
-msgstr "執行配置"
+msgstr "付款配置"
 
 #: PaymentAllocations.php:20
+#, fuzzy
 msgid "Supplier ID Number is not Set, can not display result"
-msgstr ""
+msgstr "供應商編碼未設, 不能顯示結果"
 
 #: PaymentAllocations.php:26
+#, fuzzy
 msgid "Invoice Number is not Set, can not display result"
-msgstr ""
+msgstr "發票編號未設, 不能顯示結果"
 
 #: PaymentAllocations.php:63
 #, fuzzy
 msgid "There may be a problem retrieving the information. No data is returned"
-msgstr "取得選取的交易相關資料時發生錯誤"
+msgstr "提取資料時發生錯誤, 無數據傳回"
 
 #: PaymentAllocations.php:64
 #, fuzzy
 msgid "Go back"
-msgstr "返回目錄"
+msgstr "返回"
 
 #: PaymentAllocations.php:71
 #, fuzzy
 msgid "Supplier Number"
-msgstr "供應商發票編號"
+msgstr "供應商編號"
 
 #: PaymentAllocations.php:72
 #: PaymentAllocations.php:73
@@ -10535,7 +10559,7 @@ msgstr "付款"
 #: PaymentAllocations.php:74
 #, fuzzy
 msgid "Total Payment"
-msgstr "付款條件"
+msgstr "付款總數"
 
 #: PaymentMethods.php:30
 msgid "The payment method cannot contain the character"
@@ -10619,8 +10643,9 @@ msgid "Payment Entry"
 msgstr "輸入付款"
 
 #: Payments.php:17
+#, fuzzy
 msgid "Payment Cancelled since cheque was not printed"
-msgstr ""
+msgstr "付款取消, 因為列印支票"
 
 #: Payments.php:32
 #: SupplierContacts.php:19
@@ -10630,7 +10655,7 @@ msgstr ""
 #: Suppliers.php:304
 #, fuzzy
 msgid "Back to Suppliers"
-msgstr "返回目錄"
+msgstr "返回供應商"
 
 #: Payments.php:57
 msgid "The supplier code that this payment page was called with is not a currently defined supplier code"
@@ -10660,12 +10685,12 @@ msgstr "付款沒有輸入金額，不能執行"
 #: PrintCheque.php:20
 #, fuzzy
 msgid "Print Cheque"
-msgstr "列出支票"
+msgstr "列印支票"
 
 #: Payments.php:242
 #, fuzzy
 msgid "Has the cheque been printed"
-msgstr "上次已列印"
+msgstr "支票已列印"
 
 #: Payments.php:283
 msgid "Cannot insert a GL entry for the payment using the SQL"
@@ -10800,7 +10825,7 @@ msgstr "付款類別"
 #: Payments.php:766
 #, fuzzy
 msgid "Cheque Number"
-msgstr "科目代號"
+msgstr "支票編號"
 
 #: Payments.php:804
 msgid "General Ledger Payment Analysis Entry"
@@ -10898,8 +10923,9 @@ msgid "Due After (Days)"
 msgstr "(日數)之後到期"
 
 #: PaymentTerms.php:159
+#, fuzzy
 msgid "th"
-msgstr ""
+msgstr "th"
 
 #: PaymentTerms.php:165
 #: PrintCustStatements.php:340
@@ -11272,10 +11298,11 @@ msgid "Please find herewith delivery differences report from"
 msgstr "請查看附上的交貨差異報表由"
 
 #: PDFDIFOT.php:33
+#, fuzzy
 msgid ""
 "Enter the number of days considered acceptable between delivery requested date and invoice\n"
 "     date(ie the date dispatched)"
-msgstr ""
+msgstr "輸入考慮交貨要求日期和發票期可接受的日數 (即派送日期)日數"
 
 #: PDFDIFOT.php:156
 #: PDFDIFOT.php:165
@@ -11346,9 +11373,9 @@ msgid "Sales Made To"
 msgstr "銷售到"
 
 #: PDFLowGP.php:142
-#, php-format
+#, fuzzy, php-format
 msgid "Show sales with GP % below"
-msgstr ""
+msgstr "Show sales with GP % below"
 
 #: PDFOrdersInvoiced.php:8
 #: PDFOrdersInvoiced.php:231
@@ -11430,7 +11457,7 @@ msgstr "顯示全部訂單"
 #: PDFOrderStatus.php:197
 #, fuzzy
 msgid "Order Status Report - No Data"
-msgstr "訂單狀況報表"
+msgstr "訂單狀況報告 - 無資料"
 
 #: PDFOrderStatus.php:243
 #: PO_SelectOSPurchOrder.php:416
@@ -11480,7 +11507,7 @@ msgstr "只要客戶特殊價格"
 #: PDFPriceList.php:26
 #, fuzzy
 msgid "Special price List - No Customer Selected"
-msgstr "客戶的特殊價格"
+msgstr "特殊價目列表 - 不分客戶"
 
 #: PDFPriceList.php:29
 msgid "The customer must first be selected from the select customer link"
@@ -11978,7 +12005,7 @@ msgstr "接收到"
 #: PO_Header.php:320
 #, fuzzy
 msgid "Lookup Address"
-msgstr "銀行地址"
+msgstr "查找地址"
 
 #: PO_Header.php:354
 msgid "The default stock location set up for this user is not a currently defined stock location"
@@ -12749,7 +12776,7 @@ msgstr "列印或電子信箱這訂單"
 #: PO_PDFPurchOrder.php:317
 #, fuzzy
 msgid "Show Amounts on the Order"
-msgstr "這訂單的貨品"
+msgstr "顯示訂單總計"
 
 #: PO_PDFPurchOrder.php:334
 msgid "There was a problem retrieving the contact details for the supplier"
@@ -12869,7 +12896,7 @@ msgstr "搜尋採購訂單"
 #: PO_SelectOSPurchOrder.php:155
 #, fuzzy
 msgid "Add Purchase Order"
-msgstr "接收採購訂單"
+msgstr "新增採購訂單"
 
 #: PO_SelectOSPurchOrder.php:164
 #: PO_SelectPurchOrder.php:159
@@ -13039,7 +13066,7 @@ msgstr "項目價格"
 #: WhereUsedInquiry.php:17
 #, fuzzy
 msgid "Back to Items"
-msgstr "返回目錄"
+msgstr "返回物品"
 
 #: Prices.php:38
 msgid "The part code entered does not exist in the database"
@@ -13125,23 +13152,23 @@ msgstr "付款日期"
 #: PrintCheque.php:77
 #, fuzzy
 msgid "Vendor No."
-msgstr "沒有開發中發票"
+msgstr "供應商編號"
 
 #: PrintCheque.php:64
 #: PrintCheque.php:78
 #, fuzzy
 msgid "Cheque No."
-msgstr "沒有開發中發票"
+msgstr "支票編號"
 
 #: PrintCheque.php:90
 #, fuzzy
 msgid "Print Check Error"
-msgstr "列印存貨檢查比較錯誤"
+msgstr "列印支票錯誤"
 
 #: PrintCheque.php:92
 #, fuzzy
 msgid "Could not print the cheque"
-msgstr "未能取得"
+msgstr "未能列印支票"
 
 #: PrintCustOrder_generic.php:112
 msgid "Customer Laser Packing Slip"
@@ -13158,7 +13185,7 @@ msgstr "沒有要交貨訂單的未完成項目"
 #: PrintCustOrder_generic.php:176
 #, fuzzy
 msgid "A packing slip cannot be printed"
-msgstr "未能列印送貨單"
+msgstr "載貨紙未能列印"
 
 #: PrintCustOrder_generic.php:177
 #: PrintCustOrder.php:178
@@ -13219,8 +13246,9 @@ msgid "There was a problem retrieving the outstanding transactions for"
 msgstr "問題發生在取得未完成交易的"
 
 #: PrintCustStatements.php:93
+#, fuzzy
 msgid "There was a problem retrieving the transactions that were settled over the course of the last month for"
-msgstr ""
+msgstr "上月模式結過帳的交易時發生錯誤"
 
 #: PrintCustStatements.php:137
 msgid "Settled Transactions"
@@ -14242,7 +14270,7 @@ msgstr "未能在取得項目在手上數量前執行撤銷"
 #: ReverseGRN.php:195
 #, fuzzy
 msgid "Reversal"
-msgstr "收貨品撤銷"
+msgstr "撤銷"
 
 #: ReverseGRN.php:219
 msgid "Could not insert the reversing stock movements for the batch/serial numbers"
@@ -15013,8 +15041,9 @@ msgid "The new sales GL posting record has been inserted"
 msgstr "新的總帳銷售入帳記錄已新增"
 
 #: SalesGLPostings.php:62
+#, fuzzy
 msgid "A sales gl posting account already exists for the selected area, stock category, salestype"
-msgstr ""
+msgstr "銷售總帳記帳已存在方選取地區, 存貨類型, 銷售種類"
 
 #: SalesGLPostings.php:88
 msgid "Sales posting record has been deleted"
@@ -15051,12 +15080,14 @@ msgid "Sales Report Graph"
 msgstr "(的) 稅報表"
 
 #: SalesGraph.php:17
+#, fuzzy
 msgid "The selected period range is more than 12 months - only graphs for a period less than 12 months can be created"
-msgstr ""
+msgstr "選取期間範圍超過12個月 - 只能產生少於12個月的圖表"
 
 #: SalesGraph.php:21
+#, fuzzy
 msgid "For graphs including either a customer or item range - the range must be specified. Please enter the value from and the value to for the range"
-msgstr ""
+msgstr "圖表只能包含客戶或物品範圍 - 請指定範圍.  請輸入開始和完結範圍的值"
 
 #: SalesGraph.php:88
 msgid "For Sales Area/Region:"
@@ -15279,27 +15310,27 @@ msgstr "銷售類別代號不能用 AN，因為這是系統總帳搜尋介面中
 #: SalesTypes.php:47
 #, fuzzy
 msgid "The customer/sales/pricelist type"
-msgstr "銷售類別/價格表"
+msgstr "客戶/銷售/價目種類"
 
 #: SalesTypes.php:61
 #, fuzzy
 msgid "The customer/sales/pricelist type "
-msgstr "銷售類別/價格表"
+msgstr "客戶/銷售/價目種類"
 
 #: SalesTypes.php:61
 #, fuzzy
 msgid " already exist."
-msgstr "已接收"
+msgstr "已存在"
 
 #: SalesTypes.php:72
 #, fuzzy
 msgid "Customer/sales/pricelist type"
-msgstr "銷售類別/價格表"
+msgstr "客戶/銷售/價目種類"
 
 #: SalesTypes.php:121
 #, fuzzy
 msgid "The number of transactions using this customer/sales/pricelist type could not be retrieved"
-msgstr "未能取得這銷售類別記錄的交易編號，因為"
+msgstr "客戶/銷售/價目種類的交編號未能提取"
 
 #: SalesTypes.php:126
 msgid "Cannot delete this sale type because customer transactions have been created using this sales type"
@@ -15354,7 +15385,7 @@ msgstr "類別名稱"
 #: SalesTypes.php:186
 #, fuzzy, php-format
 msgid "Are you sure you wish to delete this price list and all the prices it may have set up?"
-msgstr "您確定要刪除這個供應商價格？"
+msgstr "是否確定要刪除這價目表和所有已設定的價目??"
 
 #: SalesTypes.php:200
 msgid "Show All Sales Types Defined"
@@ -15363,7 +15394,7 @@ msgstr "顯示所有已定義的銷售類別"
 #: SalesTypes.php:205
 #, fuzzy
 msgid "Sales Type/Price List Setup"
-msgstr "(的)銷售類別/價格表"
+msgstr "銷售種類/價目表設定"
 
 #: SalesTypes.php:244
 msgid "Sales Type Name"
@@ -15494,8 +15525,9 @@ msgid "Rate"
 msgstr "換率"
 
 #: SelectCreditItems.php:757
+#, fuzzy
 msgid "Are you sure you wish to delete this line item from the credit note?"
-msgstr ""
+msgstr "是否確定要從貨帳單刪除這行?"
 
 #: SelectCreditItems.php:778
 msgid "Credit Freight"
@@ -15527,8 +15559,9 @@ msgid "Credit Note Text"
 msgstr "貸方傳票文字"
 
 #: SelectCreditItems.php:909
+#, fuzzy
 msgid "Are you sure you wish to cancel the whole of this credit note?"
-msgstr ""
+msgstr "是否要刪除這整張貨帳單"
 
 #: SelectCreditItems.php:911
 msgid "Process Credit Note"
@@ -15661,13 +15694,13 @@ msgstr "搜尋客戶"
 #: SelectCustomer.php:30
 #, fuzzy
 msgid "Customer name keywords have been used in preference to customer code or phone  entered"
-msgstr "客戶名稱關鍵字已在客戶代號的偏愛摘要輸入"
+msgstr "客戶名稱關鍵字已輸入在客戶編碼和電話的設定摘"
 
 #: SelectCustomer.php:34
 #: SelectOrderItems.php:338
 #, fuzzy
 msgid "Customer code has been used in preference to the customer phone entered"
-msgstr "客戶名稱關鍵字已在客戶代號的偏愛摘要輸入"
+msgstr "客戶編碼關鍵字已輸入在客戶編碼的偏愛摘要"
 
 #: SelectCustomer.php:132
 msgid "The customer name requested cannot be retrieved because"
@@ -15707,7 +15740,7 @@ msgstr "修改客戶資料"
 #: SelectCustomer.php:159
 #, fuzzy
 msgid "Add/Modify/Delete Customer Branches"
-msgstr "新增/編輯/刪除 客戶分公司記錄"
+msgstr "新增/編輯/刪除 客戶分公司"
 
 #: SelectCustomer.php:161
 msgid "Special Customer Prices"
@@ -15718,13 +15751,14 @@ msgid "Customer EDI Configuration"
 msgstr "客戶 EDI 設置"
 
 #: SelectCustomer.php:238
+#, fuzzy
 msgid "Your account enables you to see only customers allocated to you"
-msgstr ""
+msgstr "你的帳戶只允可你檢視你的客戶配置"
 
 #: SelectCustomer.php:238
 #, fuzzy
 msgid "Note: Sales-person Login"
-msgstr "業務員"
+msgstr "註: 銷售員登入"
 
 #: SelectCustomer.php:258
 #: SelectCustomer.php:337
@@ -15739,8 +15773,9 @@ msgstr "業務員"
 #: includes/Add_SerialItems.php:177
 #: includes/Add_SerialItems.php:274
 #: includes/PDFBankingSummaryPageHeader.inc:19
+#, fuzzy
 msgid "of"
-msgstr ""
+msgstr "屬於"
 
 #: SelectCustomer.php:258
 #: SelectCustomer.php:337
@@ -15842,12 +15877,12 @@ msgstr "這客戶的訂單不能修改,因為這訂單已開出發票"
 #: SelectOrderItems.php:335
 #, fuzzy
 msgid "Customer name keywords have been used in preference to the customer code or phone entered"
-msgstr "客戶名稱關鍵字已在客戶代號的偏愛摘要輸入"
+msgstr "客戶名稱關鍵字已輸入在客戶編碼的偏愛摘要"
 
 #: SelectOrderItems.php:341
 #, fuzzy
 msgid "At least one Customer Name keyword OR an extract of a Customer Code or phone number must be entered for the search"
-msgstr "最少輸入一個客戶關鍵字或客戶編號摘要以利搜尋"
+msgstr "最少輸入一個客戶關鍵字或客戶編號或電摘要來方便找尋"
 
 #: SelectOrderItems.php:428
 msgid "The details of the customer selected"
@@ -15856,7 +15891,7 @@ msgstr "選取的客戶資料"
 #: SelectOrderItems.php:435
 #, fuzzy
 msgid "account is currently flagged as an account that needs to be watched. Please contact the credit control personnel to discuss"
-msgstr "帳號現正被標櫼，帳號需要被監察，請聯絡貸方控制人要商討"
+msgstr "戶口現正被標櫼, 戶口需要被監察, 請聯絡貸帳控制人要商討"
 
 #: SelectOrderItems.php:510
 msgid "account is currently at or over their credit limit"
@@ -15885,12 +15920,12 @@ msgstr "對不起，您的帳號正因某些利由被凍結，請聯繫貸方控
 #: SelectOrderItems.php:621
 #, fuzzy
 msgid "Part of the code"
-msgstr "零件代號"
+msgstr "部份編號"
 
 #: SelectOrderItems.php:624
 #, fuzzy
 msgid "Part of the phone"
-msgstr "電話"
+msgstr "部份電部"
 
 #: SelectOrderItems.php:700
 msgid "There are lines on this order that have already been invoiced. Please delete only the lines on the order that are no longer required"
@@ -15939,7 +15974,7 @@ msgstr "輸入的日期無效"
 #: SelectOrderItems.php:997
 #, fuzzy
 msgid "The date entry"
-msgstr "輸入收款"
+msgstr "輸入日期"
 
 #: SelectOrderItems.php:930
 #: SelectOrderItems.php:1042
@@ -15989,7 +16024,7 @@ msgstr "您會自動轉到交貨資料輸入頁"
 #: SelectOrderItems.php:1471
 #, fuzzy
 msgid "PO Line"
-msgstr "地址列 1"
+msgstr "訂單列"
 
 #: SelectOrderItems.php:1173
 #: includes/PDFInventoryPlanPageHeader.inc:50
@@ -16003,12 +16038,12 @@ msgstr "在手上數量"
 #: SupplierTransInquiry.php:90
 #, fuzzy
 msgid "Due Date"
-msgstr "派送日期"
+msgstr "到期日期"
 
 #: SelectOrderItems.php:1232
 #, fuzzy
 msgid "Clear Remaining"
-msgstr "改名中"
+msgstr "清除餘下的"
 
 #: SelectOrderItems.php:1272
 msgid "Re-Calculate"
@@ -16025,7 +16060,7 @@ msgstr "使用快速輸入"
 #: SelectOrderItems.php:1337
 #, fuzzy
 msgid "On Demand"
-msgstr "在手上"
+msgstr "要求數量"
 
 #: SelectOrderItems.php:1338
 #: StockLocStatus.php:140
@@ -16053,7 +16088,7 @@ msgstr "這產品的需求由"
 #: SelectOrderItems.php:1411
 #, fuzzy
 msgid "The order details for this product cannot be retrieved because"
-msgstr "未能更新產品的成本資料，因為"
+msgstr "這產品的工作訂單零件要求未能提取, 因為"
 
 #: SelectOrderItems.php:1496
 msgid "Cancel Whole Order"
@@ -16097,27 +16132,27 @@ msgstr "在手上的總數量"
 #: SelectProduct.php:423
 #, fuzzy
 msgid "Item type:"
-msgstr "銷售類別"
+msgstr "物品種類:"
 
 #: SelectProduct.php:427
 #, fuzzy
 msgid "Assembly Item"
-msgstr "產品編號"
+msgstr "組裝物品"
 
 #: SelectProduct.php:431
 #, fuzzy
 msgid "Kitset Item"
-msgstr "產品編號"
+msgstr "套裝物品"
 
 #: SelectProduct.php:436
 #, fuzzy
 msgid "Service Item"
-msgstr "產品編號"
+msgstr "服務物品"
 
 #: SelectProduct.php:441
 #, fuzzy
 msgid "Purchased Item"
-msgstr "產品編號"
+msgstr "採購物品"
 
 #: SelectProduct.php:444
 msgid "Manufactured Item"
@@ -16126,7 +16161,7 @@ msgstr "生產項目"
 #: SelectProduct.php:447
 #, fuzzy
 msgid "Control Level:"
-msgstr "活躍層次"
+msgstr "控制層次:"
 
 #: SelectProduct.php:449
 #, fuzzy
@@ -16141,16 +16176,17 @@ msgstr "批次"
 #: SelectProduct.php:456
 #, fuzzy
 msgid "Volume"
-msgstr "總體積"
+msgstr "體積"
 
 #: SelectProduct.php:457
 #, fuzzy
 msgid "Weight"
-msgstr "總重量"
+msgstr "重量"
 
 #: SelectProduct.php:458
+#, fuzzy
 msgid "EOQ"
-msgstr ""
+msgstr "最佳訂貨數量"
 
 #: SelectProduct.php:460
 #: SpecialOrder.php:544
@@ -16161,12 +16197,12 @@ msgstr "銷售價格"
 #: SelectProduct.php:486
 #, fuzzy
 msgid "No Price Set"
-msgstr "沒有價格清單被選取"
+msgstr "未設價目"
 
 #: SelectProduct.php:678
 #, fuzzy
 msgid "The workorder component demand for this product cannot be retrieved because"
-msgstr "訂單的列項目未能取，因為"
+msgstr "這產品的工作訂單零件要求未能提取, 因為"
 
 #: SelectProduct.php:686
 #: StockLocStatus.php:136
@@ -16182,12 +16218,12 @@ msgstr "在手上數量"
 #: SelectProduct.php:687
 #, fuzzy
 msgid "Quantity Demand"
-msgstr "有數量的"
+msgstr "要求數量"
 
 #: SelectProduct.php:688
 #, fuzzy
 msgid "Quantity On Order"
-msgstr "經濟訂購量"
+msgstr "訂單數量"
 
 #: SelectProduct.php:722
 #: SelectProduct.php:783
@@ -16247,7 +16283,7 @@ msgstr "新增產品"
 #: SelectProduct.php:764
 #, fuzzy
 msgid "Modify Item Details"
-msgstr "修改產品資料"
+msgstr "修改物品資料"
 
 #: SelectProduct.php:766
 msgid "Maintain Reorder Levels"
@@ -16286,8 +16322,9 @@ msgid "End Date"
 msgstr "結束日期"
 
 #: SelectRecurringSalesOrder.php:82
+#, fuzzy
 msgid "Times p.a."
-msgstr ""
+msgstr "每年次數"
 
 #: SelectSalesOrder.php:21
 msgid "The Order Number entered MUST be numeric"
@@ -16317,7 +16354,7 @@ msgstr "只要訂單"
 #: SelectWorkOrder.php:153
 #, fuzzy
 msgid "Search"
-msgstr "現在搜尋"
+msgstr "搜尋"
 
 #: SelectSalesOrder.php:178
 #: SelectWorkOrder.php:178
@@ -16351,7 +16388,7 @@ msgstr "報價總數"
 #: SelectSalesOrder.php:468
 #, fuzzy
 msgid "Reprint"
-msgstr "可以重印"
+msgstr "重印"
 
 #: SelectSupplier.php:7
 msgid "Search Suppliers"
@@ -16427,7 +16464,7 @@ msgstr "修改或刪除供應商資料"
 #: SelectSupplier.php:164
 #, fuzzy
 msgid "Add/Modify/Delete Supplier Contacts"
-msgstr "修改或刪除供應商資料"
+msgstr "新增 / 修改 / 刪除 供應商聯繫資料"
 
 #: SelectSupplier.php:168
 msgid "Set Up A New Shipment"
@@ -16444,69 +16481,69 @@ msgstr "代號內的文字"
 #: SelectWorkOrder.php:8
 #, fuzzy
 msgid "Search Work Orders"
-msgstr "搜尋採購訂單"
+msgstr "搜尋工作訂單"
 
 #: SelectWorkOrder.php:21
 #, fuzzy
 msgid "The work order number entered MUST be numeric"
-msgstr "輸入的訂單編號必須是數字"
+msgstr "工作訂單編號必須是數字"
 
 #: SelectWorkOrder.php:26
 #, fuzzy
 msgid "Work Order Number"
-msgstr "採購訂單編號"
+msgstr "工作訂單單編號"
 
 #: SelectWorkOrder.php:30
 #, fuzzy
 msgid "for the item"
-msgstr "這項目的地點"
+msgstr "物品的"
 
 #: SelectWorkOrder.php:97
 #, fuzzy
 msgid "No items were returned by the SQL because"
-msgstr "沒有產品由 SQL 傳回，因為"
+msgstr "沒有物品由 SQL 傳回, 因為"
 
 #: SelectWorkOrder.php:117
 #, fuzzy
 msgid "Work Order number"
-msgstr "採購訂單編號"
+msgstr "工作訂單編號"
 
 #: SelectWorkOrder.php:117
 #, fuzzy
 msgid "Processing at"
-msgstr "執行終止"
+msgstr "執行中於"
 
 #: SelectWorkOrder.php:145
 #: SelectWorkOrder.php:148
 #, fuzzy
 msgid "Closed Work Orders Only"
-msgstr "只顯示期貨訂單"
+msgstr "只要已完結的工作訂單"
 
 #: SelectWorkOrder.php:146
 #: SelectWorkOrder.php:149
 #, fuzzy
 msgid "Open Work Orders Only"
-msgstr "只顯示期貨訂單"
+msgstr "只要生產中工作訂單"
 
 #: SelectWorkOrder.php:154
 #, fuzzy
 msgid "New Work Order"
-msgstr "輸入新的工作單"
+msgstr "新工作訂單"
 
 #: SelectWorkOrder.php:165
 #, fuzzy
 msgid "To search for work orders for a specific item use the item selection facilities below"
-msgstr "搜尋下列選取設備中的指定零件的採購訂單"
+msgstr "用下列選取工具來搜尋指定物品的工作訂單"
 
 #: SelectWorkOrder.php:166
 #, fuzzy
 msgid "Search Items Now"
-msgstr "現在搜尋零件"
+msgstr "現在搜尋物品"
 
 #: SelectWorkOrder.php:296
 #, fuzzy
 msgid "No works orders were returned by the SQL because"
-msgstr "沒有循環訂單由 SQK 傳回，因為"
+msgstr "SQL 沒有傳回工作訂單, 因為"
 
 #: SelectWorkOrder.php:306
 #: SelectWorkOrder.php:341
@@ -16519,7 +16556,7 @@ msgstr "狀況"
 #: SelectWorkOrder.php:343
 #, fuzzy, php-format
 msgid "Issue To"
-msgstr "要發出的數量"
+msgstr "開發到"
 
 #: SelectWorkOrder.php:309
 #: SelectWorkOrder.php:344
@@ -16545,12 +16582,12 @@ msgstr "已接收數量"
 #: SelectWorkOrder.php:313
 #, fuzzy
 msgid "Quantity Outstanding"
-msgstr "選擇未完成"
+msgstr "未完成數量"
 
 #: SelectWorkOrder.php:314
 #, fuzzy
 msgid "Required Date"
-msgstr "要求交貨日期"
+msgstr "要求日期"
 
 #: ShipmentCosting.php:8
 msgid "Shipment Costing"
@@ -16633,8 +16670,9 @@ msgid "The lines on the shipment could not be retrieved from the database"
 msgstr "未能由資料庫取得運輸列，因為"
 
 #: ShipmentCosting.php:118
+#, fuzzy
 msgid "Cannot close a shipment where the quantity received is more than the quantity invoiced. Check the item"
-msgstr ""
+msgstr "不能完成交收因為數量接收多於已開發票數量, 請檢查這物品"
 
 #: ShipmentCosting.php:137
 #, fuzzy
@@ -16659,13 +16697,13 @@ msgstr "差異"
 #: SupplierInvoice.php:658
 #, fuzzy
 msgid "The quantity on hand could not be retrieved from the database"
-msgstr "未能由資料庫取得運輸列，因為"
+msgstr "未能由資料庫提取庫存數量"
 
 #: ShipmentCosting.php:231
 #: SupplierInvoice.php:659
 #, fuzzy
 msgid "The following SQL to retrieve the total stock quantity was used"
-msgstr "以下用作取得稅務的資料庫是"
+msgstr "以下SQL用作提取總存貨數量"
 
 #: ShipmentCosting.php:273
 #: ShipmentCosting.php:343
@@ -16673,13 +16711,14 @@ msgid "shipment cost"
 msgstr "運輸成本"
 
 #: ShipmentCosting.php:273
+#, fuzzy
 msgid "shipment quantity > stock held - variance write off"
-msgstr ""
+msgstr "交貨數量 > 庫存 - 差異衝銷"
 
 #: ShipmentCosting.php:276
 #, fuzzy
 msgid "The GL entry for the shipment variance posting for"
-msgstr "正總帳的輸入，於運輸差異入帳"
+msgstr "輸入交貨差異記帳到總帳於"
 
 #: ShipmentCosting.php:276
 #: ShipmentCosting.php:297
@@ -16690,24 +16729,24 @@ msgstr "未能新增資料庫，因為"
 #: ShipmentCosting.php:293
 #, fuzzy
 msgid "shipment avg cost adjt"
-msgstr "運輸成本"
+msgstr "交貨平均成本調整"
 
 #: ShipmentCosting.php:297
 #, fuzzy
 msgid "The GL entry for the shipment average cost adjustment for"
-msgstr "正總帳的輸入，於運輸差異入帳"
+msgstr "輸入交貨平均成本調整記帳到總帳於"
 
 #: ShipmentCosting.php:311
 #: SupplierInvoice.php:731
 #, fuzzy
 msgid "The cost could not be updated because"
-msgstr "船運成本記錄沒有更新，因為"
+msgstr "成本未能更新, 因為"
 
 #: ShipmentCosting.php:312
 #: SupplierInvoice.php:732
 #, fuzzy
 msgid "The following SQL to update the cost was used"
-msgstr "以下取得標準成本的資料庫正被使用"
+msgstr "以下SQL用作更新成本"
 
 #: ShipmentCosting.php:343
 msgid "Qty recd"
@@ -16729,7 +16768,7 @@ msgstr "已開發票數量"
 #: ShipmentCosting.php:367
 #, fuzzy
 msgid "The credit GL entry for the shipment variance posting for"
-msgstr "正總帳的輸入，於運輸差異入帳"
+msgstr "交貨差異的貨帳總帳輸入記帳於"
 
 #: ShipmentCosting.php:397
 #: ShipmentCosting.php:415
@@ -16778,8 +16817,9 @@ msgid "Total Shipment Charges"
 msgstr "總運輸收費"
 
 #: ShipmentCosting.php:455
+#, fuzzy
 msgid "Total Value of all variances on this shipment"
-msgstr ""
+msgstr "這交貨的所有差異總值"
 
 #: ShipmentCosting.php:487
 msgid "Shipment Charges Against Products"
@@ -16819,12 +16859,12 @@ msgstr "確認 OK 來關閉"
 #: ShipmentCosting.php:637
 #, fuzzy
 msgid "Could not complete the purchase order lines on this shipment"
-msgstr "未能刪除採購數據，因為"
+msgstr "未能完成這交貨的採購訂單列"
 
 #: ShipmentCosting.php:641
 #, fuzzy
 msgid "Could not update the shipment to closed"
-msgstr "未能更新付款方式"
+msgstr "未能更新交貨為完結"
 
 #: ShipmentCosting.php:645
 msgid "has been closed"
@@ -16896,21 +16936,23 @@ msgid "A reference to the voyage (or HAWB in the case of air-freight) of more th
 msgstr "請輸入多於 2 個字的航資 (或空運單 HAWB)"
 
 #: Shipments.php:191
+#, fuzzy
 msgid "Cannot add purchase order lines to the shipment unless the shipment is first initiated - hit update to setup the shipment first"
-msgstr ""
+msgstr "未能新增採購訂單列到交貨, 除非先交收 - 按更新來設定交收"
 
 #: Shipments.php:238
 msgid "Updated the shipment record and delivery dates of order lines as necessary"
 msgstr "請按需要更新運輸記錄和交貨日期"
 
 #: Shipments.php:296
+#, fuzzy
 msgid "Vessel Name /Transport Agent"
-msgstr ""
+msgstr "航班名/船公司"
 
 #: Shipments.php:298
 #, fuzzy
 msgid "Voyage Ref / Consignment Note"
-msgstr "寄銷單參考"
+msgstr "航次 / 委托參考"
 
 #: Shipments.php:310
 msgid "Into"
@@ -17365,8 +17407,9 @@ msgid "The item entered is a controlled item that requires the detail of the ser
 msgstr "輸入的項目被定義為受控項目，調整需要輸入批次號或序號"
 
 #: StockAdjustments.php:108
+#, fuzzy
 msgid "The system parameters are set to prohibit negative stocks. Processing this stock adjustment would result in negative stock at this location. This adjustment will not be processed."
-msgstr ""
+msgstr "系統設定禁止負存貨量.  執行這存貨調整會導致這地點負存貨量. 不能執行調整"
 
 #: StockAdjustments.php:182
 msgid "Unable to determine if the serial item exists"
@@ -17429,12 +17472,12 @@ msgstr "存貨類別維護"
 #: StockCategories.php:20
 #, fuzzy
 msgid "Could not delete the property"
-msgstr "未能刪除項目記錄"
+msgstr "未能刪除屬性"
 
 #: StockCategories.php:25
 #, fuzzy
 msgid "Deleted the property"
-msgstr "分公司已刪除"
+msgstr "刪除屬性"
 
 #: StockCategories.php:42
 msgid "The Inventory Category code must be six characters or less long"
@@ -17473,32 +17516,32 @@ msgstr "原料"
 #: StockCategories.php:69
 #, fuzzy
 msgid "Could not update the stock category"
-msgstr "未能更新批次/序號的存貨記錄"
+msgstr "未能更新存貨類型"
 
 #: StockCategories.php:90
 #, fuzzy
 msgid "Could not insert a new category property for"
-msgstr "未能新增付款方式"
+msgstr "未能插入類型屬性"
 
 #: StockCategories.php:98
 #, fuzzy
 msgid "Updated the stock category property for"
-msgstr "存貨類別記錄已更新"
+msgstr "存貨類型物性已更新"
 
 #: StockCategories.php:104
 #, fuzzy
 msgid "Updated the stock category record for"
-msgstr "存貨類別記錄已更新"
+msgstr "存貨類型記錄已更新"
 
 #: StockCategories.php:127
 #, fuzzy
 msgid "Could not insert the new stock category"
-msgstr "新的銷售類別記錄已新增"
+msgstr "未能插入新存貨物性"
 
 #: StockCategories.php:129
 #, fuzzy
 msgid "A new stock category record has been added for"
-msgstr "新增了一個存貨類別"
+msgstr "新的存貨類型記錄已更新"
 
 #: StockCategories.php:152
 msgid "Cannot delete this stock category because stock items have been created using this stock category"
@@ -17556,12 +17599,12 @@ msgstr "用量差異總帳"
 #: StockCategories.php:195
 #, fuzzy
 msgid "WIP GL"
-msgstr "會計科目"
+msgstr "工作中(WIP)總帳"
 
 #: StockCategories.php:216
-#, php-format
+#, fuzzy, php-format
 msgid "Are you sure you wish to delete this stock category? Additional checks will be performed before actual deletion to ensure data integrity is not compromised."
-msgstr ""
+msgstr "是否確定要刪除存貨類型?  實際執行之前會進行附加檢查確保資料整合是否吻合"
 
 #: StockCategories.php:242
 msgid "Show All Stock Categories"
@@ -17602,7 +17645,7 @@ msgstr "存貨會計科目代號"
 #: StockCategories.php:348
 #, fuzzy
 msgid "WIP GL Code"
-msgstr "存貨會計科目代號"
+msgstr "工作中(WIP)總帳編碼"
 
 #: StockCategories.php:371
 msgid "Stock Adjustments GL Code"
@@ -17617,48 +17660,50 @@ msgid "Usage Variance GL Code"
 msgstr "用量差異代號"
 
 #: StockCategories.php:436
+#, fuzzy
 msgid "Property Label"
-msgstr ""
+msgstr "財產標貼"
 
 #: StockCategories.php:437
 #, fuzzy
 msgid "Control Type"
-msgstr "銷售類別"
+msgstr "受控種類"
 
 #: StockCategories.php:438
 #, fuzzy
 msgid "Default Value"
-msgstr "總價值"
+msgstr "預設值"
 
 #: StockCategories.php:439
 #, fuzzy
 msgid "Require in SO"
-msgstr "會計代碼"
+msgstr "銷售訂單要求"
 
 #: StockCategories.php:455
 #: StockCategories.php:457
 #: StockCategories.php:488
 #, fuzzy
 msgid "Text Box"
-msgstr "發票文字"
+msgstr "文字盒"
 
 #: StockCategories.php:460
 #: StockCategories.php:462
 #: StockCategories.php:489
 #, fuzzy
 msgid "Select Box"
-msgstr "選擇客戶"
+msgstr "選取盒"
 
 #: StockCategories.php:465
 #: StockCategories.php:467
 #: StockCategories.php:490
 #, fuzzy
 msgid "Check Box"
-msgstr "檢查總計"
+msgstr "檢查盒"
 
 #: StockCategories.php:481
+#, fuzzy
 msgid "Are you sure you wish to delete this property? All properties of this type set up for stock items will also be deleted."
-msgstr ""
+msgstr "是否確定要刪除這物性?  所有存這類型的物品存貨會全部被刪除"
 
 #: StockCheck.php:40
 #: StockCheck.php:90
@@ -17800,22 +17845,22 @@ msgstr "輸入存貨檢查表"
 #: StockCounts.php:28
 #, fuzzy
 msgid "Resuming Entering Counts"
-msgstr "輸入存貨盤點"
+msgstr "繼續輸入點算"
 
 #: StockCounts.php:28
 #, fuzzy
 msgid "Viewing Entered Counts"
-msgstr "沒有輸入點算"
+msgstr "檢視輸入的點算"
 
 #: StockCounts.php:30
 #, fuzzy
 msgid "Entering Counts"
-msgstr "輸入存貨盤點"
+msgstr "輸入點算"
 
 #: StockCounts.php:30
 #, fuzzy
 msgid "View Entered Counts"
-msgstr "沒有輸入點算"
+msgstr "檢視輸入的點算"
 
 #: StockCounts.php:47
 msgid "The quantity entered for line"
@@ -17859,7 +17904,7 @@ msgstr "未能輸入，因為"
 #: StockCounts.php:73
 #, fuzzy
 msgid " Stock Counts Entered"
-msgstr "沒有輸入點算"
+msgstr "輸入的存貨點算"
 
 #: StockCounts.php:77
 msgid "Stock Check Counts at Location"
@@ -17872,27 +17917,27 @@ msgstr "輸入上面盤點"
 #: StockCounts.php:115
 #, fuzzy
 msgid "Failed to delete StockCount ID #"
-msgstr "刪除年度借方記錄到 SQL 失敗"
+msgstr "刪除存貨點算ID#失敗"
 
 #: StockCounts.php:117
 #, fuzzy
 msgid "Deleted Id #"
-msgstr "貨運商 ID"
+msgstr "刪除 ID #"
 
 #: StockCounts.php:130
 #, fuzzy
 msgid "Qty Counted"
-msgstr "交貨數量"
+msgstr "已點算數量"
 
 #: StockCounts.php:132
 #, fuzzy
 msgid "Delete?"
-msgstr "刪除"
+msgstr "刪除?"
 
 #: StockCounts.php:142
 #, fuzzy
 msgid "Save Changes"
-msgstr "未能提交修改"
+msgstr "儲存修改"
 
 #: StockLocMovements.php:7
 msgid "All Stock Movements By Location"
@@ -18145,8 +18190,9 @@ msgid "Unable to update the Location Transfer Record"
 msgstr "未能更新地點轉移記錄"
 
 #: StockLocTransferReceive.php:329
+#, fuzzy
 msgid "Unable to set the quantity received to the quantity shipped to cancel the balance on this transfer line"
-msgstr ""
+msgstr "不能設定這轉移列的接收數量到交貨數量來除消結餘"
 
 #: StockLocTransferReceive.php:335
 msgid "Unable to COMMIT the Stock Transfer transaction"
@@ -18191,7 +18237,7 @@ msgstr "要接收數量"
 #: StockLocTransferReceive.php:427
 #, fuzzy
 msgid "Cancel Balance"
-msgstr "總結餘"
+msgstr "取編結餘"
 
 #: StockLocTransferReceive.php:464
 msgid "Enter Batch Refs"
@@ -18272,7 +18318,7 @@ msgstr "未能取得選取類別的的產品"
 #: StockQuantityByDate.php:103
 #, fuzzy
 msgid "The stock held as at"
-msgstr "試算表如(*)"
+msgstr "存貨貨存於"
 
 #: StockQuantityByDate.php:150
 #: includes/InputSerialItemsFile.php:57
@@ -18293,7 +18339,7 @@ msgstr "顯示再訂單水平"
 #: StockSerialItemResearch.php:7
 #, fuzzy
 msgid "Serial Item Research"
-msgstr "受控項目的貸方"
+msgstr "序號物品搜集"
 
 #: StockSerialItemResearch.php:25
 #: StockSerialItems.php:77
@@ -18303,53 +18349,54 @@ msgid "Serial Number"
 msgstr "序號"
 
 #: StockSerialItemResearch.php:64
+#, fuzzy
 msgid "No History found for Serial Number"
-msgstr ""
+msgstr "無序號編號歷史"
 
 #: StockSerialItemResearch.php:66
 #, fuzzy
 msgid "Details for Serial Item"
-msgstr "列的項目記錄"
+msgstr "序號物品詳細資料"
 
 #: StockSerialItemResearch.php:66
 #, fuzzy
 msgid "Length"
-msgstr "報表長"
+msgstr "長度"
 
 #: StockSerialItemResearch.php:69
 #, fuzzy
 msgid "CurInvQty"
-msgstr "國家"
+msgstr "現發票數量"
 
 #: StockSerialItemResearch.php:70
 #, fuzzy
 msgid "Move Qty"
-msgstr "交貨數量"
+msgstr "移動數量"
 
 #: StockSerialItemResearch.php:71
 #, fuzzy
 msgid "Move Type"
-msgstr "銷售類別"
+msgstr "移動種類"
 
 #: StockSerialItemResearch.php:72
 #, fuzzy
 msgid "Trans #"
-msgstr "交易"
+msgstr "交易編號 #"
 
 #: StockSerialItemResearch.php:75
 #, fuzzy
 msgid "DebtorNo"
-msgstr "借方"
+msgstr "供方編號"
 
 #: StockSerialItemResearch.php:77
 #, fuzzy
 msgid "Move Ref"
-msgstr "客戶參考號"
+msgstr "移動參考"
 
 #: StockSerialItemResearch.php:78
 #, fuzzy
 msgid "Total Move Qty"
-msgstr "總已接收數量"
+msgstr "總移動數量"
 
 #: StockSerialItems.php:7
 msgid "Stock Of Controlled Items"
@@ -18611,8 +18658,9 @@ msgid "The locations for the item"
 msgstr "這項目的地點"
 
 #: Stocks.php:396
+#, fuzzy
 msgid "NB Locations records can be added by opening the utility page"
-msgstr ""
+msgstr "無地點記錄由開啟工具頁新增"
 
 #: Stocks.php:396
 msgid "The SQL that was used to add the location records that failed was"
@@ -18681,7 +18729,7 @@ msgstr "未能刪除地點存貨記錄，因為"
 #: Stocks.php:499
 #, fuzzy
 msgid "Could not delete the prices for this stock record because"
-msgstr "未能刪除地點存貨記錄，因為"
+msgstr "未能刪除價目記錄, 因為"
 
 #: Stocks.php:502
 msgid "Could not delete the purchasing data because"
@@ -18714,7 +18762,7 @@ msgstr "及所有這零件可能設定的任何採購數據"
 #: Stocks.php:515
 #, fuzzy
 msgid "and any prices that may have been set up for the part"
-msgstr "及這零件可能設定的任何的物料清單"
+msgstr "和所有這部件設立的價目"
 
 #: Stocks.php:614
 #: Stocks.php:621
@@ -18824,7 +18872,7 @@ msgstr "圖片"
 #: Stocks.php:866
 #, fuzzy
 msgid "Item Category Properties"
-msgstr "折扣類別代號"
+msgstr "物品類型性質"
 
 #: Stocks.php:926
 msgid "Insert New Item"
@@ -18885,27 +18933,27 @@ msgstr "這是組裝零件，不能凍結存貨"
 #: StockStatus.php:161
 #, fuzzy
 msgid "The workorder component demand for this product from"
-msgstr "這產品的需求由"
+msgstr "這產品的工作訂單要求部件由"
 
 #: StockStatus.php:193
 #, fuzzy
 msgid "The quantity on work orders for this product to be received into"
-msgstr "這產品的訂單數量要接收到"
+msgstr "這產品要的工作訂單數量要接收到"
 
 #: StockStatus.php:295
 #, fuzzy
 msgid "Pricing history for sales of"
-msgstr "(的)業務區"
+msgstr "銷售價目歷史屬於"
 
 #: StockStatus.php:298
 #, fuzzy
 msgid "Date Range"
-msgstr "在日期範圍"
+msgstr "日期範圍"
 
 #: StockStatus.php:337
 #, fuzzy
 msgid "No history of sales of"
-msgstr "業務區維護"
+msgstr "無銷售歷史屬於"
 
 #: StockStatus.php:344
 msgid "Show Usage"
@@ -19474,8 +19522,9 @@ msgid "Transaction total"
 msgstr "交易總數"
 
 #: SupplierAllocations.php:464
+#, fuzzy
 msgid "Supp"
-msgstr ""
+msgstr "供應商"
 
 #: SupplierAllocations.php:566
 msgid "There are no outstanding payments or credits yet to be allocated for this supplier"
@@ -19808,8 +19857,9 @@ msgstr "入帳到貸方科目的總計是"
 
 #: SupplierCredit.php:653
 #: SupplierInvoice.php:831
+#, fuzzy
 msgid "but the sum of OvAmount converted at ExRate"
-msgstr ""
+msgstr "但於兌換率後的外幣金額總計"
 
 #: SupplierCredit.php:671
 msgid "Credit note"
@@ -19903,13 +19953,13 @@ msgstr "供應商資料未能從資料庫取得，因為"
 #: SupplierInquiry.php:207
 #, fuzzy
 msgid "Hold"
-msgstr "受約帳號"
+msgstr "凍結"
 
 #: SupplierInquiry.php:126
 #: SupplierInquiry.php:211
 #, fuzzy
 msgid "Release"
-msgstr "發出於"
+msgstr "發放"
 
 #: SupplierInquiry.php:130
 msgid "The Supplier Transactions could not be updated because"
@@ -19918,7 +19968,7 @@ msgstr "未能更新供應商交易，因為"
 #: SupplierInquiry.php:193
 #, fuzzy
 msgid "Supplier Ref"
-msgstr "客戶參考號"
+msgstr "供應商參考"
 
 #: SupplierInquiry.php:240
 #: SupplierInquiry.php:271
@@ -19931,13 +19981,13 @@ msgstr "檢視總帳入帳"
 #: SupplierInquiry.php:327
 #, fuzzy, php-format
 msgid "View Payments"
-msgstr "要付款的"
+msgstr "檢視付款"
 
 #: SupplierInquiry.php:364
 #: SupplierInquiry.php:394
 #, fuzzy, php-format
 msgid "View Allocations"
-msgstr "執行配置"
+msgstr "檢視配置"
 
 #: SupplierInvoice.php:16
 msgid "Enter Supplier Invoice"
@@ -19960,7 +20010,7 @@ msgstr "輸入運輸"
 #: SupplierInvoice.php:170
 #, fuzzy
 msgid "You should automatically be forwarded to the entry of invoices against shipments page"
-msgstr "應該是自動由運輸頁轉到貸方傳票輸入"
+msgstr "應該是由對應交貨頁自動轉到發票輸入"
 
 #: SupplierInvoice.php:178
 msgid "You should automatically be forwarded to the entry of invoices against the general ledger page"
@@ -19971,8 +20021,9 @@ msgid "Supplier Invoice Reference"
 msgstr "供應商發票參考"
 
 #: SupplierInvoice.php:233
+#, fuzzy
 msgid "Seq"
-msgstr ""
+msgstr "序列"
 
 #: SupplierInvoice.php:237
 msgid "Price in"
@@ -20241,8 +20292,9 @@ msgid "The supplier since field must be a date in the format"
 msgstr "供應商設立自從日期必須是日期格式"
 
 #: Suppliers.php:405
+#, fuzzy
 msgid "Cannot change currency code as transactions already exist"
-msgstr ""
+msgstr "未能轉換貨幣編碼, 交易已存在"
 
 #: Suppliers.php:423
 msgid "The supplier could not be updated because"
@@ -20376,31 +20428,32 @@ msgstr "檢視聯繫資料"
 #: SupplierTransInquiry.php:8
 #, fuzzy
 msgid "Supplier Transactions Inquiry"
-msgstr "客戶交易查詢"
+msgstr "供應商交易查詢"
 
 #: SupplierTransInquiry.php:78
 #, fuzzy
 msgid "The supplier transactions for the selected criteria could not be retrieved because"
-msgstr "客戶交易未能按條件挑選取得，因為"
+msgstr "選取準則的供應商交易未能提取, 因為"
 
 #: SupplierTransInquiry.php:86
 #, fuzzy
 msgid "Supp Ref"
-msgstr "客戶參考號"
+msgstr "供應商參考"
 
 #: SupplierTransInquiry.php:138
 #, fuzzy
 msgid "Could not retrieve the GL transactions for this AP transaction"
-msgstr "不能取回要求的類別，請重試"
+msgstr "未能提取這應付交易的總帳交易"
 
 #: SupplierTransInquiry.php:141
 #, fuzzy
 msgid "There are no GL transactions created for the above AP transaction"
-msgstr "沒有配置被執行"
+msgstr "沒有上述應付交易的總帳交易產生"
 
 #: SupplierTransInquiry.php:162
+#, fuzzy
 msgid "The GL transactions for this AP transaction are out of balance by"
-msgstr ""
+msgstr "這應付帳交的的總帳交易不平衡由於"
 
 #: SuppPaymentRun.php:32
 #: SuppPaymentRun.php:106
@@ -20781,21 +20834,22 @@ msgstr "輸入銷貨訂單畫面的參數定義.  快速輸入的欄位數目，
 #: SystemParameters.php:343
 #, fuzzy
 msgid "Order Entry allows Line Item Narrative"
-msgstr "列項目的訂單數量"
+msgstr "訂單輸入允可列物品敘述"
 
 #: SystemParameters.php:345
 #, fuzzy
 msgid "Allow Narrative Entry"
-msgstr "輸入銷貨訂單"
+msgstr "允可輸入敘述"
 
 #: SystemParameters.php:346
 #, fuzzy
 msgid "No Narrative Line"
-msgstr "訊息列已更新"
+msgstr "沒有敘述列"
 
 #: SystemParameters.php:348
+#, fuzzy
 msgid "Select whether or not to allow entry of narrative on order line items. This narrative will appear on invoices and packing slips. Useful mainly for service businesses."
-msgstr ""
+msgstr "選擇是否允可輸入敘述到訂單物品列.  這?述會顯示在發票和載貨紙上.  這主要用於商業服務"
 
 #: SystemParameters.php:351
 msgid "Auto Update Exchange Rates Daily"
@@ -20824,7 +20878,7 @@ msgstr "選取預設列印的包裝單格式"
 #: SystemParameters.php:369
 #, fuzzy
 msgid "Invoice Orientation"
-msgstr "發票總額"
+msgstr "發票定位"
 
 #: SystemParameters.php:371
 #, fuzzy
@@ -20839,7 +20893,7 @@ msgstr "合同"
 #: SystemParameters.php:374
 #, fuzzy
 msgid "Select the invoice layout"
-msgstr "請先選擇發票"
+msgstr "選取發票格式"
 
 #: SystemParameters.php:378
 msgid "Show company details on packing slips"
@@ -20939,7 +20993,7 @@ msgstr "設為自動 - 會自動產生客戶編號 - 是一個順序編號"
 #: SystemParameters.php:473
 #, fuzzy
 msgid "Could not load tax categories table"
-msgstr "未能取得稅別，因為"
+msgstr "未能載入稅類表"
 
 #: SystemParameters.php:475
 msgid "Default Tax Category"
@@ -20978,16 +21032,18 @@ msgid "Check Quantity Charged vs Deliver Qty"
 msgstr "檢查 收費數量 VS 交貨數量"
 
 #: SystemParameters.php:522
+#, fuzzy
 msgid "In entry of AP invoices this determines whether or not to check the quantites received into stock tie up with the quantities invoiced"
-msgstr ""
+msgstr "輸入應付發票會判是否檢查接收為存貨的數量捆綁到發票數量"
 
 #: SystemParameters.php:525
 msgid "Check Price Charged vs Order Price"
 msgstr "檢查收費價格 VS 訂單價格"
 
 #: SystemParameters.php:530
+#, fuzzy
 msgid "In entry of AP invoices this parameter determines whether or not to check invoice prices tie up to ordered prices"
-msgstr ""
+msgstr "輸入應付發票時, 這設定會判定是否檢查接收為發票單價量捆綁到訂單單價"
 
 #: SystemParameters.php:533
 msgid "Allowed Over Charge Proportion"
@@ -21139,12 +21195,12 @@ msgstr "MediaWiki"
 #: SystemParameters.php:695
 #, fuzzy
 msgid "Wiki application"
-msgstr "Wiki 程式："
+msgstr "Wiki application"
 
 #: SystemParameters.php:701
 #, fuzzy
 msgid "This feature makes webERP show links to a free form company knowlege base using a wiki. This allows sharing of important company information - about customers, suppliers and products and the set up of work flow menus and/or company procedures documentation"
-msgstr "這個功能可以讓 webERP 顯示連結到 wacko wiki，藉此建立公司的知識庫。透過知識庫管理可以分享公司的重要資訊，像是客戶、供應商、產品或是一系列的工作流程與公司內部流程文件。"
+msgstr "這使webERP能顯示連結到用wiki建成的免費公司資料庫.  能分享重要的公司資訊 - 關於客戶, 供應商, 產品, 和設立工作流程指引及/或公司程序文件"
 
 #: SystemParameters.php:703
 msgid "Wiki Path"
@@ -21153,81 +21209,86 @@ msgstr "Wiki路徑"
 #: SystemParameters.php:705
 #, fuzzy
 msgid "The path to the wiki installation to form the basis of wiki URLs - this should be the directory on the web-server where the wiki is installed. The wiki must be installed on the same web-server as webERP"
-msgstr " wacko wiki 安裝的位置，它必須與 webERP 安裝在同一個網頁伺服器。"
+msgstr "wiki 安裝的路徑來組成基礎的 wiki URLs - 這應該是在伺服器上安裝wiki的的資料夾.  wiki必須是跟webERP安裝在相同的伺服器"
 
 #: SystemParameters.php:721
 #, fuzzy
 msgid "Prohibit GL Journals to Control Accounts"
-msgstr "貸方控制會計科目"
+msgstr "禁止總帳日記到授控帳戶"
 
 #: SystemParameters.php:724
 #: SystemParameters.php:727
 #, fuzzy
 msgid "Prohibited"
-msgstr "禁止銷售"
+msgstr "禁止"
 
 #: SystemParameters.php:725
 #: SystemParameters.php:728
 #, fuzzy
 msgid "Allowed"
-msgstr "配置"
+msgstr "允可"
 
 #: SystemParameters.php:730
+#, fuzzy
 msgid "Setting this to prohibited prevents accidentally entering a journal to the automatically posted and reconciled control accounts for creditors (AP) and debtors (AR)"
-msgstr ""
+msgstr "此設定可禁止防止意外地輸入一個日記帳到自動記帳和同步受控的貸方(應付)和借方(應收)."
 
 #: SystemParameters.php:733
 #, fuzzy
 msgid "Prohibit GL Journals to Periods Prior To"
-msgstr "貸方控制會計科目"
+msgstr "禁止總帳日記帳到期間早於"
 
 #: SystemParameters.php:737
 #, fuzzy
 msgid "Could not load periods table"
-msgstr "未能載入價格清單"
+msgstr "未能載入期間表"
 
 #: SystemParameters.php:746
+#, fuzzy
 msgid "This allows all periods before the selected date to be locked from postings. All postings for transactions dated prior to this date will be posted in the period following this date."
-msgstr ""
+msgstr "這允可阻截所選取日期之前期間的記帳.  所有交易日期早於這日期的記帳都會記入於下列日期的期間"
 
 #: SystemParameters.php:748
 #, fuzzy
 msgid "Inventory Costing Method"
-msgstr "EDI 通訊方法"
+msgstr "倉存成本方法"
 
 #: SystemParameters.php:752
 #: SystemParameters.php:756
 #, fuzzy
 msgid "Weighted Average Costing"
-msgstr "平均每月用量是"
+msgstr "加權平均成本"
 
 #: SystemParameters.php:753
 #: SystemParameters.php:755
 #, fuzzy
 msgid "Standard Costing"
-msgstr "運輸成本"
+msgstr "標準成本"
 
 #: SystemParameters.php:759
+#, fuzzy
 msgid "webERP allows inventory to be costed based on the weighted average of items in stock or full standard costing with price variances reported. The selection here determines the method used and the general ledger postings resulting from purchase invoices and shipment closing"
-msgstr ""
+msgstr "webERP允可存貨物品按加權平均來計算成本或以標準成本和價格差異來報告.  這選項是按使用方法及採購發票和運費總帳記帳結果"
 
 #: SystemParameters.php:761
 #, fuzzy
 msgid "Auto Issue Components"
-msgstr "要發出的數量"
+msgstr "自動發放零件"
 
 #: SystemParameters.php:771
+#, fuzzy
 msgid "When items are manufactured it is possible for the components of the item to be automatically decremented from stock in accordance with the Bill of Material setting"
-msgstr ""
+msgstr "當物品為生產的時, 可以自動按物料清單設定, 從存貨中扣減物品的零件"
 
 #: SystemParameters.php:773
 #, fuzzy
 msgid "Prohibit Negative Stock"
-msgstr "負數存貨列出錯誤"
+msgstr "禁止負數存貨"
 
 #: SystemParameters.php:783
+#, fuzzy
 msgid "Setting this parameter to Yes prevents invoicing and the issue of stock if this would result in negative stock. The stock problem must be corrected before the invoice or issue is allowed to be processed."
-msgstr ""
+msgstr "當設定為 \"是\" 時, 可避免開發票或發放存貨時產生負存貨量.  存貨問題必須先修正才可以進行發開票或發放"
 
 #: SystemParameters.php:786
 msgid "Months of Audit Trail to Retain"
@@ -21372,8 +21433,9 @@ msgid "Update Rates"
 msgstr "更新稅率"
 
 #: TaxAuthorityRates.php:118
+#, fuzzy
 msgid "There are no tax rates to show - perhaps the dispatch tax province records have not yet been created?"
-msgstr ""
+msgstr "沒有稅率可顯示 - 可能未產生派送稅區記錄?"
 
 #: TaxAuthorityRates.php:124
 msgid "Tax Groupings"
@@ -22060,7 +22122,7 @@ msgstr "經常費用恢復會計科目"
 #: WorkOrderCosting.php:7
 #, fuzzy
 msgid "Work Order Costing"
-msgstr "輸入工作單"
+msgstr "工作訂單成本"
 
 #: WorkOrderCosting.php:11
 #: WorkOrderIssue.php:11
@@ -22068,22 +22130,22 @@ msgstr "輸入工作單"
 #: WorkOrderStatus.php:39
 #, fuzzy
 msgid "Back to Work Orders"
-msgstr "只顯示期貨訂單"
+msgstr "返回工作訂單"
 
 #: WorkOrderCosting.php:18
 #, fuzzy
 msgid "Select a work order"
-msgstr "選取現有未完成的工作單"
+msgstr "選取工作訂單"
 
 #: WorkOrderCosting.php:19
 #, fuzzy
 msgid "This page can only be opened if a work order has been selected."
-msgstr "此頁只有選取採購訂單才能開啟"
+msgstr "這頁只能在有選取工作訂單才能開啟"
 
 #: WorkOrderCosting.php:29
 #, fuzzy
 msgid "Could not retrieve the details of the selected work order"
-msgstr "未能取得選取的撤消的收貨單，因為"
+msgstr "未能提取選取工作訂單的資料"
 
 #: WorkOrderCosting.php:42
 #: WorkOrderIssue.php:59
@@ -22093,12 +22155,12 @@ msgstr "未能取得選取的撤消的收貨單，因為"
 #: WorkOrderStatus.php:33
 #, fuzzy
 msgid "The selected work order item cannot be retrieved from the database"
-msgstr "項目成本未能由資料庫取得"
+msgstr "選取的工作訂單物品未能由資料庫提取"
 
 #: WorkOrderCosting.php:50
 #, fuzzy
 msgid "Work order"
-msgstr "輸入工作單"
+msgstr "工作訂單"
 
 #: WorkOrderCosting.php:52
 #: WorkOrderIssue.php:523
@@ -22106,7 +22168,7 @@ msgstr "輸入工作單"
 #: WorkOrderStatus.php:43
 #, fuzzy
 msgid "Manufactured at"
-msgstr "生產項目"
+msgstr "生產於"
 
 #: WorkOrderCosting.php:54
 #: WorkOrderEntry.php:447
@@ -22115,171 +22177,177 @@ msgstr "生產項目"
 #: WorkOrderStatus.php:43
 #, fuzzy
 msgid "Required By"
-msgstr "要求日期"
+msgstr "要求自"
 
 #: WorkOrderCosting.php:103
 #, fuzzy
 msgid "Qty Reqd"
-msgstr "要求日期"
+msgstr "要求數量"
 
 #: WorkOrderCosting.php:104
 #, fuzzy
 msgid "Cost Reqd"
-msgstr "要求日期"
+msgstr "要求成本"
 
 #: WorkOrderCosting.php:105
 #, fuzzy
 msgid "Date Issued"
-msgstr "派送日期"
+msgstr "發放日期"
 
 #: WorkOrderCosting.php:106
 #, fuzzy
 msgid "Issued Qty"
-msgstr "交貨數量"
+msgstr "開發數量"
 
 #: WorkOrderCosting.php:107
 #, fuzzy
 msgid "Issued Cost"
-msgstr "每件成本"
+msgstr "發放成本"
 
 #: WorkOrderCosting.php:108
 #, fuzzy
 msgid "Usage Variance"
-msgstr "用量差異代號"
+msgstr "用量差異"
 
 #: WorkOrderCosting.php:109
 #, fuzzy
 msgid "Cost Variance"
-msgstr "每件成本"
+msgstr "成本差異"
 
 #: WorkOrderCosting.php:151
 #, fuzzy
 msgid "Could not retrieve the issues of the item because:"
-msgstr "未能取得要求的項目，因為"
+msgstr "未能提取要求的物品, 因為"
 
 #: WorkOrderCosting.php:224
 #, fuzzy
 msgid "Could not get issues that were not required by the BOM because"
-msgstr "未能取得要求的項目，因為"
+msgstr "未能提取非物料清單要求的物品, 因為"
 
 #: WorkOrderCosting.php:250
 #, fuzzy
 msgid "Totals"
-msgstr "發票總額"
+msgstr "總計"
 
 #: WorkOrderCosting.php:312
 #: WorkOrderCosting.php:333
 #: WorkOrderCosting.php:352
 #, fuzzy
 msgid "share of variance"
-msgstr "價格差異會計科目代號"
+msgstr "差異分佈"
 
 #: WorkOrderCosting.php:315
 #: WorkOrderCosting.php:336
 #, fuzzy
 msgid "The GL posting for the work order variance could not be inserted because"
-msgstr "這貸方傳票的總帳的船運過數無法新增，因為"
+msgstr "工作訂單差異的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:355
 #, fuzzy
 msgid "The GL posting for the WIP side of the work order variance posting could not be inserted because"
-msgstr "總帳過數的存貨銷售成本無法新增，因為"
+msgstr "WIP的工作訂單差異記帳的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:389
 #: WorkOrderCosting.php:408
 #, fuzzy
 msgid "share of usage variance"
-msgstr "用量差異代號"
+msgstr "用量差異分佈"
 
 #: WorkOrderCosting.php:392
 #, fuzzy
 msgid "The GL posting for the material useage variance could not be inserted because"
-msgstr "這貸方傳票的總帳的船運過數無法新增，因為"
+msgstr "物料用量差異的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:411
 #, fuzzy
 msgid "The GL posting for the WIP side of the usage variance posting could not be inserted because"
-msgstr "總帳過數的未確定收款單無法新增，因為"
+msgstr "WIP的用量差異記帳的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:431
 #: WorkOrderCosting.php:450
 #, fuzzy
 msgid "share of cost variance"
-msgstr "於標準成本"
+msgstr "成本差異分佈"
 
 #: WorkOrderCosting.php:434
 #, fuzzy
 msgid "The GL posting for the cost variance could not be inserted because"
-msgstr "未能新增存貨成本調整入帳到總帳借，因為"
+msgstr "成本差異的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:453
 #, fuzzy
 msgid "The GL posting for the WIP side of the cost variance posting could not be inserted because"
-msgstr "總帳過數的存貨銷售成本無法新增，因為"
+msgstr "WIP的成本差異記帳的總帳記帳未能插入, 因為"
 
 #: WorkOrderCosting.php:463
 #, fuzzy
 msgid "Could not update the work order to closed because:"
-msgstr "未能更新明細記錄，因為"
+msgstr "未能更新工作訂單為完結, 因為"
 
 #: WorkOrderCosting.php:464
 #, fuzzy
 msgid "The SQL used to close the work order was:"
-msgstr "以下更新銷售訂單的資料庫正被使用"
+msgstr "用作完結工作訂單的SQL是:"
 
 #: WorkOrderCosting.php:469
+#, fuzzy
 msgid "The item cost as calculated from the work order has been applied against the weighted average cost and the necessary GL journals created to update stock as a result of closing this work order"
-msgstr ""
+msgstr "關閉這工作訂單時, 工作單計算的物品成本已使用於加權平均成本和更新存貨所產生所需要的總帳日記帳   "
 
 #: WorkOrderCosting.php:471
+#, fuzzy
 msgid "The work order has been closed and general ledger entries made for the variances on the work order"
-msgstr ""
+msgstr "工作訂單已完結和總帳輸入了工作訂單的差異"
 
 #: WorkOrderCosting.php:475
+#, fuzzy
 msgid "The item costs resulting from the work order have been applied against the weighted average stock value of the items on the work order, and the work order has been closed"
-msgstr ""
+msgstr "工作訂單的物品成本結果改應用到工作訂單中物品的加權平均存貨值, 和工作訂單已完結"
 
 #: WorkOrderCosting.php:477
 #, fuzzy
 msgid "The work order has been closed"
-msgstr "這工作單已更新"
+msgstr "這工作訂單已完結"
 
 #: WorkOrderCosting.php:485
 msgid "Close This Work Order"
 msgstr "關閉這工作作單"
 
 #: WorkOrderCosting.php:485
+#, fuzzy
 msgid "Closing the work order takes the variances to the general ledger (if integrated). The work order will no longer be able to have manufactured goods received entered against it or materials issued to it."
-msgstr ""
+msgstr "完結工作訂單把差異帶到總帳 (如綜合).  工作訂單不再可以用作按收生產產品或領取物料."
 
 #: WorkOrderCosting.php:487
+#, fuzzy
 msgid "This work order is closed and cannot accept additional issues of materials or receipts of manufactured items"
-msgstr ""
+msgstr "這工作訂單已完結和不能接受追加發料或接收成品"
 
 #: WorkOrderEntry.php:170
 #, fuzzy
 msgid "The item selected cannot be addded to a work order because it is not a manufactured item"
-msgstr "未能新增到訂單，因為已標籤為己淘汰"
+msgstr "選取的物品未能新增到工作訂單, 因為這不是生產的物品"
 
 #: WorkOrderEntry.php:174
 #, fuzzy
 msgid "The item selected cannot be found in the database"
-msgstr "未能在資料庫中找到"
+msgstr "選取的物品未有在資料庫中找到"
 
 #: WorkOrderEntry.php:183
 #, fuzzy
 msgid "This item is already on the work order and cannot be added again"
-msgstr "未能新增銷售訂單，因為"
+msgstr "這物品已在工作訂單上, 不能再次新增."
 
 #: WorkOrderEntry.php:198
 #: WorkOrderEntry.php:295
+#, fuzzy
 msgid "The cost of this item as accumulated from the sum of the component costs is nil. This could be because there is no bill of material set up ... you may wish to double check this"
-msgstr ""
+msgstr "這由零件成本累計的物品成本總計為\"無\" (NIL).  可能因為未有設定物料清單 ... 請復核"
 
 #: WorkOrderEntry.php:233
 #, fuzzy
 msgid "The work order item could not be added"
-msgstr "這工作單已新增/更新"
+msgstr "未能新增工作訂單物品"
 
 #: WorkOrderEntry.php:255
 #, fuzzy
@@ -22289,7 +22357,7 @@ msgstr "輸入日期格式無效"
 #: WorkOrderEntry.php:273
 #, fuzzy
 msgid "The factory where this work order is made can only be updated if the quantity received on all output items is 0"
-msgstr "未能更新採購訂單資料記錄的接收數量，因為"
+msgstr "這工作訂單生產的工場只能在全部輸出物品接收數量是 \"0\" 時才能更新"
 
 #: WorkOrderEntry.php:313
 msgid "The work order could not be added/updated"
@@ -22306,12 +22374,12 @@ msgstr "輸入新的工作單"
 #: WorkOrderEntry.php:329
 #, fuzzy
 msgid "Select an existing work order"
-msgstr "選取現有未完成的工作單"
+msgstr "選取現有未完成的工作訂單"
 
 #: WorkOrderEntry.php:342
 #, fuzzy
 msgid "This work order cannot be deleted because it has issues or receipts related to it"
-msgstr "未能刪除這工作單，因為已發出工作"
+msgstr "未能刪除這工作訂單, 因為已發放工作"
 
 #: WorkOrderEntry.php:349
 msgid "The work order requirements could not be deleted"
@@ -22332,7 +22400,7 @@ msgstr "選取現有未完成的工作單"
 #: WorkOrderEntry.php:395
 #, fuzzy
 msgid "Could not get the work order items"
-msgstr "未能刪除工作單"
+msgstr "未能取得工作訂單物品"
 
 #: WorkOrderEntry.php:423
 msgid "Work Order Reference"
@@ -22341,24 +22409,24 @@ msgstr "工作單參考"
 #: WorkOrderEntry.php:424
 #, fuzzy
 msgid "Factory Location"
-msgstr "地點維護"
+msgstr "工場地點"
 
 #: WorkOrderEntry.php:451
 #, fuzzy
 msgid "Accumulated Costs"
-msgstr "修改標準成本"
+msgstr "累計成本"
 
 #: WorkOrderEntry.php:456
 #, fuzzy
 msgid "Output Item"
-msgstr "產品編號"
+msgstr "輸出物品"
 
 #: WorkOrderEntry.php:457
 #: WorkOrderIssue.php:566
 #: WorkOrderStatus.php:64
 #, fuzzy
 msgid "Qty Required"
-msgstr "無要求"
+msgstr "要求數量"
 
 #: WorkOrderEntry.php:458
 #: includes/PDFStockLocTransferHeader.inc:33
@@ -22368,11 +22436,12 @@ msgstr "接收數量"
 #: WorkOrderEntry.php:459
 #, fuzzy
 msgid "Balance Remaining"
-msgstr "總結餘"
+msgstr "餘下結餘"
 
 #: WorkOrderEntry.php:460
+#, fuzzy
 msgid "Next Lot/SN Ref"
-msgstr ""
+msgstr "下一個批/序號參考"
 
 #: WorkOrderEntry.php:484
 msgid "Delete This Work Order"
@@ -22382,22 +22451,22 @@ msgstr "刪除這工作單"
 #: WorkOrderIssue.php:691
 #, fuzzy, php-format
 msgid "Add to Work Order"
-msgstr "新增項目到訂單"
+msgstr "新增至工作訂單"
 
 #: WorkOrderIssue.php:7
 #, fuzzy
 msgid "Issue Materials To Work Order"
-msgstr "發出產品到工作單"
+msgstr "發放物料到工作訂單"
 
 #: WorkOrderIssue.php:18
 #, fuzzy
 msgid "Select a work order to issue materials to"
-msgstr "選取其他要發出工作訂單"
+msgstr "選取工作訂單來發放物料到"
 
 #: WorkOrderIssue.php:19
 #, fuzzy
 msgid "This page can only be opened if a work order has been selected. Please select a work order to issue materials to first"
-msgstr "此頁只能在銷售訂單中的列項目被選擇到發票時才能開啟，請先做這個"
+msgstr "此頁只能在已選取工作訂單後才能開啟. 請先選取工作訂單來發料"
 
 #: WorkOrderIssue.php:39
 #: WorkOrderIssue.php:483
@@ -22406,218 +22475,225 @@ msgstr "此頁只能在銷售訂單中的列項目被選擇到發票時才能開
 #: WorkOrderStatus.php:10
 #, fuzzy
 msgid "Could not retrieve the details of the selected work order item"
-msgstr "未能取得選取的撤消的收貨單，因為"
+msgstr "未能提取選取工作訂單物品的資料"
 
 #: WorkOrderIssue.php:66
+#, fuzzy
 msgid "The work order is closed - no more materials or components can be issued to it."
-msgstr ""
+msgstr "工作訂單已完結 - 不能再配發放物料或零件"
 
 #: WorkOrderIssue.php:96
+#, fuzzy
 msgid "The item being issued has a zero cost. Zero cost items cannot be issued to work orders"
-msgstr ""
+msgstr "要開發的物品為零成本, 零成本物品不能開發到工作訂單"
 
 #: WorkOrderIssue.php:109
+#, fuzzy
 msgid "This issue cannot be processed because the system parameter is set to prohibit negative stock and this issue would result in stock going into negative. Please correct the stock first before attempting another issue"
-msgstr ""
+msgstr "這發放未能執行, 因為系統設定為禁止負存貨量, 而這發放會導致存貨量為負數.  請先修正存貨才進行其他發放"
 
 #: WorkOrderIssue.php:179
 #, fuzzy
 msgid "stock movement records could not be inserted when processing the work order issue because"
-msgstr "未能新增調貨記錄，因為"
+msgstr "執行工作訂單發放時未能插入存貨移動記錄, 因為"
 
 #: WorkOrderIssue.php:233
 #, fuzzy
 msgid "Could not check if a batch/lot reference for the item already exists because"
-msgstr "未能檢查是否有一批產品已存在，因為"
+msgstr "未能檢查是否有一批存貨物品已存在, 因為"
 
 #: WorkOrderIssue.php:234
 #, fuzzy
 msgid "The following SQL to test for an already existing controlled item was used"
-msgstr "以下測試受控但未給予序號的產品的資料庫正被使用"
+msgstr "以下測試受控已存在序號物品的 SQL 正被使用"
 
 #: WorkOrderIssue.php:254
 #, fuzzy
 msgid "The batch/lot item record could not be inserted because"
-msgstr "未能新增序列號產品記錄，因為"
+msgstr "未能插入序列號/批號記錄, 因為"
 
 #: WorkOrderIssue.php:255
 #, fuzzy
 msgid "The following SQL to insert the batch/lot item records was used"
-msgstr "以下新增序號產品記錄的資料庫正被使用"
+msgstr "以下用作插入序號/批號物品記錄的 SQL "
 
 #: WorkOrderIssue.php:300
 #, fuzzy
 msgid "The issue of the item to the work order GL posting could not be inserted because"
-msgstr "未能新增總帳的存貨貸方成本的入帳，因為"
+msgstr "工作訂單的物品發放總帳記帳未能插入, 因為"
 
 #: WorkOrderIssue.php:301
 #, fuzzy
 msgid "The following SQL to insert the work order issue GLTrans record was used"
-msgstr "下列新增總帳採購交易記錄的資料庫正被使用"
+msgstr "下列用作插入工作訂單發放總帳交易記錄的SQL"
 
 #: WorkOrderIssue.php:320
 #, fuzzy
 msgid "The stock account credit on the issue of items to a work order GL posting could not be inserted because"
-msgstr "總帳過數的存貨銷售成本無法新增，因為"
+msgstr "存貨帳目貨帳於工作訂單的發放物品總帳記帳未能插入, 因為"
 
 #: WorkOrderIssue.php:321
 #, fuzzy
 msgid "The following SQL to insert the stock GLTrans record was used"
-msgstr "下列新增總帳採購交易記錄的資料庫正被使用"
+msgstr "下列SQL用作插入存貨總帳交易記錄"
 
 #: WorkOrderIssue.php:328
 #, fuzzy
 msgid "Could not update the work order cost issued to the work order because"
-msgstr "未能更新明細記錄，因為"
+msgstr "未能更新工作訂單成本發放到工作訂單, 因為"
 
 #: WorkOrderIssue.php:329
 #, fuzzy
 msgid "The following SQL was used to update the work order"
-msgstr "以下更新銷售訂單的資料庫正被使用"
+msgstr "下列SQL用作更新工作訂單"
 
 #: WorkOrderIssue.php:339
 #, fuzzy
 msgid "The issue of"
-msgstr "要發出的數量"
+msgstr "發行"
 
 #: WorkOrderIssue.php:339
 #: WorkOrderReceive.php:583
 #, fuzzy
 msgid "against work order"
-msgstr "發出這工作單"
+msgstr "相應工作訂單"
 
 #: WorkOrderIssue.php:340
 #, fuzzy
 msgid "Select a different work order for issuing materials and components against"
-msgstr "請選取要接收貨品的其他訂單"
+msgstr "選取其他工作訂單來發放相應物料和零件"
 
 #: WorkOrderIssue.php:513
+#, fuzzy
 msgid "The selected work order has been closed and variances calculated and posted. No more issues of materials and components can be made against this work order."
-msgstr ""
+msgstr "選取的工作訂單已完結, 和差異已計算及已記帳.  不能再用此工作訂單發放物料和零件."
 
 #: WorkOrderIssue.php:522
 #: WorkOrderStatus.php:42
 #, fuzzy
 msgid "Issue to work order"
-msgstr "發出產品到工作單"
+msgstr "發放到工作訂單"
 
 #: WorkOrderIssue.php:524
 #: WorkOrderReceive.php:648
 #: WorkOrderStatus.php:44
 #, fuzzy
 msgid "Quantity Ordered"
-msgstr "訂單于"
+msgstr "訂單數量"
 
 #: WorkOrderIssue.php:527
 #: WorkOrderStatus.php:46
 #, fuzzy
 msgid "Date Material Issued"
-msgstr "累計發出值"
+msgstr "原料發放日期"
 
 #: WorkOrderIssue.php:528
 #: WorkOrderStatus.php:47
 #, fuzzy
 msgid "Issued From"
-msgstr "從資料庫"
+msgstr "發放自"
 
 #: WorkOrderIssue.php:564
 #: WorkOrderStatus.php:62
 #, fuzzy
 msgid "Material Requirements For this Work Order"
-msgstr "刪除這工作單"
+msgstr "這工作訂單要求的物料"
 
 #: WorkOrderIssue.php:567
 #: WorkOrderStatus.php:65
 #, fuzzy
 msgid "Qty Issued"
-msgstr "交貨數量"
+msgstr "發放數量"
 
 #: WorkOrderIssue.php:720
 #, fuzzy
 msgid "Could not get the detail of the item being issued because"
-msgstr "未能判定項目是否存在，因為"
+msgstr "未能取得物品要發放的詳細, 因為"
 
 #: WorkOrderIssue.php:725
 #, fuzzy
 msgid "Issuing"
-msgstr "使用中"
+msgstr "發放中"
 
 #: WorkOrderIssue.php:736
 #, fuzzy
 msgid "Serial Numbers Issued"
-msgstr "輸入序列號"
+msgstr "已發放序號"
 
 #: WorkOrderIssue.php:743
 #, fuzzy
 msgid "Could not retrieve the serial numbers available at the location specified because"
-msgstr "未能取得特殊價格設定，因為"
+msgstr "未能提取指定地點可用的序號, 因為"
 
 #: WorkOrderIssue.php:745
 #, fuzzy
 msgid "There are no serial numbers at this location to issue"
-msgstr "沒有顯示交易自從"
+msgstr "這地點發有序號可發放"
 
 #: WorkOrderIssue.php:746
 #, fuzzy
 msgid "Reselect Location or Issued Item"
-msgstr "這項目的地點"
+msgstr "重選地點或發放物品"
 
 #: WorkOrderIssue.php:758
 #: WorkOrderIssue.php:768
 #: WorkOrderIssue.php:774
 #, fuzzy
 msgid "Process Items Issued"
-msgstr "累計發出值"
+msgstr "執行物品發放"
 
 #: WorkOrderIssue.php:761
 #, fuzzy
 msgid "Batch/Lots Issued"
-msgstr "累計發出值"
+msgstr "已發放批/號"
 
 #: WorkOrderIssue.php:772
 #, fuzzy
 msgid "Quantity Issued"
-msgstr "有數量的"
+msgstr "發放數量"
 
 #: WorkOrderReceive.php:7
 #, fuzzy
 msgid "Receive Work Order"
-msgstr "輸入工作單"
+msgstr "接收工作訂單"
 
 #: WorkOrderReceive.php:18
 #, fuzzy
 msgid "Select a work order to receive"
-msgstr "選擇要接收的採購訂單"
+msgstr "選取要接收的工作訂單"
 
 #: WorkOrderReceive.php:19
 #, fuzzy
 msgid "This page can only be opened if a work order has been selected. Please select a work order to receive first"
-msgstr "此頁只能在銷售訂單中的列項目被選擇到發票時才能開啟，請先做這個"
+msgstr "此頁只有在已選取工作訂單才能開啟, 請先選取要接收的工作訂單"
 
 #: WorkOrderReceive.php:92
+#, fuzzy
 msgid "The quantity received is greater than the quantity required even after allowing for the configured allowable over-receive proportion. If this is correct then the work order must be modified first."
-msgstr ""
+msgstr "接收數量大於要求數量, 即使是在設定的允可超收比例計算之後. 如這是正確的, 請修改工作訂單"
 
 #: WorkOrderReceive.php:105
 #: WorkOrderReceive.php:474
 #, fuzzy
 msgid "Could not check if a serial number for the stock item already exists because"
-msgstr "未能檢查是否有一批產品已存在，因為"
+msgstr "未能檢查存貨物品的序號是否存在, 因為"
 
 #: WorkOrderReceive.php:106
 #: WorkOrderReceive.php:475
 #, fuzzy
 msgid "The following SQL to test for an already existing serialised stock item was used"
-msgstr "以下測試受控但未給予序號的產品的資料庫正被使用"
+msgstr "下列SQL用作測試存貨物品序號是否已存在"
 
 #: WorkOrderReceive.php:111
+#, fuzzy
 msgid "The serial number entered already exists. Dupliate serial numbers are prohibited. The duplicate item is:"
-msgstr ""
+msgstr "輸入的序號已存在.  禁止重覆的序號.  重覆的物品是:"
 
 #: WorkOrderReceive.php:202
 #: WorkOrderReceive.php:221
+#, fuzzy
 msgid "Cost roll on release of WO"
-msgstr ""
+msgstr "發放工單的成本計算"
 
 #: WorkOrderReceive.php:202
 #: WorkOrderReceive.php:221
@@ -22634,129 +22710,130 @@ msgstr "未能新增存貨成本調整的入帳到總帳的貸，因為"
 #: WorkOrderReceive.php:283
 #, fuzzy
 msgid "The location stock record could not be updated by the issue of stock to the work order from an auto issue component because"
-msgstr "組裝零件的地點存貨記錄未能更新，因為"
+msgstr "地點存貨記錄按自動發放零件的工作訂單發放存貨更新, 因為"
 
 #: WorkOrderReceive.php:308
 #, fuzzy
 msgid "stock movement record could not be inserted for an auto-issue component because"
-msgstr "未能新增調貨記錄，因為"
+msgstr "自動發放零件的存貨移動記錄未能插入, 因為"
 
 #: WorkOrderReceive.php:316
 #, fuzzy
 msgid "Could not be update the work order cost for an auto-issue component because"
-msgstr "不能更新BOM零件，因為"
+msgstr "自動發放零件的工作訂單成本未能更新, 因為"
 
 #: WorkOrderReceive.php:317
 #, fuzzy
 msgid "The following SQL to update the work order cost was used"
-msgstr "以下更新採購訂單資料的資料庫是"
+msgstr "下列SQL用作更新工作訂單成本"
 
 #: WorkOrderReceive.php:338
 #, fuzzy
 msgid "The WIP side of the work order issue GL posting could not be inserted because"
-msgstr "總帳過數的存貨銷售成本無法新增，因為"
+msgstr "WIP的工作訂單發放總帳記帳未能插入, 因為"
 
 #: WorkOrderReceive.php:339
 #: WorkOrderReceive.php:358
 #, fuzzy
 msgid "The following SQL to insert the WO issue GLTrans record was used"
-msgstr "下列新增總帳交易成本差別記錄的資料庫正被使用"
+msgstr "下列的SQL用作插入工作訂單發放總帳交易記錄"
 
 #: WorkOrderReceive.php:357
 #, fuzzy
 msgid "The stock side of the work order issue GL posting could not be inserted because"
-msgstr "總帳過數的存貨銷售成本無法新增，因為"
+msgstr "存貨的工作訂單發放總帳記帳未能插入, 因為"
 
 #: WorkOrderReceive.php:415
 #, fuzzy
 msgid "stock movement records could not be inserted when processing the work order receipt because"
-msgstr "未能新增調貨記錄，因為"
+msgstr "執行工作訂單接收時存貨移動記錄未能插入, 因為"
 
 #: WorkOrderReceive.php:542
 #, fuzzy
 msgid "The receipt of work order finished stock GL posting could not be inserted because"
-msgstr "總帳過數的銷售成本無法新增，因為"
+msgstr "接收工作訂單完成存貨總帳記錄未能插入, 因為"
 
 #: WorkOrderReceive.php:543
 #, fuzzy
 msgid "The following SQL to insert the work order receipt of finished items GLTrans record was used"
-msgstr "下列新增總帳交易成本差別記錄的資料庫正被使用"
+msgstr "下列SQL用作插入接收工作訂單完成物品總帳交易記錄"
 
 #: WorkOrderReceive.php:562
 #, fuzzy
 msgid "The WIP credit on receipt of finsihed items from a work order GL posting could not be inserted because"
-msgstr "未能新增總帳的存貨貸方成本的入帳，因為"
+msgstr "WIP貨帳於工作訂單的已完成物品接收總帳記帳未能插入, 因為"
 
 #: WorkOrderReceive.php:563
 #, fuzzy
 msgid "The following SQL to insert the WIP GLTrans record was used"
-msgstr "下列新增總帳採購交易記錄的資料庫正被使用"
+msgstr "下列SQL用作插入WIP總帳交易記錄"
 
 #: WorkOrderReceive.php:570
 #, fuzzy
 msgid "Could not update the work order item record with the total quantity received because"
-msgstr "最新收款日期未能更新至客戶記錄，因為"
+msgstr "未能更新工作訂單物品記錄的總接收數量, 因為"
 
 #: WorkOrderReceive.php:571
 #, fuzzy
 msgid "The following SQL was used to update the work ordeer"
-msgstr "以下更新銷售訂單的資料庫正被使用"
+msgstr "下列SQL用作更新工作訂單"
 
 #: WorkOrderReceive.php:583
 #, fuzzy
 msgid "The receipt of"
-msgstr "收款"
+msgstr "接收屬於"
 
 #: WorkOrderReceive.php:584
 #, fuzzy
 msgid "Select a different work order for receiving finished stock against"
-msgstr "請選取要接收貨品的其他訂單"
+msgstr "選取其他工作訂單來接收對應的已完成存貨"
 
 #: WorkOrderReceive.php:637
+#, fuzzy
 msgid "The selected work order has been closed and variances calculated and posted. No more receipts of manufactured items can be received against this work order. You should make up a new work order to receive this item against."
-msgstr ""
+msgstr "選取的工作訂單已完結和差異已計算及已記帳.   不能用此工作訂單再接收成品.  必須新開一個工作訂單來接收這批物品"
 
 #: WorkOrderReceive.php:646
 #, fuzzy
 msgid "Receive work order"
-msgstr "輸入工作單"
+msgstr "接收工作訂單"
 
 #: WorkOrderReceive.php:650
 #, fuzzy
 msgid "Date Received"
-msgstr "貨品/服務接收日期"
+msgstr "接收日期"
 
 #: WorkOrderReceive.php:650
 #, fuzzy
 msgid "Received Into"
-msgstr "存款到"
+msgstr "接收到"
 
 #: WorkOrderReceive.php:686
 #, fuzzy
 msgid "Serial Numbers Received"
-msgstr "輸入序列號"
+msgstr "已接收序號"
 
 #: WorkOrderReceive.php:699
 #: WorkOrderReceive.php:711
 #: WorkOrderReceive.php:717
 #, fuzzy
 msgid "Process Manufactured Items Received"
-msgstr "執行貨品接收"
+msgstr "執行生產物品接收"
 
 #: WorkOrderReceive.php:701
 #, fuzzy
 msgid "Batch/Lots Received"
-msgstr "執行貨品接收"
+msgstr "已接收批號"
 
 #: WorkOrderStatus.php:7
 #, fuzzy
 msgid "Work Order Status Inquiry"
-msgstr "訂單狀態報表 (列印)"
+msgstr "工作訂單狀況查詢"
 
 #: WorkOrderStatus.php:79
 #, fuzzy
 msgid "Manual Issue"
-msgstr "手動輸入"
+msgstr "手動發於"
 
 #: WWW_Access.php:9
 msgid "Access Permission Maintenance"
@@ -22905,7 +22982,7 @@ msgstr "上次登入"
 #: WWW_Users.php:379
 #, fuzzy
 msgid "Security Role"
-msgstr "保安身份已產生"
+msgstr "保安角色"
 
 #: WWW_Users.php:235
 msgid "Report Size"
@@ -23233,12 +23310,12 @@ msgstr "在系統內不是現在的產品代號"
 #: Z_ChangeStockCode.php:24
 #, fuzzy
 msgid "The new stock code to change the old code to contains illegal characters - no changes will be made"
-msgstr "要更改年度客戶代號，必須輸入新的代號"
+msgstr "替換舊編碼的新物品編碼含有不合法字元 - 未有更改"
 
 #: Z_ChangeStockCode.php:30
 #, fuzzy
 msgid "The new stock code to change the old code to must be entered as well"
-msgstr "要更改年度客戶代號，必須輸入新的代號"
+msgstr "替換舊編碼的新物品編碼必須正確輸入"
 
 #: Z_ChangeStockCode.php:40
 msgid "The replacement stock code"
@@ -23408,18 +23485,21 @@ msgid "New Inventory Code"
 msgstr "新產品代號"
 
 #: Z_CheckAllocationsFrom.php:6
+#, fuzzy
 msgid "Identify Allocation Stuff Ups"
-msgstr ""
+msgstr "Identify Allocation Stuff Ups"
 
 #: Z_CheckAllocationsFrom.php:29
 #: Z_CheckAllocationsFrom.php:52
+#, fuzzy
 msgid "Ov Amt"
-msgstr ""
+msgstr "外幣總額"
 
 #: Z_CheckAllocationsFrom.php:31
 #: Z_CheckAllocationsFrom.php:54
+#, fuzzy
 msgid "Tot Allcns"
-msgstr ""
+msgstr "總配置"
 
 #: Z_CheckAllocationsFrom.php:60
 msgid "There are no inconsistent allocations"
@@ -24073,8 +24153,9 @@ msgid "Make New Company Database Utility"
 msgstr "製作新公司資料庫應用工具"
 
 #: Z_MakeNewCompany.php:24
+#, fuzzy
 msgid "The web-server does not appear to be able to write to the companies directory to create the required directories for the new company and to upload the logo to. The system administrator will need to modify the permissions on your installation before a new company can be created"
-msgstr ""
+msgstr "伺服器不允可產生和寫入公司目錄用作上載公司標誌.  系統管理員需要修已安裝的授權來產生新公司"
 
 #: Z_MakeNewCompany.php:34
 msgid "Company abbreviations must not contain spaces, \\& or \" or '"
@@ -24093,23 +24174,24 @@ msgid "This company cannot be added because either it already exists or no logo 
 msgstr "這公司無法新增，因為已存在或未上載公司標誌"
 
 #: Z_MakeNewCompany.php:150
+#, fuzzy
 msgid "Files LogoFile is set ok"
-msgstr ""
+msgstr "檔案 LogoFile 記立完成"
 
 #: Z_MakeNewCompany.php:152
 #, fuzzy
 msgid "is not set"
-msgstr "是設定到"
+msgstr "未有設定"
 
 #: Z_MakeNewCompany.php:155
 #, fuzzy
 msgid "is not blank"
-msgstr "製作者欄不能空白"
+msgstr "不是空白"
 
 #: Z_MakeNewCompany.php:157
 #, fuzzy
 msgid "is blank"
-msgstr "這是"
+msgstr "是空白"
 
 #: Z_MakeNewCompany.php:188
 msgid "The company details and parameters should now be set up for the new company. NB: Only a single user \"demo\" is defined with the password \"weberp\" in the new company database. A new system administrator user should be defined for the new company and this account deleted immediately."
@@ -24151,7 +24233,7 @@ msgstr "請註意"
 #: Z_MakeNewCompany.php:211
 #, fuzzy
 msgid "Enter up to 32 character lower case character abbreviation for the company"
-msgstr "輸入公司 10 個小楷字元為代號"
+msgstr "輸入32 個小楷字元為公司縮寫"
 
 #: Z_MakeNewCompany.php:213
 msgid "Logo Image File (.jpg)"
@@ -24160,7 +24242,7 @@ msgstr "標誌圖片檔案 (.JPG)"
 #: Z_MakeNewCompany.php:214
 #, fuzzy
 msgid "Create Database?"
-msgstr "從資料庫"
+msgstr "產生資料庫?"
 
 #: Z_MakeNewCompany.php:217
 #: Z_poAddLanguage.php:92
@@ -24255,8 +24337,9 @@ msgstr "沒有它，不能使用語言檔案"
 #: Z_poAdmin.php:22
 #: Z_poEditLangHeader.php:79
 #: Z_poEditLangModule.php:211
+#, fuzzy
 msgid "You do not have write access to the required files please contact your system administrator"
-msgstr ""
+msgstr "你沒有要求檔案的寫入權限, 請聯絡你的系統管理員"
 
 #: Z_poAdmin.php:26
 msgid "Rebuild the System Default Language File"
@@ -24275,16 +24358,19 @@ msgid "Edit a Language File Module"
 msgstr "編輯語言檔模組"
 
 #: Z_poAdmin.php:30
+#, fuzzy
 msgid "Edit Remaining Strings For This Language"
-msgstr ""
+msgstr "編輯這語言餘下的字串"
 
 #: Z_poAdmin.php:31
+#, fuzzy
 msgid "Download messages.po file"
-msgstr ""
+msgstr "下載 messages.po 檔案"
 
 #: Z_poAdmin.php:32
+#, fuzzy
 msgid "Download messages.mo file"
-msgstr ""
+msgstr "下載 messages.mo 檔案"
 
 #: Z_poEditLangHeader.php:10
 msgid "Edit Header"
@@ -24395,7 +24481,7 @@ msgstr "刷新訊自為最新句子"
 #: Z_poEditLangRemaining.php:12
 #, fuzzy
 msgid "Edit Remaining Items"
-msgstr "撰擇貸方項目"
+msgstr "編輯餘下物品"
 
 #: Z_poRebuildDefault.php:10
 msgid "Rebuild"
@@ -24478,8 +24564,9 @@ msgid "Update Prices"
 msgstr "更新價格"
 
 #: Z_PriceChanges.php:68
+#, fuzzy
 msgid "Are you sure you wish to update all the prices according to the criteria selected?"
-msgstr ""
+msgstr "是否確定要更新符合選取準則的全部價錢?"
 
 #: Z_PriceChanges.php:74
 msgid "So we are using a price list/sales type of"
@@ -24498,9 +24585,9 @@ msgid "The price list/sales type to be updated must be selected first"
 msgstr "請先選取要更新的價格表/銷售類別"
 
 #: Z_PriceChanges.php:86
-#, php-format
+#, fuzzy, php-format
 msgid "The increase or decrease to be applied is expected to be an integer between 1 and 40 it is not necessary to enter the % sign"
-msgstr ""
+msgstr "請輸入1至40整數來調升或下降, 不用輸入百分比符 % sign"
 
 #: Z_PriceChanges.php:86
 msgid "the amount is assumed to be a percentage"
@@ -24592,8 +24679,9 @@ msgid "Do the Recalculation"
 msgstr "進行重計"
 
 #: Z_RePostGLFromPeriod.php:34
+#, fuzzy
 msgid "Are you sure you wish to re-post all general ledger transactions since the selected period .... this can take some time?"
-msgstr ""
+msgstr "是否確定你要重新記帳自選取期間的所有總帳交易 .... 需要一段時間?"
 
 #: Z_RePostGLFromPeriod.php:56
 msgid "All general ledger postings have been reposted from period"
@@ -24686,7 +24774,7 @@ msgstr "發票"
 #: Z_SalesIntegrityCheck.php:49
 #, fuzzy
 msgid "has no GL Entry"
-msgstr "沒有進一步程序被執行"
+msgstr "輸入交貨差異記帳到總帳於"
 
 #: Z_SalesIntegrityCheck.php:54
 #, fuzzy
@@ -24759,7 +24847,7 @@ msgstr "採購訂單項目"
 #: Z_SalesIntegrityCheck.php:122
 #, fuzzy
 msgid "Check Order Item Amounts"
-msgstr "列項目的訂單數量"
+msgstr "顯示訂單總計"
 
 #: Z_SalesIntegrityCheck.php:133
 #, fuzzy
@@ -24789,7 +24877,7 @@ msgstr "存貨檢查凍結行動"
 #: Z_SalesIntegrityCheck.php:174
 #, fuzzy
 msgid "Stock Move "
-msgstr "產品代號"
+msgstr "移動數量"
 
 #: Z_SalesIntegrityCheck.php:180
 msgid "Check for orphan Tax Entries"
@@ -24819,13 +24907,15 @@ msgid "Upgrade webERP 3.01 - 3.02"
 msgstr "升級 webERP 3.01 - 3.02"
 
 #: Z_Upgrade_3.01-3.02.php:8
+#, fuzzy
 msgid "Upgrade script to number salesorderdetails records as required by version 3.02 .... please wait"
-msgstr ""
+msgstr "升級程式到編號銷售訂單資料記錄如3.02版本的要求 .... 請等侯"
 
 #: Z_Upgrade_3.01-3.02.php:12
 #: Z_Upgrade_3.04-3.05.php:66
+#, fuzzy
 msgid "The upgrade script appears to have been run already successfully - there is no need to re-run it"
-msgstr ""
+msgstr "升級程式顯示已完成運行 - 無需再次執行"
 
 #: Z_Upgrade_3.01-3.02.php:41
 msgid "The sales orderdetails lines have been numbered appropriately for version 3.02"
@@ -24834,11 +24924,12 @@ msgstr "銷售訂單資料列已按版本 3.02 適當地被編號，"
 #: Z_Upgrade_3.04-3.05.php:5
 #, fuzzy
 msgid "Upgrade webERP 3.04 - 3.05"
-msgstr "升級 webERP 3.01 - 3.02"
+msgstr "升級 webERP 3.04 - 3.05"
 
 #: Z_Upgrade_3.04-3.05.php:9
+#, fuzzy
 msgid "This script will run perform any modifications to the database required to allow the additional functionality in version 3.05 scripts"
-msgstr ""
+msgstr "程式會執行所有資料庫要求的修改來允可3.05版本新增的效能"
 
 #: Z_Upgrade_3.04-3.05.php:12
 #: Z_Upgrade_3.04-3.05.php:15
@@ -24850,7 +24941,7 @@ msgstr ""
 #: Z_Upgrade_3.08-3.09.php:14
 #, fuzzy
 msgid "Perform Upgrade"
-msgstr "升級 webERP 3.01 - 3.02"
+msgstr "執行升級"
 
 #: Z_Upgrade_3.04-3.05.php:27
 #: Z_Upgrade_3.05-3.06.php:19
@@ -24858,42 +24949,47 @@ msgstr "升級 webERP 3.01 - 3.02"
 #: Z_Upgrade_3.08-3.09.php:19
 #, fuzzy
 msgid "The script to upgrade the database failed because"
-msgstr "產生新公司資料庫的程式失敗，因為"
+msgstr "升級資料程式失敗, 因為"
 
 #: Z_Upgrade_3.04-3.05.php:62
+#, fuzzy
 msgid "Upgrade script to put cost information against GRN records from purchorderdetails records .... please wait"
-msgstr ""
+msgstr "升級程式由採購訂單詳細記錄到貨品接收單資對應的成本資訊 .... 請等侯"
 
 #: Z_Upgrade_3.04-3.05.php:75
+#, fuzzy
 msgid "The GRN records have been updated with cost information from purchorderdetails successfully"
-msgstr ""
+msgstr "貨品接收單記錄已由採購訂單詳細完成更新成本資訊"
 
 #: Z_Upgrade_3.05-3.06.php:4
 #, fuzzy
 msgid "Upgrade webERP 3.06 - 3.07"
-msgstr "升級 webERP 3.01 - 3.02"
+msgstr "升級 webERP 3.06 - 3.07"
 
 #: Z_Upgrade_3.05-3.06.php:8
+#, fuzzy
 msgid "This script will run perform any modifications to the database since v 3.06 required to allow the additional functionality in version 3.07 scripts"
-msgstr ""
+msgstr "程式會執行資料庫由3.06版本升級到3.07版本增加的效能要求的修改"
 
 #: Z_Upgrade_3.07-3.08.php:4
 #, fuzzy
 msgid "Upgrade webERP 3.071 - 3.08"
-msgstr "升級 webERP 3.01 - 3.02"
+msgstr "升級 webERP 3.071 - 3.08"
 
 #: Z_Upgrade_3.07-3.08.php:8
+#, fuzzy
 msgid "This script will run perform any modifications to the database since v 3.071 required to allow the additional functionality in version 3.08 scripts"
-msgstr ""
+msgstr "這程式會對資料庫執行由3.071版本升級到3.08版本新增工能所需要的修改"
 
 #: Z_Upgrade_3.08-3.09.php:4
 #, fuzzy
 msgid "Upgrade webERP 3.08 - 3.09"
-msgstr "升級 webERP 3.01 - 3.02"
+msgstr "升級 webERP 3.071 - 3.08"
 
 #: Z_Upgrade_3.08-3.09.php:8
+#, fuzzy
 msgid "This script will run perform any modifications to the database since v 3.08 required to allow the additional functionality in version 3.09 scripts"
-msgstr ""
+msgstr "這程式會對資料庫執行由3.071版本升級到3.08版本新增工能所需要的修改"
 
 #: Z_UploadForm.php:8
 #: includes/InputSerialItems.php:72
@@ -24966,14 +25062,16 @@ msgstr "未有效的"
 #: includes/Add_SerialItems.php:60
 #: includes/Add_SerialItems.php:201
 #: includes/Add_SerialItems.php:298
+#, fuzzy
 msgid "The Serial Number being added exists with a Quantity that is not Zero (0)!"
-msgstr ""
+msgstr "新增的序號的數量不是零  (0)"
 
 #: includes/Add_SerialItems.php:63
 #: includes/Add_SerialItems.php:204
 #: includes/Add_SerialItems.php:301
+#, fuzzy
 msgid "The Serial Number being removed exists with a Quantity that is not One (1)!"
-msgstr ""
+msgstr "移除的序號的數量不是1"
 
 #: includes/Add_SerialItems.php:99
 msgid "To Add Items Sequentially, the Begin Number must be less than the End Number"
@@ -24983,11 +25081,12 @@ msgstr "要按次序地新增項目，開始編號必須少於完結編號"
 #: includes/Add_SerialItems.php:316
 #, fuzzy
 msgid "Finished Validating Items"
-msgstr "撰擇貸方項目"
+msgstr "完成確認物品"
 
 #: includes/Add_SerialItems.php:314
+#, fuzzy
 msgid "problems found. Please research and correct them"
-msgstr ""
+msgstr "發現問題, 請搜集及改正他們"
 
 #: includes/DefineCartClass.php:155
 msgid "The order line for"
@@ -25006,8 +25105,9 @@ msgid "could not be updated"
 msgstr "未能更新"
 
 #: includes/DefineCartClass.php:194
+#, fuzzy
 msgid "No Line Number passed to remove_from_cart, so nothing has been removed."
-msgstr ""
+msgstr "沒有列號傳送到 remove_from_cart, 沒有東西被移除"
 
 #: includes/DefineCartClass.php:205
 msgid "The order line could not be deleted because"
@@ -25016,30 +25116,32 @@ msgstr "訂單列未能刪除，因為"
 #: includes/DefineCartClass.php:207
 #, fuzzy
 msgid "Deleted Line Number"
-msgstr "訂單列編號"
+msgstr "刪除列編號"
 
 #: includes/DefineCartClass.php:207
 #, fuzzy
 msgid "from existing Order Number"
-msgstr "檢視銷售訂單編號"
+msgstr "由現有的訂單編號"
 
 #: includes/DefineCartClass.php:213
 #, fuzzy
 msgid "The order line could not be updated as completed because"
-msgstr "未能更新採購訂單列的貸方數量，因為"
+msgstr "訂單列未能更新為完成, 因為"
 
 #: includes/DefineCartClass.php:215
+#, fuzzy
 msgid "Removed Remaining Quantity and set Line Number "
-msgstr ""
+msgstr "移除餘下數量和列號"
 
 #: includes/DefineCartClass.php:215
 #, fuzzy
 msgid "as Completed for existing Order Number"
-msgstr "銷售訂單編號"
+msgstr "是已完成的現有訂單編號"
 
 #: includes/DefineCartClass.php:350
+#, fuzzy
 msgid "Cannot find tax category Freight which must always be defined"
-msgstr ""
+msgstr "未能找到稅類, 運輸必須要定義"
 
 #: includes/DefineShiptClass.php:43
 msgid "There was an error updating the purchase order detail record to make it part of shipment"
@@ -25215,8 +25317,9 @@ msgid "Please login here"
 msgstr "請在此登入"
 
 #: includes/Login.php:26
+#, fuzzy
 msgid "Your webserver is configured to enable Magic Quotes. This may cause problems if you use punctuation (such as quotes) when doing data entry. You should contact your webmaster to disable Magic Quotes"
-msgstr ""
+msgstr "你的網站伺服器設定為允可 Magic Quotes. 這可能會在輸入數據時使用標點 (如引用) 會發生錯誤.  請聯絡網站管理員關閉 Magic Quotes."
 
 #: includes/Login.php:35
 msgid "Company"
@@ -25294,11 +25397,12 @@ msgstr "沒有付款會被執行，因為總帳入帳的交換差異"
 #: includes/Wiki.php:14
 #, fuzzy
 msgid "Wiki "
-msgstr "Wiki 程式："
+msgstr "Wiki "
 
 #: includes/ConnectDB.inc:11
+#, fuzzy
 msgid "The company name entered is not configured for use with this installation of webERP. The company name abbreviation entered at login must also have a company directory defined. See your system administrator"
-msgstr ""
+msgstr "輸入的公司名稱不是設定為這安裝的webERP.  登入時輸入的公司名稱縮寫必須是公司(伺服器中)資料夾定義的.  請聯絡你的系統管理員"
 
 #: includes/ConnectDB_mysqli.inc:21
 #: includes/ConnectDB_mysql.inc:10
@@ -25440,12 +25544,14 @@ msgid "Dates must be entered in the format"
 msgstr "日期必須是日期格式"
 
 #: includes/DateFunctions.inc:691
+#, fuzzy
 msgid "No postings are allowed before"
-msgstr ""
+msgstr "不允可記帳早於"
 
 #: includes/DateFunctions.inc:691
+#, fuzzy
 msgid "This transaction will be posted in the period following as all previous periods are closed"
-msgstr ""
+msgstr "以前期間已完結, 這交易會記帳到下列期間"
 
 #: includes/DateFunctions.inc:699
 msgid "An error occurred in retrieving the period number"
@@ -25535,12 +25641,12 @@ msgstr "未能新增首個期間"
 #: includes/GLPostings.inc:37
 #, fuzzy
 msgid "Could not insert second period"
-msgstr "未能新增首個期間"
+msgstr "未能插入第二期間"
 
 #: includes/header.inc:49
 #, fuzzy
 msgid "Items"
-msgstr "控制項目"
+msgstr "物品"
 
 #: includes/header.inc:51
 #, fuzzy
@@ -25565,8 +25671,9 @@ msgid "And Trading in"
 msgstr "折價交易"
 
 #: includes/PDFAgedDebtorsPageHeader.inc:24
+#, fuzzy
 msgid "And Has at Least 1 Branch Serviced By Sales Person #"
-msgstr ""
+msgstr "和最少有一間分公司服務於銷售員 #"
 
 #: includes/PDFAgedDebtorsPageHeader.inc:51
 #: includes/PDFAgedSuppliersPageHeader.inc:37
@@ -25680,12 +25787,13 @@ msgstr "客戶(之間)的客戶總結"
 #: includes/PDFSupplierBalsPageHeader.inc:17
 #, fuzzy
 msgid "as at"
-msgstr "結餘如"
+msgstr "截止"
 
 #: includes/PDFDebtorBalsPageHeader.inc:35
 #: includes/PDFSupplierBalsPageHeader.inc:35
+#, fuzzy
 msgid "FX"
-msgstr ""
+msgstr "外幣兌換"
 
 #: includes/PDFDeliveryDifferencesPageHeader.inc:15
 msgid "Variances Between Orders and Deliveries Listing"
@@ -25700,7 +25808,7 @@ msgstr "於存貨類別"
 #: includes/PDFDIFOTPageHeader.inc:24
 #, fuzzy
 msgid "Deliveries ex"
-msgstr "原發票"
+msgstr "交貨來自"
 
 #: includes/PDFDeliveryDifferencesPageHeader.inc:42
 #: includes/PDFDIFOTPageHeader.inc:41
@@ -25713,8 +25821,9 @@ msgid "Inv Date"
 msgstr "發票日期"
 
 #: includes/PDFDIFOTPageHeader.inc:15
+#, fuzzy
 msgid "Days Between Requested Delivery Date and Invoice Date"
-msgstr ""
+msgstr "日數介於要求交貨日期和發票日期"
 
 #: includes/PDFDIFOTPageHeader.inc:46
 msgid "Days"
@@ -25743,12 +25852,14 @@ msgid "Qty"
 msgstr "數量"
 
 #: includes/PDFInventoryPlanPageHeader.inc:47
+#, fuzzy
 msgid "MTD"
-msgstr ""
+msgstr "月初到日期"
 
 #: includes/PDFInventoryPlanPageHeader.inc:49
+#, fuzzy
 msgid "ms stk"
-msgstr ""
+msgstr "月存貨"
 
 #: includes/PDFInventoryPlanPageHeader.inc:51
 #: includes/PDFStockCheckPageHeader.inc:38
@@ -25762,7 +25873,7 @@ msgstr "供應商訂單"
 #: includes/PDFInventoryPlanPageHeader.inc:53
 #, fuzzy
 msgid "Sugg Ord"
-msgstr "訂單數量"
+msgstr "見議訂單"
 
 #: includes/PDFInventoryValnPageHeader.inc:15
 msgid "Inventory Valuation for Categories between"
@@ -25844,7 +25955,7 @@ msgstr "已開發票訂單清單"
 #: includes/PDFOrderStatusPageHeader.inc:24
 #, fuzzy
 msgid "for delivery ex"
-msgstr "訂單交貨資料"
+msgstr "交貨來自的"
 
 #: includes/PDFOrdersInvoicedPageHeader.inc:44
 #: includes/PDFOrderStatusPageHeader.inc:44
@@ -25911,7 +26022,7 @@ msgstr "結單"
 #: includes/PDFStatementPageHeader.inc:17
 #, fuzzy
 msgid "as of"
-msgstr "是直接的"
+msgstr "截止"
 
 #: includes/PDFStatementPageHeader.inc:29
 msgid "Statement dated"
@@ -26002,17 +26113,17 @@ msgstr "發票"
 #: includes/PDFTransPageHeaderPortrait.inc:222
 #, fuzzy
 msgid "Cust. Tax Ref"
-msgstr "稅務參考"
+msgstr "客戶稅務參考號"
 
 #: includes/PDFTransPageHeaderPortrait.inc:225
 #, fuzzy
 msgid "Cust. Order No"
-msgstr "我司訂單編號"
+msgstr "客戶訂單編號"
 
 #: includes/PDFTransPageHeaderPortrait.inc:248
 #, fuzzy
 msgid "Disc."
-msgstr "折扣"
+msgstr "說明"
 
 #: includes/PO_PDFOrderPageHeader.inc:26
 msgid "FOR VIEWING ONLY"
