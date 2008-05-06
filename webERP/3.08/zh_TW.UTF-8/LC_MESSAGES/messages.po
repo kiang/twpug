@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: webERP 3.02\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-05-03 22:35+0100\n"
-"PO-Revision-Date: 2008-05-04 22:32+0800\n"
+"PO-Revision-Date: 2008-05-04 22:44+0800\n"
 "Last-Translator: Finjon Kiang <kiang@osobiz.com>\n"
 "Language-Team: Good <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1028,11 +1028,11 @@ msgstr "檢視地區定義"
 
 #: AuditTrail.php:7
 msgid "Audit Trail"
-msgstr ""
+msgstr "審計存底"
 
 #: AuditTrail.php:19
 msgid "Incorrerct date format used, please re-enter"
-msgstr ""
+msgstr "日期格式有誤，請重新輸入"
 
 #: AuditTrail.php:32
 #, fuzzy
@@ -1166,7 +1166,7 @@ msgstr "銀行地址必須是或少於50字元"
 
 #: BankAccounts.php:90
 msgid "Note that it is not possible to change the currency of the account once there are transactions against it"
-msgstr ""
+msgstr "請注意，當有交易存在時，科目的貨幣就不能夠修改"
 
 #: BankAccounts.php:100
 msgid "The bank account details have been updated"
@@ -4871,7 +4871,7 @@ msgstr "取得貨幣定義時發生錯誤"
 
 #: Currencies.php:298
 msgid "ISO 4217 Currency Code"
-msgstr ""
+msgstr "ISO 4217 貨幣代碼"
 
 #: Currencies.php:305
 msgid "Currency Abbreviation"
@@ -26020,7 +26020,6 @@ msgid "Statement"
 msgstr "結單"
 
 #: includes/PDFStatementPageHeader.inc:17
-#, fuzzy
 msgid "as of"
 msgstr "截止"
 
@@ -26106,22 +26105,18 @@ msgid "Extended Price"
 msgstr "廣泛價格"
 
 #: includes/PDFTransPageHeaderPortrait.inc:16
-#, fuzzy
 msgid "INVOICE"
 msgstr "發票"
 
 #: includes/PDFTransPageHeaderPortrait.inc:222
-#, fuzzy
 msgid "Cust. Tax Ref"
 msgstr "客戶稅務參考號"
 
 #: includes/PDFTransPageHeaderPortrait.inc:225
-#, fuzzy
 msgid "Cust. Order No"
 msgstr "客戶訂單編號"
 
 #: includes/PDFTransPageHeaderPortrait.inc:248
-#, fuzzy
 msgid "Disc."
 msgstr "說明"
 
@@ -26219,9 +26214,8 @@ msgid "is not a valid user of the system"
 msgstr "不是系統的有效使用者"
 
 #: includes/session.inc:193
-#, fuzzy
 msgid "There was a problem deleting expired audit-trail history"
-msgstr "預設貨運商測試時發生錯誤"
+msgstr "刪除到期審計存底紀錄時發生錯誤"
 
 #: includes/session.inc:238
 msgid "webERP is configured to allow only secure socket connections. Pages must be called with https://"
