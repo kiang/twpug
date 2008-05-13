@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -27,7 +27,7 @@ header("Pragma: no-cache");
 <META HTTP-EQUIV="Expires" CONTENT="0">
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-<TITLE>Sugar Translation suite Instalation</TITLE>
+<TITLE>Vtiger Translation Suite Instalation</TITLE>
 <link href="style/style.css" rel="stylesheet" type="text/css">
 </HEAD>
 <BODY bgcolor="#E6EBF6">
@@ -152,28 +152,27 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
         
-        if($install_ok && $chkdb) {           
+        if($install_ok && $chkdb) {
             // database structure creation
             if(@mysql_select_db($db_name)) {
-                
                 if(!isset($_REQUEST['chkchar']) && $charset_db != "") {
-                     if(is_readable('inc/sugar_lang_replace.sql')) {
+                     if(is_readable('inc/vtiger_lang_replace.sql')) {
                         $file_content = array();
-                        $file_content_replace = file('inc/sugar_lang_replace.sql');
+                        $file_content_replace = file('inc/vtiger_lang_replace.sql');
                          
                          foreach($file_content_replace as $sql_line){ 
                             $file_content[] = str_replace("@@CHARSET@@", $charset_db, $sql_line);   
                          }
                      } else {
-                         msg_err('Error: can\'t access database creation script (inc/sugar_lang_replace.sql)');
+                         msg_err('Error: can\'t access database creation script (inc/vtiger_lang_replace.sql)');
                          $install_ok = false; 
                      }
                 } else {
                     
-                    if(is_readable('inc/sugar_lang.sql')) { 
-                        $file_content = file('inc/sugar_lang.sql');
+                    if(is_readable('inc/vtiger_lang.sql')) { 
+                        $file_content = file('inc/vtiger_lang.sql');
                     } else {
-                        msg_err('Error: can\'t access database creation script (inc/sugar_lang.sql)');
+                        msg_err('Error: can\'t access database creation script (inc/vtiger_lang.sql)');
                         $install_ok = false; 
                     }
                 }
@@ -219,8 +218,8 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     }    
 } else {
     $host_name = "localhost";
-    $db_name = "sugar_lang";
-    $user_name = "sugar_lang";
+    $db_name = "vtiger_lang";
+    $user_name = "vtiger_lang";
     $user_pass = "";
     $user_pass_conf = "";
     $charset_db = "";
@@ -294,7 +293,7 @@ function Validate() {
 }
 
 </SCRIPT><BR><DIV align="center"><TABLE class="tabform" border="0" width="800" cellpadding="2" cellspacing="0" align="center">
-<TR class="title"><TD colspan="3">Sugar Translation Suite Installation</TD></TR>
+<TR class="title"><TD colspan="3">Vtiger Translation Suite Installation</TD></TR>
 <TR><TD width="50%"><STRONG>Mysql Database:</STRONG></TD><TD colspan="2" width="50%"><?php
 if(function_exists("mysql_connect")) {
     print '<span class="msg">OK</span>';
@@ -341,7 +340,7 @@ if(is_writable("./dumppack") && is_writable("./tmp_lang")) {
 <?php } else {
     print '<BR><BR><TABLE align="center" cellspacing="0" width="400px" class="tabform"><TR class="title"><TD colspan="2">Installation successfull!</TD></TR>';
     print '<TR><TD colspan="2" align="center">&nbsp;<BR>You can now access the <a href="index.php">index</a> page';
-    print ' to start using Sugar Translation suite<BR>&nbsp;</TD></TR></TABLE>';  
+    print ' to start using Vtiger Translation Suite<BR>&nbsp;</TD></TR></TABLE>';  
 }?>
 </BODY>
 </HTML>

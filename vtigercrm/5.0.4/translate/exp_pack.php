@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,13 +26,11 @@ if (!$isPost) {
     $action = "status";
     $file_path = $default_dump_file_path;
     $perform_approx = true;
-    $inc_sugar_entry = "DEFINE";
     if (isset($_GET["version"])) $version_id = $_GET["version"];
 } else {
     $action = $_POST["action"];
     $file_path = $_POST['file_path'];
     $perform_approx = isset($_POST['perform_approx']);
-    $inc_sugar_entry = $_POST['inc_sugar_entry'];
     $version_id = $_POST["versionDD"];
 }
 
@@ -71,14 +69,7 @@ if ($version_id > -1) {
         </TR>
         <TR>
             <TD  width=2%><INPUT NAME=action TYPE=radio class='radio' <?php stickyRadio("dump")?> /></TD><TD STYLE='text-align:left'><STRONG>Dump translated package to file</STRONG></TD>
-            <TD><TABLE class='shell' width=100%><TR>
-                <TD width=40%>Destination Directory</TD><TD><INPUT TYPE=TEXT NAME=file_path size=20 value='<?php echo $file_path?>' /></TD></TR><TR>
-                <TD width=40%>Sugar Entry Validation</TD><TD ><TABLE>
-                   <TR><TD>By Define, version &gt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="DEFINE" <?php echo  ( empty($inc_sugar_entry) || $inc_sugar_entry == "DEFINE"  ? "CHECKED" : "") ?> /></TD></TR>
-                   <TR><TD>By Global, version &lt; 4.2.0.c&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="GLOBALS" <?php echo  ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "GLOBALS"  ? "CHECKED" : "") ?> /></TD></TR>
-                   <TR><TD>None, version &lt; 3.5&nbsp;<INPUT class="radio" TYPE=radio NAME=inc_sugar_entry VALUE="NONE" <?php echo  ( ! empty($inc_sugar_entry) && $inc_sugar_entry == "NONE"  ? "CHECKED" : "") ?> /></TD></TR>
-                </TABLE></TD>
-            </TR></TABLE></TD>
+            <TD>Destination Directory<INPUT TYPE=TEXT NAME=file_path size=20 value='<?php echo $file_path?>' /></TD>
         </TR>
         </TABLE>
         <BR>

@@ -4,7 +4,7 @@
   class Manifest { 
     var $props;var $isRef;var $version;
     function Manifest($version,$isRef = false) {
-        $this->props = query_db_prop("sugar_mnf","WHERE lang = '".($isRef ? "REF" : "TRX" )."' and version_id = '$version' order by name");
+        $this->props = query_db_prop("vtiger_mnf","WHERE lang = '".($isRef ? "REF" : "TRX" )."' and version_id = '$version' order by name");
         $this->isRef = $isRef;
         $this->version = $version;
     }
@@ -18,15 +18,15 @@
     function save() {
         $lang = ($this->isRef ? "REF" : "TRX" );
         $version = $this->version;
-        mysql_query("DELETE FROM sugar_mnf WHERE lang = '$lang' and version_id = '$version'");
-        foreach($this->props as $key => $value) mysql_query("INSERT INTO sugar_mnf VALUES( '$version', '$lang','$key','".mysql_real_escape_string($value)."')");
+        mysql_query("DELETE FROM vtiger_mnf WHERE lang = '$lang' and version_id = '$version'");
+        foreach($this->props as $key => $value) mysql_query("INSERT INTO vtiger_mnf VALUES( '$version', '$lang','$key','".mysql_real_escape_string($value)."')");
     }
     
     function refresh($mnfRef = null) {
         global $manifestProps,$requiredProps,$default_props;
         $lang = ($this->isRef ? "REF" : "TRX" );
         $version = $this->version;
-        mysql_query("DELETE FROM sugar_mnf WHERE lang = '$lang' and version_id = '$version'");
+        mysql_query("DELETE FROM vtiger_mnf WHERE lang = '$lang' and version_id = '$version'");
         $merge = array_merge($manifestProps,$requiredProps);
         $this->props = array();
         for ($i = 0 ; $i < count($merge); $i++) {
@@ -35,7 +35,7 @@
               if ($value == "" && array_key_exists($key,$default_props)) {
                   $value = $default_props[$key];
               }
-              mysql_query("INSERT INTO sugar_mnf VALUES( '$version', '$lang','$key','".mysql_real_escape_string($value)."')");
+              mysql_query("INSERT INTO vtiger_mnf VALUES( '$version', '$lang','$key','".mysql_real_escape_string($value)."')");
               $this->props[$key] =$value;
         }
     }

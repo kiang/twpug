@@ -14,13 +14,13 @@ include_once('inc/fonc.inc');
 //To enfore no magic quotes
 set_magic_quotes_runtime(0);
 
-$title ='Sugar Translation Suite';
+$title ='Vtiger Translation Suite';
 $default_dump_file_path = './dumppack';
 
 $requiredProps = array ('lang_file_suffix');
-$manifestProps = array ('name', 'description','type','is_uninstallable','version','acceptable_sugar_flavors','published_date','author','acceptable_sugar_versions','icon');
+$manifestProps = array ('name', 'description','type','is_uninstallable','version','acceptable_vtiger_flavors','published_date','author','acceptable_vtiger_versions','icon');
   $default_props = array(
   'name' => '', 'published_date' => '','author' => '','icon' => '','description' => '','version' => '',
-  'type' => 'langpack','is_uninstallable' => 'Yes','acceptable_sugar_flavors' =>'array ()','acceptable_sugar_versions' =>'array ()'
+  'type' => 'langpack','is_uninstallable' => 'Yes','acceptable_vtiger_flavors' =>'array ()','acceptable_vtiger_versions' =>'array ()'
   );
 ?>

@@ -20,13 +20,13 @@ function displayQueryResult($qry,$terms) {
 }
 
 $qry_mod = "select A.module id, A.array_id, ref, trx from ";
-$qry_mod .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, count(*) ref from sugar_terms where version_id=$version_id and lang = 'REF' and sub_array_id = '' group by module,array_id) A LEFT JOIN ";
-$qry_mod .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, count(*) trx from sugar_terms where version_id=$version_id and lang = 'TRX' and sub_array_id = '' group by module,array_id) B ";
+$qry_mod .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, count(*) ref from vtiger_terms where version_id=$version_id and lang = 'REF' and sub_array_id = '' group by module,array_id) A LEFT JOIN ";
+$qry_mod .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, count(*) trx from vtiger_terms where version_id=$version_id and lang = 'TRX' and sub_array_id = '' group by module,array_id) B ";
 $qry_mod .= "ON A.module = B.module and A.array_id = B.array_id";
 
 $qry_app = "select CONcAT(A.module, ':', A.array_id) id, A.sub_array_id array_id, ref, trx from ";
-$qry_app .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, sub_array_id, count(*) ref from sugar_terms where version_id=$version_id and lang = 'REF' and sub_array_id != '' group by module,array_id,sub_array_id) A LEFT JOIN ";
-$qry_app .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, sub_array_id, count(*) trx from sugar_terms where version_id=$version_id and lang = 'TRX' and sub_array_id != '' group by module,array_id,sub_array_id) B ";
+$qry_app .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, sub_array_id, count(*) ref from vtiger_terms where version_id=$version_id and lang = 'REF' and sub_array_id != '' group by module,array_id,sub_array_id) A LEFT JOIN ";
+$qry_app .= "(select SUBSTRING_INDEX(file, '/', 2 ) module, array_id, sub_array_id, count(*) trx from vtiger_terms where version_id=$version_id and lang = 'TRX' and sub_array_id != '' group by module,array_id,sub_array_id) B ";
 $qry_app .= "ON A.module = B.module and A.array_id = B.array_id and A.sub_array_id = B.sub_array_id";
 
 displayQueryResult($qry_mod,true);

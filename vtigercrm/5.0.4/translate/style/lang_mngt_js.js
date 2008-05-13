@@ -70,12 +70,12 @@ function displaySrc(suffixe) {
       case 'upload':
         returnObjById('upload_row' + suffixe).style.display= '';
         returnObjById('lang_row' + suffixe).style.display= 'none';
-        returnObjById('sugar_path' + suffixe).style.display= 'none';
+        returnObjById('vtiger_path' + suffixe).style.display= 'none';
        break;
       case 'sug_inst':
         returnObjById('upload_row' + suffixe).style.display= 'none';
         returnObjById('lang_row' + suffixe).style.display= '';
-        returnObjById('sugar_path' + suffixe).style.display= '';
+        returnObjById('vtiger_path' + suffixe).style.display= '';
         break;       
       default: 
         break;
