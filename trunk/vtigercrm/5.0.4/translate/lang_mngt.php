@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -16,12 +16,11 @@ include('def.inc');
 start($html_charset,$db_charset);
 
 // *************************
-define("DEFAULT_SUGAR_PATH", "");
+define("DEFAULT_VTIGER_PATH", "");
 define("TMP_LANG_DIR", "tmp_lang");
 define("ARRAY_NAMES", serialize(array('app_strings','app_list_strings','mod_strings','mod_list_strings')));
-define("INFO_LABELS", serialize(array("tp" => "Type: ", "ver" => "Version: ", "sv" => "SugarCRM versions supported: ", "lg" => "Language: ", "nbl" => "Number of termes: ", "nbf" => "Number of files: ",
+define("INFO_LABELS", serialize(array("tp" => "Type: ", "ver" => "Version: ", "sv" => "VtigerCRM versions supported: ", "lg" => "Language: ", "nbl" => "Number of termes: ", "nbf" => "Number of files: ",
                                       "dico_count" => "Imported Dictionary Size","trx_match" => "Matched Entry Count", "empty_trx" => "Empty Translation")));
-define('sugarEntry',true);
 //**************************
 
 $path_to_file = "";
@@ -124,53 +123,28 @@ function display_menu() {
     ?>
 <FORM name="the_form" method="post" action="<?php basename(__FILE__); ?>"
 	onsubmit="javascript:return Validate();" enctype="multipart/form-data">
+<input type="hidden" name="srctype" value="sug_inst">
 <SCRIPT language="javascript" src="style/lang_mngt_js.js"></SCRIPT>
 <TABLE class="tabform" border="0" width="800" cellpadding="2"
 	cellspacing="0" align="center">
 	<TR class="title">
 		<TD colspan=2>LangPack #1</TD>
 	</TR>
-	<TR>
-		<TD><STRONG>Source:</STRONG></TD>
-		<TD>
-		<TABLE width=100% class=shell>
-			<TR class=packed>
-				<TD width=10%><INPUT class="radio" NAME="srctype" id="srctype"
-					TYPE="radio" VALUE="upload" onclick="displaySrc('')"
-					<?php print($source=='upload')?'CHECKED':'';?> /></TD>
-				<TD class=left>Uploaded Pack</TD>
-			</TR>
-			<TR class=packed>
-				<TD width=10%><INPUT class="radio" NAME="srctype" id="srctype"
-					TYPE="radio" VALUE="sug_inst" onclick="displaySrc('')"
-					<?php print($source=='sug_inst')?'CHECKED':'';?> />
-				
-				
-				<TD class=left>Existing SugarCRM instance</TD>
-			</TR>
-		</TABLE>
-		</TD>
-	</TR>
-	<TR id="upload_row" style="display: ">
-		<TD width=40% align="right"><STRONG>File:</STRONG></TD>
-		<TD width=60% align="left"><input type="file" name="file_name"
-			size="40" value="" /></TD>
-	</TR>
-	<TR id="sugar_path" style="display: none">
-		<TD width=40% align="right"><STRONG>Sugar installation path:</STRONG></TD>
-		<TD width=60% align="left"><input type="text" name="sugar_path"
+	<TR id="vtiger_path">
+		<TD width=40% align="right"><STRONG>Vtiger installation path:</STRONG></TD>
+		<TD width=60% align="left"><input type="text" name="vtiger_path"
 			size="40"
 			value="<?php
-print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_path']:DEFAULT_SUGAR_PATH; 
+print(isset($_POST['vtiger_path']) && $_POST['vtiger_path'] != "")?$_POST['vtiger_path']:DEFAULT_VTIGER_PATH; 
 ?>" /></TD>
 	</TR>
-	<TR id="lang_row" style="display: none">
+	<TR id="lang_row">
 		<TD width=40% align="right"><STRONG>Lang:</STRONG></TD>
 		<TD width=60% align="left"><?php
 		if (isset($_POST['srctype']) && $_POST['srctype'] == "sug_inst") {
-		    if(isset($_POST['sugar_path'])) {
-		        if(is_readable($_POST['sugar_path']."/config.php")) {
-		            include($_POST['sugar_path']."/config.php");
+		    if(isset($_POST['vtiger_path'])) {
+		        if(is_readable($_POST['vtiger_path']."/config.php")) {
+		            include($_POST['vtiger_path']."/config.php");
 		            if(count($languages)>0) {
 		                print "<SELECT name='drop_lang'>";
 		                while (list($key, $val) = each($languages)) {
@@ -183,12 +157,12 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 		                }
 		                print "</SELECT>";
 		            } else {
-		                print 'No language informations found in "'.$_POST['sugar_path'].'/config.php"<BR>';
+		                print 'No language informations found in "'.$_POST['vtiger_path'].'/config.php"<BR>';
 		                print 'Using default language <strong>en_us</strong>';
 		                print '<INPUT type="hidden" name="drop_lang" value="en_us" />';
 		            }
 		        } else {
-		            print 'Can\'t find "config.php" in "'.$_POST['sugar_path'].'"';
+		            print 'Can\'t find "config.php" in "'.$_POST['vtiger_path'].'"';
 		            print '&nbsp;<INPUT type="submit" value="Search again" class="btnform">';
 		        }
 		    }
@@ -229,52 +203,27 @@ print(isset($_POST['sugar_path']) && $_POST['sugar_path'] != "")?$_POST['sugar_p
 <BR>
 <DIV align="center">
 <DIV id="compared" style="display:<?php print(isset($_POST['action']) && $_POST['action'] == "compare_info")?'inline':'none';?>">
+<INPUT TYPE="hidden" NAME="srctype_cp" VALUE="sug_inst" />
 <TABLE class="tabform" border="0" width="800" cellpadding="2"
 	cellspacing="0" align="center">
 	<TR class="title">
 		<TD colspan=2>LangPack #2</TD>
 	</TR>
-	<TR>
-		<TD><STRONG>Source:</STRONG></TD>
-		<TD>
-		<TABLE width=100% class=shell>
-			<TR class=packed>
-				<TD width=10%><INPUT class="radio" NAME="srctype_cp" id="srctype_cp"
-					TYPE="radio" VALUE="upload" onclick="displaySrc('_cp')"
-					<?php print($source_cp=='upload')?'CHECKED':'';?> /></TD>
-				<TD class=left>Uploaded Pack</TD>
-			</TR>
-			<TR class=packed>
-				<TD width=10%><INPUT class="radio" NAME="srctype_cp" id="srctype_cp"
-					TYPE="radio" VALUE="sug_inst" onclick="displaySrc('_cp')"
-					<?php print($source_cp=='sug_inst')?'CHECKED':'';?> />
-				
-				
-				<TD class=left>Existing SugarCRM instance</TD>
-			</TR>
-		</TABLE>
-		</TD>
-	</TR>
-	<TR id="upload_row_cp" style="display: ">
-		<TD width=40% align="right"><STRONG>File:</STRONG></TD>
-		<TD width=60% align="left"><input type="file" name="file_name_cp"
-			size="40" value="" /></TD>
-	</TR>
-	<TR id="sugar_path_cp" style="display: none">
-		<TD width=40% align="right"><STRONG>Sugar installation path:</STRONG></TD>
-		<TD width=60% align="left"><input type="text" name="sugar_path_cp"
+	<TR id="vtiger_path_cp">
+		<TD width=40% align="right"><STRONG>Vtiger installation path:</STRONG></TD>
+		<TD width=60% align="left"><input type="text" name="vtiger_path_cp"
 			size="40"
 			value="<?php
-print(isset($_POST['sugar_path_cp']) && $_POST['sugar_path_cp'] != "")?$_POST['sugar_path_cp']:DEFAULT_SUGAR_PATH;
+print(isset($_POST['vtiger_path_cp']) && $_POST['vtiger_path_cp'] != "")?$_POST['vtiger_path_cp']:DEFAULT_VTIGER_PATH;
 ?>" /></TD>
 	</TR>
-	<TR id="lang_row_cp" style="display: none">
+	<TR id="lang_row_cp">
 		<TD width=40% align="right"><STRONG>Lang:</STRONG></TD>
 		<TD width=60% align="left"><?php
 		if (isset($_POST['srctype_cp']) && $_POST['srctype_cp'] == "sug_inst") {
-		    if(isset($_POST['sugar_path_cp'])) {
-		        if(is_readable($_POST['sugar_path_cp']."/config.php")) {
-		            include($_POST['sugar_path_cp']."/config.php");
+		    if(isset($_POST['vtiger_path_cp'])) {
+		        if(is_readable($_POST['vtiger_path_cp']."/config.php")) {
+		            include($_POST['vtiger_path_cp']."/config.php");
 		            if(count($languages) >0) {
 		                print "<SELECT name='drop_lang_cp'>";
 		                while (list($key, $val) = each($languages)) {
@@ -287,12 +236,12 @@ print(isset($_POST['sugar_path_cp']) && $_POST['sugar_path_cp'] != "")?$_POST['s
 		                }
 		                print "</SELECT>";
 		            } else {
-		                print 'No language informations found in "'.$_POST['sugar_path_cp'].'/config.php"<BR>';
+		                print 'No language informations found in "'.$_POST['vtiger_path_cp'].'/config.php"<BR>';
 		                print 'Using default language <strong>en_us</strong>';
 		                print '<INPUT type="hidden" name="drop_lang_cp" value="en_us" />';
 		            }
 		        } else {
-		            print 'Can\'t find "config.php" in "'.$_POST['sugar_path_cp'].'"';
+		            print 'Can\'t find "config.php" in "'.$_POST['vtiger_path_cp'].'"';
 		            print '&nbsp;<INPUT type="submit" value="Search again" class="btnform">';
 		        }
 		    }
@@ -333,8 +282,8 @@ function getPackInfo($path, $ext, $lang = null) {
                 if (array_key_exists('version', $tmp_manifest))
                 $info_lang["ver"] = $tmp_manifest['version'];
                 $tmp = "";
-                if(array_key_exists('acceptable_sugar_flavors', $tmp_manifest)) {
-                    $version_list = $tmp_manifest['acceptable_sugar_flavors'];
+                if(array_key_exists('acceptable_vtiger_flavors', $tmp_manifest)) {
+                    $version_list = $tmp_manifest['acceptable_vtiger_flavors'];
                     while (list($key, $val) = each($version_list)) {
                         $tmp .= " ".$key."=>".$val." ";
                     }
@@ -350,9 +299,9 @@ function getPackInfo($path, $ext, $lang = null) {
         $info_lang["tp"] = "Installed sugar lang pack";
         if(is_readable($path."/config.php")) {
             include($path."/config.php");
-            if(isset($sugar_config)) {
-                if(array_key_exists('sugar_version', $sugar_config)) {
-                    $info_lang["ver"] = $sugar_config['sugar_version'];
+            if(isset($vtiger_config)) {
+                if(array_key_exists('vtiger_version', $vtiger_config)) {
+                    $info_lang["ver"] = $vtiger_config['vtiger_version'];
                 }
             }
         }
@@ -610,14 +559,14 @@ function parse($new_files, $langue, $info_lang) {
 
     if($_POST['action'] == "import_info") {
         if($_POST['drop_version'] == 0) {
-            $query = "INSERT INTO sugar_versions(descr) VALUES ('".$_POST['new_version']."')";
+            $query = "INSERT INTO vtiger_versions(descr) VALUES ('".$_POST['new_version']."')";
             mysql_query($query);
             $version_id = mysql_insert_id();
         } else {
             $version_id = $_POST['drop_version'];
-            $query = "DELETE FROM sugar_terms WHERE version_id = ".$version_id;
+            $query = "DELETE FROM vtiger_terms WHERE version_id = ".$version_id;
             mysql_query($query);
-            $query = "DELETE FROM sugar_mnf WHERE version_id = ".$version_id;
+            $query = "DELETE FROM vtiger_mnf WHERE version_id = ".$version_id;
             mysql_query($query);
         }
 
@@ -650,7 +599,7 @@ function parse($new_files, $langue, $info_lang) {
                 include($path_to_file.$the_file);
             }
             if($_POST['srctype'] == "sug_inst") {
-                include($_POST['sugar_path'].$the_file);
+                include($_POST['vtiger_path'].$the_file);
             }
 
             unset($defined);
@@ -678,7 +627,7 @@ function parse($new_files, $langue, $info_lang) {
             if(count($defined) == 0) { //empty file
                 if($_POST['action'] == "import_info") {
                     $tmp_file = substr($the_file,1);
-                    $query = "INSERT INTO sugar_terms(version_id, file, array_id, sub_array_id, label_id, lang, text) VALUES (".$version_id.",
+                    $query = "INSERT INTO vtiger_terms(version_id, file, array_id, sub_array_id, label_id, lang, text) VALUES (".$version_id.",
                        '".$the_file."', '', '', '', 'REF', '')";
                     mysql_query($query);
                 }
@@ -712,7 +661,7 @@ function expl($tab, $lvl, $the_file, $array_name, $type, $info_lang, $version_id
                 }
                 $global_query[] = $query_line;
                 /*
-                 $query = "INSERT INTO sugar_terms(version_id, file, array_id, sub_array_id, label_id, lang, text) VALUES (".$version_id.",
+                 $query = "INSERT INTO vtiger_terms(version_id, file, array_id, sub_array_id, label_id, lang, text) VALUES (".$version_id.",
                  '".$tmp_file."', '".$type."', '".$array_name."', '".mysql_real_escape_string($key)."', 'REF', '".mysql_real_escape_string($val)."')";
                  mysql_query($query);
                  */
@@ -729,8 +678,7 @@ my_header($title,$html_charset);
 <BR>
 <DIV align="center"><?php
 if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if(($_POST['srctype'] == "sug_inst" && !isset($_POST['drop_lang'])) || ($_POST['srctype_cp'] == "sug_inst" && !isset($_POST['drop_lang_cp']))) {
+    if($_POST['srctype'] == "sug_inst" && !isset($_POST['drop_lang'])) {
         display_menu();
     } else {
         if(isset($_POST['action']) && $_POST['action'] == "compare_info") {
@@ -740,9 +688,9 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
              
             if(isset($_POST['srctype']) && $_POST['srctype'] == "sug_inst") {
                 require_once('inc/sugar_inc/dir_inc.php');
-                $tab_files  = findAllFilesRelative($_POST['sugar_path'], array());
+                $tab_files  = findAllFilesRelative($_POST['vtiger_path'], array());
                 $lang = $_POST['drop_lang'];
-                $path = $_POST['sugar_path'];
+                $path = $_POST['vtiger_path'];
                 $info_lang = array();
                 $info_lang =  getPackInfo($path, "", $lang);
             } else {
@@ -759,9 +707,9 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
             if(isset($_POST['srctype_cp']) && $_POST['srctype_cp'] == "sug_inst") {
                 require_once('inc/sugar_inc/dir_inc.php');
-                $tab_files2  = findAllFilesRelative($_POST['sugar_path_cp'], array());
+                $tab_files2  = findAllFilesRelative($_POST['vtiger_path_cp'], array());
                 $lang2 = $_POST['drop_lang_cp'];
-                $path2 = $_POST['sugar_path_cp'];
+                $path2 = $_POST['vtiger_path_cp'];
                 $info_lang2 = getPackInfo($path2, "_cp",$lang2);
             } else {
                 print get_uploaded('_cp');
@@ -811,9 +759,9 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
             $info_lang2 = array();
             if(isset($_POST['srctype']) && $_POST['srctype'] == "sug_inst") {
                 require_once('inc/sugar_inc/dir_inc.php');
-                $tab_files  = findAllFilesRelative($_POST['sugar_path'], array());
+                $tab_files  = findAllFilesRelative($_POST['vtiger_path'], array());
                 $lang = $_POST['drop_lang'];
-                $path = $_POST['sugar_path'];
+                $path = $_POST['vtiger_path'];
                 $info_lang = array();
                 $info_lang =  getPackInfo($path, "", $lang);
             } else {
@@ -830,9 +778,9 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 
             if(isset($_POST['srctype_cp']) && $_POST['srctype_cp'] == "sug_inst") {
                 require_once('inc/sugar_inc/dir_inc.php');
-                $tab_files2  = findAllFilesRelative($_POST['sugar_path_cp'], array());
+                $tab_files2  = findAllFilesRelative($_POST['vtiger_path_cp'], array());
                 $lang2 = $_POST['drop_lang_cp'];
-                $path2 = $_POST['sugar_path_cp'];
+                $path2 = $_POST['vtiger_path_cp'];
                 $info_lang2 = getPackInfo($path2, "_cp",$lang2);
             } else {
                 print get_uploaded('_cp');
@@ -853,9 +801,9 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
                 $sql_values[] = "'".mysql_real_escape_string($ref)."','".mysql_real_escape_string($trx)."'";
             }
 
-            mysql_query("DELETE FROM sugar_lang_dico") or die("<SPAN class=msg-err>A mysql error occured : ".mysql_error()."</SPAN>");
+            mysql_query("DELETE FROM vtiger_lang_dico") or die("<SPAN class=msg-err>A mysql error occured : ".mysql_error()."</SPAN>");
             if (count($sql_values) > 0) {
-                $query = "INSERT INTO sugar_lang_dico (ref,trx) VALUES(";
+                $query = "INSERT INTO vtiger_lang_dico (ref,trx) VALUES(";
                 $query .= implode("),(", $sql_values).")";
 
                 mysql_query($query) or die("<SPAN class=msg-err>A mysql error occured : ".mysql_error()."</SPAN>");
@@ -894,7 +842,6 @@ if(isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
 	?>
 </TABLE>
 	<?php
-
 }
 if(isset($_POST['action']) && ($_POST['action'] == "show_info" || $_POST['action'] == "import_info")) {
     global $global_query;
@@ -906,13 +853,13 @@ if(isset($_POST['action']) && ($_POST['action'] == "show_info" || $_POST['action
         $info_lang = parse($pack_files, "", $info_lang);
     } else {
         require_once('inc/sugar_inc/dir_inc.php');
-        $info_lang =  getPackInfo($_POST['sugar_path'], "", $_POST['drop_lang']);
+        $info_lang =  getPackInfo($_POST['vtiger_path'], "", $_POST['drop_lang']);
 
-        $tab_files  = findAllFilesRelative($_POST['sugar_path'], array());
+        $tab_files  = findAllFilesRelative($_POST['vtiger_path'], array());
         $info_lang = parse($tab_files, $_POST['drop_lang'], $info_lang);
     }
     if($_POST['action'] == "import_info") {
-        $query = "INSERT INTO sugar_terms(version_id, file, array_id, sub_array_id, third_array_id, label_id, level, lang, text) VALUES(";
+        $query = "INSERT INTO vtiger_terms(version_id, file, array_id, sub_array_id, third_array_id, label_id, level, lang, text) VALUES(";
         $query .= implode("),(", $global_query).")";
         mysql_query($query) or die("<SPAN class=msg-err>A mysql error occured : ".mysql_error()."</SPAN>");
     }

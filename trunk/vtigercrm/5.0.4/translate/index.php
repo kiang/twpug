@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -22,9 +22,9 @@ my_header($title,$html_charset);
 <BR><BR>
 
 <TABLE align="center" cellspacing=0 width="800px" class='tabform'>
-<TR class='title'><TD colspan=2>Sugar Translation Suite Index</TD></TR>
+<TR class='title'><TD colspan=2>Vtiger Translation Suite Index</TD></TR>
 <TR><TD STYLE="{text-align:right}" width=25%><A href='lang_mngt.php'>Language Pack Manager&nbsp;<IMG src="style/bullet_htm.gif" /></A></TD><TD CLASS=left>Include features for : 
-<LI>Displaying and Comparing SugarCRM Language Packs content (from an uploaded zip file or a sugarCRM installation) 
+<LI>Displaying and Comparing VtigerCRM Language Packs content (from an uploaded zip file or a vtigerCRM installation) 
 <LI>Importing a reference language pack in order to translate it
 <LI>Importing a dictionary based on a reference and a translated language packs
 </TD></TR>
@@ -36,7 +36,7 @@ my_header($title,$html_charset);
 </TD></TR>
 <TR><TD STYLE="{text-align:right}"><A href='totrx.php'>To Translate&nbsp;<IMG src="style/bullet_htm.gif" /></A></TD><TD CLASS=left>Contains the definitions that should be translated.</TD></TR>
 <TR><TD STYLE="{text-align:right}" ><A href='dico_adm.php'>Dictionary Administration&nbsp;<IMG src="style/bullet_htm.gif" /></A></TD><TD CLASS=left>Allow to display and update the content of the dictionary.</TD></TR>
-<TR><TD STYLE="{text-align:right}"><A href='doc.html'>Documentation&nbsp;<IMG src="style/bullet_htm.gif" /></A></TD><TD CLASS=left>Sugar Translation Suite Documentation.</TD></TR>
+<TR><TD STYLE="{text-align:right}"><A href='doc.html'>Documentation&nbsp;<IMG src="style/bullet_htm.gif" /></A></TD><TD CLASS=left>Vtiger Translation Suite Documentation.</TD></TR>
 </TABLE>
 
 </BODY>

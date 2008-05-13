@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -17,7 +17,7 @@ start($html_charset,$db_charset);
 
 function runSearch() {
         global $ref_text,$trx_text,$ref_sel,$trx_sel,$from_row,$to_row;
-        $query = "SELECT * FROM sugar_lang_dico ";
+        $query = "SELECT * FROM vtiger_lang_dico ";
         $next = "WHERE ";
         if ($ref_text != "") {
             $query .= $next . " ref like ".getLikeClause($ref_text,$ref_sel)." ";
@@ -100,7 +100,7 @@ if($isPost) {
         foreach($_POST as $name => $value) {
             if (ereg("entry", $name)) {
                 $id = substr($name, 5);
-                $dico_entry = query_db("SELECT trx FROM sugar_lang_dico WHERE id = ".$id);
+                $dico_entry = query_db("SELECT trx FROM vtiger_lang_dico WHERE id = ".$id);
                 if ($dico_entry[0]->trx != $value && ! in_array($id,$deleted)) {
                         $updated[$id] = $value;
                 }
@@ -108,11 +108,11 @@ if($isPost) {
         }
         
         foreach ($updated as $id => $value) {
-            mysql_query("update sugar_lang_dico set trx = '". mysql_real_escape_string($value) ."' WHERE id = ".$id);
+            mysql_query("update vtiger_lang_dico set trx = '". mysql_real_escape_string($value) ."' WHERE id = ".$id);
         }
         for($i = 0 ; $i < count($deleted) ; $i++){
             $id = $deleted[$i];
-            mysql_query("delete from sugar_lang_dico WHERE id = ".$id);
+            mysql_query("delete from vtiger_lang_dico WHERE id = ".$id);
         }
         msg(count($updated) . " value(s) updated");
         runSearch();

@@ -1,7 +1,7 @@
 <?php
 
 function getVersions() {
-    return query_db("SELECT id,descr from sugar_versions"); 
+    return query_db("SELECT id,descr from vtiger_versions"); 
 }
 
 function checkVersions() {
@@ -17,7 +17,7 @@ function checkVersions() {
 }
 
 function getVersionDropDown($name = "versionDD", $val = 0, $add = "", $default_label = null) {
-    $versions = query_db("SELECT id,descr from sugar_versions");
+    $versions = query_db("SELECT id,descr from vtiger_versions");
     $content = "\n<SELECT name=$name $add>";
     if ($val == 0 && isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST[$name])) $val = $_POST[$name];
     //if ($val == '' && isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "GET" && $isset($_GET[$name])) $val = $_GET[$name];

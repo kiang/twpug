@@ -1,10 +1,10 @@
 <?php
 /* =================================================================================================
- * Sugar Translation Suite
+ * Vtiger Translation Suite
  * January, 2006
- * Web Based Translation tool for SugarCRM application
+ * Web Based Translation tool for VtigerCRM application
  * Copyright (c) http://www.grupa-atlantis.pl
- * Authors : Romain Girardot, David Konig
+ * Authors : Romain Girardot, David Konig ( Modified by kiang )
  * =================================================================================================
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -39,7 +39,7 @@ $isPost = isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "PO
 
 function runSearch() {
         global $ref_text,$ref_sel,$from_row,$to_row, $rem_blank;
-        $query = "SELECT * FROM sugar_lang_trx ";
+        $query = "SELECT * FROM vtiger_lang_trx ";
         $next = "WHERE ";
         if ($ref_text != "") {
             $query .= $next . " ref like ".getLikeClause($ref_text,$ref_sel)." ";
@@ -54,8 +54,8 @@ function runSearch() {
 
 function showSearchForm() {
     global $ref_text,$ref_sel,$from_row,$to_row, $rem_blank; 
-    $done = query_db("SELECT count(*) result FROM sugar_lang_trx where trx != ''",true);
-    $total = query_db("SELECT count(*) result FROM sugar_lang_trx",true);
+    $done = query_db("SELECT count(*) result FROM vtiger_lang_trx where trx != ''",true);
+    $total = query_db("SELECT count(*) result FROM vtiger_lang_trx",true);
    $done = $done->result;
    $total = $total->result;
     $percent = ($total == 0 ? 100 : round(($done/$total) * 100,1));
@@ -112,23 +112,23 @@ if($isPost) {
         foreach($_POST as $name => $value) {
             if (ereg("entry", $name)) {
                 $id = substr($name, 5);
-                $dico_entry = query_db("SELECT trx FROM sugar_lang_trx WHERE id = ".$id);
+                $dico_entry = query_db("SELECT trx FROM vtiger_lang_trx WHERE id = ".$id);
                 if ($dico_entry[0]->trx != $value) {$updated[$id] = $value;}
             }
         }
 
         foreach ($updated as $id => $value) {
-            mysql_query("update sugar_lang_trx set trx = '". mysql_real_escape_string($value) ."' WHERE id = ".$id);
+            mysql_query("update vtiger_lang_trx set trx = '". mysql_real_escape_string($value) ."' WHERE id = ".$id);
         }
         
         showSearchForm();
         msg(count($updated) . " value(s) updated");
         runSearch();
     } else if ($action == "commit") {
-        $counts = query_db("SELECT COUNT(*) cnt FROM sugar_lang_trx WHERE trx != '' and ref NOT IN (SELECT ref FROM sugar_lang_dico)");
+        $counts = query_db("SELECT COUNT(*) cnt FROM vtiger_lang_trx WHERE trx != '' and ref NOT IN (SELECT ref FROM vtiger_lang_dico)");
         $count = $counts[0]->cnt;
-        mysql_query("INSERT INTO sugar_lang_dico (ref,trx) SELECT ref,trx FROM sugar_lang_trx where trx != ''");
-        mysql_query("DELETE FROM sugar_lang_trx where trx != ''");
+        mysql_query("INSERT INTO vtiger_lang_dico (ref,trx) SELECT ref,trx FROM vtiger_lang_trx where trx != ''");
+        mysql_query("DELETE FROM vtiger_lang_trx where trx != ''");
         showSearchForm();
         msg("Commited ".$count." translation(s) to dictionary");
         runSearch();

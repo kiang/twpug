@@ -9,14 +9,14 @@
  * License.
  *
  * All copies of the Covered Code must include on each user interface screen:
- *    (i) the "Powered by SugarCRM" logo and
- *    (ii) the SugarCRM copyright notice
+ *    (i) the "Powered by VtigerCRM" logo and
+ *    (ii) the VtigerCRM copyright notice
  * in the same form as they appear in the distribution.  See full license for
  * requirements.
  *
  * The Original Code is: SugarCRM Open Source
  * The Initial Developer of the Original Code is SugarCRM, Inc.
- * Portions created by SugarCRM are Copyright (C) 2004-2005 SugarCRM, Inc.;
+ * Portions created by VtigerCRM are Copyright (C) 2004-2005 SugarCRM, Inc.;
  * All Rights Reserved.
  * Contributor(s): ______________________________________.
  ********************************************************************************/
