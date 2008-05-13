@@ -7,10 +7,10 @@ function getVersions() {
 function checkVersions() {
     $versions = getVersions();
     if (count($versions) == 0) {  
-        echo '<BR><CENTER>';
+        ?><BR><CENTER><?php
         msg("No version have yet been imported, you need to import a reference language pack for this functionality");
         msg("Click <A href='lang_mngt.php'>here</A> to import a new language pack and use it as a reference for your translation");
-        echo '</BODY></HTML>';
+        ?></BODY></HTML><?php
         die();
     }
     return $versions[0]->id;
@@ -52,15 +52,12 @@ function showDicoEntry($query,$force_area ,$checkboxes = false,$show_next = fals
     $results = query_db($query);
     $colspan = ($checkboxes ? "5" : "4");
     $checkbox_hdr = ($checkboxes ? "<TD width=5%>Delete</TD>" : "");
+    /*<TR><TD colspan=<?php echo $colspan?>><TABLE width=100%><TR><TD align=left><INPUT TYPE=submit name='back' value='Back'  class=btnform /></TD><TD align=right><INPUT TYPE=submit name='next' value='Next' class=btnform /></TD></TR>*/
+    /*<TR><TD colspan=<?php echo $colspan?>><INPUT TYPE=submit name='back' value='Back' STYLE='{float:left}' class=btnform /><INPUT TYPE=submit STYLE='{float:right}' name='next' value='Next' class=btnform /></TD></TR>*/
     ?>
     <TABLE align=center cellspacing=0 width="900px" class='tabform-list' border=1>
     <TR class='title'><TD colspan=<?php echo $colspan?>>Text Entry</TD></TR>
-    <TR><TD colspan=<?php echo $colspan?>>
-    	<TABLE class=shell width=100%><TR>
-    	<TD class=left witdh=50%><INPUT TYPE=submit name='back' value='Back' align=left class=btnform /></TD>
-    	<TD class=right class=right witdh=50%><INPUT TYPE=submit name='next' value='Next' align=right class=btnform /></TD>
-    	</TR></TABLE>
-    </TD></TR>
+    <TR><TD colspan=<?php echo $colspan?>><TABLE class=shell width=100%><TR><TD class=left witdh=50%><INPUT TYPE=submit name='back' value='Back' align=left class=btnform /></TD><TD class=right class=right witdh=50%><INPUT TYPE=submit name='next' value='Next' align=right class=btnform /></TD></TR></TABLE></TD></TR>
     <TR>
         <?php echo $checkbox_hdr?>
         <TD width=6%>Id</TD>
@@ -109,5 +106,4 @@ function showDicoEntry($query,$force_area ,$checkboxes = false,$show_next = fals
     }
     echo '</TABLE>';
     return count($results);
-
 }
