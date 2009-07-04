@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-28 16:37+0100\n"
-"PO-Revision-Date: 2009-02-08 13:08+0800\n"
+"PO-Revision-Date: 2009-07-04 08:24+0800\n"
 "Last-Translator: Finjon Kiang <kiang@osobiz.com>\n"
 "Language-Team: Translators\n"
 "MIME-Version: 1.0\n"
@@ -1171,7 +1171,7 @@ msgstr "發票超收數值必須在  0 到 100 間。"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:35
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:44
 msgid "The past due days interval allowance must be between 0 and 100."
-msgstr "過去到期日間隔必須在 0 到 100 間。"
+msgstr "會計月循環天數必須在 0 到 100 間。"
 
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:65
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:76
@@ -1186,7 +1186,7 @@ msgstr "會計"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:117
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:130
 msgid "Past Due Days Interval:"
-msgstr "過去到期日間隔："
+msgstr "會計月循環天數："
 
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:117
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:179
@@ -1268,7 +1268,7 @@ msgstr "範圍的預設值"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:185
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:163
 msgid "Dimension Required By After:"
-msgstr "之後的預設範圍："
+msgstr "範圍的預設天數："
 
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:143
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:168
@@ -1278,7 +1278,7 @@ msgstr "供應商及採購"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:145
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:170
 msgid "Delivery Over-Receive Allowance:"
-msgstr "允許送貨超收額度："
+msgstr "允許送貨超出銷貨額度："
 
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:147
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:172
@@ -1312,7 +1312,7 @@ msgstr "存貨"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:163
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:187
 msgid "Allow Negative Inventory:"
-msgstr "允許負數的存貨。"
+msgstr "允許存貨負值："
 
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:161
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:189
@@ -1351,7 +1351,7 @@ msgstr "製造預設值"
 # e:\xampp\htdocs\faccount/admin/gl_setup.php:179
 #: c:\Apache2\htdocs\account21/admin/gl_setup.php:204
 msgid "Work Order Required By After:"
-msgstr "預設之後的需求工作單："
+msgstr "預設完成工作單天數："
 
 # e:\xampp\htdocs\faccount/admin/inst_lang.php:7
 # e:\xampp\htdocs\faccount/applications/setup.php:30
@@ -3176,7 +3176,7 @@ msgstr "到："
 # e:\xampp\htdocs\faccount/manufacturing/search_work_orders.php:39
 #: c:\Apache2\htdocs\account21/dimensions/inquiry/search_dimensions.php:79
 msgid "Only Overdue:"
-msgstr "有愈期："
+msgstr "只顯示逾期："
 
 # e:\xampp\htdocs\faccount/dimensions/inquiry/search_dimensions.php:47
 # e:\xampp\htdocs\faccount/manufacturing/search_work_orders.php:41
@@ -3435,7 +3435,7 @@ msgstr "期末餘額"
 # e:\xampp\htdocs\faccount/reporting/includes/doctext.inc:67
 #: c:\Apache2\htdocs\account21/gl/bank_account_reconcile.php:215
 msgid "Account<br>Total"
-msgstr "科目合計及總數的"
+msgstr "科目合計"
 
 #: c:\Apache2\htdocs\account21/gl/bank_account_reconcile.php:215
 msgid "Reconciled<br>Amount"
@@ -3554,12 +3554,12 @@ msgstr "輸入其他轉帳(&A)"
 # e:\xampp\htdocs\faccount/gl/bank_transfer.php:51
 #: c:\Apache2\htdocs\account21/gl/bank_transfer.php:65
 msgid "From Account:"
-msgstr "從哪個會計科目："
+msgstr "從哪個銀行帳戶："
 
 # e:\xampp\htdocs\faccount/gl/bank_transfer.php:53
 #: c:\Apache2\htdocs\account21/gl/bank_transfer.php:67
 msgid "To Account:"
-msgstr "到哪個會計科目："
+msgstr "到哪個銀行帳戶："
 
 # e:\xampp\htdocs\faccount/gl/bank_transfer.php:55
 #: c:\Apache2\htdocs\account21/gl/bank_transfer.php:69
@@ -3696,12 +3696,12 @@ msgstr "來源及目的會計科目不能一樣。"
 # e:\xampp\htdocs\faccount/gl/gl_payment.php:238
 #: c:\Apache2\htdocs\account21/gl/gl_bank.php:287
 msgid "Payment Items"
-msgstr "付款產品"
+msgstr "付款帳目"
 
 # e:\xampp\htdocs\faccount/gl/gl_deposit.php:237
 #: c:\Apache2\htdocs\account21/gl/gl_bank.php:287
 msgid "Deposit Items"
-msgstr "存入產品"
+msgstr "存款帳目"
 
 # e:\xampp\htdocs\faccount/gl/gl_payment.php:248
 #: c:\Apache2\htdocs\account21/gl/gl_bank.php:295
@@ -5445,7 +5445,7 @@ msgstr "供應商代碼或是說明："
 # e:\xampp\htdocs\faccount/inventory/reorder_level.php:7
 #: c:\Apache2\htdocs\account21/inventory/reorder_level.php:16
 msgid "Reorder Levels"
-msgstr "記錄層級"
+msgstr "再訂購水準"
 
 # e:\xampp\htdocs\faccount/inventory/reorder_level.php:15
 # e:\xampp\htdocs\faccount/inventory/transfers.php:22
@@ -6394,7 +6394,7 @@ msgstr "輸入的數量有誤數字。"
 # e:\xampp\htdocs\faccount/manufacturing/work_order_add_finished.php:86
 #: c:\Apache2\htdocs\account21/manufacturing/work_order_add_finished.php:99
 msgid "The production date cannot be before the release date of the work order."
-msgstr "生產日期不能在工作單發布日之前。"
+msgstr "生產日期不能在工作單發佈日之前。"
 
 # e:\xampp\htdocs\faccount/manufacturing/work_order_add_finished.php:98
 #: c:\Apache2\htdocs\account21/manufacturing/work_order_add_finished.php:112
@@ -6619,7 +6619,7 @@ msgstr "處理發放"
 # e:\xampp\htdocs\faccount/manufacturing/work_order_release.php:7
 #: c:\Apache2\htdocs\account21/manufacturing/work_order_release.php:25
 msgid "Work Order Release to Manufacturing"
-msgstr "工作單發布到製造部"
+msgstr "工作單發佈到製造部"
 
 # e:\xampp\htdocs\faccount/manufacturing/work_order_release.php:35
 #: c:\Apache2\htdocs\account21/manufacturing/work_order_release.php:47
@@ -8118,7 +8118,7 @@ msgstr "已開立發票數量"
 #: c:\Apache2\htdocs\account21/purchasing/view/view_grn.php:66
 #: c:\Apache2\htdocs\account21/purchasing/view/view_po.php:84
 msgid "Total Excluding Tax/Shipping"
-msgstr "不含稅總訂單價"
+msgstr "稅前銷貨總額"
 
 # e:\xampp\htdocs\faccount/purchasing/view/view_grn.php:61
 #: c:\Apache2\htdocs\account21/purchasing/view/view_grn.php:71
@@ -8167,7 +8167,7 @@ msgstr "在手上"
 # e:\xampp\htdocs\faccount/purchasing/view/view_po.php:120
 #: c:\Apache2\htdocs\account21/purchasing/view/view_po.php:128
 msgid "Invoices/Credits"
-msgstr "發票的總靜貸方"
+msgstr "發票的總淨貸方"
 
 # e:\xampp\htdocs\faccount/purchasing/view/view_supp_credit.php:9
 #: c:\Apache2\htdocs\account21/purchasing/view/view_supp_credit.php:23
@@ -9995,7 +9995,7 @@ msgstr "折扣"
 #: c:\Apache2\htdocs\account21/sales/customer_delivery.php:434
 #: c:\Apache2\htdocs\account21/sales/customer_invoice.php:476
 msgid "Shipping Cost"
-msgstr "每件成本"
+msgstr "運費"
 
 # e:\xampp\htdocs\faccount/gl/view/bank_transfer_view.php:61
 # e:\xampp\htdocs\faccount/gl/view/bank_transfer_view.php:71
@@ -10022,7 +10022,7 @@ msgstr "每件成本"
 # e:\xampp\htdocs\faccount/reporting/includes/doctext.inc:67
 #: c:\Apache2\htdocs\account21/sales/customer_delivery.php:447
 msgid "Amount Total"
-msgstr "及總數的"
+msgstr "稅後總額"
 
 #: c:\Apache2\htdocs\account21/sales/customer_delivery.php:452
 msgid "Marked items have insufficient quantities in stock as on day of delivery."
@@ -11759,7 +11759,7 @@ msgstr "一次出貨日期"
 
 #: c:\Apache2\htdocs\account21/sales/view/view_sales_order.php:213
 msgid "Total Order Value"
-msgstr "不含稅總訂單價"
+msgstr "訂單總額"
 
 #: c:\Apache2\htdocs\account21/sql/alter2.1.php:31
 msgid "Cannot retrieve bank accounts codes"
@@ -12208,7 +12208,7 @@ msgstr "收款人："
 # e:\xampp\htdocs\faccount/gl/includes/ui/gl_payment_ui.inc:45
 #: c:\Apache2\htdocs\account21/gl/includes/ui/gl_bank_ui.inc:53
 msgid "To the Order of:"
-msgstr "返回銷貨訂單"
+msgstr "（付款品項資料）併入銷貨訂單："
 
 # e:\xampp\htdocs\faccount/gl/includes/ui/gl_deposit_ui.inc:48
 # e:\xampp\htdocs\faccount/gl/includes/ui/gl_payment_ui.inc:48
@@ -12260,7 +12260,7 @@ msgstr "儲存修改"
 #: c:\Apache2\htdocs\account21/gl/includes/ui/gl_bank_ui.inc:256
 #: c:\Apache2\htdocs\account21/gl/includes/ui/gl_journal_ui.inc:214
 msgid "Add Item"
-msgstr "增加產品"
+msgstr "增加帳目"
 
 #: c:\Apache2\htdocs\account21/gl/includes/ui/gl_bank_ui.inc:257
 msgid "Add new item to document"
@@ -12371,12 +12371,12 @@ msgstr "銀行付款"
 #: c:\Apache2\htdocs\account21/includes/types.inc:17
 #: c:\Apache2\htdocs\account21/includes/types.inc:334
 msgid "Bank Deposit"
-msgstr "銀行存入"
+msgstr "銀行存款"
 
 # e:\xampp\htdocs\faccount/includes/types.inc:9
 #: c:\Apache2\htdocs\account21/includes/types.inc:18
 msgid "Funds Transfer"
-msgstr "基金移轉"
+msgstr "資金移轉"
 
 # e:\xampp\htdocs\faccount/includes/types.inc:10
 # e:\xampp\htdocs\faccount/reporting/includes/form_types.inc:5
@@ -12388,7 +12388,7 @@ msgstr "銷貨發票"
 # e:\xampp\htdocs\faccount/includes/types.inc:12
 #: c:\Apache2\htdocs\account21/includes/types.inc:21
 msgid "Customer Payment"
-msgstr "付款條件"
+msgstr "客戶付款"
 
 # e:\xampp\htdocs\faccount/sales/includes/ui/sales_order_ui.inc:362
 #: c:\Apache2\htdocs\account21/includes/types.inc:22
@@ -12766,7 +12766,7 @@ msgstr "發票"
 # e:\xampp\htdocs\faccount/includes/ui/ui_lists.inc:1868
 #: c:\Apache2\htdocs\account21/includes/ui/ui_lists.inc:1891
 msgid "Overdue Credit Notes"
-msgstr "貸方傳票由"
+msgstr "逾期貸方傳票"
 
 # e:\xampp\htdocs\faccount/includes/ui/ui_lists.inc:1883
 #: c:\Apache2\htdocs\account21/includes/ui/ui_lists.inc:1904
@@ -13076,7 +13076,7 @@ msgstr "工作中心："
 # e:\xampp\htdocs\faccount/manufacturing/includes/work_order_issue_ui.inc:155
 #: c:\Apache2\htdocs\account21/manufacturing/includes/work_order_issue_ui.inc:161
 msgid "Issue Date:"
-msgstr "發布日期："
+msgstr "發佈日期："
 
 #: c:\Apache2\htdocs\account21/purchasing/includes/db/invoice_db.inc:243
 #: c:\Apache2\htdocs\account21/purchasing/includes/db/invoice_db.inc:247
@@ -13287,7 +13287,7 @@ msgstr "供應商參考:"
 # e:\xampp\htdocs\faccount/purchasing/includes/ui/po_ui.inc:119
 #: c:\Apache2\htdocs\account21/purchasing/includes/ui/po_ui.inc:119
 msgid "Receive Into:"
-msgstr "接收到"
+msgstr "接收、驗收到："
 
 # e:\xampp\htdocs\faccount/purchasing/includes/ui/po_ui.inc:146
 #: c:\Apache2\htdocs\account21/purchasing/includes/ui/po_ui.inc:147
@@ -13312,7 +13312,7 @@ msgstr "要求出貨日期日期"
 # e:\xampp\htdocs\faccount/purchasing/includes/ui/po_ui.inc:209
 #: c:\Apache2\htdocs\account21/purchasing/includes/ui/po_ui.inc:214
 msgid "Total Excluding Shipping/Tax"
-msgstr "不含稅總訂單價"
+msgstr "稅前總額"
 
 # e:\xampp\htdocs\faccount/reporting/includes/doctext.inc:4
 #: c:\Apache2\htdocs\account21/reporting/includes/doctext.inc:14
