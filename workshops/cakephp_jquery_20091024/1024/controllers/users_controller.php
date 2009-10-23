@@ -9,7 +9,13 @@ class UsersController extends AppController {
 		    'order' => array('User.id DESC'),
 		    'limit' => 10,
 		);
-		$this->set('users', $this->paginate($this->User));
+		$users = $this->paginate($this->User);
+		foreach($users AS $key => $user) {
+		    $users[$key]['User']['countTopics'] = $this->User->Topic->find('count', array(
+		        'conditions' => array('Topic.user_id' => $user['User']['id']),
+		    ));
+		}
+		$this->set('users', $users);
 	}
 
 	function view($id = null) {

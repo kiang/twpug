@@ -48,6 +48,7 @@ foreach ($users as $user):
 			<?php echo $html->link(__('Edit', true), array('action' => 'edit', $user['User']['id'])); ?>
 			<?php echo $html->link(__('Delete', true), array('action' => 'delete', $user['User']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $user['User']['id'])); ?>
 			<?php echo $html->link('相關主題(' . $user['User']['countTopics'] . ')', array('controller' => 'topics', 'action' => 'index', $user['User']['id'])); ?>
+			<?php echo $html->link('新增主題', array('controller' => 'topics', 'action' => 'add', $user['User']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
