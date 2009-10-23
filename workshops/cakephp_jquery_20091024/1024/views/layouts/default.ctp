@@ -27,7 +27,7 @@
 <head>
 	<?php echo $html->charset(); ?>
 	<title>
-		<?php __('CakePHP: the rapid development php framework:'); ?>
+		自由軟體技術分享工作坊-jQuery與CakePHP::
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -41,7 +41,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $html->link(__('CakePHP: the rapid development php framework', true), 'http://cakephp.org'); ?></h1>
+			<h1><?php echo $html->link('自由軟體技術分享工作坊-jQuery與CakePHP', '/'); ?></h1>
 		</div>
 		<div id="content">
 
