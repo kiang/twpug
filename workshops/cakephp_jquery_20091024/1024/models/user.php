@@ -3,8 +3,22 @@ class User extends AppModel {
 
 	var $name = 'User';
 	var $validate = array(
-		'name' => array('notempty'),
-		'email' => array('email')
+	    'email' => array(
+            'isNumeric' => array(
+                'rule' => 'email',
+                'message' => '信箱的格式有問題',
+            ),
+			'notEmpty' => array(
+                'rule' => 'notEmpty',
+                'message' => '這個欄位必須輸入',
+            ),
+        ),
+        'name' => array(
+            'notEmpty' => array(
+                'rule' => 'notEmpty',
+                'message' => '這個欄位必須輸入',
+            ),
+        ),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
