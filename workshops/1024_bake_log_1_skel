@@ -1,0 +1,68 @@
+Welcome to CakePHP v1.2.4.8284 Console
+---------------------------------------------------------------
+App : .
+Path: /var/www/1024/.
+---------------------------------------------------------------
+What is the full path for this app including the app directory name?
+Example: /var/www/1024/./myapp  
+[/var/www/1024/./myapp] > /var/www/1024
+Bake Project
+Skel Directory: /var/www/cake/console/libs/templates/skel
+Will be copied to: /var/www/1024
+---------------------------------------------------------------
+Look okay? (y/n/q) 
+[y] > 
+Do you want verbose output? (y/n) 
+[n] > 
+---------------------------------------------------------------
+Created: 1024 in /var/www/1024
+---------------------------------------------------------------
+
+Creating file /var/www/1024/views/pages/home.ctp
+Wrote /var/www/1024/views/pages/home.ctp
+Welcome page created
+Random hash key created for 'Security.salt'
+Your database configuration was not found. Take a moment to create one.
+---------------------------------------------------------------
+Database Configuration:
+---------------------------------------------------------------
+Name:  
+[default] > 
+Driver: (db2/firebird/mssql/mysql/mysqli/odbc/oracle/postgres/sqlite/sybase) 
+[mysql] > 
+Persistent Connection? (y/n) 
+[n] > 
+Database Host:  
+[localhost] > 
+Port?  
+[n] > 
+User:  
+[root] > 
+Password:  
+> ubuntu904
+Database Name:  
+[cake] > cake1024
+Table Prefix?  
+[n] > 
+Table encoding?  
+[n] > utf8
+
+---------------------------------------------------------------
+The following database configuration will be created:
+---------------------------------------------------------------
+Name:         default
+Driver:       mysql
+Persistent:   false
+Host:         localhost
+User:         root
+Pass:         ***********
+Database:     cake1024
+Encoding:     utf8
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] > 
+Do you wish to add another database configuration?  
+[n] > 
+
+Creating file /var/www/1024/config/database.php
+Wrote /var/www/1024/config/database.php

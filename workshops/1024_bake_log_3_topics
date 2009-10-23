@@ -1,0 +1,434 @@
+
+Welcome to CakePHP v1.2.4.8284 Console
+---------------------------------------------------------------
+App : .
+Path: /var/www/1024/.
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+> m
+---------------------------------------------------------------
+Bake Model
+Path: /var/www/1024/./models/
+---------------------------------------------------------------
+Possible Models based on your current database:
+1. Topic
+2. User
+Enter a number from the list above, type in the name of another model, or 'q' to exit  
+[q] > 1
+Would you like to supply validation criteria for the fields in your model? (y/n) 
+[y] > 
+
+Field: id
+Type: integer
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[29] > 
+
+Field: user_id
+Type: integer
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[21] > 
+
+Field: sort
+Type: integer
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[21] > 
+
+Field: title
+Type: string
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[20] > 
+
+Field: body
+Type: text
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[29] > 
+
+Field: created
+Type: datetime
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[29] > 
+
+Field: modified
+Type: datetime
+---------------------------------------------------------------
+Please select one of the following validation options:
+---------------------------------------------------------------
+1 - alphaNumeric
+2 - between
+3 - blank
+4 - boolean
+5 - cc
+6 - comparison
+7 - custom
+8 - date
+9 - decimal
+10 - email
+11 - equalTo
+12 - extension
+13 - file
+14 - inList
+15 - ip
+16 - maxLength
+17 - minLength
+18 - money
+19 - multiple
+20 - notEmpty
+21 - numeric
+22 - phone
+23 - postal
+24 - range
+25 - ssn
+26 - time
+27 - url
+28 - userDefined
+29 - Do not do any validation on this field.
+... or enter in a valid regex validation string.
+  
+[29] > 
+Would you like to define model associations (hasMany, hasOne, belongsTo, etc.)? (y/n) 
+[y] > 
+One moment while the associations are detected.
+---------------------------------------------------------------
+Please confirm the following associations:
+---------------------------------------------------------------
+Topic belongsTo User? (y/n) 
+[y] > 
+Would you like to define some additional model associations? (y/n) 
+[n] > 
+
+---------------------------------------------------------------
+The following Model will be created:
+---------------------------------------------------------------
+Name:       Topic
+Validation: Array
+(
+    [user_id] => numeric
+    [sort] => numeric
+    [title] => notempty
+)
+
+Associations:
+			Topic belongsTo User
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] > 
+
+Baking model class for Topic...
+
+Creating file /var/www/1024/./models/topic.php
+Wrote /var/www/1024/./models/topic.php
+SimpleTest is not installed.  Do you want to bake unit test files anyway? (y/n) 
+[y] > n
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+> c
+---------------------------------------------------------------
+Bake Controller
+Path: /var/www/1024/./controllers/
+---------------------------------------------------------------
+Possible Controllers based on your current database:
+1. Topics
+2. Users
+Enter a number from the list above, type in the name of another controller, or 'q' to exit  
+[q] > 1
+---------------------------------------------------------------
+Baking TopicsController
+---------------------------------------------------------------
+Would you like to build your controller interactively? (y/n) 
+[y] > n
+Would you like to include some basic class methods (index(), add(), view(), edit())? (y/n) 
+[y] > 
+Would you like to create the methods for admin routing? (y/n) 
+[y] > 
+
+---------------------------------------------------------------
+The following controller will be created:
+---------------------------------------------------------------
+Controller Name:  Topics
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] > 
+
+Creating file /var/www/1024/./controllers/topics_controller.php
+Wrote /var/www/1024/./controllers/topics_controller.php
+SimpleTest is not installed.  Do you want to bake unit test files anyway? (y/n) 
+[y] > n
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+> v
+---------------------------------------------------------------
+Bake View
+Path: /var/www/1024/./views/
+---------------------------------------------------------------
+Possible Controllers based on your current database:
+1. Topics
+2. Users
+Enter a number from the list above, type in the name of another controller, or 'q' to exit  
+[q] > 1
+Would you like to create some scaffolded views (index, add, view, edit) for this controller?
+NOTE: Before doing so, you'll need to create your controller and model classes (including associated models). (y/n) 
+[n] > y
+Would you like to create the views for admin routing? (y/n) 
+[y] > 
+
+Creating file /var/www/1024/./views/topics/index.ctp
+Wrote /var/www/1024/./views/topics/index.ctp
+
+Creating file /var/www/1024/./views/topics/view.ctp
+Wrote /var/www/1024/./views/topics/view.ctp
+
+Creating file /var/www/1024/./views/topics/add.ctp
+Wrote /var/www/1024/./views/topics/add.ctp
+
+Creating file /var/www/1024/./views/topics/edit.ctp
+Wrote /var/www/1024/./views/topics/edit.ctp
+
+Creating file /var/www/1024/./views/topics/admin_index.ctp
+Wrote /var/www/1024/./views/topics/admin_index.ctp
+
+Creating file /var/www/1024/./views/topics/admin_view.ctp
+Wrote /var/www/1024/./views/topics/admin_view.ctp
+
+Creating file /var/www/1024/./views/topics/admin_add.ctp
+Wrote /var/www/1024/./views/topics/admin_add.ctp
+
+Creating file /var/www/1024/./views/topics/admin_edit.ctp
+Wrote /var/www/1024/./views/topics/admin_edit.ctp
+---------------------------------------------------------------
+
+View Scaffolding Complete.
+
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+> q
+
