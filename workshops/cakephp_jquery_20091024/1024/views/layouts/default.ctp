@@ -46,7 +46,7 @@
 
 			<?php $session->flash(); ?>
 
-			<?php echo $content_for_layout; ?>
+			<div id="viewContent"><?php echo $content_for_layout; ?></div>
 
 		</div>
 		<div id="footer">

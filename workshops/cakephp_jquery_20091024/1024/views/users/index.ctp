@@ -65,3 +65,10 @@ foreach ($users as $user):
 		<li><?php echo $html->link('產生測試資料', array('action' => 'test')); ?></li>
 	</ul>
 </div>
+<?php
+echo $javascript->codeBlock('$(function() {
+	$(\'div.paging a, div.users table th a\').click(function() {
+		$(\'#viewContent\').load(this.href);
+		return false;
+	});
+})');
