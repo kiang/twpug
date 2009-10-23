@@ -4,9 +4,15 @@ class TopicsController extends AppController {
 	var $name = 'Topics';
 	var $helpers = array('Html', 'Form');
 
-	function index() {
+	function index($userId = 0) {
+	    $userId = intval($userId);
+	    if($userId <= 0 || !$this->Topic->User->hasAny(array('User.id' => $userId))) {
+	        $this->Session->setFlash('選擇的使用者不存在！');
+	        $this->redirect(array('controller' => 'users', 'action'=>'index'));
+	    }
 		$this->Topic->recursive = 0;
-		$this->set('topics', $this->paginate());
+		$this->set('topics', $this->paginate($this->Topic, array('Topic.user_id' => $userId)));
+		$this->set('userId', $userId);
 	}
 
 	function view($id = null) {
