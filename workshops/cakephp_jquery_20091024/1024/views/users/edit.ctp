@@ -12,7 +12,9 @@ if(!empty($editMessage)) {
 		echo $form->input('id');
 		echo $form->input('name');
 		echo $form->input('email');
-		echo $form->input('birthday');
+		echo $form->input('birthday', array(
+		    'type' => 'text',
+		));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
@@ -34,6 +36,7 @@ echo $javascript->codeBlock('$(function() {
 	setTimeout(function() {
 		$(\'div#usersEditPage div.message\').fadeOut();
 	}, 3000);
+	$(\'#UserBirthday\').datepicker();
 })');
 ?>
 </div>

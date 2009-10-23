@@ -5,7 +5,9 @@
 	<?php
 		echo $form->input('name');
 		echo $form->input('email');
-		echo $form->input('birthday');
+		echo $form->input('birthday', array(
+		    'type' => 'text',
+		));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
@@ -15,3 +17,7 @@
 		<li><?php echo $html->link(__('List Users', true), array('action' => 'index'));?></li>
 	</ul>
 </div>
+<?php
+echo $javascript->codeBlock('$(function() {
+	$(\'#UserBirthday\').datepicker();
+})');
