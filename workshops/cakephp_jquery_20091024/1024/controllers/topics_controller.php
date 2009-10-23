@@ -23,18 +23,23 @@ class TopicsController extends AppController {
 		$this->set('topic', $this->Topic->read(null, $id));
 	}
 
-	function add() {
+	function add($userId = 0) {
+	    $userId = intval($userId);
+	    if($userId <= 0 || !$this->Topic->User->hasAny(array('User.id' => $userId))) {
+	        $this->Session->setFlash('選擇的使用者不存在！');
+	        $this->redirect(array('controller' => 'users', 'action'=>'index'));
+	    }
 		if (!empty($this->data)) {
 			$this->Topic->create();
+			$this->data['Topic']['user_id'] = $userId;
 			if ($this->Topic->save($this->data)) {
 				$this->Session->setFlash(__('The Topic has been saved', true));
-				$this->redirect(array('action'=>'index'));
+				$this->redirect(array('action'=>'index', $userId));
 			} else {
 				$this->Session->setFlash(__('The Topic could not be saved. Please, try again.', true));
 			}
 		}
-		$users = $this->Topic->User->find('list');
-		$this->set(compact('users'));
+		$this->set('userId', $userId);
 	}
 
 	function edit($id = null) {
@@ -45,7 +50,7 @@ class TopicsController extends AppController {
 		if (!empty($this->data)) {
 			if ($this->Topic->save($this->data)) {
 				$this->Session->setFlash(__('The Topic has been saved', true));
-				$this->redirect(array('action'=>'index'));
+				$this->redirect(array('action'=>'index', $this->Topic->field('user_id')));
 			} else {
 				$this->Session->setFlash(__('The Topic could not be saved. Please, try again.', true));
 			}
@@ -53,18 +58,16 @@ class TopicsController extends AppController {
 		if (empty($this->data)) {
 			$this->data = $this->Topic->read(null, $id);
 		}
-		$users = $this->Topic->User->find('list');
-		$this->set(compact('users'));
 	}
 
 	function delete($id = null) {
-		if (!$id) {
+		if (!$id || !$userId = $this->Topic->field('user_id', array('Topic.id' => $id))) {
 			$this->Session->setFlash(__('Invalid id for Topic', true));
 			$this->redirect(array('action'=>'index'));
 		}
 		if ($this->Topic->del($id)) {
 			$this->Session->setFlash(__('Topic deleted', true));
-			$this->redirect(array('action'=>'index'));
+			$this->redirect(array('action'=>'index', $userId));
 		}
 	}
 

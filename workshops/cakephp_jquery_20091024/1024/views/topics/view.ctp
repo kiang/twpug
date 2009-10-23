@@ -42,7 +42,7 @@
 	<ul>
 		<li><?php echo $html->link(__('Edit Topic', true), array('action' => 'edit', $topic['Topic']['id'])); ?> </li>
 		<li><?php echo $html->link(__('Delete Topic', true), array('action' => 'delete', $topic['Topic']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $topic['Topic']['id'])); ?> </li>
-		<li><?php echo $html->link(__('List Topics', true), array('action' => 'index')); ?> </li>
-		<li><?php echo $html->link(__('New Topic', true), array('action' => 'add')); ?> </li>
+		<li><?php echo $html->link(__('List Topics', true), array('action' => 'index', $topic['Topic']['user_id'])); ?> </li>
+		<li><?php echo $html->link(__('New Topic', true), array('action' => 'add', $topic['Topic']['user_id'])); ?> </li>
 	</ul>
 </div>

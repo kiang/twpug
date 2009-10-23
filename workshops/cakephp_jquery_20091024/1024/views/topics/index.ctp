@@ -9,7 +9,6 @@ echo $paginator->counter(array(
 <table cellpadding="0" cellspacing="0">
 <tr>
 	<th><?php echo $paginator->sort('id');?></th>
-	<th><?php echo $paginator->sort('user_id');?></th>
 	<th><?php echo $paginator->sort('sort');?></th>
 	<th><?php echo $paginator->sort('title');?></th>
 	<th><?php echo $paginator->sort('body');?></th>
@@ -28,9 +27,6 @@ foreach ($topics as $topic):
 	<tr<?php echo $class;?>>
 		<td>
 			<?php echo $topic['Topic']['id']; ?>
-		</td>
-		<td>
-			<?php echo $topic['Topic']['user_id']; ?>
 		</td>
 		<td>
 			<?php echo $topic['Topic']['sort']; ?>
@@ -63,6 +59,7 @@ foreach ($topics as $topic):
 </div>
 <div class="actions">
 	<ul>
-		<li><?php echo $html->link(__('New Topic', true), array('action' => 'add')); ?></li>
+		<li><?php echo $html->link(__('New Topic', true), array('action' => 'add', $userId)); ?></li>
+		<li><?php echo $html->link('回到使用者', array('controller' => 'users', 'action' => 'index'));?></li>
 	</ul>
 </div>
