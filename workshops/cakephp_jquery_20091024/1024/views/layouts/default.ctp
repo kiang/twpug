@@ -32,9 +32,8 @@
 	</title>
 	<?php
 		echo $html->meta('icon');
-
 		echo $html->css('cake.generic');
-
+		echo $javascript->link('jquery-1.3.2.min');
 		echo $scripts_for_layout;
 	?>
 </head>
