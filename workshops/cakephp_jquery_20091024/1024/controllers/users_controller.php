@@ -5,8 +5,11 @@ class UsersController extends AppController {
 	var $helpers = array('Html', 'Form');
 
 	function index() {
-		$this->User->recursive = 0;
-		$this->set('users', $this->paginate());
+		$this->paginate['User'] = array(
+		    'order' => array('User.id DESC'),
+		    'limit' => 10,
+		);
+		$this->set('users', $this->paginate($this->User));
 	}
 
 	function view($id = null) {
