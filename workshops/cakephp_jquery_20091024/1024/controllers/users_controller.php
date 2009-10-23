@@ -45,10 +45,9 @@ class UsersController extends AppController {
 		}
 		if (!empty($this->data)) {
 			if ($this->User->save($this->data)) {
-				$this->Session->setFlash(__('The User has been saved', true));
-				$this->redirect(array('action'=>'index'));
+				$this->set('editMessage', __('The User has been saved', true));
 			} else {
-				$this->Session->setFlash(__('The User could not be saved. Please, try again.', true));
+			    $this->set('editMessage', __('The User could not be saved. Please, try again.', true));
 			}
 		}
 		if (empty($this->data)) {
