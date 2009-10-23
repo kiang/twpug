@@ -54,7 +54,7 @@ foreach ($topics as $topic):
 <?php endforeach; ?>
 </tbody>
 </table>
-<a href="#" id="saveSorting">儲存排序</a>
+<a href="#" id="saveSorting" style="display:none;">儲存排序</a>
 </div>
 <div class="paging">
 	<?php echo $paginator->prev('<< '.__('previous', true), array(), null, array('class'=>'disabled'));?>
@@ -71,6 +71,9 @@ foreach ($topics as $topic):
 echo $javascript->codeBlock('$(function() {
 	$(\'#topicListBody\').sortable({
     	axis: \'y\',
+    	change: function() {
+    		$(\'#saveSorting\').show();
+    	}
     });
     $(\'#saveSorting\').click(function() {
     	var sortingIndex = 1;
