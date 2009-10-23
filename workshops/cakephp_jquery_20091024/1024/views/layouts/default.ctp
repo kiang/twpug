@@ -37,6 +37,7 @@
 		echo $javascript->link('jquery-1.3.2.min');
 		echo $javascript->link('jquery-ui-1.7.2.custom.min');
 		echo $javascript->link('ui.datepicker-zh-TW');
+		echo $javascript->link('jquery.validate');
 		echo $scripts_for_layout;
 	?>
 </head>

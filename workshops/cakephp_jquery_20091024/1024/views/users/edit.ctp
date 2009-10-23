@@ -27,11 +27,29 @@ if(!empty($editMessage)) {
 </div>
 <?php
 echo $javascript->codeBlock('$(function() {
-	$(\'#UserEditForm\').submit(function() {
-		$.post(\'' . $html->url(array('action' => 'edit')) . '\', $(this).serializeArray(), function(pageData) {
-			$(\'#usersEditPage\').html(pageData);
-		});
-		return false;
+	$(\'#UserEditForm\').validate({
+		submitHandler: function() {
+			$.post(\'' . $html->url(array('action' => 'edit')) . '\', $(\'#UserEditForm\').serializeArray(), function(pageData) {
+				$(\'#usersEditPage\').html(pageData);
+			});
+			return false;
+		},
+		rules: {
+			\'data[User][name]\':{
+				required: true,
+			},
+			\'data[User][email]\':{
+				email: true,
+			},
+		},
+		messages: {
+			\'data[User][name]\':{
+				required: \'這個欄位必須輸入\',
+			},
+			\'data[User][email]\':{
+				email: \'信箱格式有誤\',
+			},
+		},
 	});
 	setTimeout(function() {
 		$(\'div#usersEditPage div.message\').fadeOut();
