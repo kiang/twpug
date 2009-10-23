@@ -113,5 +113,22 @@ class UsersController extends AppController {
 		}
 	}
 
+	function test() {
+	    $lastNames = explode("\n", file_get_contents(TMP . 'lastname.txt'));
+	    unset($lastNames[500]);
+	    $firstNames = explode("\n", file_get_contents(TMP . 'firstname.txt'));
+	    unset($firstNames[500]);
+	    for($i = 0; $i < 100; $i++) {
+	        $this->User->create();
+	        $this->User->save(array('User' => array(
+	            'name' => $lastNames[rand(0, 500)] . $firstNames[rand(0, 500)],
+	            'email' => 'user' . rand(1,99999999) . '@openfoundry.org',
+	            'birthday' => date('Y-m-d', rand(0, 661103999)),
+	        )));
+	    }
+	    $this->Session->setFlash('產生了 100 筆使用者資料');
+	    $this->redirect(array('action'=>'index'));
+	}
+
 }
 ?>
