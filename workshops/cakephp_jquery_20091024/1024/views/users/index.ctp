@@ -44,8 +44,8 @@ foreach ($users as $user):
 			<?php echo $user['User']['modified']; ?>
 		</td>
 		<td class="actions">
-			<?php echo $html->link(__('View', true), array('action' => 'view', $user['User']['id'])); ?>
-			<?php echo $html->link(__('Edit', true), array('action' => 'edit', $user['User']['id'])); ?>
+			<?php echo $html->link(__('View', true), array('action' => 'view', $user['User']['id']), array('class' => 'usersAction')); ?>
+			<?php echo $html->link(__('Edit', true), array('action' => 'edit', $user['User']['id']), array('class' => 'usersAction')); ?>
 			<?php echo $html->link(__('Delete', true), array('action' => 'delete', $user['User']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $user['User']['id'])); ?>
 			<?php echo $html->link('相關主題(' . $user['User']['countTopics'] . ')', array('controller' => 'topics', 'action' => 'index', $user['User']['id'])); ?>
 			<?php echo $html->link('新增主題', array('controller' => 'topics', 'action' => 'add', $user['User']['id'])); ?>
@@ -65,10 +65,21 @@ foreach ($users as $user):
 		<li><?php echo $html->link('產生測試資料', array('action' => 'test')); ?></li>
 	</ul>
 </div>
+<div id="usersActionPanel"></div>
 <?php
 echo $javascript->codeBlock('$(function() {
 	$(\'div.paging a, div.users table th a\').click(function() {
 		$(\'#viewContent\').load(this.href);
+		return false;
+	});
+	$(\'a.usersAction\').click(function() {
+		$(\'#usersActionPanel\').load(this.href, {
+			success: function() {
+				$(\'html,body\').animate({
+					scrollTop: $(\'#usersActionPanel\').offset().top
+				});
+			}
+		}, 1000);
 		return false;
 	});
 })');
