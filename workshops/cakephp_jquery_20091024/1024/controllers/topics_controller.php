@@ -11,8 +11,32 @@ class TopicsController extends AppController {
 	        $this->redirect(array('controller' => 'users', 'action'=>'index'));
 	    }
 		$this->Topic->recursive = 0;
+		$this->paginate['Topic'] = array(
+		    'order' => array('Topic.sort ASC'),
+		);
 		$this->set('topics', $this->paginate($this->Topic, array('Topic.user_id' => $userId)));
 		$this->set('userId', $userId);
+	}
+
+	function sort($userId = 0) {
+	    $userId = intval($userId);
+	    if($userId > 0 && $this->Topic->User->find('count', array(
+            'conditions' => array(
+                'User.id' => $userId,
+            ),
+        )) == 1 && $this->Topic->find('count', array(
+            'conditions' => array(
+                'Topic.id' => array_keys($_POST),
+                'Topic.user_id' => $userId,
+            ),
+        )) == count($_POST)) {
+            foreach($_POST AS $topicId => $sort) {
+                $this->Topic->save(array('Topic' => array(
+                    'id' => $topicId,
+                    'sort' => $sort,
+                )));
+            }
+        }
 	}
 
 	function view($id = null) {

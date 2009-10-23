@@ -6,6 +6,7 @@ echo $paginator->counter(array(
 'format' => __('Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%', true)
 ));
 ?></p>
+<div id="sortingResult" class="message"></div>
 <table cellpadding="0" cellspacing="0">
 <tr>
 	<th><?php echo $paginator->sort('id');?></th>
@@ -16,6 +17,7 @@ echo $paginator->counter(array(
 	<th><?php echo $paginator->sort('modified');?></th>
 	<th class="actions"><?php __('Actions');?></th>
 </tr>
+<tbody id="topicListBody">
 <?php
 $i = 0;
 foreach ($topics as $topic):
@@ -24,7 +26,7 @@ foreach ($topics as $topic):
 		$class = ' class="altrow"';
 	}
 ?>
-	<tr<?php echo $class;?>>
+	<tr<?php echo $class;?> id="sLine<?php echo $topic['Topic']['id']; ?>">
 		<td>
 			<?php echo $topic['Topic']['id']; ?>
 		</td>
@@ -50,7 +52,9 @@ foreach ($topics as $topic):
 		</td>
 	</tr>
 <?php endforeach; ?>
+</tbody>
 </table>
+<a href="#" id="saveSorting">儲存排序</a>
 </div>
 <div class="paging">
 	<?php echo $paginator->prev('<< '.__('previous', true), array(), null, array('class'=>'disabled'));?>
@@ -63,3 +67,29 @@ foreach ($topics as $topic):
 		<li><?php echo $html->link('回到使用者', array('controller' => 'users', 'action' => 'index'));?></li>
 	</ul>
 </div>
+<?php
+echo $javascript->codeBlock('$(function() {
+	$(\'#topicListBody\').sortable({
+    	axis: \'y\',
+    });
+    $(\'#saveSorting\').click(function() {
+    	var sortingIndex = 1;
+    	var sortingResult = {};
+    	$(\'tbody#topicListBody tr\').each(function() {
+    		sortingResult[this.id.split(\'sLine\')[1]] = sortingIndex;
+    		sortingIndex++;
+    	});
+    	$.ajax({
+    		type: \'POST\',
+    		url: \''.$html->url('/topics/sort/' . $userId).'\',
+    		data: sortingResult,
+    		success: function(data) {
+    			$(\'#sortingResult\').html(\'排序已經儲存，請重新整理畫面來檢視新的順序\');
+    		},
+    		error: function() {
+    			$(\'#sortingResult\').html(\'更新資料時發生錯誤，請重試！\');
+    		}
+    	});
+    	return false;
+    });
+})');
