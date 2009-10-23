@@ -1,4 +1,5 @@
 <?php
+App::import('Core', 'Sanitize');
 class UsersController extends AppController {
 
 	var $name = 'Users';
@@ -138,5 +139,19 @@ class UsersController extends AppController {
 	    $this->redirect(array('action'=>'index'));
 	}
 
+	function userlist($keyword = null) {
+	    Configure::write('debug', 0);
+	    $keyword = trim(Sanitize::clean($keyword));
+	    $items = array();
+	    if(!empty($keyword)) {
+	        $items = $this->User->find('all', array(
+	            'limit' => 20,
+	            'conditions' => array(
+	                'User.name LIKE' => '%' . $keyword . '%',
+	            ),
+	        ));
+	    }
+	    $this->set('items', $items);
+	}
 }
 ?>

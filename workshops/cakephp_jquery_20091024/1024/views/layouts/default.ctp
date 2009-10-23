@@ -34,10 +34,12 @@
 		echo $html->meta('icon');
 		echo $html->css('cake.generic');
 		echo $html->css('jquery-ui-1.7.2.custom', NULL, array('media' => 'screen, projection'));
+		echo $html->css('jquery.autocomplete');
 		echo $javascript->link('jquery-1.3.2.min');
 		echo $javascript->link('jquery-ui-1.7.2.custom.min');
 		echo $javascript->link('ui.datepicker-zh-TW');
 		echo $javascript->link('jquery.validate');
+		echo $javascript->link('jquery.autocomplete');
 		echo $scripts_for_layout;
 	?>
 </head>

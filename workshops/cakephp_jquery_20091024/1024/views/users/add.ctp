@@ -20,4 +20,17 @@
 <?php
 echo $javascript->codeBlock('$(function() {
 	$(\'#UserBirthday\').datepicker();
+	$(\'#UserName\').autocomplete(\''.$html->url(array('action' => 'userlist')).'/\', {
+		parse: function(data) {
+			return $.map(eval(data), function(row) {
+				return {
+					data: row.User.name,
+					value: row.User.id,
+					result: row.User.name,
+				};
+			});
+		},
+	}).result(function(event, data, value) {
+		$(\'#UserName\').attr(\'value\', data);
+	});
 })');
