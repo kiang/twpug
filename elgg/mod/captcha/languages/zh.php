@@ -11,8 +11,8 @@
 
 	$chinese = array(
 	
-		'captcha:entercaptcha' => '�п�J�Ϥ�������r',
-		'captcha:captchafail' => '��p, �z��J����r�P�Ϥ�������r�ä��۲�.',
+		'captcha:entercaptcha' => '請輸入圖片中的文字',
+		'captcha:captchafail' => '抱歉, 您輸入的文字與圖片中的文字並不相符.',
 	
 	);
 					
