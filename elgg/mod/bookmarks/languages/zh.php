@@ -9,12 +9,12 @@
 			'bookmarks' => "書籤",
 			'bookmarks:add' => "Bookmark something",
 			'bookmarks:read' => "%s's bookmarked items",
-			'bookmarks:friends' => "Friends' bookmarks",
-			'bookmarks:everyone' => "All site bookmarks",
+			'bookmarks:friends' => "朋友的書籤",
+			'bookmarks:everyone' => "整個網站的書籤",
 			'bookmarks:this' => "Bookmark this",
 			'bookmarks:this:group' => "Bookmark in %s",
-			'bookmarks:bookmarklet' => "Get bookmarklet",
-			'bookmarks:bookmarklet:group' => "Get group bookmarklet",
+			'bookmarks:bookmarklet' => "使用書籤捷徑",
+			'bookmarks:bookmarklet:group' => "使用群組書籤捷徑",
 			'bookmarks:inbox' => "Bookmarks inbox",
 			'bookmarks:more' => "More",
 			'bookmarks:shareditem' => "Bookmarked item",
@@ -49,10 +49,10 @@
 		            "This widget is designed for your dashboard and will show you the latest items in your bookmarks inbox.",
 
 			'bookmarks:bookmarklet:description' =>
-					"The bookmarks bookmarklet allows you to share any resource you find on the web with your friends, or just bookmark it for yourself. To use it, simply drag the following button to your browser's links bar:",
+					"書籤捷徑讓你將網路上找到的資訊分享給朋友，或只是自己做個記錄。使用的方式很簡單，只要把下面圖示拖拉到瀏覽器的書籤管理功能(或是將按鈕的連結加入到我的最愛)：",
 
 	        'bookmarks:bookmarklet:descriptionie' =>
-					"If you are using Internet Explorer, you will need to right click on the bookmarklet icon, select 'add to favorites', and then the Links bar.",
+					"如果您是使用 Internet Explorer，請將滑鼠游標移動到下面圖示點選滑鼠右鍵，選擇'加入到我的最愛'後可以將它設定到導覽列。",
 
 			'bookmarks:bookmarklet:description:conclusion' =>
 					"You can then save any page you visit by clicking it at any time.",

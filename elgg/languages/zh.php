@@ -13,22 +13,22 @@
 		 */
 
 			'login' => "登入",
-			'loginok' => "You have been logged in.",
-			'loginerror' => "We couldn't log you in. This may be because you haven't validated your account yet, the details you supplied were incorrect, or you have made too many incorrect login attempts. Make sure your details are correct and please try again.",
+			'loginok' => "您已經登入.",
+			'loginerror' => "系統無法讓您登入. 這也許是因為您尚未完成帳號認證作業, 也許是您提供的資料不正確, 也或許是您登入錯誤太多次. 請確認您的資料都正確並再試一次.",
 
-			'logout' => "Log out",
-			'logoutok' => "You have been logged out.",
-			'logouterror' => "We couldn't log you out. Please try again.",
+			'logout' => "登出",
+			'logoutok' => "您已經登出.",
+			'logouterror' => "系統無法將您登出.請再試一次.",
 
 		/**
 		 * Errors
 		 */
-			'exception:title' => "Welcome to Elgg.",
+			'exception:title' => "歡迎使用 Elgg.",
 
 			'InstallationException:CantCreateSite' => "Unable to create a default ElggSite with credentials Name:%s, Url: %s",
 
 			'actionundefined' => "The requested action (%s) was not defined in the system.",
-			'actionloggedout' => "Sorry, you cannot perform this action while logged out.",
+			'actionloggedout' => "抱歉, 您無法在登出後執行這個動作.",
 
 			'notfound' => "The requested resource could not be found, or you do not have access to it.",
 
@@ -220,11 +220,11 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'widgets:middlecolumn' => "中間區塊",
 			'widgets:rightcolumn' => "右邊區塊",
 			'widgets:profilebox' => "Profile box",
-			'widgets:panel:save:success' => "Your widgets were successfully saved.",
-			'widgets:panel:save:failure' => "There was a problem saving your widgets. Please try again.",
-			'widgets:save:success' => "The widget was successfully saved.",
-			'widgets:save:failure' => "We could not save your widget. Please try again.",
-			'widgets:handlernotfound' => 'This widget is either broken or has been disabled by the site administrator.',
+			'widgets:panel:save:success' => "您的 widgets 已被儲存成功.",
+			'widgets:panel:save:failure' => "系統在儲存您的 widgets 時發生了一個錯誤. 請再試一次.",
+			'widgets:save:success' => "這個 widget 已被儲存成功.",
+			'widgets:save:failure' => "系統無法儲存您的 widget. 請再試一次.",
+			'widgets:handlernotfound' => '這個 widget 要不是已毀損就是被系統管理者停用.',
 
 		/**
 		 * Groups
@@ -238,7 +238,7 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 */
 
 			'profile' => "個人資料",
-			'profile:edit:default' => 'Replace profile fields',
+			'profile:edit:default' => '取代個人資料欄位',
 			'profile:preview' => '預覽',
 			'user' => "會員",
 			'item:user' => "會員",
@@ -255,7 +255,7 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'profile:user' => "%s 的資料",
 
 			'profile:edit' => "編輯個人資料",
-			'profile:profilepictureinstructions' => "The profile picture is the image that's displayed on your profile page. <br /> You can change it as often as you'd like. (File formats accepted: GIF, JPG or PNG)",
+			'profile:profilepictureinstructions' => "這個個人圖示是顯示在您個人資料頁面上的圖片. <br /> 您可以隨時依您的喜好變更這個圖示. (可接受的檔案格式: GIF, JPG or PNG)",
 			'profile:icon' => "個人圖示",
 			'profile:createicon' => "建立個人圖示",
 			'profile:currentavatar' => "目前圖示",
@@ -277,25 +277,25 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'profile:mobile' => "手機",
 			'profile:website' => "網站",
 
-			'profile:banned' => 'This user account has been suspended.',
-			'profile:deleteduser' => 'Deleted user',
+			'profile:banned' => '這個使用者帳號已被停用.',
+			'profile:deleteduser' => '已被刪除的使甪者',
 
-			'profile:river:update' => "%s updated their profile",
-			'profile:river:iconupdate' => "%s updated their profile icon",
+			'profile:river:update' => "%s 更新他們的個人資料",
+			'profile:river:iconupdate' => "%s 更新他們的個人圖示",
 
-			'profile:label' => "Profile label",
-			'profile:type' => "Profile type",
+			'profile:label' => "個人資料標籤",
+			'profile:type' => "個人資料類別",
 
-			'profile:editdefault:fail' => 'Default profile could not be saved',
+			'profile:editdefault:fail' => '預設的個人資料無法被儲存',
 			'profile:editdefault:success' => 'Item successfully added to default profile',
 
 
 			'profile:editdefault:delete:fail' => 'Removed default profile item field failed',
 			'profile:editdefault:delete:success' => 'Default profile item deleted!',
 
-			'profile:defaultprofile:reset' => 'Default system profile reset',
+			'profile:defaultprofile:reset' => '重置預設系統個人資料',
 
-			'profile:resetdefault' => 'Reset default profile',
+			'profile:resetdefault' => '重置預設個人資料',
 			'profile:explainchangefields' => 'You can replace the existing profile fields with your own using the form below. First you give the new profile field a label, for example, \'Favourite team\'. Next you need to select the field type, for example, tags, url, text and so on. At any time you can revert back to the default profile set up.',
 
 
@@ -304,17 +304,17 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 * Profile status messages
 		 */
 
-			'profile:saved' => "Your profile was successfully saved.",
-			'profile:icon:uploaded' => "Your profile picture was successfully uploaded.",
+			'profile:saved' => "您的個人資料已被儲存成功.",
+			'profile:icon:uploaded' => "您的個人圖示已被上傳成功.",
 
 		/**
 		 * Profile error messages
 		 */
 
-			'profile:noaccess' => "You do not have permission to edit this profile.",
-			'profile:notfound' => "Sorry; we could not find the specified profile.",
-			'profile:cantedit' => "Sorry; you do not have permission to edit this profile.",
-			'profile:icon:notfound' => "Sorry; there was a problem uploading your profile picture.",
+			'profile:noaccess' => "您沒有權限可以編輯這筆個人資料.",
+			'profile:notfound' => "抱歉; 系統無法找到您所指定的個人資料.",
+			'profile:cantedit' => "抱歉; 您沒有權限可以編輯這筆個人資料.",
+			'profile:icon:notfound' => "抱歉; 系統在上傳您的個人圖示時發生了一個錯誤.",
 
 		/**
 		 * Friends
@@ -326,14 +326,14 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'friend:add' => "新增朋友",
 			'friend:remove' => "移除朋友",
 
-			'friends:add:successful' => "You have successfully added %s as a friend.",
-			'friends:add:failure' => "We couldn't add %s as a friend. Please try again.",
+			'friends:add:successful' => "您已成功將 %s 新增為您的朋友.",
+			'friends:add:failure' => "系統無法將 %s 新增為您的朋友. 請再試一次.",
 
-			'friends:remove:successful' => "You have successfully removed %s from your friends.",
-			'friends:remove:failure' => "We couldn't remove %s from your friends. Please try again.",
+			'friends:remove:successful' => "您已成功將 %s 從您的朋友中移除.",
+			'friends:remove:failure' => "系統無法將 %s 從您的朋友中移除. 請再試一次.",
 
-			'friends:none' => "This user hasn't added anyone as a friend yet.",
-			'friends:none:you' => "You haven't added anyone as a friend! Search for your interests to begin finding people to follow.",
+			'friends:none' => "這個使用者尚未被新增為任何人的朋友.",
+			'friends:none:you' => "您尚未新增任何人成為您的朋友! Search for your interests to begin finding people to follow.",
 
 			'friends:none:found' => "No friends were found.",
 
@@ -343,9 +343,9 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'friends:of:owned' => "People who have made %s a friend",
 
 			 'friends:num_display' => "Number of friends to display",
-			 'friends:icon_size' => "Icon size",
-			 'friends:tiny' => "tiny",
-			 'friends:small' => "small",
+			 'friends:icon_size' => "圖示大小",
+			 'friends:tiny' => "極小",
+			 'friends:small' => "小",
 			 'friends:of' => "Friends of",
 			 'friends:collections' => "Collections of friends",
 			 'friends:collections:add' => "New friends collection",
@@ -884,7 +884,7 @@ Alternatively, you can enter your database settings below and we will try and do
 			'generic_comment:blank' => "Sorry; you need to actually put something in your comment before we can save it.",
 			'generic_comment:notfound' => "Sorry; we could not find the specified item.",
 			'generic_comment:notdeleted' => "Sorry; we could not delete this comment.",
-			'generic_comment:failure' => "An unexpected error occurred when adding your comment. Please try again.",
+			'generic_comment:failure' => "An unexpected error occurred when adding your comment. 請再試一次.",
 
 			'generic_comment:email:subject' => '您有新的留言',
 			'generic_comment:email:body' => "您的 \"%s\" 在 %s 有新留言：
@@ -917,7 +917,7 @@ Alternatively, you can enter your database settings below and we will try and do
 		 * Action gatekeeper
 		 */
 			'actiongatekeeper:missingfields' => 'Form is missing __token or __ts fields',
-			'actiongatekeeper:tokeninvalid' => "We encountered an error (token mismatch). This probably means that the page you were using expired. Please try again.",
+			'actiongatekeeper:tokeninvalid' => "We encountered an error (token mismatch). This probably means that the page you were using expired. 請再試一次.",
 			'actiongatekeeper:timeerror' => 'The page you were using has expired. Please refresh and try again.',
 			'actiongatekeeper:pluginprevents' => 'A extension has prevented this form from being submitted.',
 
