@@ -7,17 +7,17 @@
 		 */
 
 			'messageboard:board' => "留言板",
-			'messageboard:messageboard' => "message board",
-			'messageboard:viewall' => "View all",
+			'messageboard:messageboard' => "留言板",
+			'messageboard:viewall' => "檢視全部",
 			'messageboard:postit' => "留言",
-			'messageboard:history' => "history",
+			'messageboard:history' => "記錄",
 			'messageboard:none' => "There is nothing on this message board yet",
 			'messageboard:num_display' => "Number of messages to display",
 			'messageboard:desc' => "This is a message board that you can put on your profile where other users can comment.",
 
 			'messageboard:user' => "%s 的留言板",
 
-			'messageboard:history' => "History",
+			'messageboard:history' => "記錄",
 			'messageboard:replyon' => 'reply on',
 
          /**
@@ -42,22 +42,22 @@
 		 * Email messages
 		 */
 
-			'messageboard:email:subject' => 'You have a new message board comment!',
-			'messageboard:email:body' => "You have a new message board comment from %s. It reads:
+			'messageboard:email:subject' => '您的留言板有新訊息！',
+			'messageboard:email:body' => " %s 留了一封訊息給您：
 
 
 %s
 
 
-To view your message board comments, click here:
+點選這裡檢視：
 
 	%s
 
-To view %s's profile, click here:
+回覆 %s 訊息點這裡：
 
 	%s
 
-You cannot reply to this email.",
+請不要直接回覆這封信！",
 
 		/**
 		 * Error messages

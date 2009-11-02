@@ -6,11 +6,11 @@
 		 * Menu items and titles
 		 */
 
-			'expages' => "External pages",
+			'expages' => "外部網頁",
 			'expages:frontpage' => "首頁",
 			'expages:about' => "關於我們",
 			'expages:terms' => "會員條款",
-			'expages:privacy' => "隱私權聲名",
+			'expages:privacy' => "隱私權聲明",
 			'expages:analytics' => "Analytics",
 			'expages:contact' => "連絡",
 			'expages:nopreview' => "No preview yet available",
@@ -19,7 +19,7 @@
 			'expages:lefthand' => "The lefthand information pane",
 			'expages:righthand' => "The righthand information pane",
 			'expages:addcontent' => "You can add content here via your admin tools. Look for the external pages link under admin.",
-			'item:object:front' => 'Front page items',
+			'item:object:front' => '首頁項目',
 
 		/**
 		 * Status messages

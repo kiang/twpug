@@ -7,10 +7,10 @@
 		 */
 
 		'members:members' => "會員",
-	    'members:online' => "Members active now",
-	    'members:active' => "site members",
-	    'members:searchtag' => "Member search via tag",
-	    'members:searchname' => "Member search via name",
+	    'members:online' => "已經啟用的會員",
+	    'members:active' => "網站會員",
+	    'members:searchtag' => "以標籤搜尋會員",
+	    'members:searchname' => "以名稱搜尋會員",
 
 		'members:label:newest' => '最新',
 		'members:label:popular' => '熱門',

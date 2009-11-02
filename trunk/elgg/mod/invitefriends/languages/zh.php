@@ -15,7 +15,7 @@
 		'friends:invite' => '邀請朋友',
 		'invitefriends:introduction' => 'To invite friends to join you on this network, enter their email addresses below (one per line):',
 		'invitefriends:message' => 'Enter a message they will receive with your invitation:',
-		'invitefriends:subject' => 'Invitation to join %s',
+		'invitefriends:subject' => '來自 %s 的邀請',
 
 		'invitefriends:success' => 'Your friends were invited.',
 		'invitefriends:failure' => 'Your friends could not be invited.',
@@ -23,17 +23,17 @@
 		'invitefriends:message:default' => '
 Hi,
 
-I want to invite you to join my network here on %s.',
+我想邀請你加入我們在 %s 的社群',
 		'invitefriends:email' => '
-You have been invited to join %s by %s. They included the following message:
+ %s 的會員 %s 邀請您的參與，他提到：
 
 %s
 
-To join, click the following link:
+要加入我們，請點選連結：
 
 	%s
 
-You will automatically add them as a friend when you create your account.',
+您在建立帳號後會自動成為他們的朋友',
 
 	);
 

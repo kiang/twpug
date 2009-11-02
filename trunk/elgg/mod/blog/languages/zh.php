@@ -22,25 +22,25 @@
 			'blog:addpost' => "Write a blog post",
 			'blog:editpost' => "Edit blog post",
 
-			'blog:text' => "Blog text",
+			'blog:text' => "部落格內容",
 
 			'blog:strapline' => "%s",
 
-			'item:object:blog' => 'Blog posts',
+			'item:object:blog' => '部落格文章',
 
 			'blog:never' => 'never',
-			'blog:preview' => 'Preview',
+			'blog:preview' => '預覽',
 
-			'blog:draft:save' => 'Save draft',
+			'blog:draft:save' => '儲存草稿',
 			'blog:draft:saved' => 'Draft last saved',
 			'blog:comments:allow' => 'Allow comments',
 
 			'blog:preview:description' => 'This is an unsaved preview of your blog post.',
 			'blog:preview:description:link' => 'To continue editing or save your post, click here.',
 
-			'blog:enableblog' => 'Enable group blog',
+			'blog:enableblog' => '啟用群組部落格',
 
-			'blog:group' => 'Group blog',
+			'blog:group' => '群組部落格',
 
          /**
 	     * Blog river
