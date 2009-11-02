@@ -10,25 +10,25 @@
 	$chinese = array(
 	
 			'diagnostics' => 'System diagnostics',
-			'diagnostics:unittester' => '³æ¤¸´ú¸Õ',
+			'diagnostics:unittester' => 'å–®å…ƒæ¸¬è©¦',
 	
 			'diagnostics:description' => 'The following diagnostic report is useful for diagnosing any problems with Elgg, and should be attached to any bug reports you file.',
 			'diagnostics:unittester:description' => 'The following are diagnostic tests which are registered by plugins and may be performed in order to debug parts of the Elgg framework.',
 	
-			'diagnostics:test:executetest' => '°õ¦æ´ú¸Õ',
-			'diagnostics:test:executeall' => '°õ¦æ¥þ³¡',
+			'diagnostics:test:executetest' => 'åŸ·è¡Œæ¸¬è©¦',
+			'diagnostics:test:executeall' => 'åŸ·è¡Œå…¨éƒ¨',
 			'diagnostics:unittester:notests' => 'Sorry, there are no unit test modules currently installed.',
 			'diagnostics:unittester:testnotfound' => 'Sorry, the report could not be generated because that test was not found',
 	
 			'diagnostics:unittester:testresult:nottestclass' => 'FAIL - Result not a test class',
-			'diagnostics:unittester:testresult:fail' => '¥¢±Ñ',
-			'diagnostics:unittester:testresult:success' => '¦¨¥\',
+			'diagnostics:unittester:testresult:fail' => 'å¤±æ•—',
+			'diagnostics:unittester:testresult:success' => 'æˆåŠŸ',
 	
 			'diagnostics:unittest:example' => 'Example unit test, only available in debug mode.',
 	
-			'diagnostics:unittester:report' => '%s ªº´ú¸Õ³ø§i',
+			'diagnostics:unittester:report' => '%s çš„æ¸¬è©¦å ±å‘Š',
 	
-			'diagnostics:download' => '¤U¸ü .txt',
+			'diagnostics:download' => 'ä¸‹è¼‰ .txt',
 	
 	
 			'diagnostics:header' => '========================================================================
