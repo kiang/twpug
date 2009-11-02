@@ -7,8 +7,8 @@
 			'custom:files' => "新檔案",
 			'custom:blogs' => "新部落格文章",
 			'custom:members' => "新會員",
-			'custom:nofiles' => "There are no files yet",
-			'custom:nogroups' => "There are no files yet",
+			'custom:nofiles' => "目前尚無任何檔案",
+			'custom:nogroups' => "目前尚無任何檔案",
 
 	);
 

@@ -11,8 +11,8 @@
 
 	$chinese = array(
 	
-		'captcha:entercaptcha' => 'Enter text from image',
-		'captcha:captchafail' => 'Sorry, the text that you entered didn\'t match the text in the image.',
+		'captcha:entercaptcha' => '請輸入圖片中的文字',
+		'captcha:captchafail' => '抱歉, 您輸入的文字與圖片中的文字並不相符.',
 	
 	);
 					

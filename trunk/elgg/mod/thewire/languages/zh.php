@@ -8,7 +8,7 @@
 
 			'thewire' => "碎碎念",
 			'thewire:user' => "%s 的碎碎念",
-			'thewire:posttitle' => "%s's notes on the wire: %s",
+			'thewire:posttitle' => "%s 的碎碎念在線上: %s",
 			'thewire:everyone' => "所有碎碎念",
 
 			'thewire:read' => "碎碎念文章",
@@ -18,11 +18,11 @@
 			'thewire:add' => "發表到碎碎念",
 		    'thewire:text' => "碎碎念文字",
 			'thewire:reply' => "回覆",
-			'thewire:via' => "via",
-			'thewire:wired' => "Posted to the wire",
+			'thewire:via' => "透過",
+			'thewire:wired' => "發表到線上",
 			'thewire:charleft' => "(還可以輸入字數)",
 			'item:object:thewire' => "碎碎念",
-			'thewire:notedeleted' => "note deleted",
+			'thewire:notedeleted' => "已刪除的碎碎念",
 			'thewire:doing' => "在碎碎念可以輸入您現在的想法、正在做些什麼等等：",
 			'thewire:newpost' => '新增碎碎念',
 			'thewire:addpost' => '發表到碎碎念',

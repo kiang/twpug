@@ -13,14 +13,14 @@
 			'blog:your' => "您的部落格",
 			'blog:posttitle' => "%s 的部落格：  %s",
 			'blog:friends' => "朋友的部落格",
-			'blog:yourfriends' => "Your friends' latest blogs",
-			'blog:everyone' => "All site blogs",
-			'blog:newpost' => "New blog post",
-			'blog:via' => "via blog",
-			'blog:read' => "Read blog",
+			'blog:yourfriends' => "您朋友最後發表的部落格文章",
+			'blog:everyone' => "整個網站的部落格文章",
+			'blog:newpost' => "新的部落格文章",
+			'blog:via' => "透過部落格",
+			'blog:read' => "閱讀部落格",
 
-			'blog:addpost' => "Write a blog post",
-			'blog:editpost' => "Edit blog post",
+			'blog:addpost' => "寫一篇部落格文章",
+			'blog:editpost' => "編輯部落格文章",
 
 			'blog:text' => "部落格內容",
 
@@ -32,11 +32,11 @@
 			'blog:preview' => '預覽',
 
 			'blog:draft:save' => '儲存草稿',
-			'blog:draft:saved' => 'Draft last saved',
-			'blog:comments:allow' => 'Allow comments',
+			'blog:draft:saved' => '最後儲存的草稿',
+			'blog:comments:allow' => '允許發表評論',
 
-			'blog:preview:description' => 'This is an unsaved preview of your blog post.',
-			'blog:preview:description:link' => 'To continue editing or save your post, click here.',
+			'blog:preview:description' => '這是一篇您部落格文章尚未儲存的預覽內容.',
+			'blog:preview:description:link' => '要繼續編輯或是儲存您的文章, 請點選這裏.',
 
 			'blog:enableblog' => '啟用群組部落格',
 
@@ -61,18 +61,18 @@
 		 * Status messages
 		 */
 
-			'blog:posted' => "Your blog post was successfully posted.",
-			'blog:deleted' => "Your blog post was successfully deleted.",
+			'blog:posted' => "您的部落格文章已被發表成功.",
+			'blog:deleted' => "您的部落格文章已被刪除成功",
 
 		/**
 		 * Error messages
 		 */
 
-			'blog:error' => 'Something went wrong. Please try again.',
-			'blog:save:failure' => "Your blog post could not be saved. Please try again.",
-			'blog:blank' => "Sorry; you need to fill in both the title and body before you can make a post.",
-			'blog:notfound' => "Sorry; we could not find the specified blog post.",
-			'blog:notdeleted' => "Sorry; we could not delete this blog post.",
+			'blog:error' => '系統發生錯誤. 請再試一次.',
+			'blog:save:failure' => "您的部落格文章無法被儲存. 請再試一次.",
+			'blog:blank' => "抱歉; 在您發表文章之前您必須填寫文章的標題及內容.",
+			'blog:notfound' => "抱歉; 系統無法找到您所指定的部落格文章.",
+			'blog:notdeleted' => "抱歉; 系統無法刪除這筆部落格文章.",
 
 	);
 
