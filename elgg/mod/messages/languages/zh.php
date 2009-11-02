@@ -7,27 +7,27 @@
 		 */
 
 			'messages' => "線上訊息",
-            'messages:back' => "back to messages",
-			'messages:user' => "Your inbox",
-			'messages:sentMessages' => "Sent messages",
-			'messages:posttitle' => "%s's messages: %s",
-			'messages:inbox' => "Inbox",
-			'messages:send' => "Send a message",
-			'messages:sent' => "Sent messages",
-			'messages:message' => "Message",
-			'messages:title' => "Title",
-			'messages:to' => "To",
-            'messages:from' => "From",
-			'messages:fly' => "Send",
-			'messages:replying' => "Message replying to",
-			'messages:inbox' => "Inbox",
+            'messages:back' => "回到線上訊息",
+			'messages:user' => "您的收件匣",
+			'messages:sentMessages' => "寄件備份",
+			'messages:posttitle' => "%s 的訊息： %s",
+			'messages:inbox' => "收件匣",
+			'messages:send' => "發送訊息",
+			'messages:sent' => "寄件備份",
+			'messages:message' => "線上訊息",
+			'messages:title' => "標題",
+			'messages:to' => "收件人",
+            'messages:from' => "寄件人",
+			'messages:fly' => "送出",
+			'messages:replying' => "回覆訊息",
+			'messages:inbox' => "收件匣",
 			'messages:sendmessage' => "Send a message",
 			'messages:compose' => "Compose a message",
 			'messages:sentmessages' => "Sent messages",
 			'messages:recent' => "Recent messages",
             'messages:original' => "Original message",
             'messages:yours' => "Your message",
-            'messages:answer' => "Reply",
+            'messages:answer' => "回覆",
 			'messages:toggle' => 'Toggle all',
 			'messages:markread' => 'Mark read',
 
@@ -37,7 +37,7 @@
 
 			'messages:error' => 'There was a problem saving your message. Please try again.',
 
-			'item:object:messages' => 'Messages',
+			'item:object:messages' => '線上訊息',
 
 		/**
 		 * Status messages
@@ -51,22 +51,22 @@
 		 * Email messages
 		 */
 
-			'messages:email:subject' => 'You have a new message!',
-			'messages:email:body' => "You have a new message from %s. It reads:
+			'messages:email:subject' => '您有新的訊息！',
+			'messages:email:body' => " %s 寄了一封訊息給您：
 
 
 %s
 
 
-To view your messages, click here:
+點選這裡檢視：
 
 	%s
 
-To send %s a message, click here:
+回覆 %s 一個訊息點這裡：
 
 	%s
 
-You cannot reply to this email.",
+請不要直接回覆這封信！",
 
 		/**
 		 * Error messages

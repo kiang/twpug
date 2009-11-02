@@ -15,35 +15,35 @@
 		 * Menu items and titles
 		 */
 
-			'pages' => "網頁",
-			'pages:yours' => "Your pages",
-			'pages:user' => "Pages home",
-			'pages:group' => "Group pages",
-			'pages:all' => "All site pages",
-			'pages:new' => "New page",
-			'pages:groupprofile' => "Group pages",
-			'pages:edit' => "Edit this page",
-			'pages:delete' => "Delete this page",
-			'pages:history' => "Page history",
-			'pages:view' => "View page",
+			'pages' => "文章",
+			'pages:yours' => "您的文章",
+			'pages:user' => "文章首頁",
+			'pages:group' => "群組文章",
+			'pages:all' => "所有文章",
+			'pages:new' => "新增文章",
+			'pages:groupprofile' => "群組文章",
+			'pages:edit' => "編輯文章",
+			'pages:delete' => "刪除文章",
+			'pages:history' => "文章記錄",
+			'pages:view' => "檢視文章",
 			'pages:welcome' => "Edit welcome message",
 			'pages:welcomemessage' => "Welcome to this Elgg pages plugin. This feature allows you to create pages on any topic and select who can view them and edit them.",
 			'pages:welcomeerror' => "There was a problem saving your welcome message",
 			'pages:welcomeposted' => "Your welcome message has been posted",
-			'pages:navigation' => "Page navigation",
+			'pages:navigation' => "文章分頁",
 	        'pages:via' => "via pages",
 			'item:object:page_top' => 'Top-level pages',
-			'item:object:page' => 'Pages',
+			'item:object:page' => '文章',
 			'item:object:pages_welcome' => 'Pages welcome blocks',
-			'pages:nogroup' => 'This group does not have any pages yet',
-			'pages:more' => 'More pages',
+			'pages:nogroup' => '這個群組還沒有任何文章',
+			'pages:more' => '更多文章',
 
 		/**
 		* River
 		**/
 
 		    'pages:river:annotate' => "a comment on this page",
-		    'pages:river:created' => "%s wrote",
+		    'pages:river:created' => "%s 提到",
 	        'pages:river:updated' => "%s updated",
 	        'pages:river:posted' => "%s posted",
 			'pages:river:create' => "a new page titled",
@@ -55,11 +55,11 @@
 		 * Form fields
 		 */
 
-			'pages:title' => 'Pages Title',
-			'pages:description' => 'Your page entry',
-			'pages:tags' => 'Tags',
-			'pages:access_id' => 'Access',
-			'pages:write_access_id' => 'Write access',
+			'pages:title' => '文章標題',
+			'pages:description' => '內容',
+			'pages:tags' => '標籤',
+			'pages:access_id' => '閱讀權限',
+			'pages:write_access_id' => '寫入權限',
 
 		/**
 		 * Status and error messages
@@ -92,19 +92,19 @@
 		/**
 		 * Submenu items
 		 */
-			'pages:label:view' => "View page",
-			'pages:label:edit' => "Edit page",
-			'pages:label:history' => "Page history",
+			'pages:label:view' => "檢視文章",
+			'pages:label:edit' => "編輯文章",
+			'pages:label:history' => "文章記錄",
 
 		/**
 		 * Sidebar items
 		 */
-			'pages:sidebar:this' => "This page",
-			'pages:sidebar:children' => "Sub-pages",
-			'pages:sidebar:parent' => "Parent",
+			'pages:sidebar:this' => "這篇文章",
+			'pages:sidebar:children' => "延伸文章",
+			'pages:sidebar:parent' => "參考文章",
 
-			'pages:newchild' => "Create a sub-page",
-			'pages:backtoparent' => "Back to '%s'",
+			'pages:newchild' => "建立延伸文章",
+			'pages:backtoparent' => "回到 '%s'",
 	);
 
 	add_translation("zh",$chinese);

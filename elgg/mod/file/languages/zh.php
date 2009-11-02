@@ -20,7 +20,7 @@
 			'file:yours:friends' => "您朋友的檔案",
 			'file:user' => "%s 的檔案",
 			'file:friends' => "%s 朋友的檔案",
-			'file:all' => "All site files",
+			'file:all' => "所有檔案",
 			'file:edit' => "Edit file",
 			'file:more' => "More files",
 			'file:list' => "list view",
@@ -41,12 +41,12 @@
 
 			'file:types' => "Uploaded file types",
 
-			'file:type:all' => "All files",
-			'file:type:video' => "Videos",
-			'file:type:document' => "Documents",
-			'file:type:audio' => "Audio",
-			'file:type:image' => "Pictures",
-			'file:type:general' => "General",
+			'file:type:all' => "所有檔案",
+			'file:type:video' => "影片",
+			'file:type:document' => "文件",
+			'file:type:audio' => "音樂",
+			'file:type:image' => "圖片",
+			'file:type:general' => "一般",
 
 			'file:user:type:video' => "%s's videos",
 			'file:user:type:document' => "%s's documents",
@@ -63,11 +63,11 @@
 			'file:widget' => "File widget",
 			'file:widget:description' => "Showcase your latest files",
 
-			'file:download' => "Download this",
+			'file:download' => "下載",
 
 			'file:delete:confirm' => "Are you sure you want to delete this file?",
 
-			'file:tagcloud' => "Tag cloud",
+			'file:tagcloud' => "標籤雲",
 
 			'file:display:number' => "Number of files to display",
 
@@ -75,7 +75,7 @@
 			'file:river:item' => "a file",
 			'file:river:annotate' => "a comment on this file",
 
-			'item:object:file' => 'Files',
+			'item:object:file' => '檔案',
 
 	    /**
 		 * Embed media

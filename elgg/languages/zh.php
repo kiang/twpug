@@ -204,21 +204,21 @@
             'dashboard:configure' => "編輯頁面",
 			'dashboard:nowidgets' => "Your dashboard is your gateway into the site. Click 'Edit page' to add widgets to keep track of content and your life within the system.",
 
-			'widgets:add' => 'Add widgets to your page',
+			'widgets:add' => '新增區塊到個人首頁',
 			'widgets:add:description' => "Choose the features you want to add to your page by dragging them from the <b>Widget gallery</b> on the right, to any of the three widget areas below, and position them where you would like them to appear.
 
 To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'widgets:position:fixed' => '(Fixed position on page)',
 
-			'widgets' => "Widgets",
-			'widget' => "Widget",
-			'item:object:widget' => "Widgets",
-			'layout:customise' => "Customise layout",
-			'widgets:gallery' => "Widget gallery",
-			'widgets:leftcolumn' => "Left widgets",
-			'widgets:fixed' => "Fixed position",
-			'widgets:middlecolumn' => "Middle widgets",
-			'widgets:rightcolumn' => "Right widgets",
+			'widgets' => "區塊",
+			'widget' => "區塊",
+			'item:object:widget' => "區塊",
+			'layout:customise' => "自訂版面",
+			'widgets:gallery' => "可用區塊",
+			'widgets:leftcolumn' => "左邊區塊",
+			'widgets:fixed' => "固定寬度",
+			'widgets:middlecolumn' => "中間區塊",
+			'widgets:rightcolumn' => "右邊區塊",
 			'widgets:profilebox' => "Profile box",
 			'widgets:panel:save:success' => "Your widgets were successfully saved.",
 			'widgets:panel:save:failure' => "There was a problem saving your widgets. Please try again.",
@@ -256,15 +256,15 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 
 			'profile:edit' => "編輯個人資料",
 			'profile:profilepictureinstructions' => "The profile picture is the image that's displayed on your profile page. <br /> You can change it as often as you'd like. (File formats accepted: GIF, JPG or PNG)",
-			'profile:icon' => "Profile picture",
-			'profile:createicon' => "Create your avatar",
-			'profile:currentavatar' => "Current avatar",
-			'profile:createicon:header' => "Profile picture",
-			'profile:profilepicturecroppingtool' => "Profile picture cropping tool",
+			'profile:icon' => "個人圖示",
+			'profile:createicon' => "建立個人圖示",
+			'profile:currentavatar' => "目前圖示",
+			'profile:createicon:header' => "個人照片",
+			'profile:profilepicturecroppingtool' => "個人照片剪輯工具",
 			'profile:createicon:instructions' => "Click and drag a square below to match how you want your picture cropped.  A preview of your cropped picture will appear in the box on the right.  When you are happy with the preview, click 'Create your avatar'. This cropped image will be used throughout the site as your avatar. ",
 
-			'profile:editdetails' => "Edit details",
-			'profile:editicon' => "Edit profile icon",
+			'profile:editdetails' => "編輯細節",
+			'profile:editicon' => "編輯個人圖示",
 
 			'profile:aboutme' => "關於自己",
 			'profile:description' => "關於自己",
@@ -687,20 +687,20 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 * User add
 		 */
 
-			'useradd:subject' => 'User account created',
+			'useradd:subject' => '註冊完成',
 			'useradd:body' => '
 %s,
 
-A user account has been created for you at %s. To log in, visit:
+您在 %s 註冊了一個帳號，請透過下面網址登入：
 
 	%s
 
-And log in with these user credentials:
+您的登入資訊如下：
 
 	Username: %s
 	Password: %s
 
-Once you have logged in, we highly recommend that you change your password.
+在登入後，強烈建議您立刻修改密碼。
 ',
 
 	    /**
@@ -720,13 +720,13 @@ Once you have logged in, we highly recommend that you change your password.
 		 * Time
 		 */
 
-			'friendlytime:justnow' => "just now",
-			'friendlytime:minutes' => "%s minutes ago",
-			'friendlytime:minutes:singular' => "a minute ago",
-			'friendlytime:hours' => "%s hours ago",
-			'friendlytime:hours:singular' => "an hour ago",
-			'friendlytime:days' => "%s days ago",
-			'friendlytime:days:singular' => "yesterday",
+			'friendlytime:justnow' => "剛剛",
+			'friendlytime:minutes' => "%s 分鐘前",
+			'friendlytime:minutes:singular' => "1 分鐘前",
+			'friendlytime:hours' => "%s 小時前",
+			'friendlytime:hours:singular' => "1 小時前",
+			'friendlytime:days' => "%s 天前",
+			'friendlytime:days:singular' => "1 天前",
 
 			'date:month:01' => '一月 %s',
 			'date:month:02' => '二月 %s',
@@ -822,35 +822,35 @@ Alternatively, you can enter your database settings below and we will try and do
 		/**
 		 * Emails
 		 */
-			'email:settings' => "Email settings",
+			'email:settings' => "Email 設定",
 			'email:address:label' => "Your email address",
 
 			'email:save:success' => "New email address saved, verification requested.",
 			'email:save:fail' => "Your new email address could not be saved.",
 
-			'friend:newfriend:subject' => "%s has made you a friend!",
-			'friend:newfriend:body' => "%s has made you a friend!
+			'friend:newfriend:subject' => "%s 把你加入好友",
+			'friend:newfriend:body' => "%s 剛剛把你加入好友
 
-To view their profile, click here:
+透過下面網址可以檢視他的資訊：
 
 	%s
 
-You cannot reply to this email.",
+請不要直接回覆這封信。",
 
 
 
-			'email:resetpassword:subject' => "Password reset!",
+			'email:resetpassword:subject' => "密碼重設",
 			'email:resetpassword:body' => "Hi %s,
 
-Your password has been reset to: %s",
+您的密碼已經重設為：  %s",
 
 
-			'email:resetreq:subject' => "Request for new password.",
+			'email:resetreq:subject' => "密碼請求",
 			'email:resetreq:body' => "Hi %s,
 
-Somebody (from the IP address %s) has requested a new password for their account.
+有人(來自 IP %s) 請求重設密碼。
 
-If you requested this click on the link below, otherwise ignore this email.
+如果這是您發出的請求，可以點選下面連結繼續，如果不是就請忽略這封信：
 
 %s
 ",
@@ -886,22 +886,22 @@ If you requested this click on the link below, otherwise ignore this email.
 			'generic_comment:notdeleted' => "Sorry; we could not delete this comment.",
 			'generic_comment:failure' => "An unexpected error occurred when adding your comment. Please try again.",
 
-			'generic_comment:email:subject' => 'You have a new comment!',
-			'generic_comment:email:body' => "You have a new comment on your item \"%s\" from %s. It reads:
+			'generic_comment:email:subject' => '您有新的留言',
+			'generic_comment:email:body' => "您的 \"%s\" 在 %s 有新留言：
 
 
 %s
 
 
-To reply or view the original item, click here:
+回覆留言或檢視原來項目請點選：
 
 	%s
 
-To view %s's profile, click here:
+檢視 %s 的資訊請點選：
 
 	%s
 
-You cannot reply to this email.",
+請不要直接回覆這封信。",
 
 		/**
 		 * Entities

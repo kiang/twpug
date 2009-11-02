@@ -15,17 +15,17 @@
 
 			'thewire:strapline' => "%s",
 
-			'thewire:add' => "Post to the wire",
-		    'thewire:text' => "A note on the wire",
+			'thewire:add' => "發表到碎碎念",
+		    'thewire:text' => "碎碎念文字",
 			'thewire:reply' => "回覆",
 			'thewire:via' => "via",
 			'thewire:wired' => "Posted to the wire",
-			'thewire:charleft' => "characters left",
-			'item:object:thewire' => "Wire posts",
+			'thewire:charleft' => "(還可以輸入字數)",
+			'item:object:thewire' => "碎碎念",
 			'thewire:notedeleted' => "note deleted",
-			'thewire:doing' => "What are you doing? Tell everyone on the wire:",
+			'thewire:doing' => "在碎碎念可以輸入您現在的想法、正在做些什麼等等：",
 			'thewire:newpost' => '新增碎碎念',
-			'thewire:addpost' => 'Post to the wire',
+			'thewire:addpost' => '發表到碎碎念',
 
 
         /**
