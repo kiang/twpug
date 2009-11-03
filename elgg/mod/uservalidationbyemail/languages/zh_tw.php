@@ -7,7 +7,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		'email:validate:subject' => "%s 信箱驗證",
 		'email:validate:body' => "Hi %s,
@@ -29,5 +29,5 @@
 
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

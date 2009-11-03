@@ -9,12 +9,12 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 	
 		'captcha:entercaptcha' => '請輸入圖片中的文字',
 		'captcha:captchafail' => '抱歉, 您輸入的文字與圖片中的文字並不相符.',
 	
 	);
 					
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

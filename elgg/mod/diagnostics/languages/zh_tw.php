@@ -7,7 +7,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 	
 			'diagnostics' => 'System diagnostics',
 			'diagnostics:unittester' => '單元測試',
@@ -63,5 +63,5 @@ Global variables:
 	
 	);
 					
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

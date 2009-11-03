@@ -9,7 +9,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		/**
 		 * Menu items and titles
@@ -107,5 +107,5 @@
 			'pages:backtoparent' => "回到 '%s'",
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

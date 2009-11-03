@@ -1,6 +1,6 @@
 <?php
 
-$chinese = array (
+$traditionalChinese = array (
 
 	/**
 	 * Nice name for the entity (shown in admin panel)
@@ -25,4 +25,4 @@ $chinese = array (
 	'defaultwidgets:dashboard:title' => '將預設的 widgets 設定給新使用者的儀表板頁面',
 );
 
-add_translation ( "zh", $chinese );
+add_translation ( "zh", $traditionalChinese );
