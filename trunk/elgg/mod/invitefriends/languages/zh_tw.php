@@ -10,7 +10,7 @@
 	 * @link http://elgg.org/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		'friends:invite' => '邀請朋友',
 		'invitefriends:introduction' => 'To invite friends to join you on this network, enter their email addresses below (one per line):',
@@ -37,5 +37,5 @@ Hi,
 
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

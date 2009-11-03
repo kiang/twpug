@@ -9,7 +9,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		/**
 		 * Menu items and titles
@@ -216,5 +216,5 @@ or click below to confirm request:
 			'groups:joinrequestkilled' => 'The join request has been deleted.',
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		/**
 		 * Menu items and titles
@@ -10,6 +10,6 @@
 
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 
 ?>

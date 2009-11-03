@@ -9,7 +9,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		/**
 		 * Menu items and titles
@@ -43,5 +43,5 @@
 			'reportedcontent:notarchived' => 'We were not able to archive that report',
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

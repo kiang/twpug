@@ -1,6 +1,6 @@
 <?php
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		'friends:all' => '所有朋友',
 
@@ -24,6 +24,6 @@
 
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 
 ?>

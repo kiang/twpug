@@ -1,6 +1,6 @@
 <?php
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		/**
 		 * Sites
@@ -1071,7 +1071,8 @@ Alternatively, you can enter your database settings below and we will try and do
 			"yo" => "Yoruba",
 			"za" => "Zuang",
 			"zh" => "中文",
+			"zh_tw" => "正體中文",
 			"zu" => "Zulu",
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);

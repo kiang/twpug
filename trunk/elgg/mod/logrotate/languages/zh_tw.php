@@ -7,7 +7,7 @@
 	 * @link http://elgg.com/
 	 */
 
-	$chinese = array(
+	$traditionalChinese = array(
 		'logrotate:period' => '系統記錄進行歸檔的頻率？',
 
 		'logrotate:weekly' => '一週',
@@ -18,5 +18,5 @@
 		'logrotate:lognotrotated' => "Error rotating log\n",
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 ?>

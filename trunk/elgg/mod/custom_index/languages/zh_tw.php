@@ -1,6 +1,6 @@
 <?php
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 			'custom:bookmarks' => "新書籤",
 			'custom:groups' => "新群組",
@@ -12,6 +12,6 @@
 
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 
 ?>

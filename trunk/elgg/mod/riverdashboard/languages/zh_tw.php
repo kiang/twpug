@@ -1,6 +1,6 @@
 <?php
 
-	$chinese = array(
+	$traditionalChinese = array(
 
 		'mine' => '我的',
 		'filter' => '過濾',
@@ -31,6 +31,6 @@
 		'item:object:sitemessage' => "線上訊息",
 	);
 
-	add_translation("zh",$chinese);
+	add_translation("zh_tw",$traditionalChinese);
 
 ?>
