@@ -27,16 +27,16 @@
 
 			'InstallationException:CantCreateSite' => "Unable to create a default ElggSite with credentials Name:%s, Url: %s",
 
-			'actionundefined' => "The requested action (%s) was not defined in the system.",
+			'actionundefined' => "您要求的動作 (%s) 在系統中並未被定義.",
 			'actionloggedout' => "抱歉, 您無法在登出後執行這個動作.",
 
-			'notfound' => "The requested resource could not be found, or you do not have access to it.",
+			'notfound' => "系統中找不到您所要求的資源, 或是您無法存取該資源.",
 
 			'SecurityException:Codeblock' => "Denied access to execute privileged code block",
-			'DatabaseException:WrongCredentials' => "Elgg couldn't connect to the database using the given credentials.",
-			'DatabaseException:NoConnect' => "Elgg couldn't select the database '%s', please check that the database is created and you have access to it.",
+			'DatabaseException:WrongCredentials' => "Elgg 使用您提供的憑證無法連結到資料庫.",
+			'DatabaseException:NoConnect' => "Elgg 無法找到資料庫 '%s', please check that the database is created and you have access to it.",
 			'SecurityException:FunctionDenied' => "Access to privileged function '%s' is denied.",
-			'DatabaseException:DBSetupIssues' => "There were a number of issues: ",
+			'DatabaseException:DBSetupIssues' => "有一些問題: ",
 			'DatabaseException:ScriptNotFound' => "Elgg couldn't find the requested database script at %s.",
 
 			'IOException:FailedToLoadGUID' => "Failed to load new %s from GUID:%d",
@@ -59,7 +59,7 @@
 			'InvalidParameterException:NonArrayReturnValue' => "Entity serialisation function passed a non-array returnvalue parameter",
 
 			'ConfigurationException:NoCachePath' => "Cache path set to nothing!",
-			'IOException:NotDirectory' => "%s is not a directory.",
+			'IOException:NotDirectory' => "%s 不是一個目錄.",
 
 			'IOException:BaseEntitySaveFailed' => "Unable to save new object's base entity information!",
 			'InvalidParameterException:UnexpectedODDClass' => "import() passed an unexpected ODD class",
@@ -70,7 +70,7 @@
 			'InstallationException:TypeNotSupported' => "Type %s is not supported. This indicates an error in your installation, most likely caused by an incomplete upgrade.",
 
 			'ImportException:ImportFailed' => "Could not import element %d",
-			'ImportException:ProblemSaving' => "There was a problem saving %s",
+			'ImportException:ProblemSaving' => "系統在儲存 %s 時發生了一個錯誤",
 			'ImportException:NoGUID' => "New entity created but has no GUID, this should not happen.",
 
 			'ImportException:GUIDNotFound' => "Entity '%d' could not be found.",
@@ -166,9 +166,9 @@
 			'memcache:versiontoolow' => 'Memcache needs at least version %s to run, you are running %s',
 			'memcache:noaddserver' => 'Multiple server support disabled, you may need to upgrade your PECL memcache library',
 
-			'deprecatedfunction' => 'Warning: This code uses the deprecated function \'%s\' and is not compatible with this version of Elgg',
+			'deprecatedfunction' => '警告: This code uses the deprecated function \'%s\' and is not compatible with this version of Elgg',
 
-			'pageownerunavailable' => 'Warning: The page owner %d is not accessible!',
+			'pageownerunavailable' => '警告: The page owner %d is not accessible!',
 		/**
 		 * API
 		 */
@@ -462,16 +462,16 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'registration:passwordnotvalid' => 'Sorry, the password you entered is invalid on this system',
 			'registration:usernamenotvalid' => 'Sorry, the username you entered is invalid on this system',
 
-			'adduser' => "Add User",
-			'adduser:ok' => "You have successfully added a new user.",
-			'adduser:bad' => "The new user could not be created.",
+			'adduser' => "新增使用者",
+			'adduser:ok' => "您已成功新增一位使用者.",
+			'adduser:bad' => "新使用建立失敗.",
 
 			'item:object:reported_content' => "Reported items",
 
-			'user:set:name' => "Account name settings",
-			'user:name:label' => "Your name",
-			'user:name:success' => "Successfully changed your name on the system.",
-			'user:name:fail' => "Could not change your name on the system.",
+			'user:set:name' => "帳號名稱設定",
+			'user:name:label' => "您的帳號名稱",
+			'user:name:success' => "已成功變更您在系統上的帳號名稱.",
+			'user:name:fail' => "無法變更您在系統上的帳號名稱.",
 
 			'user:set:password' => "帳號密碼",
 			'user:password:label' => "新密碼",
@@ -483,14 +483,14 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 
 			'user:set:language' => "語言設定",
 			'user:language:label' => "您的語言",
-			'user:language:success' => "Your language settings have been updated.",
-			'user:language:fail' => "Your language settings could not be saved.",
+			'user:language:success' => "您的語言設定已被更新.",
+			'user:language:fail' => "語言設定儲存失敗.",
 
 			'user:username:notfound' => '找不到帳號 %s',
 
 			'user:password:lost' => '忘記密碼',
-			'user:password:resetreq:success' => 'Successfully requested a new password, email sent',
-			'user:password:resetreq:fail' => 'Could not request a new password.',
+			'user:password:resetreq:success' => '已成功申請一個新的密碼, email 已寄出',
+			'user:password:resetreq:fail' => '無法申請一個新的密碼.',
 
 			'user:password:text' => 'To generate a new password, enter your username below. We will send the address of a unique verification page to you via email click on the link in the body of the message and a new password will be sent to you.',
 
@@ -499,86 +499,86 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 * Administration
 		 */
 
-			'admin:configuration:success' => "Your settings have been saved.",
-			'admin:configuration:fail' => "Your settings could not be saved.",
+			'admin:configuration:success' => "您的設定已被儲存.",
+			'admin:configuration:fail' => "您的設定無法被儲存.",
 
 			'admin' => "管理",
-			'admin:description' => "The admin panel allows you to control all aspects of the system, from user management to how plugins behave. Choose an option below to get started.",
+			'admin:description' => "這個管理面版讓您可以控制系統的外觀, 從使用者管理到 plugins 如何表現. 從選擇下面的選項開始.",
 
-			'admin:user' => "User Administration",
-			'admin:user:description' => "This admin panel allows you to control user settings for your site. Choose an option below to get started.",
-			'admin:user:adduser:label' => "Click here to add a new user...",
-			'admin:user:opt:linktext' => "Configure users...",
-			'admin:user:opt:description' => "Configure users and account information. ",
+			'admin:user' => "使用者管理",
+			'admin:user:description' => "這個管理面版讓您可以控制您站台的使用者設定. 從選擇下面的選項開始.",
+			'admin:user:adduser:label' => "點選這裏新增使用者...",
+			'admin:user:opt:linktext' => "設定使用者...",
+			'admin:user:opt:description' => "設定使用者及帳號資訊. ",
 
-			'admin:site' => "Site Administration",
-			'admin:site:description' => "This admin panel allows you to control global settings for your site. Choose an option below to get started.",
-			'admin:site:opt:linktext' => "Configure site...",
-			'admin:site:opt:description' => "Configure the site technical and non-technical settings. ",
+			'admin:site' => "站台管理",
+			'admin:site:description' => "這個管理面版讓您可以控制您站台的全域設定, 從使用者管理到 plugins 如何表現. 從選擇下面的選項開始.",
+			'admin:site:opt:linktext' => "設定站台...",
+			'admin:site:opt:description' => "設定這個站台技術及非技術的設定. ",
 			'admin:site:access:warning' => "Changing the access setting only affects the permissions on content created in the future.",
 
-			'admin:plugins' => "Tool Administration",
-			'admin:plugins:description' => "This admin panel allows you to control and configure tools installed on your site.",
-			'admin:plugins:opt:linktext' => "Configure tools...",
-			'admin:plugins:opt:description' => "Configure the tools installed on the site. ",
-			'admin:plugins:label:author' => "Author",
-			'admin:plugins:label:copyright' => "Copyright",
-			'admin:plugins:label:licence' => "Licence",
+			'admin:plugins' => "工具管理",
+			'admin:plugins:description' => "這個管理面版讓您可以掌控及配置安裝在您站台上的所有工具.",
+			'admin:plugins:opt:linktext' => "設定工具...",
+			'admin:plugins:opt:description' => "設定安裝在這個站台的工具. ",
+			'admin:plugins:label:author' => "作者",
+			'admin:plugins:label:copyright' => "版權",
+			'admin:plugins:label:licence' => "授權",
 			'admin:plugins:label:website' => "URL",
-			'admin:plugins:label:moreinfo' => 'more info',
-			'admin:plugins:label:version' => 'Version',
-			'admin:plugins:warning:elggversionunknown' => 'Warning: This plugin does not specify a compatible Elgg version.',
-			'admin:plugins:warning:elggtoolow' => 'Warning: This plugin requires a later version of Elgg!',
-			'admin:plugins:reorder:yes' => "Plugin %s was reordered successfully.",
-			'admin:plugins:reorder:no' => "Plugin %s could not be reordered.",
-			'admin:plugins:disable:yes' => "Plugin %s was disabled successfully.",
-			'admin:plugins:disable:no' => "Plugin %s could not be disabled.",
-			'admin:plugins:enable:yes' => "Plugin %s was enabled successfully.",
-			'admin:plugins:enable:no' => "Plugin %s could not be enabled.",
+			'admin:plugins:label:moreinfo' => '更多資訊',
+			'admin:plugins:label:version' => '版本',
+			'admin:plugins:warning:elggversionunknown' => '警告: 這個 plugin 沒有指定相容的 Elgg 版本.',
+			'admin:plugins:warning:elggtoolow' => '警告: 這個 plugin 需要較新的 Elgg 版本!',
+			'admin:plugins:reorder:yes' => "Plugin %s 已重新排序成功.",
+			'admin:plugins:reorder:no' => "Plugin %s 無法被重新排序.",
+			'admin:plugins:disable:yes' => "Plugin %s 已停用成功.",
+			'admin:plugins:disable:no' => "Plugin %s 無法被停用.",
+			'admin:plugins:enable:yes' => "Plugin %s 已啟用成功.",
+			'admin:plugins:enable:no' => "Plugin %s 無法被啟用.",
 
-			'admin:statistics' => "Statistics",
-			'admin:statistics:description' => "This is an overview of statistics on your site. If you need more detailed statistics, a professional administration feature is available.",
-			'admin:statistics:opt:description' => "View statistical information about users and objects on your site.",
-			'admin:statistics:opt:linktext' => "View statistics...",
-			'admin:statistics:label:basic' => "Basic site statistics",
+			'admin:statistics' => "統計",
+			'admin:statistics:description' => "這是您站台的統計簡介. 如果您需要更多詳細的統計, 系統有一個專業的管理功能.",
+			'admin:statistics:opt:description' => "檢視您站台上的使用者及物件統計資訊.",
+			'admin:statistics:opt:linktext' => "檢視統計...",
+			'admin:statistics:label:basic' => "基本站台統計",
 			'admin:statistics:label:numentities' => "Entities on site",
-			'admin:statistics:label:numusers' => "Number of users",
-			'admin:statistics:label:numonline' => "Number of users online",
-			'admin:statistics:label:onlineusers' => "Users online now",
-			'admin:statistics:label:version' => "Elgg version",
-			'admin:statistics:label:version:release' => "Release",
-			'admin:statistics:label:version:version' => "Version",
+			'admin:statistics:label:numusers' => "使用者數量",
+			'admin:statistics:label:numonline' => "線上使用者數量",
+			'admin:statistics:label:onlineusers' => "目前線上的使用者",
+			'admin:statistics:label:version' => "Elgg 版本",
+			'admin:statistics:label:version:release' => "發行",
+			'admin:statistics:label:version:version' => "版本",
 
-			'admin:user:label:search' => "Find users:",
+			'admin:user:label:search' => "尋找使用者:",
 			'admin:user:label:seachbutton' => "搜尋",
 
-			'admin:user:ban:no' => "Can not ban user",
-			'admin:user:ban:yes' => "User banned.",
-			'admin:user:unban:no' => "Can not unban user",
-			'admin:user:unban:yes' => "User un-banned.",
-			'admin:user:delete:no' => "Can not delete user",
-			'admin:user:delete:yes' => "User deleted",
+			'admin:user:ban:no' => "無法停用使用者",
+			'admin:user:ban:yes' => "已停用使用者.",
+			'admin:user:unban:no' => "無法復用使用者",
+			'admin:user:unban:yes' => "已復用使用者.",
+			'admin:user:delete:no' => "無法刪除使用者",
+			'admin:user:delete:yes' => "已刪除使用者",
 
-			'admin:user:resetpassword:yes' => "Password reset, user notified.",
-			'admin:user:resetpassword:no' => "Password could not be reset.",
+			'admin:user:resetpassword:yes' => "密碼重設, 使用者已被通知.",
+			'admin:user:resetpassword:no' => "無法重設密碼.",
 
-			'admin:user:makeadmin:yes' => "User is now an admin.",
-			'admin:user:makeadmin:no' => "We could not make this user an admin.",
+			'admin:user:makeadmin:yes' => "使用者現在是系統管理者.",
+			'admin:user:makeadmin:no' => "系統無法將這名使用者設定為系統管理者.",
 
-			'admin:user:removeadmin:yes' => "User is no longer an admin.",
-			'admin:user:removeadmin:no' => "We could not remove administrator privileges from this user.",
+			'admin:user:removeadmin:yes' => "使用者已不再是系統管理者.",
+			'admin:user:removeadmin:no' => "系統無法移除這名使用者的系統管理者權限.",
 
 		/**
 		 * User settings
 		 */
-			'usersettings:description' => "The user settings panel allows you to control all your personal settings, from user management to how plugins behave. Choose an option below to get started.",
+			'usersettings:description' => "這個使用者設定面版讓您可以控制您全部的個人設定, 從使用者管理到 plugins 如何表現. 從選擇下面的選項開始.",
 
 			'usersettings:statistics' => "您的統計資訊",
-			'usersettings:statistics:opt:description' => "View statistical information about users and objects on your site.",
+			'usersettings:statistics:opt:description' => "檢視您站台上關於使用者及物件的統計資訊.",
 			'usersettings:statistics:opt:linktext' => "帳號統計",
 
-			'usersettings:user' => "Your settings",
-			'usersettings:user:opt:description' => "This allows you to control user settings.",
+			'usersettings:user' => "您的設定",
+			'usersettings:user:opt:description' => "這將允許您控制使用者設定.",
 			'usersettings:user:opt:linktext' => "修改您的設定",
 
 			'usersettings:plugins' => "功能",
@@ -651,8 +651,8 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 
 			'link:text' => '檢視連結',
 
-			'enableall' => 'Enable All',
-			'disableall' => 'Disable All',
+			'enableall' => '全部啟用',
+			'disableall' => '全部停用',
 
 		/**
 		 * Generic questions
