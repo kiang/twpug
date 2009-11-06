@@ -23,9 +23,9 @@
 			'bookmarks:via' => "透過書籤",
 			'bookmarks:address' => "Address of the resource to bookmark",
 
-			'bookmarks:delete:confirm' => "Are you sure you want to delete this resource?",
+			'bookmarks:delete:confirm' => "您確定您要刪除這個資料?",
 
-			'bookmarks:numbertodisplay' => 'Number of bookmarked items to display',
+			'bookmarks:numbertodisplay' => '書籤顯示數量',
 
 			'bookmarks:shared' => "Bookmarked",
 			'bookmarks:visit' => "參觀網站",
