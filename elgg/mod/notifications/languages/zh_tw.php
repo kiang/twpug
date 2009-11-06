@@ -4,15 +4,15 @@
 
 		'friends:all' => '所有朋友',
 
-		'notifications:subscriptions:personal:description' => 'Receive notifications when actions are performed on your content',
-		'notifications:subscriptions:personal:title' => '個人提醒',
+		'notifications:subscriptions:personal:description' => '當有動作針對您的內容執行時接收通知',
+		'notifications:subscriptions:personal:title' => '個人通知',
 
-		'notifications:subscriptions:collections:title' => 'Toggle friends collections',
+		'notifications:subscriptions:collections:title' => '切換朋友類別',
 		'notifications:subscriptions:collections:description' => 'To toggle settings for members of your friends collections, use the icons below. This will affect the corresponding users in the main notification settings panel at the bottom of the page. ',
-		'notifications:subscriptions:collections:edit' => 'To edit your friends collections, click here.',
+		'notifications:subscriptions:collections:edit' => '如要編輯您的朋友類別, 請點擊這裏.',
 
-		'notifications:subscriptions:changesettings' => '提醒',
-		'notifications:subscriptions:changesettings:groups' => '群組提醒',
+		'notifications:subscriptions:changesettings' => '通知',
+		'notifications:subscriptions:changesettings:groups' => '群組通知',
 		'notification:method:email' => 'Email',
 
 		'notifications:subscriptions:title' => 'Notifications per user',

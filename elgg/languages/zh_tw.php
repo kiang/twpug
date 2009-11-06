@@ -193,7 +193,7 @@
 			'PRIVATE' => "私人的",
 			'LOGGED_IN' => "登入會員",
 			'PUBLIC' => "公開",
-			'access:friends:label' => "朋友",
+			'access:friends:label' => "我的朋友",
 			'access' => "權限",
 
 		/**
@@ -202,8 +202,7 @@
 
 			'dashboard' => "我的首頁",
             'dashboard:configure' => "編輯頁面",
-			'dashboard:nowidgets' => "個人首頁是進入網站的路徑，點選 '編輯頁面' 來新增可以追蹤系統內更新內容與個人記錄的區塊",
-
+			'dashboard:nowidgets' => "您的儀表板是您進入站台的出入口. 點擊 '編輯頁面' 透過在系統新增 widgets 以追蹤站台內容及您的生活.",
 			'widgets:add' => '新增區塊到個人首頁',
 			'widgets:add:description' => "從右邊的 <b>可用區塊</b> 選擇想要的功能，透過滑鼠拖曳到下面3個位置，排序也可以適當的調整。
 
@@ -320,7 +319,7 @@
 		 * Friends
 		 */
 
-			'friends' => "朋友",
+			'friends' => "我的朋友",
 			'friends:yours' => "您的朋友",
 			'friends:owned' => "%s 的朋友",
 			'friend:add' => "新增朋友",
@@ -346,20 +345,20 @@
 			 'friends:icon_size' => "圖示大小",
 			 'friends:tiny' => "極小",
 			 'friends:small' => "小",
-			 'friends:of' => "Friends of",
-			 'friends:collections' => "Collections of friends",
-			 'friends:collections:add' => "New friends collection",
-			 'friends:addfriends' => "Add friends",
-			 'friends:collectionname' => "Collection name",
-			 'friends:collectionfriends' => "Friends in collection",
-			 'friends:collectionedit' => "Edit this collection",
-			 'friends:nocollections' => "You do not yet have any collections.",
-			 'friends:collectiondeleted' => "Your collection has been deleted.",
-			 'friends:collectiondeletefailed' => "We were unable to delete the collection. Either you don't have permission, or some other problem has occurred.",
-			 'friends:collectionadded' => "Your collection was successfuly created",
-			 'friends:nocollectionname' => "You need to give your collection a name before it can be created.",
-			'friends:collections:members' => "Collection members",
-			'friends:collections:edit' => "Edit collection",
+			 'friends:of' => "別人的朋友",
+			 'friends:collections' => "朋友類別",
+			 'friends:collections:add' => "新增朋友類別",
+			 'friends:addfriends' => "新增朋友",
+			 'friends:collectionname' => "類別名稱",
+			 'friends:collectionfriends' => "在類別中的朋友",
+			 'friends:collectionedit' => "編輯這個類別",
+			 'friends:nocollections' => "您目前尚無任何類別.",
+			 'friends:collectiondeleted' => "您的類別已被刪除.",
+			 'friends:collectiondeletefailed' => "系統無法刪除這個類別. 或許是您沒有權限, 或是其它問題所造成.",
+			 'friends:collectionadded' => "您的類別已建立成功",
+			 'friends:nocollectionname' => "您必須在建立類別時給它一個名稱.",
+			'friends:collections:members' => "類別成員",
+			'friends:collections:edit' => "編輯類別",
 
 	        'friends:river:created' => "%s added the friends widget.",
 	        'friends:river:updated' => "%s updated their friends widget.",
@@ -402,11 +401,11 @@
 		/**
 		 * Notifications
 		 */
-			'notifications:usersettings' => "Notification settings",
-			'notifications:methods' => "Please specify which methods you want to permit.",
+			'notifications:usersettings' => "通知設定",
+			'notifications:methods' => "請指定您希望允許哪些方法.",
 
-			'notifications:usersettings:save:ok' => "Your notification settings were successfully saved.",
-			'notifications:usersettings:save:fail' => "There was a problem saving your notification settings.",
+			'notifications:usersettings:save:ok' => "您的通知設定已被儲存成功.",
+			'notifications:usersettings:save:fail' => "系統在儲存您的通知設定時發生了一個錯誤.",
 
 			'user.notification.get' => 'Return the notification settings for a given user.',
 			'user.notification.set' => 'Set the notification settings for a given user.',
@@ -422,7 +421,6 @@
 			'notfound' => "找不到任何資料",
 			'next' => "下一頁",
 			'previous' => "上一頁",
-
 			'viewtype:change' => "調整清單類型",
 			'viewtype:list' => "資料列表",
 			'viewtype:gallery' => "相簿",
@@ -579,11 +577,11 @@
 
 			'usersettings:user' => "您的設定",
 			'usersettings:user:opt:description' => "這將允許您控制使用者設定.",
-			'usersettings:user:opt:linktext' => "修改您的設定",
+			'usersettings:user:opt:linktext' => "修改個人設定",
 
 			'usersettings:plugins' => "功能",
 			'usersettings:plugins:opt:description' => "Configure settings (if any) for your active tools.",
-			'usersettings:plugins:opt:linktext' => "設定您的功能",
+			'usersettings:plugins:opt:linktext' => "功能設定",
 
 			'usersettings:plugins:description' => "This panel allows you to control and configure the personal settings for the tools installed by your system administrator.",
 			'usersettings:statistics:label:numentities' => "Your entities",
@@ -646,8 +644,8 @@
 			'learnmore' => "點選這裡來檢視更多資訊",
 
 			'content' => "內容",
-			'content:latest' => '最新活動',
-			'content:latest:blurb' => 'Alternatively, click here to view the latest content from across the site.',
+			'content:latest' => '最後活動',
+			'content:latest:blurb' => '或者, 點擊這裏檢視整個站台的最新內容.',
 
 			'link:text' => '檢視連結',
 
@@ -658,7 +656,7 @@
 		 * Generic questions
 		 */
 
-			'question:areyousure' => '確定？',
+			'question:areyousure' => '您確定要這麼做?',
 
 		/**
 		 * Generic data words
@@ -808,8 +806,8 @@ Alternatively, you can enter your database settings below and we will try and do
 			'installation:viewpathcache:label' => "Use view filepath cache (recommended)",
 
 			'upgrading' => '升級中',
-			'upgrade:db' => '您的資料庫已經升級',
-			'upgrade:core' => '您的 elgg 已經完成升級',
+			'upgrade:db' => '您的資料庫已升級完成.',
+			'upgrade:core' => '您的 Elgg 安裝程序已升級完成',
 
 		/**
 		 * Welcome
@@ -817,16 +815,16 @@ Alternatively, you can enter your database settings below and we will try and do
 
 			'welcome' => "歡迎",
 			'welcome:user' => '歡迎 %s',
-			'welcome_message' => "Welcome to this Elgg installation.",
+			'welcome_message' => "歡迎進入 Elgg 安裝程序.",
 
 		/**
 		 * Emails
 		 */
 			'email:settings' => "Email 設定",
-			'email:address:label' => "您的信箱",
+			'email:address:label' => "您的 Email",
 
-			'email:save:success' => "New email address saved, verification requested.",
-			'email:save:fail' => "Your new email address could not be saved.",
+			'email:save:success' => "新的 Email 已被儲存, 已要求驗證.",
+			'email:save:fail' => "您的新 Email 儲存失敗.",
 
 			'friend:newfriend:subject' => "%s 把你加入好友",
 			'friend:newfriend:body' => "%s 剛剛把你加入好友
