@@ -18,7 +18,7 @@
 			'messageboard:user' => "%s 的留言板",
 
 			'messageboard:history' => "記錄",
-			'messageboard:replyon' => 'reply on',
+			'messageboard:replyon' => '回覆於',
 
          /**
 	     * Message board widget river
@@ -28,7 +28,7 @@
 	        'messageboard:river:create' => "%s added the message board widget.",
 	        'messageboard:river:update' => "%s updated their message board widget.",
 	        'messageboard:river:added' => "%s posted on",
-		    'messageboard:river:messageboard' => "message board",
+		    'messageboard:river:messageboard' => "留言板",
 
 
 		/**

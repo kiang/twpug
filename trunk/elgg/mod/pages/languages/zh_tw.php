@@ -26,7 +26,7 @@
 			'pages:delete' => "刪除文章",
 			'pages:history' => "文章記錄",
 			'pages:view' => "檢視文章",
-			'pages:welcome' => "Edit welcome message",
+			'pages:welcome' => "編輯歡迎訊息",
 			'pages:welcomemessage' => "Welcome to this Elgg pages plugin. This feature allows you to create pages on any topic and select who can view them and edit them.",
 			'pages:welcomeerror' => "There was a problem saving your welcome message",
 			'pages:welcomeposted' => "Your welcome message has been posted",

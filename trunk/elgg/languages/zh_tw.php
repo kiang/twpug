@@ -34,42 +34,42 @@
 
 			'SecurityException:Codeblock' => "Denied access to execute privileged code block",
 			'DatabaseException:WrongCredentials' => "Elgg 使用您提供的憑證無法連結到資料庫.",
-			'DatabaseException:NoConnect' => "Elgg 無法找到資料庫 '%s', please check that the database is created and you have access to it.",
-			'SecurityException:FunctionDenied' => "Access to privileged function '%s' is denied.",
+			'DatabaseException:NoConnect' => "Elgg 無法存取資料庫 '%s'，請確認資料庫已經建立以及是否有適當權限。",
+			'SecurityException:FunctionDenied' => "沒有權限存取功能 '%s'",
 			'DatabaseException:DBSetupIssues' => "有一些問題: ",
-			'DatabaseException:ScriptNotFound' => "Elgg couldn't find the requested database script at %s.",
+			'DatabaseException:ScriptNotFound' => "Elgg 找不到需要的資料庫指令檔： %s",
 
-			'IOException:FailedToLoadGUID' => "Failed to load new %s from GUID:%d",
-			'InvalidParameterException:NonElggObject' => "Passing a non-ElggObject to an ElggObject constructor!",
-			'InvalidParameterException:UnrecognisedValue' => "Unrecognised value passed to constuctor.",
+			'IOException:FailedToLoadGUID' => "無法載入新的 %s ，GUID: %d",
+			'InvalidParameterException:NonElggObject' => "送出了一個非 ElggObject 給 ElggObject 建構子",
+			'InvalidParameterException:UnrecognisedValue' => "送出了無法驗證的數值到建構子",
 
-			'InvalidClassException:NotValidElggStar' => "GUID:%d is not a valid %s",
+			'InvalidClassException:NotValidElggStar' => "GUID:%d 不是正確的 %s",
 
-			'PluginException:MisconfiguredPlugin' => "%s is a misconfigured plugin.",
+			'PluginException:MisconfiguredPlugin' => "%s 功能設定有誤",
 
-			'InvalidParameterException:NonElggUser' => "Passing a non-ElggUser to an ElggUser constructor!",
+			'InvalidParameterException:NonElggUser' => "送出了一個非 ElggUser 給 ElggUser 建構子",
 
-			'InvalidParameterException:NonElggSite' => "Passing a non-ElggSite to an ElggSite constructor!",
+			'InvalidParameterException:NonElggSite' => "送出了一個非 ElggSite 給 ElggSite 建構子",
 
-			'InvalidParameterException:NonElggGroup' => "Passing a non-ElggGroup to an ElggGroup constructor!",
+			'InvalidParameterException:NonElggGroup' => "送出了一個非 ElggGroup 給 ElggGroup 建構子",
 
-			'IOException:UnableToSaveNew' => "Unable to save new %s",
+			'IOException:UnableToSaveNew' => "無法新增 %s",
 
-			'InvalidParameterException:GUIDNotForExport' => "GUID has not been specified during export, this should never happen.",
-			'InvalidParameterException:NonArrayReturnValue' => "Entity serialisation function passed a non-array returnvalue parameter",
+			'InvalidParameterException:GUIDNotForExport' => "匯出時沒有指定 GUID ，這不應該會發生",
+			'InvalidParameterException:NonArrayReturnValue' => "資料序列化功能接收了一個非陣列的傳回參數",
 
-			'ConfigurationException:NoCachePath' => "Cache path set to nothing!",
+			'ConfigurationException:NoCachePath' => "快取路徑設定錯誤",
 			'IOException:NotDirectory' => "%s 不是一個目錄.",
 
-			'IOException:BaseEntitySaveFailed' => "Unable to save new object's base entity information!",
-			'InvalidParameterException:UnexpectedODDClass' => "import() passed an unexpected ODD class",
-			'InvalidParameterException:EntityTypeNotSet' => "Entity type must be set.",
+			'IOException:BaseEntitySaveFailed' => "無法儲存新物件的基礎資料",
+			'InvalidParameterException:UnexpectedODDClass' => "import() 傳入了一個預期外的 ODD 類別",
+			'InvalidParameterException:EntityTypeNotSet' => "必須設定資料類型",
 
-			'ClassException:ClassnameNotClass' => "%s is not a %s.",
-			'ClassNotFoundException:MissingClass' => "Class '%s' was not found, missing plugin?",
-			'InstallationException:TypeNotSupported' => "Type %s is not supported. This indicates an error in your installation, most likely caused by an incomplete upgrade.",
+			'ClassException:ClassnameNotClass' => "%s 不是一個 %s.",
+			'ClassNotFoundException:MissingClass' => "找不到 '%s' 類別，也許功能遺失？",
+			'InstallationException:TypeNotSupported' => "不支援  %s 類型，這表示安裝過程發生錯誤，一般會是升級過程。",
 
-			'ImportException:ImportFailed' => "Could not import element %d",
+			'ImportException:ImportFailed' => "無法匯入元素  %d",
 			'ImportException:ProblemSaving' => "系統在儲存 %s 時發生了一個錯誤",
 			'ImportException:NoGUID' => "New entity created but has no GUID, this should not happen.",
 
@@ -202,13 +202,13 @@
 
 			'dashboard' => "我的首頁",
             'dashboard:configure' => "編輯頁面",
-			'dashboard:nowidgets' => "Your dashboard is your gateway into the site. Click 'Edit page' to add widgets to keep track of content and your life within the system.",
+			'dashboard:nowidgets' => "個人首頁是進入網站的路徑，點選 '編輯頁面' 來新增可以追蹤系統內更新內容與個人記錄的區塊",
 
 			'widgets:add' => '新增區塊到個人首頁',
-			'widgets:add:description' => "Choose the features you want to add to your page by dragging them from the <b>Widget gallery</b> on the right, to any of the three widget areas below, and position them where you would like them to appear.
+			'widgets:add:description' => "從右邊的 <b>可用區塊</b> 選擇想要的功能，透過滑鼠拖曳到下面3個位置，排序也可以適當的調整。
 
-To remove a widget drag it back to the <b>Widget gallery</b>.",
-			'widgets:position:fixed' => '(Fixed position on page)',
+移除的方式就是透過滑鼠拖曳區塊回到 <b>可用區塊</b> 中",
+			'widgets:position:fixed' => '(頁面中的固定位置)',
 
 			'widgets' => "區塊",
 			'widget' => "區塊",
@@ -219,12 +219,12 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'widgets:fixed' => "固定寬度",
 			'widgets:middlecolumn' => "中間區塊",
 			'widgets:rightcolumn' => "右邊區塊",
-			'widgets:profilebox' => "Profile box",
-			'widgets:panel:save:success' => "您的 widgets 已被儲存成功.",
-			'widgets:panel:save:failure' => "系統在儲存您的 widgets 時發生了一個錯誤. 請再試一次.",
-			'widgets:save:success' => "這個 widget 已被儲存成功.",
-			'widgets:save:failure' => "系統無法儲存您的 widget. 請再試一次.",
-			'widgets:handlernotfound' => '這個 widget 要不是已毀損就是被系統管理者停用.',
+			'widgets:profilebox' => "個人資料區塊",
+			'widgets:panel:save:success' => "您的區塊已被儲存成功.",
+			'widgets:panel:save:failure' => "系統在儲存您的區塊時發生了一個錯誤. 請再試一次.",
+			'widgets:save:success' => "這個區塊已被儲存成功.",
+			'widgets:save:failure' => "系統無法儲存您的區塊，請再試一次.",
+			'widgets:handlernotfound' => '這個區塊要不是已毀損就是被系統管理者停用.',
 
 		/**
 		 * Groups
@@ -242,8 +242,8 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'profile:preview' => '預覽',
 			'user' => "會員",
 			'item:user' => "會員",
-			'riveritem:single:user' => 'a user',
-			'riveritem:plural:user' => 'some users',
+			'riveritem:single:user' => '一個會員',
+			'riveritem:plural:user' => '一些會員',
 
 
 
@@ -261,7 +261,7 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'profile:currentavatar' => "目前圖示",
 			'profile:createicon:header' => "個人照片",
 			'profile:profilepicturecroppingtool' => "個人照片剪輯工具",
-			'profile:createicon:instructions' => "Click and drag a square below to match how you want your picture cropped.  A preview of your cropped picture will appear in the box on the right.  When you are happy with the preview, click 'Create your avatar'. This cropped image will be used throughout the site as your avatar. ",
+			'profile:createicon:instructions' => "點選與拖曳下面的方框來決定圖片如何切割，切割圖片的預覽會出現在右邊，預覽的圖片如果沒問題就點選 '建立你的圖示'，這個切割過的圖示就會代表你出現在這個網站。",
 
 			'profile:editdetails' => "編輯細節",
 			'profile:editicon' => "編輯個人圖示",
@@ -335,14 +335,14 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'friends:none' => "這個使用者尚未被新增為任何人的朋友.",
 			'friends:none:you' => "您尚未新增任何人成為您的朋友! Search for your interests to begin finding people to follow.",
 
-			'friends:none:found' => "No friends were found.",
+			'friends:none:found' => "沒有朋友",
 
-			'friends:of:none' => "Nobody has added this user as a friend yet.",
+			'friends:of:none' => "還沒有人將這個會員加入好友",
 			'friends:of:none:you' => "Nobody has added you as a friend yet. Start adding content and fill in your profile to let people find you!",
 
-			'friends:of:owned' => "People who have made %s a friend",
+			'friends:of:owned' => "將 %s 加入好友的會員",
 
-			 'friends:num_display' => "Number of friends to display",
+			 'friends:num_display' => "顯示會員數量",
 			 'friends:icon_size' => "圖示大小",
 			 'friends:tiny' => "極小",
 			 'friends:small' => "小",
@@ -414,18 +414,18 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 * Search
 		 */
 
-			'search' => "Search",
-			'searchtitle' => "Search: %s",
-			'users:searchtitle' => "Searching for users: %s",
-			'groups:searchtitle' => "Searching for groups: %s",
-			'advancedsearchtitle' => "%s with results matching %s",
-			'notfound' => "No results found.",
-			'next' => "Next",
-			'previous' => "Previous",
+			'search' => "搜尋",
+			'searchtitle' => "搜尋： %s",
+			'users:searchtitle' => "搜尋會員： %s",
+			'groups:searchtitle' => "搜尋群組： %s",
+			'advancedsearchtitle' => "%s 找到符合結果 %s",
+			'notfound' => "找不到任何資料",
+			'next' => "下一頁",
+			'previous' => "上一頁",
 
-			'viewtype:change' => "Change listing type",
-			'viewtype:list' => "List view",
-			'viewtype:gallery' => "Gallery",
+			'viewtype:change' => "調整清單類型",
+			'viewtype:list' => "資料列表",
+			'viewtype:gallery' => "相簿",
 
 			'tag:search:startblurb' => "Items with tags matching '%s':",
 
@@ -466,7 +466,7 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'adduser:ok' => "您已成功新增一位使用者.",
 			'adduser:bad' => "新使用建立失敗.",
 
-			'item:object:reported_content' => "Reported items",
+			'item:object:reported_content' => "舉報",
 
 			'user:set:name' => "帳號名稱設定",
 			'user:name:label' => "您的帳號名稱",
@@ -632,8 +632,8 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'invite' => "邀請",
 
 			'resetpassword' => "重設密碼",
-			'makeadmin' => "Make admin",
-			'removeadmin' => "Remove admin",
+			'makeadmin' => "設為管理員",
+			'removeadmin' => "取消管理權限",
 
 			'option:yes' => "是",
 			'option:no' => "否",
@@ -643,10 +643,10 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'active' => '啟用',
 			'total' => '總計',
 
-			'learnmore' => "Click here to learn more.",
+			'learnmore' => "點選這裡來檢視更多資訊",
 
-			'content' => "content",
-			'content:latest' => 'Latest activity',
+			'content' => "內容",
+			'content:latest' => '最新活動',
 			'content:latest:blurb' => 'Alternatively, click here to view the latest content from across the site.',
 
 			'link:text' => '檢視連結',
@@ -658,7 +658,7 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		 * Generic questions
 		 */
 
-			'question:areyousure' => 'Are you sure?',
+			'question:areyousure' => '確定？',
 
 		/**
 		 * Generic data words
@@ -673,8 +673,8 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 			'by' => 'by',
 
 			'annotations' => "Annotations",
-			'relationships' => "Relationships",
-			'metadata' => "Metadata",
+			'relationships' => "關聯",
+			'metadata' => "後設資料",
 
 		/**
 		 * Input / output strings
@@ -713,8 +713,8 @@ To remove a widget drag it back to the <b>Widget gallery</b>.",
 		/**
 		 * Import / export
 		 */
-			'importsuccess' => "Import of data was successful",
-			'importfail' => "OpenDD import of data failed.",
+			'importsuccess' => "資料匯入成功",
+			'importfail' => "OpenDD 資料匯入失敗",
 
 		/**
 		 * Time
@@ -761,11 +761,11 @@ Alternatively, you can enter your database settings below and we will try and do
 
 			'installation:error:configuration' => "Once you've corrected any configuration issues, press reload to try again.",
 
-			'installation' => "Installation",
-			'installation:success' => "Elgg's database was installed successfully.",
+			'installation' => "安裝",
+			'installation:success' => "Elgg's 資料庫安裝成功",
 			'installation:configuration:success' => "Your initial configuration settings have been saved. Now register your initial user; this will be your first system administrator.",
 
-			'installation:settings' => "System settings",
+			'installation:settings' => "系統設定",
 			'installation:settings:description' => "Now that the Elgg database has been successfully installed, you need to enter a couple of pieces of information to get your site fully up and running. We've tried to guess where we could, but <b>you should check these details.</b>",
 
 			'installation:settings:dbwizard:prompt' => "Enter your database settings below and hit save:",
@@ -807,9 +807,9 @@ Alternatively, you can enter your database settings below and we will try and do
 			'installation:viewpathcache:description' => "The view filepath cache decreases the loading times of plugins by caching the location of their views.",
 			'installation:viewpathcache:label' => "Use view filepath cache (recommended)",
 
-			'upgrading' => 'Upgrading',
-			'upgrade:db' => 'Your database was upgraded.',
-			'upgrade:core' => 'Your elgg installation was upgraded',
+			'upgrading' => '升級中',
+			'upgrade:db' => '您的資料庫已經升級',
+			'upgrade:core' => '您的 elgg 已經完成升級',
 
 		/**
 		 * Welcome
@@ -823,7 +823,7 @@ Alternatively, you can enter your database settings below and we will try and do
 		 * Emails
 		 */
 			'email:settings' => "Email 設定",
-			'email:address:label' => "Your email address",
+			'email:address:label' => "您的信箱",
 
 			'email:save:success' => "New email address saved, verification requested.",
 			'email:save:fail' => "Your new email address could not be saved.",
@@ -859,8 +859,8 @@ Alternatively, you can enter your database settings below and we will try and do
 		 * user default access
 		 */
 
-		'default_access:settings' => "Your default access level",
-		'default_access:label' => "Default access",
+		'default_access:settings' => "您的預設權限",
+		'default_access:label' => "預設權限",
 		'user:default_access:success' => "Your new default access level was saved.",
 		'user:default_access:failure' => "Your new default access level could not be saved.",
 
