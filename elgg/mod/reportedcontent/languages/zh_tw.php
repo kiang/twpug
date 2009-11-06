@@ -25,7 +25,7 @@
 			'reportedcontent:notdeleted' => 'We were not able to delete that report',
 			'reportedcontent:delete' => '刪除',
 			'reportedcontent:areyousure' => 'Are you sure you want to delete?',
-			'reportedcontent:archive' => 'Archive it',
+			'reportedcontent:archive' => '歸檔',
 			'reportedcontent:archived' => 'The report has been archived',
 			'reportedcontent:visit' => '檢視舉報的項目',
 			'reportedcontent:by' => '舉報人',

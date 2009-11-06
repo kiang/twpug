@@ -21,25 +21,25 @@
 			'file:user' => "%s 的檔案",
 			'file:friends' => "%s 朋友的檔案",
 			'file:all' => "所有檔案",
-			'file:edit' => "Edit file",
-			'file:more' => "More files",
-			'file:list' => "list view",
-			'file:group' => "Group files",
-			'file:gallery' => "gallery view",
-			'file:gallery_list' => "Gallery or list view",
-			'file:num_files' => "Number of files to display",
-			'file:user:gallery'=>'View %s gallery',
-	        'file:via' => 'via files',
-			'file:upload' => "Upload a file",
+			'file:edit' => "編輯檔案",
+			'file:more' => "更多檔案",
+			'file:list' => "清單檢視",
+			'file:group' => "群阻檔案",
+			'file:gallery' => "圖片檢視",
+			'file:gallery_list' => "圖片或清單檢視",
+			'file:num_files' => "顯示檔案數量",
+			'file:user:gallery'=>'檢視 %s 的相簿',
+	        'file:via' => '透過檔案',
+			'file:upload' => "上傳一個檔案",
 
-			'file:newupload' => 'New file upload',
+			'file:newupload' => '上傳檔案',
 
-			'file:file' => "File",
-			'file:title' => "Title",
-			'file:desc' => "Description",
-			'file:tags' => "Tags",
+			'file:file' => "檔案",
+			'file:title' => "名稱",
+			'file:desc' => "介紹",
+			'file:tags' => "標籤",
 
-			'file:types' => "Uploaded file types",
+			'file:types' => "上傳的檔案類型",
 
 			'file:type:all' => "所有檔案",
 			'file:type:video' => "影片",
@@ -48,11 +48,11 @@
 			'file:type:image' => "圖片",
 			'file:type:general' => "一般",
 
-			'file:user:type:video' => "%s's videos",
-			'file:user:type:document' => "%s's documents",
-			'file:user:type:audio' => "%s's audio",
-			'file:user:type:image' => "%s's pictures",
-			'file:user:type:general' => "%s's general files",
+			'file:user:type:video' => "%s 的影片",
+			'file:user:type:document' => "%s 的文件",
+			'file:user:type:audio' => "%s 的音樂",
+			'file:user:type:image' => "%s 的相片",
+			'file:user:type:general' => "%s 的檔案",
 
 			'file:friends:type:video' => "Your friends' videos",
 			'file:friends:type:document' => "Your friends' documents",
@@ -60,16 +60,16 @@
 			'file:friends:type:image' => "Your friends' pictures",
 			'file:friends:type:general' => "Your friends' general files",
 
-			'file:widget' => "File widget",
-			'file:widget:description' => "Showcase your latest files",
+			'file:widget' => "檔案區塊",
+			'file:widget:description' => "顯示您最新的檔案",
 
 			'file:download' => "下載",
 
-			'file:delete:confirm' => "Are you sure you want to delete this file?",
+			'file:delete:confirm' => "確定要刪除這個檔案？",
 
 			'file:tagcloud' => "標籤雲",
 
-			'file:display:number' => "Number of files to display",
+			'file:display:number' => "顯示檔案數量",
 
 			'file:river:created' => "%s uploaded",
 			'file:river:item' => "a file",
@@ -82,7 +82,7 @@
 		 **/
 
 		    'file:embed' => "Embed media",
-		    'file:embedall' => "All",
+		    'file:embedall' => "全部",
 
 		/**
 		 * Status messages

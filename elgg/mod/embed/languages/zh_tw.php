@@ -4,12 +4,12 @@
 
 		'media:insert' => '嵌入/上傳多媒體檔案',
 
-		'embed:instructions' => 'Click on any file to embed it into your content.',
+		'embed:instructions' => '點選要嵌入內容的檔案',
 
 		'embed:media' => '嵌入多媒體檔案',
 		'upload:media' => '上傳多媒體檔案',
 
-		'embed:file:required' => 'No file upload facilities were found. The system administrator may need to upload the file plugin or similar.',
+		'embed:file:required' => '找不到上傳功能，也許是系統管理員並未安裝相關功能。',
 
 	);
 
