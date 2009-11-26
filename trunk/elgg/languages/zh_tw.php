@@ -13,11 +13,11 @@
 		 */
 
 			'login' => "登入",
-			'loginok' => "您已經登入.",
+			'loginok' => "您已登入系統.",
 			'loginerror' => "系統無法讓您登入. 這也許是因為您尚未完成帳號認證作業, 也許是您提供的資料不正確, 也或許是您登入錯誤太多次. 請確認您的資料都正確並再試一次.",
 
 			'logout' => "登出",
-			'logoutok' => "您已經登出.",
+			'logoutok' => "您已登出系統.",
 			'logouterror' => "系統無法將您登出.請再試一次.",
 
 		/**
@@ -202,7 +202,7 @@
 
 			'dashboard' => "我的首頁",
             'dashboard:configure' => "編輯頁面",
-			'dashboard:nowidgets' => "您的儀表板是您進入站台的出入口. 點擊 '編輯頁面' 透過在系統新增 widgets 以追蹤站台內容及您的生活.",
+			'dashboard:nowidgets' => "儀表板是您進入站台的出入口. 點擊 '編輯頁面' 透過在系統新增 widgets 以追蹤站台內容及您的生活.",
 			'widgets:add' => '新增區塊到個人首頁',
 			'widgets:add:description' => "從右邊的 <b>可用區塊</b> 選擇想要的功能，透過滑鼠拖曳到下面3個位置，排序也可以適當的調整。
 
@@ -644,7 +644,7 @@
 			'learnmore' => "點選這裡來檢視更多資訊",
 
 			'content' => "內容",
-			'content:latest' => '最後活動',
+			'content:latest' => '最新活動',
 			'content:latest:blurb' => '或者, 點擊這裏檢視整個站台的最新內容.',
 
 			'link:text' => '檢視連結',
@@ -760,7 +760,7 @@ Alternatively, you can enter your database settings below and we will try and do
 			'installation:error:configuration' => "Once you've corrected any configuration issues, press reload to try again.",
 
 			'installation' => "安裝",
-			'installation:success' => "Elgg's 資料庫安裝成功",
+			'installation:success' => "Elgg 資料庫安裝成功",
 			'installation:configuration:success' => "Your initial configuration settings have been saved. Now register your initial user; this will be your first system administrator.",
 
 			'installation:settings' => "系統設定",
@@ -775,11 +775,11 @@ Alternatively, you can enter your database settings below and we will try and do
 
 			'installation:settings:dbwizard:savefail' => "We were unable to save the new settings.php. Please save the following file as engine/settings.php using a text editor.",
 
-			'installation:sitename' => "The name of your site (eg \"My social networking site\"):",
-			'installation:sitedescription' => "Short description of your site (optional)",
-			'installation:wwwroot' => "The site URL, followed by a trailing slash:",
-			'installation:path' => "The full path to your site root on your disk, followed by a trailing slash:",
-			'installation:dataroot' => "The full path to the directory where uploaded files will be stored, followed by a trailing slash:",
+			'installation:sitename' => "您的站台名稱 (例 \"My social networking site\"):",
+			'installation:sitedescription' => "您的站台簡介 (可選擇)",
+			'installation:wwwroot' => "站台URL, 結尾請加上斜線(/):",
+			'installation:path' => "站台在您電腦上的完整路徑, 結尾請加上斜線(/):",
+			'installation:dataroot' => "上傳檔案存放在您電腦上的完整路徑, 結尾請加上斜線(/):",
 			'installation:dataroot:warning' => "You must create this directory manually. It should sit in a different directory to your Elgg installation.",
 			'installation:sitepermissions' => "The default access permissions:",
 			'installation:language' => "The default language for your site:",
@@ -791,7 +791,7 @@ Alternatively, you can enter your database settings below and we will try and do
 			'installation:usage:label' => "Send anonymous usage statistics",
 			'installation:view' => "Enter the view which will be used as the default for your site or leave this blank for the default view (if in doubt, leave as default):",
 
-			'installation:siteemail' => "Site email address (used when sending system emails)",
+			'installation:siteemail' => "站台使用 Email (寄送系統 Email)",
 
 			'installation:disableapi' => "The RESTful API is a flexible and extensible interface that enables applications to use certain Elgg features remotely.",
 			'installation:disableapi:label' => "Enable the RESTful API",
