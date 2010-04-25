@@ -4,12 +4,12 @@
 
 		'media:insert' => '嵌入/上傳多媒體檔案',
 
-		'embed:instructions' => '點選要嵌入內容的檔案',
+		'embed:instructions' => '點擊任何檔案以便將它嵌入您的內容.',
 
 		'embed:media' => '嵌入多媒體檔案',
 		'upload:media' => '上傳多媒體檔案',
 
-		'embed:file:required' => '找不到上傳功能，也許是系統管理員並未安裝相關功能。',
+		'embed:file:required' => '未找到任何檔案上傳的機制. 系統管理者可能要上傳檔案或類似的插件.',
 
 	);
 

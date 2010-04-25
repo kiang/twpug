@@ -10,14 +10,14 @@
 	$traditionalChinese = array(
 
 		'email:validate:subject' => "%s 信箱驗證",
-		'email:validate:body' => "Hi %s,
+		'email:validate:body' => "嗨, %s,
 
 請透過點選下面連結來驗證您的信箱：
 
 %s
 ",
 		'email:validate:success:subject' => "信箱通過驗證 %s",
-		'email:validate:success:body' => "Hi %s,
+		'email:validate:success:body' => "嗨, %s,
 
 太好了，您的信箱已經通過驗證。",
 

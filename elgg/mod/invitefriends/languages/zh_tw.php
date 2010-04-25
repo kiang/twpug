@@ -13,12 +13,13 @@
 	$traditionalChinese = array(
 
 		'friends:invite' => '邀請朋友',
-		'invitefriends:introduction' => 'To invite friends to join you on this network, enter their email addresses below (one per line):',
-		'invitefriends:message' => 'Enter a message they will receive with your invitation:',
+		'invitefriends:introduction' => '邀請朋友加入您所在的社群, 請在底下輸入他們的電子郵件地址(每行一位):',
+		'invitefriends:message' => '請輸入他們收到的邀請函中看到的訊息:',
 		'invitefriends:subject' => '來自 %s 的邀請',
 
-		'invitefriends:success' => 'Your friends were invited.',
-		'invitefriends:failure' => 'Your friends could not be invited.',
+		'invitefriends:success' => '您的朋友已經被邀請.',
+		'invitefriends:email_error' => '邀請函已送出, 但以下的郵件地址不正確: %s',
+		'invitefriends:failure' => '您的朋友無法被邀請.',
 
 		'invitefriends:message:default' => '
 Hi,

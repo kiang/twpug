@@ -11,23 +11,23 @@
 			'messageboard:viewall' => "檢視全部",
 			'messageboard:postit' => "留言",
 			'messageboard:history' => "記錄",
-			'messageboard:none' => "There is nothing on this message board yet",
-			'messageboard:num_display' => "Number of messages to display",
-			'messageboard:desc' => "This is a message board that you can put on your profile where other users can comment.",
+			'messageboard:none' => "留言板尚無任何訊息",
+			'messageboard:num_display' => "要顯示的訊息數",
+			'messageboard:desc' => "這是一個可以放置在您個人資料中的留言板, 其他會員可以評論它.",
 
 			'messageboard:user' => "%s 的留言板",
 
 			'messageboard:history' => "記錄",
-			'messageboard:replyon' => '回覆於',
+			'messageboard:replyon' => '回覆',
 
          /**
 	     * Message board widget river
 	     **/
 
-	        'messageboard:river:annotate' => "%s has had a new comment posted on their message board.",
-	        'messageboard:river:create' => "%s added the message board widget.",
-	        'messageboard:river:update' => "%s updated their message board widget.",
-	        'messageboard:river:added' => "%s posted on",
+	        'messageboard:river:annotate' => "%s 有一個新的評論發表在他們的留言板上.",
+	        'messageboard:river:create' => "%s 新增留言板小工具(widget).",
+	        'messageboard:river:update' => "%s 更新了他們的留言板小工具(widget).",
+	        'messageboard:river:added' => "%s 發表",
 		    'messageboard:river:messageboard' => "留言板",
 
 

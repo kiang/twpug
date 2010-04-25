@@ -14,8 +14,8 @@
 		'logrotate:monthly' => '一個月',
 		'logrotate:yearly' => '一年',
 
-		'logrotate:logrotated' => "Log rotated\n",
-		'logrotate:lognotrotated' => "Error rotating log\n",
+		'logrotate:logrotated' => "系統日誌已循環\n",
+		'logrotate:lognotrotated' => "系統日誌循環發生錯誤\n",
 	);
 
 	add_translation("zh_tw",$traditionalChinese);

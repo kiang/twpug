@@ -33,20 +33,20 @@
 	     **/
 
 	        //generic terms to use
-	        'thewire:river:created' => "%s posted",
+	        'thewire:river:created' => "%s 發佈",
 
 	        //these get inserted into the river links to take the user to the entity
-	        'thewire:river:create' => "on the wire.",
+	        'thewire:river:create' => "在碎碎念上.",
 
 	    /**
 	     * Wire widget
 	     **/
 
-	        'thewire:sitedesc' => 'This widget shows the latest site notes posted to the wire',
-	        'thewire:yourdesc' => 'This widget shows your latest notes posted to the wire',
-	        'thewire:friendsdesc' => 'This widget will show the latest from your friends on the wire',
-	        'thewire:friends' => 'Your friends on the wire',
-	        'thewire:num' => 'Number of items to display',
+	        'thewire:sitedesc' => '這個小工具(widget)會在碎碎念上顯示最近發佈的網頁注釋',
+	        'thewire:yourdesc' => '這個小工具(widget)會在碎碎念上顯示您最近發佈的網頁注釋',
+	        'thewire:friendsdesc' => '這個小工具(widget)會在碎碎念上顯示您朋友最近發佈的網頁注釋',
+	        'thewire:friends' => '在碎碎念上的朋友',
+	        'thewire:num' => '顯示的項目數',
 
 
 
@@ -54,23 +54,23 @@
 		 * Status messages
 		 */
 
-			'thewire:posted' => "Your message was successfully posted to the wire.",
-			'thewire:deleted' => "Your note was successfully deleted.",
+			'thewire:posted' => "您的訊息已成功發佈在碎碎念上.",
+			'thewire:deleted' => "您的注釋已成功刪除.",
 
 		/**
 		 * Error messages
 		 */
 
-			'thewire:blank' => "Sorry; you need to actually put something in the textbox before we can save it.",
-			'thewire:notfound' => "Sorry; we could not find the specified note.",
-			'thewire:notdeleted' => "Sorry; we could not delete this shout.",
+			'thewire:blank' => "抱歉; 在儲存之前, 您必須在文字方塊內填入一些東西.",
+			'thewire:notfound' => "抱歉; 系統無法找到特定的注釋.",
+			'thewire:notdeleted' => "抱歉; 系統無法刪除該項呼喊.",
 
 
 		/**
 		 * Settings
 		 */
-			'thewire:smsnumber' => "Your SMS number if different from your mobile number (mobile number must be set to public for the wire to be able to use it). All phone numbers must be in international format.",
-			'thewire:channelsms' => "The number to send SMS messages to is <b>%s</b>",
+			'thewire:smsnumber' => "您的簡訊號碼如果與手機號不同(手機號在碎碎念中必須設定為公用, 您才能使用它). 所有的電話號碼使用國際通用格式.",
+			'thewire:channelsms' => "要將簡訊傳送的號碼為<b>%s</b>",
 
 	);
 
