@@ -4,7 +4,7 @@
 
 		'categories' => '分類',
 		'categories:settings' => '設定網站的分類',
-		'categories:explanation' => 'To set some predefined site-wide categories that will be used throughout your system, enter them below, separated with commas. Compatible tools will then display them when the user creates or edits content.',
+		'categories:explanation' => '要設定可以在整個網站使用的預分類, 請在底下輸入, 並以逗號區分. 當使用者建立或編輯內容時, 相容的工具就會顯示出來.',
 		'categories:save:success' => '網站的分類已被儲存成功.',
 
 	);

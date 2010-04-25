@@ -14,7 +14,9 @@
 
 		'members:label:newest' => '最新',
 		'members:label:popular' => '熱門',
-		'members:label:active' => '活躍',
+		'members:label:active' => '熱心',
+		'members:search:name' => '使用者名稱',
+		'members:search:tags' => '標籤',
 
 	);
 

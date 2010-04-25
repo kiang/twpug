@@ -22,11 +22,11 @@
 			'reportedcontent:report' => '舉報給管理員',
 			'reportedcontent:title' => '網頁標題',
 			'reportedcontent:deleted' => '舉報的內容已經刪除',
-			'reportedcontent:notdeleted' => 'We were not able to delete that report',
+			'reportedcontent:notdeleted' => '系統無法刪除舉報',
 			'reportedcontent:delete' => '刪除',
-			'reportedcontent:areyousure' => 'Are you sure you want to delete?',
+			'reportedcontent:areyousure' => '您確要要刪除嗎?',
 			'reportedcontent:archive' => '歸檔',
-			'reportedcontent:archived' => 'The report has been archived',
+			'reportedcontent:archived' => '舉報已經歸檔',
 			'reportedcontent:visit' => '檢視舉報的項目',
 			'reportedcontent:by' => '舉報人',
 			'reportedcontent:objecttitle' => '物件標題',
@@ -39,8 +39,8 @@
 			'reportedcontent:report' => '舉報',
 			'reportedcontent:moreinfo' => '更多資訊',
 
-			'reportedcontent:failed' => 'Sorry, the attempt to report this content has failed.',
-			'reportedcontent:notarchived' => 'We were not able to archive that report',
+			'reportedcontent:failed' => '抱歉, 舉報該篇內容失敗.',
+			'reportedcontent:notarchived' => '系統無法將舉報歸檔',
 	);
 
 	add_translation("zh_tw",$traditionalChinese);

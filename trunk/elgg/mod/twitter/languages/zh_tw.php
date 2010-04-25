@@ -9,7 +9,7 @@
 
 		'twitter:username' => '輸入您的 Twitter 帳號',
 		'twitter:num' => '要顯示 Twitter 訊息的數量',
-		'twitter:visit' => '參觀我 twitter',
+		'twitter:visit' => '參觀我的 twitter',
 		'twitter:notset' => '這個 Twitter widget 尚未被設定啟用. 要顯示您最後的 Twitter 訊息, 請點選 - 編輯 - 並填入您的資料',
 
 

@@ -28,15 +28,15 @@
 
 			'item:object:blog' => '部落格文章',
 
-			'blog:never' => 'never',
+			'blog:never' => '永遠不',
 			'blog:preview' => '預覽',
 
 			'blog:draft:save' => '儲存草稿',
 			'blog:draft:saved' => '最後儲存的草稿',
 			'blog:comments:allow' => '允許發表評論',
 
-			'blog:preview:description' => '這是一篇您部落格文章尚未儲存的預覽內容.',
-			'blog:preview:description:link' => '要繼續編輯或是儲存您的文章, 請點選這裏.',
+			'blog:preview:description' => '這是一篇在您部落格文章中, 尚未儲存的預覽內容.',
+			'blog:preview:description:link' => '要繼續編輯或是儲存您的文章, 請點擊這裏.',
 
 			'blog:enableblog' => '啟用群組部落格',
 
@@ -47,14 +47,14 @@
 	     **/
 
 	        //generic terms to use
-	        'blog:river:created' => "%s wrote",
-	        'blog:river:updated' => "%s updated",
-	        'blog:river:posted' => "%s posted",
+	        'blog:river:created' => "%s 寫入",
+	        'blog:river:updated' => "%s 更新",
+	        'blog:river:posted' => "%s 張貼",
 
 	        //these get inserted into the river links to take the user to the entity
-	        'blog:river:create' => "a new blog post titled",
-	        'blog:river:update' => "a blog post titled",
-	        'blog:river:annotate' => "a comment on this blog post",
+	        'blog:river:create' => "一篇部落格文章剛被命名",
+	        'blog:river:update' => "一篇部落格文章已被命名",
+	        'blog:river:annotate' => "有人針對此部落格發表了一篇評論",
 
 
 		/**

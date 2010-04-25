@@ -27,14 +27,14 @@
 			'pages:history' => "文章記錄",
 			'pages:view' => "檢視文章",
 			'pages:welcome' => "編輯歡迎訊息",
-			'pages:welcomemessage' => "Welcome to this Elgg pages plugin. This feature allows you to create pages on any topic and select who can view them and edit them.",
-			'pages:welcomeerror' => "There was a problem saving your welcome message",
-			'pages:welcomeposted' => "Your welcome message has been posted",
-			'pages:navigation' => "文章分頁",
-	        'pages:via' => "via pages",
-			'item:object:page_top' => 'Top-level pages',
+			'pages:welcomemessage' => "歡迎使用Elgg首頁插件. 它的功能可以讓您在任何主題建立頁面, 並選擇哪些人可以檢視與編輯它們.",
+			'pages:welcomeerror' => "在儲存您的歡迎訊息時出現問題",
+			'pages:welcomeposted' => "您的歡迎訊息已發佈d",
+			'pages:navigation' => "網頁導覽",
+	        'pages:via' => "透過網頁",
+			'item:object:page_top' => '頂層網頁',
 			'item:object:page' => '文章',
-			'item:object:pages_welcome' => 'Pages welcome blocks',
+			'item:object:pages_welcome' => '網頁的歡迎區塊',
 			'pages:nogroup' => '這個群組還沒有任何文章',
 			'pages:more' => '更多文章',
 
@@ -42,14 +42,14 @@
 		* River
 		**/
 
-		    'pages:river:annotate' => "a comment on this page",
+		    'pages:river:annotate' => "這個網頁的評論",
 		    'pages:river:created' => "%s 提到",
-	        'pages:river:updated' => "%s updated",
-	        'pages:river:posted' => "%s posted",
-			'pages:river:create' => "a new page titled",
-	        'pages:river:update' => "a page titled",
-	        'page:river:annotate' => "a comment on this page",
-	        'page_top:river:annotate' => "a comment on this page",
+	        'pages:river:updated' => "%s 已更新",
+	        'pages:river:posted' => "%s 已發佈",
+			'pages:river:create' => "新的網頁主題",
+	        'pages:river:update' => "網頁主題",
+	        'page:river:annotate' => "網頁的評論",
+	        'page_top:river:annotate' => "該網頁的評論",
 
 		/**
 		 * Form fields
@@ -64,30 +64,30 @@
 		/**
 		 * Status and error messages
 		 */
-			'pages:noaccess' => 'No access to page',
-			'pages:cantedit' => 'You can not edit this page',
-			'pages:saved' => 'Pages saved',
-			'pages:notsaved' => 'Page could not be saved',
-			'pages:notitle' => 'You must specify a title for your page.',
-			'pages:delete:success' => 'Your page was successfully deleted.',
-			'pages:delete:failure' => 'The page could not be deleted.',
+			'pages:noaccess' => '無法存取網頁',
+			'pages:cantedit' => '您不能編輯本頁',
+			'pages:saved' => '網頁已儲存',
+			'pages:notsaved' => '網頁無法儲存',
+			'pages:notitle' => '您必須設定網頁的標題.',
+			'pages:delete:success' => '網頁刪除成功.',
+			'pages:delete:failure' => '網頁無法刪除.',
 
 		/**
 		 * Page
 		 */
-			'pages:strapline' => 'Last updated %s by %s',
+			'pages:strapline' => '最後更新 %s 由 %s',
 
 		/**
 		 * History
 		 */
-			'pages:revision' => 'Revision created %s by %s',
+			'pages:revision' => '新版本 %s 由 %s',
 
 		/**
 		 * Widget
 		 **/
 
-		    'pages:num' => 'Number of pages to display',
-			'pages:widget:description' => "This is a list of your pages.",
+		    'pages:num' => '顯示的網頁數',
+			'pages:widget:description' => "這是網頁的清單.",
 
 		/**
 		 * Submenu items

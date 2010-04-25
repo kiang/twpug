@@ -13,20 +13,20 @@
 		 * Menu items and titles
 		 */
 	
-			'garbagecollector:period' => 'How often should the Elgg garbage collector run?',
+			'garbagecollector:period' => 'Elgg的garbage collector要多久執行一次?',
 	
-			'garbagecollector:weekly' => 'Once a week',
-			'garbagecollector:monthly' => 'Once a month',
-			'garbagecollector:yearly' => 'Once a year',
+			'garbagecollector:weekly' => '每星期一次',
+			'garbagecollector:monthly' => '每月一次',
+			'garbagecollector:yearly' => '每年一次',
 	
 			'garbagecollector' => "GARBAGE COLLECTOR\n",
-			'garbagecollector:done' => "DONE\n",
-			'garbagecollector:optimize' => "Optimizing %s ",
+			'garbagecollector:done' => "完成\n",
+			'garbagecollector:optimize' => "最佳化 %s ",
 	
-			'garbagecollector:error' => "ERROR",
-			'garbagecollector:ok' => "OK",
+			'garbagecollector:error' => "錯誤",
+			'garbagecollector:ok' => "是",
 	
-			'garbagecollector:gc:metastrings' => 'Cleaning up unlinked metastrings: ',
+			'garbagecollector:gc:metastrings' => '清除未連結的中繼字串: ',
 	
 	);
 					
