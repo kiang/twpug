@@ -25,26 +25,6 @@ function navbar() {
     return $str;
 }
 
-function lang_trans($matches) {
-    if (isset($_POST[$matches[1]]))
-        $new_string = preg_replace('/\'/', '\\\'', stripslashes($_POST[$matches[1]]));
-    else
-        $new_string = preg_replace('/\'/', '\\\'', stripslashes($matches[2]));
-    $i = 0;
-
-    while (strpos($new_string, '\\\\')) {
-        $new_string = str_replace('\\\\', '\\', $new_string);
-    }
-    if (preg_match_all('/\\\\\'\s*\.(.*?)\s*\.\s*\\\\\'/ism', $new_string, $inmatches)) {
-        foreach ($inmatches[1] AS $key => $val) {
-            $inmatches[1][$key] = '\' . ' . stripslashes($val) . ' . \'';
-        }
-        $new_string = str_replace($inmatches[0], $inmatches[1], $new_string);
-    }
-
-    return 'define(\'' . $matches[1] . '\', \'' . $new_string . '\');' . chr(10);
-}
-
 function getlist($dir, &$var) {
     if (is_dir($dir)) {
         if ($dh = opendir($dir)) {
@@ -56,4 +36,30 @@ function getlist($dir, &$var) {
     } else {
         $var[] = $dir;
     }
+}
+
+function parseLangFile($file) {
+    $fileContent = file_get_contents($file);
+    $fileContentLower = strtolower($fileContent);
+    $currentPosition = 0;
+    $languages = array();
+    while (FALSE !== ($definePosition = strpos($fileContentLower, 'define', $currentPosition))) {
+        $currentPosition = $definePosition + 6;
+        $commaPosition = strpos($fileContent, ',', $currentPosition);
+        $part1 = substr($fileContent, $currentPosition, ($commaPosition - $currentPosition));
+        $part1 = trim($part1, ' (\'"');
+        $currentPosition = $commaPosition + 1;
+        $semicolonPosition = strpos($fileContent, ';', $currentPosition);
+        $part2 = substr($fileContent, $currentPosition, ($semicolonPosition - $currentPosition));
+        $part2 = trim($part2, ') ');
+        $languages[$part1] = array(
+            'content' => $part2,
+            'start' => $definePosition,
+            'end' => $semicolonPosition + 1,
+        );
+        $currentPosition = $semicolonPosition + 1;
+    }
+    unset($fileContent);
+    unset($fileContentLower);
+    return $languages;
 }
