@@ -1,4 +1,5 @@
 <?php
+
 $modversion['name'] = _MI_LANG_TOOL_NAME;
 $modversion['version'] = 0.0761;
 $modversion['description'] = _MI_LANG_TOOL_DESC;
@@ -26,4 +27,3 @@ $modversion['hasMain'] = 1;
 // Templates
 $modversion['templates'][1]['file'] = 'lang_tool_greet.html';
 $modversion['templates'][1]['description'] = 'lang_tool Form';
-?>
