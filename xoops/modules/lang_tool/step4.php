@@ -37,7 +37,7 @@ if ($_POST["the_file"] && !is_dir($file_to) && !is_dir($file_from)) {
                         $content .= '<textarea name="lang[' . $key . ']" rows="' . $rows . '" cols="40" style="border:1px solid #999999;font-size:10pt">' . htmlentities($lang_source[$key]) . '</textarea>';
                 }
                 else if (isset($lang_target[$key]))
-                    $content .= '<input size="40" type="text" name="lang[' . $key . ']" value="' . stripslashes(htmlentities($lang_target[$key], ENT_QUOTES, _CHARSET)) . '" style="border:1px solid #999999">';
+                    $content .= '<input size="40" type="text" name="lang[' . $key . ']" value="' . htmlentities($lang_target[$key], ENT_QUOTES, _CHARSET) . '" style="border:1px solid #999999">';
                 else
                     $content .= '<input size="40" type="text" name="lang[' . $key . ']" value="' . htmlentities($lang_source[$key]) . '" style="border:1px solid #999999">';
                 $content .= '</td></tr>' . chr(10);
