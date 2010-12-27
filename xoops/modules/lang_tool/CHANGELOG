@@ -1,3 +1,5 @@
+0.08   --- 12/27/2010
+Change the way to parse language files. (from preg_* to simpler string manipulations)
 0.0761 --- 11/16/2007
 Remove the BOM characters in admin/index.php & admin/function.php, thanks mikhail.
 0.076 --- 11/04/2007

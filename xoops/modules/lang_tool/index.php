@@ -16,7 +16,6 @@ if (isset($_SESSION['lang_tool']['module']))
 if (isset($_SESSION['lang_tool']['path']))
     $content .= $_SESSION['lang_tool']['path'];
 $content .= '<hr><form method="post">';
-$pattern = LANG_TOOL_PATTERN;
 switch ($_SESSION['lang_tool']['step']) {
     case 5:
         include 'step5.php';

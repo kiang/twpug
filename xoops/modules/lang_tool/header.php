@@ -2,12 +2,6 @@
 
 require('../../mainfile.php');
 include 'include/function.php';
-DEFINE('LANG_TOOL_PATTERN', '/define\s*\(\s*[\'"]([^\'"]*?)[\'"]\s*,\s*[\'"](.*?)[\'"]\s*\)\s*;\s*/ism');
-$skip_patterns = array(
-    '/\/\/.*/',
-    '/\/\*([^\*]*)\*\//s',
-);
-//	'/define\s*\(\s*[\'"]([^\'"]*?)[\'"]\s*,\s*([^\'"]*?)\s*;\s*/ism',
 
 if (isset($_POST['step']))
     $step = $_POST['step'];

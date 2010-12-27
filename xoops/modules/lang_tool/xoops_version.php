@@ -1,11 +1,11 @@
 <?php
 
 $modversion['name'] = _MI_LANG_TOOL_NAME;
-$modversion['version'] = 0.0761;
+$modversion['version'] = 0.08;
 $modversion['description'] = _MI_LANG_TOOL_DESC;
 $modversion['credits'] = '';
-$modversion['author'] = 'Finjon Kiang | http://twpug.net/';
-$modversion['license'] = 'GPL see LICENSE';
+$modversion['author'] = 'Finjon Kiang | http://olc.tw/';
+$modversion['license'] = 'GPLv2';
 $modversion['official'] = 0;
 $modversion['image'] = 'lang_tool_slogo.png';
 $modversion['dirname'] = 'lang_tool';
