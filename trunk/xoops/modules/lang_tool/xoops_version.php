@@ -1,7 +1,7 @@
 <?php
 
 $modversion['name'] = _MI_LANG_TOOL_NAME;
-$modversion['version'] = 0.08;
+$modversion['version'] = 0.081;
 $modversion['description'] = _MI_LANG_TOOL_DESC;
 $modversion['credits'] = '';
 $modversion['author'] = 'Finjon Kiang | http://olc.tw/';
