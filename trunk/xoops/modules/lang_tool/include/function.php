@@ -48,8 +48,32 @@ function parseLangFile($file) {
         $commaPosition = strpos($fileContent, ',', $currentPosition);
         $part1 = substr($fileContent, $currentPosition, ($commaPosition - $currentPosition));
         $part1 = trim($part1, ' (\'"');
-        $currentPosition = $commaPosition + 1;
-        $semicolonPosition = strpos($fileContent, ';', $currentPosition);
+        $currentPosition = $findQuotePosition = $commaPosition + 1;
+        $semicolonPosition = $inText = false;
+        $currentQuote = '';
+        while(false === $semicolonPosition) {
+            $c = substr($fileContent, $findQuotePosition, 1);
+            switch($c) {
+                case '\'':
+                case '"':
+                    if(false === $inText) {
+                        $inText = true;
+                        $currentQuote = $c;
+                    } elseif($currentQuote === $c && (substr($fileContent, $findQuotePosition - 1, 1) != '\\')) {
+                        $inText = false;
+                        $currentQuote = '';
+                    }
+                    break;
+                case ';':
+                    if(!$inText) {
+                        $semicolonPosition = $findQuotePosition;
+                    }
+                    break;
+            }
+            if(false === $semicolonPosition) {
+                ++$findQuotePosition;
+            }
+        }
         $part2 = substr($fileContent, $currentPosition, ($semicolonPosition - $currentPosition));
         $part2 = trim($part2, ') ');
         $languages[$part1] = array(
