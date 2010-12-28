@@ -17,13 +17,13 @@ if (is_dir($base)) {
 $mo_dir[] = 'xoops_core_lang_files';
 $content .= '<input type="hidden" name="step" value="2">';
 $content .= _MD_LANG_TOOL_SESELECTMOD . '<p></p>';
-$content .= '<select name="module">';
+$content .= '<select name="module" onchange="xoops$(\'textPath\').value = \'\';">';
 $num = sizeof($mo_dir);
 for ($i = 0; $i < $num; $i++) {
     $content .= '<option>' . $mo_dir[$i] . '</option>';
 }
 $content .= '</select>';
-$content .= '<p>' . _MD_LANG_TOOL_MANUALPATH . '</p><input type="text" name="manual_path" value="';
+$content .= '<p>' . _MD_LANG_TOOL_MANUALPATH . '</p><input type="text" id="textPath" name="manual_path" value="';
 if (isset($_SESSION['lang_tool']['base_dir'])) {
     $content .= $_SESSION['lang_tool']['base_dir'];
 }
