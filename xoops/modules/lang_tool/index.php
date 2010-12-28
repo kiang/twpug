@@ -17,6 +17,9 @@ if (isset($_SESSION['lang_tool']['path']))
     $content .= $_SESSION['lang_tool']['path'];
 $content .= '<hr><form method="post">';
 switch ($_SESSION['lang_tool']['step']) {
+    case 'check':
+        include 'check.php';
+        break;
     case 5:
         include 'step5.php';
         break;
