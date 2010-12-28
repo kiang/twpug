@@ -30,7 +30,7 @@ function getlist($dir, &$var) {
         if ($dh = opendir($dir)) {
             while (($file = readdir($dh)) !== false) {
                 if ($file != '.' && $file != '..')
-                    $the_list[] = getlist($dir . '/' . $file, $var);
+                    getlist($dir . '/' . $file, $var);
             }
         }
     } else {
@@ -42,16 +42,17 @@ function parseLangFile($file) {
     $fileContent = file_get_contents($file);
     $fileContentLower = strtolower($fileContent);
     $currentPosition = 0;
+    $fileLength = strlen($fileContent);
     $languages = array();
     while (FALSE !== ($definePosition = strpos($fileContentLower, 'define', $currentPosition))) {
         $currentPosition = $definePosition + 6;
         $commaPosition = strpos($fileContent, ',', $currentPosition);
         $part1 = substr($fileContent, $currentPosition, ($commaPosition - $currentPosition));
-        $part1 = trim($part1, ' (\'"');
+        $part1 = trim($part1, " ('\"\n\r");
         $currentPosition = $findQuotePosition = $commaPosition + 1;
         $semicolonPosition = $inText = false;
         $currentQuote = '';
-        while(false === $semicolonPosition) {
+        while((false === $semicolonPosition)) {
             $c = substr($fileContent, $findQuotePosition, 1);
             switch($c) {
                 case '\'':
@@ -65,7 +66,7 @@ function parseLangFile($file) {
                     }
                     break;
                 case ';':
-                    if(!$inText) {
+                    if(false === $inText) {
                         $semicolonPosition = $findQuotePosition;
                     }
                     break;
@@ -73,9 +74,18 @@ function parseLangFile($file) {
             if(false === $semicolonPosition) {
                 ++$findQuotePosition;
             }
+            if($findQuotePosition >= $fileLength) {
+                $semicolonPosition = $fileLength;
+            }
+        }
+        if($semicolonPosition === $fileLength) {
+            if(substr($fileContent, -2) == '?>') {
+                $semicolonPosition -= 2;
+            }
         }
         $part2 = substr($fileContent, $currentPosition, ($semicolonPosition - $currentPosition));
-        $part2 = trim($part2, ') ');
+        $part2 = trim($part2, " )\n\r");
+        
         $languages[$part1] = array(
             'content' => $part2,
             'start' => $definePosition,
