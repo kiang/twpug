@@ -1,5 +1,5 @@
 #summary lang_tool 0.08 beta howto
-#labels Featured
+#labels Deprecated
 
 The lang_tool module is a tool helping people translating modules and core of XOOPS. I know many people tried to test this module with no luck. It's sure need more documentation. But I must work for living first, right? If you think this module should be better, try to do it by your hand, or consider clicking the donation link in the project page:
   http://code.google.com/p/twpug/
