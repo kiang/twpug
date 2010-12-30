@@ -46,15 +46,23 @@ function parseLangFile($file) {
     $commentBlocks = $languages = array();
     /*
      * Find all comment blocks
-     * @todo there's another kind of comment start with // ......
      */
     while (FALSE !== ($commentPosition = strpos($fileContent, '/*', $currentPosition))) {
         $commentEndPosition = strpos($fileContent, '*/', $commentPosition) + 2;
         $commentBlocks[] = array(
             $commentPosition,
-            $commentEndPosition + 2,
+            $commentEndPosition,
         );
         $currentPosition = $commentEndPosition + 2;
+    }
+    $currentPosition = 0;
+    while (FALSE !== ($commentPosition = strpos($fileContent, '//', $currentPosition))) {
+        $commentEndPosition = strpos($fileContent, "\n", $commentPosition) + 1;
+        $commentBlocks[] = array(
+            $commentPosition,
+            $commentEndPosition,
+        );
+        $currentPosition = $commentEndPosition;
     }
     $currentPosition = 0;
     $inComment = false;
