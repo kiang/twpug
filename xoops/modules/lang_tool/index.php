@@ -20,6 +20,9 @@ switch ($_SESSION['lang_tool']['step']) {
     case 'check':
         include 'check.php';
         break;
+    case 'batch':
+        include 'batch.php';
+        break;
     case 5:
         include 'step5.php';
         break;

@@ -34,7 +34,6 @@ switch ($_POST['ext']) {
             $betweenLength = $val['start'] - $currentPosition;
             if($betweenLength > 0) {
                 $translated_str .= substr($fileFromContent, $currentPosition, $betweenLength);
-                $currentPosition = $val['start'];
             }
             if(!empty($_POST['lang'][$key])) {
                 $val['content'] = $_POST['lang'][$key];
