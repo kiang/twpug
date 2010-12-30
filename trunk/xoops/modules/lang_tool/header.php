@@ -14,7 +14,8 @@ else
 
 switch ($step) {
     case 'check':
-        $_SESSION['lang_tool']['step'] = 'check';
+    case 'batch':
+        $_SESSION['lang_tool']['step'] = $step;
         break;
     case 1:
         $_SESSION['lang_tool']['step'] = 1;
